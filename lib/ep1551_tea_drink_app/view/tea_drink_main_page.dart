@@ -81,7 +81,9 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                     ),
                                   ),
                                 ),
-                                SizedBox(width: 16,),
+                                SizedBox(
+                                  width: 16,
+                                ),
                                 Expanded(
                                   child: Container(
                                     decoration: BoxDecoration(
@@ -94,6 +96,13 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                   ),
                                 )
                               ],
+                            ),
+                          ),
+                          Container(
+                            height: 400,
+                            decoration: BoxDecoration(
+                              color: Colors.green,
+                              borderRadius: BorderRadius.circular(16)
                             ),
                           )
                         ],
