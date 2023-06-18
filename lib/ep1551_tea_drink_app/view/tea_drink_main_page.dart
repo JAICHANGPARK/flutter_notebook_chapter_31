@@ -15,8 +15,30 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
         child: Stack(
           children: [
             Positioned(
+              left: 16,
+              top: 16,
+              bottom: 0,
+              right: 16,
               child: Column(
-                children: [],
+                children: [
+                  Row(
+                    children: [
+                      Text("Hi, Dream"),
+                      Spacer(),
+                      CircleAvatar(
+                        backgroundColor: Colors.grey[400],
+                        radius: 22,
+                      ),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      CircleAvatar(
+                        backgroundColor: Colors.grey[400],
+                        radius: 22,
+                      ),
+                    ],
+                  )
+                ],
               ),
             )
           ],
