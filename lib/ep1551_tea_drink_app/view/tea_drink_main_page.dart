@@ -47,6 +47,13 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                         foregroundColor: Colors.black,
                       ),
                     ],
+                  ),
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: [],
+                      ),
+                    ),
                   )
                 ],
               ),
