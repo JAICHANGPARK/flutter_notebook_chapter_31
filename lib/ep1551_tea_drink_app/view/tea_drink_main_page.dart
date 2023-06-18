@@ -48,7 +48,9 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 24,),
+                  SizedBox(
+                    height: 24,
+                  ),
                   Expanded(
                     child: SingleChildScrollView(
                       child: Column(
@@ -63,22 +65,34 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                               ),
                             ),
                           ),
-
                           Container(
                             margin: EdgeInsets.symmetric(vertical: 16),
                             height: 100,
-                           
                             child: Row(
                               children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(8),
-                          border: Border.all(
-                            color: Colors.grey[300]!,
-                          ),
-                        ),
-                      )
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(8),
+                                      border: Border.all(
+                                        color: Colors.grey[300]!,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(width: 16,),
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(8),
+                                      border: Border.all(
+                                        color: Colors.grey[300]!,
+                                      ),
+                                    ),
+                                  ),
+                                )
                               ],
                             ),
                           )
