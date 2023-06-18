@@ -32,7 +32,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                       ),
                       Spacer(),
                       CircleAvatar(
-                        backgroundColor: Colors.grey[400],
+                        backgroundColor: Colors.grey[300],
                         radius: 22,
                         child: Icon(Icons.notifications_none),
                         foregroundColor: Colors.black,
@@ -41,7 +41,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                         width: 8,
                       ),
                       CircleAvatar(
-                        backgroundColor: Colors.grey[400],
+                        backgroundColor: Colors.grey[300],
                         radius: 22,
                         child: Icon(Icons.person_outline),
                         foregroundColor: Colors.black,
