@@ -23,7 +23,13 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                 children: [
                   Row(
                     children: [
-                      Text("Hi, Dream"),
+                      Text(
+                        "Hi, Dream",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w900,
+                          fontSize: 24,
+                        ),
+                      ),
                       Spacer(),
                       CircleAvatar(
                         backgroundColor: Colors.grey[400],
