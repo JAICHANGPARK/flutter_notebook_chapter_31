@@ -12,7 +12,15 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Stack(),
+        child: Stack(
+          children: [
+            Positioned(
+              child: Column(
+                children: [],
+              ),
+            )
+          ],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
