@@ -17,7 +17,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: [
-
+          IconButton(onPressed: (){}, icon: Icon(Icons.add))
           ],
         ),
       ),
