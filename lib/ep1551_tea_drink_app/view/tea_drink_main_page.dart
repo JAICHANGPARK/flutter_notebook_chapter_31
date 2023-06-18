@@ -63,18 +63,22 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                               ),
                             ),
                           ),
+
                           Container(
+                            margin: EdgeInsets.symmetric(vertical: 16),
                             height: 100,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(8),
-                              border: Border.all(
-                                color: Colors.grey[300]!,
-                              ),
-                            ),
+                           
                             child: Row(
                               children: [
-                                
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(
+                            color: Colors.grey[300]!,
+                          ),
+                        ),
+                      )
                               ],
                             ),
                           )
