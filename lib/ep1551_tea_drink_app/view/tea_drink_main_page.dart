@@ -14,18 +14,21 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
       body: SafeArea(
         child: Stack(),
       ),
-      bottomNavigationBar: BottomAppBar(
-        child: Row(
-          children: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.add))
-          ],
-        ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home_filled),label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.search),label: "Search"),
+          BottomNavigationBarItem(icon: Icon(Icons.emoji_events_outlined),label: "Rewards"),
+          BottomNavigationBarItem(icon: Icon(Icons.payment),label: "Pay"),
+          BottomNavigationBarItem(icon: Icon(Icons.payment),label: "Pay"),
+        ],
+        type: BottomNavigationBarType.fixed,
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {  },
         child: Icon(Icons.abc),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
