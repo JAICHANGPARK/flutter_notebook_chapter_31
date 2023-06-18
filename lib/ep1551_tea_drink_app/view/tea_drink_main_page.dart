@@ -34,6 +34,8 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                       CircleAvatar(
                         backgroundColor: Colors.grey[400],
                         radius: 22,
+                        child: Icon(Icons.notifications_none),
+                        foregroundColor: Colors.black,
                       ),
                       SizedBox(
                         width: 8,
@@ -41,6 +43,8 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                       CircleAvatar(
                         backgroundColor: Colors.grey[400],
                         radius: 22,
+                        child: Icon(Icons.person_outline),
+                        foregroundColor: Colors.black,
                       ),
                     ],
                   )
