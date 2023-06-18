@@ -48,10 +48,37 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                       ),
                     ],
                   ),
+                  SizedBox(height: 24,),
                   Expanded(
                     child: SingleChildScrollView(
                       child: Column(
-                        children: [],
+                        children: [
+                          Container(
+                            height: 100,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            height: 100,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              ),
+                            ),
+                            child: Row(
+                              children: [
+                                
+                              ],
+                            ),
+                          )
+                        ],
                       ),
                     ),
                   )
