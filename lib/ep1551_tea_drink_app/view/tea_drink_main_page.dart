@@ -23,32 +23,32 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                 children: [
                   Row(
                     children: [
-                      Text(
+                      const Text(
                         "Hi, Dream",
                         style: TextStyle(
                           fontWeight: FontWeight.w900,
                           fontSize: 24,
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       CircleAvatar(
                         backgroundColor: Colors.grey[300],
                         radius: 22,
-                        child: Icon(Icons.notifications_none),
+                        child: const Icon(Icons.notifications_none),
                         foregroundColor: Colors.black,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       CircleAvatar(
                         backgroundColor: Colors.grey[300],
                         radius: 22,
-                        child: Icon(Icons.person_outline),
+                        child: const Icon(Icons.person_outline),
                         foregroundColor: Colors.black,
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 24,
                   ),
                   Expanded(
@@ -64,10 +64,10 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                 color: Colors.grey[300]!,
                               ),
                             ),
-                            padding: EdgeInsets.all(16),
+                            padding: const EdgeInsets.all(16),
                             child: Row(
                               children: [
-                                CircleAvatar(
+                                const CircleAvatar(
                                   radius: 24,
                                   backgroundColor: Colors.black,
                                   child: Icon(
@@ -75,9 +75,9 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                   ),
                                   foregroundColor: Colors.white,
                                 ),
-                                Expanded(
+                                const Expanded(
                                   child: Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                                    padding: EdgeInsets.symmetric(horizontal: 8),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       mainAxisAlignment: MainAxisAlignment.center,
@@ -99,7 +99,8 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                     color: Colors.grey[200],
                                     borderRadius: BorderRadius.circular(32),
                                   ),
-                                  child: Row(
+                                  padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 8),
+                                  child: const Row(
                                     children: [
                                       Text("Scan"),
                                       SizedBox(
@@ -113,7 +114,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.symmetric(vertical: 16),
+                            margin: const EdgeInsets.symmetric(vertical: 16),
                             height: 100,
                             child: Row(
                               children: [
@@ -128,7 +129,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                     ),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 16,
                                 ),
                                 Expanded(
@@ -161,16 +162,16 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
-          BottomNavigationBarItem(icon: Icon(Icons.emoji_events_outlined), label: "Rewards"),
-          BottomNavigationBarItem(icon: Icon(Icons.payment), label: "Pay"),
+          const BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+          const BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
+          const BottomNavigationBarItem(icon: Icon(Icons.emoji_events_outlined), label: "Rewards"),
+          const BottomNavigationBarItem(icon: Icon(Icons.payment), label: "Pay"),
         ],
         type: BottomNavigationBarType.fixed,
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.abc),
+        child: const Icon(Icons.abc),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
