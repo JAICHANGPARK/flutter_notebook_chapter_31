@@ -115,7 +115,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                           ),
                           Container(
                             margin: const EdgeInsets.symmetric(vertical: 16),
-                            height: 100,
+                            height: 84,
                             child: Row(
                               children: [
                                 Expanded(
@@ -131,8 +131,19 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
-                                          Text("65 Points"),
-                                          Text("Worth \$65"),
+                                          Text(
+                                            "65 Points",
+                                            style: TextStyle(
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          Text(
+                                            "Worth \$65",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
                                         ],
                                       ),
                                     ),
@@ -157,7 +168,10 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                           ),
                           Container(
                             height: 400,
-                            decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(16)),
+                            decoration: BoxDecoration(
+                              color: Colors.green,
+                              borderRadius: BorderRadius.circular(16),
+                            ),
                           )
                         ],
                       ),
