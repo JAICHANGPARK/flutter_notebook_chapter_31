@@ -201,10 +201,43 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                             ),
                           ),
                           Container(
-                            height: 400,
+                            height: 450,
                             decoration: BoxDecoration(
                               color: Colors.green,
                               borderRadius: BorderRadius.circular(16),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2013/07/13/11/48/asia-158702_1280.png",
+                                ),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            width: double.infinity,
+                            child: Column(
+                              children: [
+                                Text(
+                                  "Now Serving",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 18,
+                                  ),
+                                ),
+                                Text(
+                                  "CUTTING MATCHA",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 24,
+                                  ),
+                                ),
+                                Spacer(),
+                                Text(
+                                  "On all Dine-in & Online Orders",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                )
+                              ],
                             ),
                           )
                         ],
