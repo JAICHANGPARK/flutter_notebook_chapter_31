@@ -56,7 +56,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                       child: Column(
                         children: [
                           Container(
-                            height: 100,
+                            height: 84,
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(8),
@@ -67,13 +67,19 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                             child: Row(
                               children: [
                                 CircleAvatar(),
-                                Column(
-                                  children: [
-                                    Text("Wallet"),
-                                    Text("\$300"),
-                                  ],
+                                Expanded(
+                                  child: Column(
+                                    children: [
+                                      Text("Wallet"),
+                                      Text("\$300"),
+                                    ],
+                                  ),
                                 ),
                                 Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200],
+                                    borderRadius: BorderRadius.circular(32),
+                                  ),
                                   child: Row(
                                     children: [
                                       Text("Scan"),
