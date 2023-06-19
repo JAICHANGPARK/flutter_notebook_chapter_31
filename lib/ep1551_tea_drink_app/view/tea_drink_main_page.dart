@@ -64,6 +64,28 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                 color: Colors.grey[300]!,
                               ),
                             ),
+                            child: Row(
+                              children: [
+                                CircleAvatar(),
+                                Column(
+                                  children: [
+                                    Text("Wallet"),
+                                    Text("\$300"),
+                                  ],
+                                ),
+                                Container(
+                                  child: Row(
+                                    children: [
+                                      Text("Scan"),
+                                      SizedBox(
+                                        width: 8,
+                                      ),
+                                      Icon(Icons.document_scanner_outlined)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                           Container(
                             margin: EdgeInsets.symmetric(vertical: 16),
@@ -100,10 +122,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                           ),
                           Container(
                             height: 400,
-                            decoration: BoxDecoration(
-                              color: Colors.green,
-                              borderRadius: BorderRadius.circular(16)
-                            ),
+                            decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(16)),
                           )
                         ],
                       ),
