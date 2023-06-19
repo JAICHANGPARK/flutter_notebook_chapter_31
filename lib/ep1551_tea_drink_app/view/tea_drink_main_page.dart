@@ -161,8 +161,43 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                         color: Colors.grey[300]!,
                                       ),
                                     ),
+                                    child: Center(
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Text.rich(
+                                            TextSpan(
+                                              children: [
+                                                TextSpan(
+                                                  text: "0 Loyal ",
+                                                  style: TextStyle(
+                                                    fontSize: 20,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
+                                                TextSpan(
+                                                  text: "TEA",
+                                                  style: TextStyle(
+                                                    fontSize: 20,
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.green
+                                                  ),
+                                                )
+                                              ]
+                                            )
+
+                                          ),
+                                          Text(
+                                            "Worth \$65",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
                                   ),
-                                )
+                                ),
                               ],
                             ),
                           ),
