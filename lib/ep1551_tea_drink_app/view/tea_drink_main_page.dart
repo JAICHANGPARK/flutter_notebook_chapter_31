@@ -127,7 +127,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                         color: Colors.grey[300]!,
                                       ),
                                     ),
-                                    child: Center(
+                                    child: const Center(
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
@@ -161,7 +161,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                         color: Colors.grey[300]!,
                                       ),
                                     ),
-                                    child: Center(
+                                    child: const Center(
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
@@ -180,15 +180,14 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                                   style: TextStyle(
                                                     fontSize: 20,
                                                     fontWeight: FontWeight.bold,
-                                                    color: Colors.green
+                                                    color: Colors.green,
                                                   ),
                                                 )
-                                              ]
-                                            )
-
+                                              ],
+                                            ),
                                           ),
                                           Text(
-                                            "Worth \$65",
+                                            "2 chai away",
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                             ),
