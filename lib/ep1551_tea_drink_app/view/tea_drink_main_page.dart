@@ -64,15 +64,34 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                 color: Colors.grey[300]!,
                               ),
                             ),
+                            padding: EdgeInsets.all(16),
                             child: Row(
                               children: [
-                                CircleAvatar(),
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundColor: Colors.black,
+                                  child: Icon(
+                                    Icons.wallet,
+                                  ),
+                                  foregroundColor: Colors.white,
+                                ),
                                 Expanded(
-                                  child: Column(
-                                    children: [
-                                      Text("Wallet"),
-                                      Text("\$300"),
-                                    ],
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text("Wallet"),
+                                        Text(
+                                          "\$300",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 24,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
                                 Container(
