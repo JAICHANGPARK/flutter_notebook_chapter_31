@@ -99,7 +99,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                     color: Colors.grey[200],
                                     borderRadius: BorderRadius.circular(32),
                                   ),
-                                  padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 8),
+                                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                   child: const Row(
                                     children: [
                                       Text("Scan"),
@@ -125,6 +125,15 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                       borderRadius: BorderRadius.circular(8),
                                       border: Border.all(
                                         color: Colors.grey[300]!,
+                                      ),
+                                    ),
+                                    child: Center(
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Text("65 Points"),
+                                          Text("Worth \$65"),
+                                        ],
                                       ),
                                     ),
                                   ),
