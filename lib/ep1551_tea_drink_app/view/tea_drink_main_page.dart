@@ -253,18 +253,41 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                       )
                     ],
                   ),
+                  Container(),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Order"),
+                      Text(
+                        "Order",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                      ),
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.white,
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(
+                            color: Colors.grey[300]!,
+                          ),
                         ),
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
                           ),
+                        ),
+                      ),
+                      Container(
+                        height: 72,
+                        color: Colors.blue,
+                      ),
+                      Container(
+                        height: 72,
+                        padding: EdgeInsets.symmetric(vertical: 16),
+                        color: Colors.blue,
+                      ),
+                      Text(
+                        "RECOMMENDED",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
                         ),
                       )
                     ],
@@ -355,12 +378,17 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                         ),
                       ),
                     ),
-                     Positioned(
+                    Positioned(
                       left: 0,
                       right: 0,
                       top: 8,
                       bottom: 0,
                       child: GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            menuIndex = 2;
+                          });
+                        },
                         child: Column(
                           children: [
                             CircleAvatar(
