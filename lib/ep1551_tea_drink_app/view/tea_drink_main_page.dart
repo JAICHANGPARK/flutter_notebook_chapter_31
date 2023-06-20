@@ -289,7 +289,17 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
-                      )
+                      ),
+                      Expanded(
+                        child: ListView.builder(
+                          itemCount: 10,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              height: 140,
+                            );
+                          },
+                        ),
+                      ),
                     ],
                   )
                 ],
