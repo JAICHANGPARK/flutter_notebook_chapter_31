@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_31/ep1551_tea_drink_app/view/tea_drink_main_page.dart';
 
 void main() {
-  runApp(TeaDrinkApp());
+  runApp(const TeaDrinkApp());
 }
 
 class TeaDrinkApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class TeaDrinkApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: TeaDrinkMainPage(),
     );
   }
