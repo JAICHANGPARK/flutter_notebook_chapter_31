@@ -332,14 +332,19 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                         ),
                       ),
                     ),
-                    Positioned(
+                    const Positioned(
                       left: 0,
                       right: 0,
                       top: 8,
                       bottom: 0,
                       child: Column(
                         children: [
-                          CircleAvatar(radius: 28),
+                          CircleAvatar(
+                            radius: 28,
+                            backgroundColor: Colors.green,
+                            child: Icon(Icons.local_drink_outlined),
+                            foregroundColor: Colors.white,
+                          ),
                           SizedBox(
                             height: 8,
                           ),
