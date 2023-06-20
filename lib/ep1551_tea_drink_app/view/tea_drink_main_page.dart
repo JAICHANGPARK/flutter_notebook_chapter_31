@@ -264,7 +264,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                       top: 32,
                       child: Container(
                         color: Colors.white,
-                        child: Row(
+                        child: const Row(
                           children: [
                             Expanded(
                               child: Column(
@@ -330,6 +330,21 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                             )
                           ],
                         ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 0,
+                      right: 0,
+                      top: 8,
+                      bottom: 0,
+                      child: Column(
+                        children: [
+                          CircleAvatar(radius: 28),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text("Drink")
+                        ],
                       ),
                     )
                   ],
