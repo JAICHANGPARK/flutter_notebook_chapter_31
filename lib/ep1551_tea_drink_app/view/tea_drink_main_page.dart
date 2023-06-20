@@ -273,8 +273,58 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                   Icon(
                                     Icons.home_filled,
                                   ),
-                                  SizedBox(height: 6,),
+                                  SizedBox(
+                                    height: 6,
+                                  ),
                                   Text("Home"),
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.search,
+                                  ),
+                                  SizedBox(
+                                    height: 6,
+                                  ),
+                                  Text("Search"),
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [],
+                              ),
+                            ),
+                            Expanded(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.emoji_events_outlined,
+                                  ),
+                                  SizedBox(
+                                    height: 6,
+                                  ),
+                                  Text("Rewards"),
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.payment,
+                                  ),
+                                  SizedBox(
+                                    height: 6,
+                                  ),
+                                  Text("Pay"),
                                 ],
                               ),
                             )
