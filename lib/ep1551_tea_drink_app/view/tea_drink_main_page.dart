@@ -213,6 +213,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                               ),
                             ),
                             width: double.infinity,
+                            padding: EdgeInsets.fromLTRB(0, 24, 0, 16),
                             child: Column(
                               children: [
                                 Text(
@@ -227,7 +228,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 24,
+                                    fontSize: 32,
                                   ),
                                 ),
                                 Spacer(),
@@ -235,6 +236,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                                   "On all Dine-in & Online Orders",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
+                                    color: Colors.white,
                                   ),
                                 )
                               ],
