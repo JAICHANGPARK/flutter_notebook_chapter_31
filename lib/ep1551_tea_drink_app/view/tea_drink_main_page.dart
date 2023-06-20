@@ -257,7 +257,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         "Order",
                         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                       ),
@@ -269,7 +269,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                             color: Colors.grey[300]!,
                           ),
                         ),
-                        child: TextField(
+                        child: const TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
                           ),
@@ -281,21 +281,23 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                       ),
                       Container(
                         height: 72,
-                        padding: EdgeInsets.symmetric(vertical: 16),
+                        padding: const EdgeInsets.symmetric(vertical: 16),
                         color: Colors.blue,
                       ),
-                      Text(
+                      const Text(
                         "RECOMMENDED",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       Expanded(
-                        child: ListView.builder(
+                        child: ListView.separated(
                           itemCount: 10,
+                          separatorBuilder: (context, _) => const Divider(),
                           itemBuilder: (context, index) {
                             return Container(
                               height: 140,
+                              color: Colors.blue,
                             );
                           },
                         ),
@@ -399,7 +401,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                             menuIndex = 2;
                           });
                         },
-                        child: Column(
+                        child: const Column(
                           children: [
                             CircleAvatar(
                               radius: 28,
