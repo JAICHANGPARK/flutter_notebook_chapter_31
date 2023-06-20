@@ -205,7 +205,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                             decoration: BoxDecoration(
                               color: Colors.green,
                               borderRadius: BorderRadius.circular(16),
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: NetworkImage(
                                   "https://cdn.pixabay.com/photo/2013/07/13/11/48/asia-158702_1280.png",
                                 ),
@@ -213,8 +213,8 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                               ),
                             ),
                             width: double.infinity,
-                            padding: EdgeInsets.fromLTRB(0, 24, 0, 16),
-                            child: Column(
+                            padding: const EdgeInsets.fromLTRB(0, 24, 0, 16),
+                            child: const Column(
                               children: [
                                 Text(
                                   "Now Serving",
@@ -248,24 +248,61 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                   )
                 ],
               ),
-            )
+            ),
+            Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              child: Container(
+                height: 100,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      top: 32,
+                      child: Container(
+                        color: Colors.white,
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.home_filled,
+                                  ),
+                                  SizedBox(height: 6,),
+                                  Text("Home"),
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          const BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
-          const BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
-          const BottomNavigationBarItem(icon: Icon(Icons.emoji_events_outlined), label: "Rewards"),
-          const BottomNavigationBarItem(icon: Icon(Icons.payment), label: "Pay"),
-        ],
-        type: BottomNavigationBarType.fixed,
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: const Icon(Icons.abc),
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      // bottomNavigationBar: BottomNavigationBar(
+      //   items: [
+      //     const BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+      //     const BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
+      //     const BottomNavigationBarItem(icon: Icon(Icons.emoji_events_outlined), label: "Rewards"),
+      //     const BottomNavigationBarItem(icon: Icon(Icons.payment), label: "Pay"),
+      //   ],
+      //   type: BottomNavigationBarType.fixed,
+      // ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {},
+      //   child: const Icon(Icons.abc),
+      // ),
+      // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
