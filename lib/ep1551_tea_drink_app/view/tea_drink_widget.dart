@@ -68,28 +68,52 @@ class TeaDrinkWidget extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 8,),
-                            Text("Tea"),
+                            const SizedBox(
+                              width: 8,
+                            ),
+                            const Text("Tea"),
                           ],
                         ),
-                        SizedBox(height: 4,),
-                        Text("Dream Chai", style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),),
-                        SizedBox(height: 4,),
-                        Text("\$1.0", style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),),
+                        const SizedBox(
+                          height: 4,
+                        ),
+                        const Text(
+                          "Dream Chai",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 4,
+                        ),
+                        const Text(
+                          "\$1.0",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                         Row(
                           children: [
                             ...List.generate(
                                 5,
-                                (index) => Icon(
+                                (index) => const Icon(
                                       Icons.star,
                                       size: 12,
+                                      color: Colors.orange,
                                     )),
-                            Text("4.5"),
-                            Text('(1.5k)'),
+                            const Text(
+                              "4.5",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.orange,
+                              ),
+                            ),
+                            const Text(
+                              '(1.5k)',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ],
                         )
                       ],
