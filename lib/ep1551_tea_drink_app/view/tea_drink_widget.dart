@@ -53,7 +53,8 @@ class TeaDrinkWidget extends StatelessWidget {
                 color: Colors.blue,
                 child: Row(
                   children: [
-                     Expanded(child: Column(
+                    Expanded(
+                        child: Column(
                       children: [
                         Row(
                           children: [
@@ -61,7 +62,22 @@ class TeaDrinkWidget extends StatelessWidget {
                               height: 24,
                               width: 24,
                               decoration: BoxDecoration(),
-                            )
+                            ),
+                            Text("Tea"),
+                          ],
+                        ),
+                        Text("Dream Chai"),
+                        Text("\$1.0"),
+                        Row(
+                          children: [
+                            ...List.generate(
+                                5,
+                                (index) => Icon(
+                                      Icons.star,
+                                      size: 12,
+                                    )),
+                            Text("4.5"),
+                            Text('(1.5k)'),
                           ],
                         )
                       ],
