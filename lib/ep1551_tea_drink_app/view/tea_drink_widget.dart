@@ -53,7 +53,19 @@ class TeaDrinkWidget extends StatelessWidget {
                 color: Colors.blue,
                 child: Row(
                   children: [
-                    Expanded(child: Column()),
+                     Expanded(child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              height: 24,
+                              width: 24,
+                              decoration: BoxDecoration(),
+                            )
+                          ],
+                        )
+                      ],
+                    )),
                     Container(
                       width: 110,
                       child: Stack(
@@ -81,7 +93,7 @@ class TeaDrinkWidget extends StatelessWidget {
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(8),
                               ),
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   "ADD",
                                   style: TextStyle(
