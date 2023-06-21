@@ -49,13 +49,13 @@ class TeaDrinkWidget extends StatelessWidget {
             separatorBuilder: (context, _) => const Divider(),
             itemBuilder: (context, index) {
               return Container(
-                height: 140,
+                height: 130,
                 color: Colors.blue,
                 child: Row(
                   children: [
                     Expanded(child: Column()),
                     Container(
-                      width: 120,
+                      width: 110,
                       child: Stack(
                         children: [
                           Positioned(
@@ -72,7 +72,18 @@ class TeaDrinkWidget extends StatelessWidget {
                             ),
                           ),
                           Positioned(
-                            child: Container(),
+                              left: 16,
+                            right: 16,
+                            bottom: 0,
+                            child: Container(
+                              width: 84,
+                              height: 32,
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(8)
+                              ),
+                              
+                            ),
                           ),
                         ],
                       ),
