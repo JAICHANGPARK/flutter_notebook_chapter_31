@@ -66,23 +66,30 @@ class TeaDrinkWidget extends StatelessWidget {
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.red,
-                                borderRadius: BorderRadius.circular(8)
+                                borderRadius: BorderRadius.circular(8),
                               ),
-                              
                             ),
                           ),
                           Positioned(
-                              left: 16,
+                            left: 16,
                             right: 16,
                             bottom: 0,
                             child: Container(
                               width: 84,
                               height: 32,
                               decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(8)
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(8),
                               ),
-                              
+                              child: Center(
+                                child: Text(
+                                  "ADD",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.green,
+                                  ),
+                                ),
+                              ),
                             ),
                           ),
                         ],
