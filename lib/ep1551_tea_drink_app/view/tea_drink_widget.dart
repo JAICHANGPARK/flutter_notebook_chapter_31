@@ -50,24 +50,36 @@ class TeaDrinkWidget extends StatelessWidget {
             itemBuilder: (context, index) {
               return Container(
                 height: 130,
-                color: Colors.blue,
                 child: Row(
                   children: [
                     Expanded(
                         child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Row(
                           children: [
                             Container(
                               height: 24,
                               width: 24,
-                              decoration: BoxDecoration(),
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.green,
+                                ),
+                              ),
                             ),
+                            SizedBox(width: 8,),
                             Text("Tea"),
                           ],
                         ),
-                        Text("Dream Chai"),
-                        Text("\$1.0"),
+                        SizedBox(height: 4,),
+                        Text("Dream Chai", style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),),
+                        SizedBox(height: 4,),
+                        Text("\$1.0", style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),),
                         Row(
                           children: [
                             ...List.generate(
