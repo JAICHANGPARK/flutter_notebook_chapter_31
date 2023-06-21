@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 
-
 class TeaDrinkWidget extends StatelessWidget {
   const TeaDrinkWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return    Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
@@ -14,7 +13,7 @@ class TeaDrinkWidget extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
         ),
         Container(
-          margin: EdgeInsets.only(top: 16),
+          margin: const EdgeInsets.only(top: 16),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(8),
@@ -29,12 +28,12 @@ class TeaDrinkWidget extends StatelessWidget {
           ),
         ),
         Container(
-          margin: EdgeInsets.only(top: 16),
+          margin: const EdgeInsets.only(top: 16),
           height: 72,
           color: Colors.blue,
         ),
         Container(
-          margin: EdgeInsets.symmetric(vertical: 16),
+          margin: const EdgeInsets.symmetric(vertical: 16),
           height: 84,
           color: Colors.blue,
         ),
@@ -52,6 +51,20 @@ class TeaDrinkWidget extends StatelessWidget {
               return Container(
                 height: 140,
                 color: Colors.blue,
+                child: Row(
+                  children: [
+                    Expanded(child: Column()),
+                    Container(
+                      width: 84,
+                      child: Stack(
+                        children: [
+                          Positioned(child: Container(),),
+                          Positioned(child: Container(),),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               );
             },
           ),
