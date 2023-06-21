@@ -14,6 +14,7 @@ class TeaDrinkWidget extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
         ),
         Container(
+          margin: EdgeInsets.only(top: 16),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(8),
@@ -28,12 +29,13 @@ class TeaDrinkWidget extends StatelessWidget {
           ),
         ),
         Container(
+          margin: EdgeInsets.only(top: 16),
           height: 72,
           color: Colors.blue,
         ),
         Container(
-          height: 72,
-          padding: const EdgeInsets.symmetric(vertical: 16),
+          margin: EdgeInsets.symmetric(vertical: 16),
+          height: 84,
           color: Colors.blue,
         ),
         const Text(
