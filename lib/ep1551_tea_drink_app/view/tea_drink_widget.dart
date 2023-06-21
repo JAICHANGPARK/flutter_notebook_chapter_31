@@ -55,11 +55,25 @@ class TeaDrinkWidget extends StatelessWidget {
                   children: [
                     Expanded(child: Column()),
                     Container(
-                      width: 84,
+                      width: 120,
                       child: Stack(
                         children: [
-                          Positioned(child: Container(),),
-                          Positioned(child: Container(),),
+                          Positioned(
+                            left: 0,
+                            top: 0,
+                            bottom: 16,
+                            right: 0,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                                borderRadius: BorderRadius.circular(8)
+                              ),
+                              
+                            ),
+                          ),
+                          Positioned(
+                            child: Container(),
+                          ),
                         ],
                       ),
                     )
