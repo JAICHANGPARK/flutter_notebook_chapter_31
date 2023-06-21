@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_31/ep1551_tea_drink_app/view/tea_drink_home_widget.dart';
+import 'package:flutter_notebook_chapter_31/ep1551_tea_drink_app/view/tea_drink_widget.dart';
 
 class TeaDrinkMainPage extends StatefulWidget {
   const TeaDrinkMainPage({super.key});
@@ -27,7 +28,7 @@ class _TeaDrinkMainPageState extends State<TeaDrinkMainPage> {
                 children: [
                   TeaDrinkHomeWidget(),
                   Container(),
-
+                  TeaDrinkWidget(),
                 ],
               ),
             ),
