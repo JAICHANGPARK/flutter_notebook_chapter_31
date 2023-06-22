@@ -91,9 +91,11 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       ),
                     ),
                     Expanded(
-                      child: IconButton(
-                        onPressed: () {},
-                        icon: Icon(Icons.explore_outlined),
+                      child: Center(
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.explore_outlined),
+                        ),
                       ),
                     ),
                     Expanded(
@@ -104,7 +106,15 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           ),
                         ),
                       ),
-                    )
+                    ),
+                    Expanded(
+                      child: Center(
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.favorite_border),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
