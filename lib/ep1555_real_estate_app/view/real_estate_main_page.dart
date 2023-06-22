@@ -11,6 +11,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       body: SafeArea(
         child: Stack(
           children: [
@@ -40,7 +41,12 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           backgroundColor: Colors.blue,
                         ),
                       ),
-                      CircleAvatar(),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      CircleAvatar(
+                        radius: 24,
+                      ),
                     ],
                   )
                 ],
