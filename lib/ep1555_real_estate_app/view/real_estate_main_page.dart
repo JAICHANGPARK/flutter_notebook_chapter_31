@@ -15,14 +15,13 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
         child: Stack(
           children: [
             Positioned(
-                left: 16,right: 16,
-                top: 24,
-                child: Column(
-              children: [
-
-              ],
-            ))
-
+              left: 16,
+              right: 16,
+              top: 24,
+              child: Column(
+                children: [],
+              ),
+            )
           ],
         ),
       ),
