@@ -63,29 +63,37 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
               right: 16,
               bottom: 16,
               child: Container(
-                height: 84,
+                height: 80,
                 decoration: ShapeDecoration(color: Colors.white, shape: StadiumBorder()),
                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                 child: Row(
                   children: [
                     Container(
-                      decoration: BoxDecoration(
-                        color: Colors.teal,
-borderRadius: BorderRadius.circular(42)
-                      ),
-                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+                      height: double.infinity,
+                      decoration: BoxDecoration(color: Colors.teal, borderRadius: BorderRadius.circular(42)),
+                      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
                       child: Row(
                         children: [
                           Icon(
                             Icons.home,
+                            color: Colors.white,
                           ),
                           SizedBox(
                             width: 12,
                           ),
-                          Text("Home")
+                          Text(
+                            "Home",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
                         ],
                       ),
-                    )
+                    ),
+                    Expanded(
+                        child: IconButton(
+                      onPressed: () {}, icon: Icon(Icons.explore_outlined),
+                    ))
                   ],
                 ),
               ),
