@@ -22,13 +22,16 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 children: [
                   Row(
                     children: [
-                      Text("HOMMIE", style: TextStyle(
-                        color: Colors.teal,
-                        fontWeight: FontWeight.w900,
-                        fontSize: 24
-                      ),),
+                      Text(
+                        "HOMMIE",
+                        style: TextStyle(
+                          color: Colors.teal,
+                          fontWeight: FontWeight.w900,
+                          fontSize: 24,
+                        ),
+                      ),
+                      Spacer(),
                       CircleAvatar(
-
                         radius: 24,
                         backgroundColor: Colors.white,
                         foregroundColor: Colors.black,
@@ -38,7 +41,6 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         ),
                       ),
                       CircleAvatar(),
-
                     ],
                   )
                 ],
