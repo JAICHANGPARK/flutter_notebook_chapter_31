@@ -19,6 +19,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
               left: 16,
               right: 16,
               top: 24,
+              bottom: 0,
               child: Column(
                 children: [
                   Row(
@@ -48,8 +49,45 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         radius: 24,
                       ),
                     ],
+                  ),
+                  Expanded(
+                    child: Stack(
+                      children: [],
+                    ),
                   )
                 ],
+              ),
+            ),
+            Positioned(
+              left: 16,
+              right: 16,
+              bottom: 16,
+              child: Container(
+                height: 84,
+                decoration: ShapeDecoration(color: Colors.white, shape: StadiumBorder()),
+                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                child: Row(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.teal,
+borderRadius: BorderRadius.circular(42)
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.home,
+                          ),
+                          SizedBox(
+                            width: 12,
+                          ),
+                          Text("Home")
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             )
           ],
