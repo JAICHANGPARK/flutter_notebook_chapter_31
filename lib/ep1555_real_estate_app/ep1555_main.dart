@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_31/ep1555_real_estate_app/view/real_estate_main_page.dart';
 
 
 
@@ -11,6 +12,8 @@ class RealEstateApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: RealEstateMainPage(),
+    );
   }
 }
