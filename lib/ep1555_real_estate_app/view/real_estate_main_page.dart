@@ -26,7 +26,16 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         color: Colors.teal,
                         fontWeight: FontWeight.bold,
                       ),),
-                      CircleAvatar(),
+                      CircleAvatar(
+
+                        radius: 24,
+                        backgroundColor: Colors.white,
+                        foregroundColor: Colors.black,
+                        child: Badge(
+                          child: Icon(Icons.notifications_none),
+                          backgroundColor: Colors.blue,
+                        ),
+                      ),
                       CircleAvatar(),
 
                     ],
