@@ -91,9 +91,20 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       ),
                     ),
                     Expanded(
-                        child: IconButton(
-                      onPressed: () {}, icon: Icon(Icons.explore_outlined),
-                    ))
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.explore_outlined),
+                      ),
+                    ),
+                    Expanded(
+                      child: Center(
+                        child: Badge(
+                          child: Icon(
+                            Icons.calendar_today,
+                          ),
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
