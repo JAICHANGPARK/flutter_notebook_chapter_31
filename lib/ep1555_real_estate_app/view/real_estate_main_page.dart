@@ -19,7 +19,19 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
               right: 16,
               top: 24,
               child: Column(
-                children: [],
+                children: [
+                  Row(
+                    children: [
+                      Text("HOMMIE", style: TextStyle(
+                        color: Colors.teal,
+                        fontWeight: FontWeight.bold,
+                      ),),
+                      CircleAvatar(),
+                      CircleAvatar(),
+
+                    ],
+                  )
+                ],
               ),
             )
           ],
