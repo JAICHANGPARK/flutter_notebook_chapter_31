@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 
 
+void main() {
+  runApp(RealEstateApp());
+}
+
 class RealEstateApp extends StatelessWidget {
   const RealEstateApp({super.key});
 
