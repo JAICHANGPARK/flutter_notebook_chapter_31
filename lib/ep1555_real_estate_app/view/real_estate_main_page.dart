@@ -24,7 +24,8 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                     children: [
                       Text("HOMMIE", style: TextStyle(
                         color: Colors.teal,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w900,
+                        fontSize: 24
                       ),),
                       CircleAvatar(
 
