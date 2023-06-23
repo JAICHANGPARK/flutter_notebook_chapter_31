@@ -26,12 +26,11 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
               child: Column(
                 children: [
                   GestureDetector(
-                    onTap: (){
-                      if(!cardOpen){
+                    onTap: () {
+                      if (!cardOpen) {
                         setState(() {
                           cardOpen = true;
                         });
-
                       }
                     },
                     child: const Row(
@@ -104,8 +103,8 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                     FloatingActionButton(
                                       onPressed: () {
                                         setState(() {
+                                          cardOpen = !cardOpen;
                                           if (cardOpen) {
-                                            cardOpen = !cardOpen;
                                             cardHeightPadding = 0;
                                           } else {
                                             cardHeightPadding = 72;
@@ -125,7 +124,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           ),
                         ),
                         AnimatedPositioned(
-                          top: cardHeightPadding.toDouble(),
+                          top: cardOpen ? 78 : 0,
                           left: 0,
                           right: 0,
                           bottom: 0,
