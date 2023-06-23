@@ -64,14 +64,26 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
               bottom: 16,
               child: Container(
                 height: 80,
-                decoration: const ShapeDecoration(color: Colors.white, shape: StadiumBorder()),
-                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                decoration: const ShapeDecoration(
+                  color: Colors.white,
+                  shape: StadiumBorder(),
+                ),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 8,
+                  vertical: 8,
+                ),
                 child: Row(
                   children: [
                     Container(
                       height: double.infinity,
-                      decoration: BoxDecoration(color: Colors.teal, borderRadius: BorderRadius.circular(42)),
-                      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                      decoration: BoxDecoration(
+                        color: Colors.teal,
+                        borderRadius: BorderRadius.circular(42),
+                      ),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 24,
+                        vertical: 8,
+                      ),
                       child: const Row(
                         children: [
                           Icon(
