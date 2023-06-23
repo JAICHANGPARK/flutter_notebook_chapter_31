@@ -74,11 +74,19 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                       Icons.location_on,
                                       color: Colors.white,
                                     ),
-                                    Column(
-                                      children: [
-                                        
-                                      ],
-                                    )
+                                    SizedBox(
+                                      width: 12,
+                                    ),
+                                    Expanded(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text("Current location"),
+                                          Text("Republic of Korea"),
+                                        ],
+                                      ),
+                                    ),
+                                    FloatingActionButton(onPressed: () {}),
                                   ],
                                 )
                               ],
