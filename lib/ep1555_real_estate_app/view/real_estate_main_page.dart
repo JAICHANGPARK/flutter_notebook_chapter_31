@@ -8,6 +8,7 @@ class RealEstateMainPage extends StatefulWidget {
 }
 
 class _RealEstateMainPageState extends State<RealEstateMainPage> {
+  int cardHeightPadding = 72;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -88,7 +89,11 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                       ),
                                     ),
                                     FloatingActionButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        setState(() {
+                                          cardHeightPadding = 0;
+                                        });
+                                      },
                                       backgroundColor: Colors.white,
                                       foregroundColor: Colors.teal,
                                       child: const Icon(
@@ -101,11 +106,12 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                             ),
                           ),
                         ),
-                        Positioned(
-                          top: 72,
+                        AnimatedPositioned(
+                          top: cardHeightPadding.toDouble(),
                           left: 0,
                           right: 0,
                           bottom: 0,
+                          duration: Duration(milliseconds: 350),
                           child: Container(
                             decoration: const BoxDecoration(
                               color: Colors.white,
