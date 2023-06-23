@@ -15,7 +15,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
       body: SafeArea(
         child: Stack(
           children: [
-            Positioned(
+            const Positioned(
               left: 16,
               right: 16,
               top: 24,
@@ -64,15 +64,15 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
               bottom: 16,
               child: Container(
                 height: 80,
-                decoration: ShapeDecoration(color: Colors.white, shape: StadiumBorder()),
-                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                decoration: const ShapeDecoration(color: Colors.white, shape: StadiumBorder()),
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                 child: Row(
                   children: [
                     Container(
                       height: double.infinity,
                       decoration: BoxDecoration(color: Colors.teal, borderRadius: BorderRadius.circular(42)),
-                      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
-                      child: Row(
+                      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                      child: const Row(
                         children: [
                           Icon(
                             Icons.home,
@@ -94,11 +94,11 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       child: Center(
                         child: IconButton(
                           onPressed: () {},
-                          icon: Icon(Icons.explore_outlined),
+                          icon: const Icon(Icons.explore_outlined),
                         ),
                       ),
                     ),
-                    Expanded(
+                    const Expanded(
                       child: Center(
                         child: Badge(
                           child: Icon(
@@ -111,7 +111,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       child: Center(
                         child: IconButton(
                           onPressed: () {},
-                          icon: Icon(Icons.favorite_border),
+                          icon: const Icon(Icons.favorite_border),
                         ),
                       ),
                     ),
