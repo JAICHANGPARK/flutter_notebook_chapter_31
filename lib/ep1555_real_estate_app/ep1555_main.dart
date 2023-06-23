@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_31/ep1555_real_estate_app/view/real_estate_main_page.dart';
 
-
-
 void main() {
   runApp(const RealEstateApp());
 }
