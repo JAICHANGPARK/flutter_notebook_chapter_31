@@ -50,6 +50,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       ),
                     ],
                   ),
+                  SizedBox(
+                    height: 24,
+                  ),
                   Expanded(
                     child: Stack(
                       children: [
@@ -60,7 +63,8 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           bottom: 0,
                           child: Container(
                             decoration: BoxDecoration(
-                              
+                              borderRadius: BorderRadius.circular(16),
+                              color: Colors.teal,
                             ),
                           ),
                         ),
