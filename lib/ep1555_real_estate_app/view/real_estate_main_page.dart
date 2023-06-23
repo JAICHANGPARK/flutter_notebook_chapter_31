@@ -54,8 +54,17 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                     child: Stack(
                       children: [
                         Positioned(
-                          child: Container(),
+                          top: 0,
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              
+                            ),
+                          ),
                         ),
+                        Positioned(child: Container())
                       ],
                     ),
                   )
