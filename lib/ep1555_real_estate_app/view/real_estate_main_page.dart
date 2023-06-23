@@ -15,7 +15,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
       body: SafeArea(
         child: Stack(
           children: [
-            const Positioned(
+            Positioned(
               left: 16,
               right: 16,
               top: 24,
@@ -52,7 +52,11 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                   ),
                   Expanded(
                     child: Stack(
-                      children: [],
+                      children: [
+                        Positioned(
+                          child: Container(),
+                        ),
+                      ],
                     ),
                   )
                 ],
