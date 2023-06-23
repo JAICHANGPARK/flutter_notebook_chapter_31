@@ -10,6 +10,7 @@ class RealEstateMainPage extends StatefulWidget {
 class _RealEstateMainPageState extends State<RealEstateMainPage> {
   int cardHeightPadding = 72;
   bool cardOpen = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,33 +25,43 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
               bottom: 0,
               child: Column(
                 children: [
-                  const Row(
-                    children: [
-                      Text(
-                        "HOMMIE",
-                        style: TextStyle(
-                          color: Colors.teal,
-                          fontWeight: FontWeight.w900,
-                          fontSize: 24,
+                  GestureDetector(
+                    onTap: (){
+                      if(!cardOpen){
+                        setState(() {
+                          cardOpen = true;
+                        });
+
+                      }
+                    },
+                    child: const Row(
+                      children: [
+                        Text(
+                          "HOMMIE",
+                          style: TextStyle(
+                            color: Colors.teal,
+                            fontWeight: FontWeight.w900,
+                            fontSize: 24,
+                          ),
                         ),
-                      ),
-                      Spacer(),
-                      CircleAvatar(
-                        radius: 24,
-                        backgroundColor: Colors.white,
-                        foregroundColor: Colors.black,
-                        child: Badge(
-                          child: Icon(Icons.notifications_none),
-                          backgroundColor: Colors.blue,
+                        Spacer(),
+                        CircleAvatar(
+                          radius: 24,
+                          backgroundColor: Colors.white,
+                          foregroundColor: Colors.black,
+                          child: Badge(
+                            child: Icon(Icons.notifications_none),
+                            backgroundColor: Colors.blue,
+                          ),
                         ),
-                      ),
-                      SizedBox(
-                        width: 8,
-                      ),
-                      CircleAvatar(
-                        radius: 24,
-                      ),
-                    ],
+                        SizedBox(
+                          width: 8,
+                        ),
+                        CircleAvatar(
+                          radius: 24,
+                        ),
+                      ],
+                    ),
                   ),
                   const SizedBox(
                     height: 24,
@@ -59,9 +70,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                     child: Stack(
                       children: [
                         AnimatedPositioned(
-                          duration: Duration(
-                            milliseconds: 350
-                          ),
+                          duration: Duration(milliseconds: 350),
                           top: cardOpen ? 0 : 24,
                           left: 0,
                           right: 0,
@@ -95,12 +104,12 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                     FloatingActionButton(
                                       onPressed: () {
                                         setState(() {
-                                          if(cardOpen){
-                                            cardHeightPadding = 72;
-                                          }else{
+                                          if (cardOpen) {
+                                            cardOpen = !cardOpen;
                                             cardHeightPadding = 0;
+                                          } else {
+                                            cardHeightPadding = 72;
                                           }
-
                                         });
                                       },
                                       backgroundColor: Colors.white,
