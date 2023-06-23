@@ -4,7 +4,7 @@ import 'package:flutter_notebook_chapter_31/ep1555_real_estate_app/view/real_est
 
 
 void main() {
-  runApp(RealEstateApp());
+  runApp(const RealEstateApp());
 }
 
 class RealEstateApp extends StatelessWidget {
@@ -12,7 +12,7 @@ class RealEstateApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: RealEstateMainPage(),
     );
   }
