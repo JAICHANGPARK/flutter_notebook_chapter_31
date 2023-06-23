@@ -87,7 +87,14 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                         ],
                                       ),
                                     ),
-                                    FloatingActionButton(onPressed: () {}),
+                                    FloatingActionButton(
+                                      onPressed: () {},
+                                      backgroundColor: Colors.white,
+                                      foregroundColor: Colors.teal,
+                                      child: Icon(
+                                        Icons.keyboard_arrow_down,
+                                      ),
+                                    ),
                                   ],
                                 )
                               ],
