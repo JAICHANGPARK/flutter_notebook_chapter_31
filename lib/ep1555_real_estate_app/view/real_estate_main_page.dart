@@ -66,6 +66,23 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                               borderRadius: BorderRadius.circular(16),
                               color: Colors.teal,
                             ),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.location_on,
+                                      color: Colors.white,
+                                    ),
+                                    Column(
+                                      children: [
+                                        
+                                      ],
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                         ),
                         Positioned(
