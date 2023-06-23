@@ -22,7 +22,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
               bottom: 0,
               child: Column(
                 children: [
-                  Row(
+                  const Row(
                     children: [
                       Text(
                         "HOMMIE",
@@ -50,7 +50,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 24,
                   ),
                   Expanded(
@@ -66,19 +66,19 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                               borderRadius: BorderRadius.circular(16),
                               color: Colors.teal,
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                             child: Column(
                               children: [
                                 Row(
                                   children: [
-                                    Icon(
+                                    const Icon(
                                       Icons.location_on,
                                       color: Colors.white,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 12,
                                     ),
-                                    Expanded(
+                                    const Expanded(
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
@@ -91,7 +91,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                       onPressed: () {},
                                       backgroundColor: Colors.white,
                                       foregroundColor: Colors.teal,
-                                      child: Icon(
+                                      child: const Icon(
                                         Icons.keyboard_arrow_down,
                                       ),
                                     ),
@@ -107,7 +107,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           right: 0,
                           bottom: 0,
                           child: Container(
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(32),
@@ -116,11 +116,11 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                             ),
                             child: Column(
                               children: [
-                                SearchBar(),
+                                const SearchBar(),
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text(
+                                    const Text(
                                       "Recommended For You",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
@@ -128,7 +128,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                     ),
                                     IconButton(
                                       onPressed: () {},
-                                      icon: Icon(Icons.keyboard_arrow_right),
+                                      icon: const Icon(Icons.keyboard_arrow_right),
                                     )
                                   ],
                                 )
