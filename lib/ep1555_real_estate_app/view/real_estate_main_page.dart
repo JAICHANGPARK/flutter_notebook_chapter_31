@@ -176,6 +176,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                   child: Stack(
                                     children: [
                                       Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Expanded(
                                             child: Container(
@@ -184,9 +185,13 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                               ),
                                             ),
                                           ),
+                                          SizedBox(height: 8,),
                                           Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
-                                              Text("Squmir House"),
+                                              Text("Squmir House", style: TextStyle(
+                                                fontSize: 18
+                                              ),),
                                               Row(
                                                 children: [
                                                   Icon(
