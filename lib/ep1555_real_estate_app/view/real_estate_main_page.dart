@@ -242,7 +242,13 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                           )
                                         ],
                                       ),
-                                      Positioned(right: 8, child: CircleAvatar())
+                                      Positioned(
+                                          top: 160,
+                                          bottom: 0,
+                                          right: 8, child: CircleAvatar(
+                                        radius: 32,
+                                        
+                                      ))
                                     ],
                                   ),
                                 ),
