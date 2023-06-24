@@ -169,11 +169,55 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                   ],
                                 ),
                                 Container(
-                                  height: 200,
+                                  height: 380,
                                   decoration: BoxDecoration(
-                                    color: Colors.pink
+                                    color: Colors.pink,
                                   ),
-                                )
+                                  child: Stack(
+                                    children: [
+                                      Column(
+                                        children: [
+                                          Expanded(
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.orange,
+                                              ),
+                                            ),
+                                          ),
+                                          Column(
+                                            children: [
+                                              Text("Squmir House"),
+                                              Row(
+                                                children: [
+                                                  Icon(
+                                                    Icons.location_on,
+                                                    color: Colors.teal,
+                                                  ),
+                                                  Text("211 M Carpenter St. Chicago 123456"),
+                                                ],
+                                              ),
+                                              Row(
+                                                children: [
+                                                  Container(
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.grey[200],
+                                                      borderRadius: BorderRadius.circular(24),
+
+                                                    ),
+                                                    
+                                                    child: Text(
+                                                      "🛏 4 🚗2 🛁 4"
+                                                    ),
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ),
                               ],
                             ),
                           ),
