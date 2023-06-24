@@ -196,18 +196,21 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                   Text("211 M Carpenter St. Chicago 123456"),
                                                 ],
                                               ),
+                                              SizedBox(
+                                                height: 16,
+                                              ),
                                               Row(
                                                 children: [
                                                   Container(
                                                     decoration: BoxDecoration(
                                                       color: Colors.grey[200],
                                                       borderRadius: BorderRadius.circular(24),
-
                                                     ),
-                                                    
-                                                    child: Text(
-                                                      "🛏 4 🚗2 🛁 4"
+                                                    padding: EdgeInsets.symmetric(
+                                                      horizontal: 4,
+                                                      vertical: 4,
                                                     ),
+                                                    child: Text("🛏 4 🚗2 🛁 4"),
                                                   )
                                                 ],
                                               )
