@@ -167,6 +167,12 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                       icon: const Icon(Icons.keyboard_arrow_right),
                                     )
                                   ],
+                                ),
+                                Container(
+                                  height: 200,
+                                  decoration: BoxDecoration(
+                                    color: Colors.pink
+                                  ),
                                 )
                               ],
                             ),
