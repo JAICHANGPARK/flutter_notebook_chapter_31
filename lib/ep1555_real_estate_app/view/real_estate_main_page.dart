@@ -190,6 +190,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                           ),
                                           Container(
                                             color: Colors.white,
+                                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
