@@ -185,41 +185,55 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                               ),
                                             ),
                                           ),
-                                          SizedBox(height: 8,),
-                                          Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Text("Squmir House", style: TextStyle(
-                                                fontSize: 18
-                                              ),),
-                                              Row(
-                                                children: [
-                                                  Icon(
-                                                    Icons.location_on,
-                                                    color: Colors.teal,
-                                                  ),
-                                                  Text("211 M Carpenter St. Chicago 123456"),
-                                                ],
-                                              ),
-                                              SizedBox(
-                                                height: 16,
-                                              ),
-                                              Row(
-                                                children: [
-                                                  Container(
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.grey[200],
-                                                      borderRadius: BorderRadius.circular(24),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Container(
+                                            color: Colors.white,
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  "Squmir House",
+                                                  style: TextStyle(fontSize: 18),
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Icon(
+                                                      Icons.location_on,
+                                                      color: Colors.teal,
                                                     ),
-                                                    padding: EdgeInsets.symmetric(
-                                                      horizontal: 16,
-                                                      vertical: 8,
+                                                    Text("211 M Carpenter St. Chicago 123456"),
+                                                  ],
+                                                ),
+                                                SizedBox(
+                                                  height: 16,
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Container(
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.grey[200],
+                                                        borderRadius: BorderRadius.circular(24),
+                                                      ),
+                                                      padding: EdgeInsets.symmetric(
+                                                        horizontal: 16,
+                                                        vertical: 8,
+                                                      ),
+                                                      child: Text("🛏 4 🚗2 🛁 4"),
                                                     ),
-                                                    child: Text("🛏 4 🚗2 🛁 4"),
-                                                  ),
-                                                ],
-                                              )
-                                            ],
+                                                    Spacer(),
+                                                    Text(
+                                                      "\$512,00",
+                                                      style: TextStyle(
+                                                          // fontWeight: FontWeight.bold,
+                                                          fontSize: 20),
+                                                    ),
+                                                    Text("/12mo")
+                                                  ],
+                                                )
+                                              ],
+                                            ),
                                           )
                                         ],
                                       )
