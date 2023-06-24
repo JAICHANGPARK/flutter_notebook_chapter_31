@@ -212,11 +212,11 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                       borderRadius: BorderRadius.circular(24),
                                                     ),
                                                     padding: EdgeInsets.symmetric(
-                                                      horizontal: 4,
-                                                      vertical: 4,
+                                                      horizontal: 16,
+                                                      vertical: 8,
                                                     ),
                                                     child: Text("🛏 4 🚗2 🛁 4"),
-                                                  )
+                                                  ),
                                                 ],
                                               )
                                             ],
