@@ -174,7 +174,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                     Container(
                                       height: 380,
                                       decoration: const BoxDecoration(
-                                        color: Colors.pink,
+                                        // color: Colors.pink,
                                       ),
                                       child: Stack(
                                         children: [
@@ -184,7 +184,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                               Expanded(
                                                 child: Container(
                                                   decoration: const BoxDecoration(
-                                                    color: Colors.orange,
+                                                    // color: Colors.orange,
                                                     image: DecorationImage(
                                                       image: NetworkImage(
                                                           "https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg"),
