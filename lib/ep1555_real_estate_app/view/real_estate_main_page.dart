@@ -176,7 +176,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                       onTap: () {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(
-                                            builder: (context) => RealEstateDetailPage(),
+                                            builder: (context) => const RealEstateDetailPage(),
                                           ),
                                         );
                                       },
