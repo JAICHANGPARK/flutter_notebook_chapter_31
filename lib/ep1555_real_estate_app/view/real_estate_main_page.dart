@@ -49,8 +49,8 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           backgroundColor: Colors.white,
                           foregroundColor: Colors.black,
                           child: Badge(
-                            child: Icon(Icons.notifications_none),
                             backgroundColor: Colors.blue,
+                            child: Icon(Icons.notifications_none),
                           ),
                         ),
                         SizedBox(
@@ -252,10 +252,10 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                             child: CircleAvatar(
                                               radius: 32,
                                               backgroundColor: Colors.white,
+                                              foregroundColor: Colors.teal,
                                               child: Icon(
                                                 Icons.favorite,
                                               ),
-                                              foregroundColor: Colors.teal,
                                             ),
                                           )
                                         ],
@@ -342,10 +342,10 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                             child: CircleAvatar(
                                               radius: 32,
                                               backgroundColor: Colors.white,
+                                              foregroundColor: Colors.teal,
                                               child: Icon(
                                                 Icons.favorite,
                                               ),
-                                              foregroundColor: Colors.teal,
                                             ),
                                           )
                                         ],
