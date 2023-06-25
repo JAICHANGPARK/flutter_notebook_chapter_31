@@ -12,17 +12,18 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Place details",
           style: TextStyle(color: Colors.black),
         ),
         centerTitle: true,
         backgroundColor: Colors.white,
         foregroundColor: Colors.teal,
+        elevation: 0,
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.more_horiz),
+            icon: const Icon(Icons.more_horiz),
           )
         ],
       ),
@@ -42,7 +43,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 ),
                 Row(
                   children: [
-                    Column(
+                    const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Squmir House"),
@@ -72,7 +73,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                           )
                         ]
                       ),
-                      child: Icon(
+                      child: const Icon(
                         Icons.favorite,
                         color: Colors.teal,
                       ),
@@ -98,30 +99,30 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
               ),
               child: Row(
                 children: [
-                  Text(
+                  const Text(
                     "\$521,00",
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.w300,
                     ),
                   ),
-                  Text(
+                  const Text(
                     " /12 mo",
                     style: TextStyle(
                       color: Colors.grey,
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(40),
                       color: Colors.teal,
                     ),
                     // height: double.infinity,
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       horizontal: 24,
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Text(
                         "Create Schedule",
                         style: TextStyle(
