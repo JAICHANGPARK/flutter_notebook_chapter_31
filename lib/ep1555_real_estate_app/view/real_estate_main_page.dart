@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_31/ep1555_real_estate_app/view/real_estate_detail_page.dart';
 
 class RealEstateMainPage extends StatefulWidget {
   const RealEstateMainPage({super.key});
@@ -172,14 +173,18 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                     child: ListView(
                                   children: [
                                     GestureDetector(
-                                      onTap: (){
-                                        
+                                      onTap: () {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder: (context) => RealEstateDetailPage(),
+                                          ),
+                                        );
                                       },
                                       child: Container(
                                         height: 380,
                                         decoration: const BoxDecoration(
-                                          // color: Colors.pink,
-                                        ),
+                                            // color: Colors.pink,
+                                            ),
                                         child: Stack(
                                           children: [
                                             Column(
@@ -269,8 +274,8 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                     Container(
                                       height: 380,
                                       decoration: const BoxDecoration(
-                                        // color: Colors.pink,
-                                      ),
+                                          // color: Colors.pink,
+                                          ),
                                       child: Stack(
                                         children: [
                                           Column(
