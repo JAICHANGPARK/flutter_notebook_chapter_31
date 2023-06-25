@@ -171,94 +171,99 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                 Expanded(
                                     child: ListView(
                                   children: [
-                                    Container(
-                                      height: 380,
-                                      decoration: const BoxDecoration(
-                                        // color: Colors.pink,
-                                      ),
-                                      child: Stack(
-                                        children: [
-                                          Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Expanded(
-                                                child: Container(
-                                                  decoration: const BoxDecoration(
-                                                    // color: Colors.orange,
-                                                    image: DecorationImage(
-                                                      image: NetworkImage(
-                                                          "https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg"),
+                                    GestureDetector(
+                                      onTap: (){
+                                        
+                                      },
+                                      child: Container(
+                                        height: 380,
+                                        decoration: const BoxDecoration(
+                                          // color: Colors.pink,
+                                        ),
+                                        child: Stack(
+                                          children: [
+                                            Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Expanded(
+                                                  child: Container(
+                                                    decoration: const BoxDecoration(
+                                                      // color: Colors.orange,
+                                                      image: DecorationImage(
+                                                        image: NetworkImage(
+                                                            "https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg"),
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
-                                              ),
-                                              const SizedBox(
-                                                height: 8,
-                                              ),
-                                              Container(
-                                                color: Colors.white,
-                                                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                                                child: Column(
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                  children: [
-                                                    const Text(
-                                                      "Squmir House",
-                                                      style: TextStyle(fontSize: 18),
-                                                    ),
-                                                    const Row(
-                                                      children: [
-                                                        Icon(
-                                                          Icons.location_on,
-                                                          color: Colors.teal,
-                                                        ),
-                                                        Text("211 M Carpenter St. Chicago 123456"),
-                                                      ],
-                                                    ),
-                                                    const SizedBox(
-                                                      height: 16,
-                                                    ),
-                                                    Row(
-                                                      children: [
-                                                        Container(
-                                                          decoration: BoxDecoration(
-                                                            color: Colors.grey[200],
-                                                            borderRadius: BorderRadius.circular(24),
-                                                          ),
-                                                          padding: const EdgeInsets.symmetric(
-                                                            horizontal: 16,
-                                                            vertical: 8,
-                                                          ),
-                                                          child: const Text("🛏 4 🚗2 🛁 4"),
-                                                        ),
-                                                        const Spacer(),
-                                                        const Text(
-                                                          "\$512,00",
-                                                          style: TextStyle(
-                                                              // fontWeight: FontWeight.bold,
-                                                              fontSize: 20),
-                                                        ),
-                                                        const Text("/12mo")
-                                                      ],
-                                                    )
-                                                  ],
+                                                const SizedBox(
+                                                  height: 8,
                                                 ),
-                                              )
-                                            ],
-                                          ),
-                                          const Positioned(
-                                            top: 160,
-                                            bottom: 0,
-                                            right: 8,
-                                            child: CircleAvatar(
-                                              radius: 32,
-                                              backgroundColor: Colors.white,
-                                              foregroundColor: Colors.teal,
-                                              child: Icon(
-                                                Icons.favorite,
-                                              ),
+                                                Container(
+                                                  color: Colors.white,
+                                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                                  child: Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    children: [
+                                                      const Text(
+                                                        "Squmir House",
+                                                        style: TextStyle(fontSize: 18),
+                                                      ),
+                                                      const Row(
+                                                        children: [
+                                                          Icon(
+                                                            Icons.location_on,
+                                                            color: Colors.teal,
+                                                          ),
+                                                          Text("211 M Carpenter St. Chicago 123456"),
+                                                        ],
+                                                      ),
+                                                      const SizedBox(
+                                                        height: 16,
+                                                      ),
+                                                      Row(
+                                                        children: [
+                                                          Container(
+                                                            decoration: BoxDecoration(
+                                                              color: Colors.grey[200],
+                                                              borderRadius: BorderRadius.circular(24),
+                                                            ),
+                                                            padding: const EdgeInsets.symmetric(
+                                                              horizontal: 16,
+                                                              vertical: 8,
+                                                            ),
+                                                            child: const Text("🛏 4 🚗2 🛁 4"),
+                                                          ),
+                                                          const Spacer(),
+                                                          const Text(
+                                                            "\$512,00",
+                                                            style: TextStyle(
+                                                                // fontWeight: FontWeight.bold,
+                                                                fontSize: 20),
+                                                          ),
+                                                          const Text("/12mo")
+                                                        ],
+                                                      )
+                                                    ],
+                                                  ),
+                                                )
+                                              ],
                                             ),
-                                          )
-                                        ],
+                                            const Positioned(
+                                              top: 160,
+                                              bottom: 0,
+                                              right: 8,
+                                              child: CircleAvatar(
+                                                radius: 32,
+                                                backgroundColor: Colors.white,
+                                                foregroundColor: Colors.teal,
+                                                child: Icon(
+                                                  Icons.favorite,
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     ),
                                     Container(
