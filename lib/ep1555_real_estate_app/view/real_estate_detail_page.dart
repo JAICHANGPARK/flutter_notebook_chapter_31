@@ -34,6 +34,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
             bottom: 0,
             top: 0,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                   height: 240,
@@ -41,7 +42,41 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 ),
                 Row(
                   children: [
-                    
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Squmir House"),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.location_on,
+                              color: Colors.teal,
+                            ),
+                            Text("location title location title"),
+                          ],
+                        ),
+
+                      ],
+                    ),
+                    Container(
+                      height: 52,
+                      width: 52,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        shape: BoxShape.circle,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey[300]!,
+                            blurRadius: 4,
+
+                          )
+                        ]
+                      ),
+                      child: Icon(
+                        Icons.favorite,
+                        color: Colors.teal,
+                      ),
+                    )
                   ],
                 )
               ],
