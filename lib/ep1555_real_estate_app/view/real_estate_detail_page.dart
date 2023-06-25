@@ -42,46 +42,61 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                   color: Colors.blue,
                 ),
                 Expanded(
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          const Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("Squmir House"),
-                              Row(
-                                children: [
-                                  Icon(
-                                    Icons.location_on,
-                                    color: Colors.teal,
-                                  ),
-                                  Text("location title location title"),
-                                ],
-                              ),
-                            ],
-                          ),
-                          Container(
-                            height: 52,
-                            width: 52,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              shape: BoxShape.circle,
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey[300]!,
-                                  blurRadius: 4,
-                                )
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            const Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Squmir House"),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.location_on,
+                                      color: Colors.teal,
+                                    ),
+                                    Text("location title location title"),
+                                  ],
+                                ),
                               ],
                             ),
-                            child: const Icon(
-                              Icons.favorite,
-                              color: Colors.teal,
-                            ),
-                          )
-                        ],
-                      )
-                    ],
+                            Spacer(),
+                            Container(
+                              height: 52,
+                              width: 52,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                shape: BoxShape.circle,
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey[300]!,
+                                    blurRadius: 4,
+                                  )
+                                ],
+                              ),
+                              child: const Icon(
+                                Icons.favorite,
+                                color: Colors.teal,
+                              ),
+                            )
+                          ],
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 8,
+                          ),
+                          child: const Text("🛏 4 🚗2 🛁 4"),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],
