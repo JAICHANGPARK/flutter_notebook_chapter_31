@@ -34,7 +34,17 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
             bottom: 0,
             top: 0,
             child: Column(
-              children: [],
+              children: [
+                Container(
+                  height: 240,
+                  color: Colors.blue,
+                ),
+                Row(
+                  children: [
+                    
+                  ],
+                )
+              ],
             ),
           ),
           Positioned(
@@ -48,13 +58,44 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 shape: StadiumBorder(),
               ),
               padding: const EdgeInsets.symmetric(
-                horizontal: 8,
+                horizontal: 16,
                 vertical: 8,
               ),
               child: Row(
                 children: [
-                  Text("\$521,00"),
-                  Text("/12 mo"),
+                  Text(
+                    "\$521,00",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w300,
+                    ),
+                  ),
+                  Text(
+                    " /12 mo",
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  Spacer(),
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(40),
+                      color: Colors.teal,
+                    ),
+                    // height: double.infinity,
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 24,
+                    ),
+                    child: Center(
+                      child: Text(
+                        "Create Schedule",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
