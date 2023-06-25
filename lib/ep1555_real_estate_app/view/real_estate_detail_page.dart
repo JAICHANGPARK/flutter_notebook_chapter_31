@@ -41,45 +41,49 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                   height: 240,
                   color: Colors.blue,
                 ),
-                Row(
-                  children: [
-                    const Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text("Squmir House"),
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.location_on,
+                Expanded(
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          const Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Squmir House"),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.location_on,
+                                    color: Colors.teal,
+                                  ),
+                                  Text("location title location title"),
+                                ],
+                              ),
+                            ],
+                          ),
+                          Container(
+                            height: 52,
+                            width: 52,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              shape: BoxShape.circle,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey[300]!,
+                                  blurRadius: 4,
+                                )
+                              ],
+                            ),
+                            child: const Icon(
+                              Icons.favorite,
                               color: Colors.teal,
                             ),
-                            Text("location title location title"),
-                          ],
-                        ),
-
-                      ],
-                    ),
-                    Container(
-                      height: 52,
-                      width: 52,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        shape: BoxShape.circle,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey[300]!,
-                            blurRadius: 4,
-
                           )
-                        ]
-                      ),
-                      child: const Icon(
-                        Icons.favorite,
-                        color: Colors.teal,
-                      ),
-                    )
-                  ],
-                )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
