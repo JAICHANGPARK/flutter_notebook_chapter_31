@@ -69,7 +69,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                     child: Stack(
                       children: [
                         AnimatedPositioned(
-                          duration: Duration(milliseconds: 350),
+                          duration: const Duration(milliseconds: 350),
                           top: cardOpen ? 0 : 24,
                           left: 0,
                           right: 0,
@@ -141,7 +141,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           left: 0,
                           right: 0,
                           bottom: 0,
-                          duration: Duration(milliseconds: 350),
+                          duration: const Duration(milliseconds: 350),
                           child: Container(
                             decoration: const BoxDecoration(
                               color: Colors.white,
@@ -173,7 +173,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                   children: [
                                     Container(
                                       height: 380,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         color: Colors.pink,
                                       ),
                                       child: Stack(
@@ -183,7 +183,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                             children: [
                                               Expanded(
                                                 child: Container(
-                                                  decoration: BoxDecoration(
+                                                  decoration: const BoxDecoration(
                                                     color: Colors.orange,
                                                     image: DecorationImage(
                                                       image: NetworkImage(
@@ -192,20 +192,20 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                   ),
                                                 ),
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 height: 8,
                                               ),
                                               Container(
                                                 color: Colors.white,
-                                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                                 child: Column(
                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                   children: [
-                                                    Text(
+                                                    const Text(
                                                       "Squmir House",
                                                       style: TextStyle(fontSize: 18),
                                                     ),
-                                                    Row(
+                                                    const Row(
                                                       children: [
                                                         Icon(
                                                           Icons.location_on,
@@ -214,7 +214,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                         Text("211 M Carpenter St. Chicago 123456"),
                                                       ],
                                                     ),
-                                                    SizedBox(
+                                                    const SizedBox(
                                                       height: 16,
                                                     ),
                                                     Row(
@@ -224,20 +224,20 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                             color: Colors.grey[200],
                                                             borderRadius: BorderRadius.circular(24),
                                                           ),
-                                                          padding: EdgeInsets.symmetric(
+                                                          padding: const EdgeInsets.symmetric(
                                                             horizontal: 16,
                                                             vertical: 8,
                                                           ),
-                                                          child: Text("🛏 4 🚗2 🛁 4"),
+                                                          child: const Text("🛏 4 🚗2 🛁 4"),
                                                         ),
-                                                        Spacer(),
-                                                        Text(
+                                                        const Spacer(),
+                                                        const Text(
                                                           "\$512,00",
                                                           style: TextStyle(
                                                               // fontWeight: FontWeight.bold,
                                                               fontSize: 20),
                                                         ),
-                                                        Text("/12mo")
+                                                        const Text("/12mo")
                                                       ],
                                                     )
                                                   ],
@@ -245,7 +245,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                               )
                                             ],
                                           ),
-                                          Positioned(
+                                          const Positioned(
                                             top: 160,
                                             bottom: 0,
                                             right: 8,
@@ -263,7 +263,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                     ),
                                     Container(
                                       height: 380,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         color: Colors.pink,
                                       ),
                                       child: Stack(
@@ -273,7 +273,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                             children: [
                                               Expanded(
                                                 child: Container(
-                                                  decoration: BoxDecoration(
+                                                  decoration: const BoxDecoration(
                                                     color: Colors.orange,
                                                     image: DecorationImage(
                                                       image: NetworkImage(
@@ -282,20 +282,20 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                   ),
                                                 ),
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 height: 8,
                                               ),
                                               Container(
                                                 color: Colors.white,
-                                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                                 child: Column(
                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                   children: [
-                                                    Text(
+                                                    const Text(
                                                       "Squmir House",
                                                       style: TextStyle(fontSize: 18),
                                                     ),
-                                                    Row(
+                                                    const Row(
                                                       children: [
                                                         Icon(
                                                           Icons.location_on,
@@ -304,7 +304,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                         Text("211 M Carpenter St. Chicago 123456"),
                                                       ],
                                                     ),
-                                                    SizedBox(
+                                                    const SizedBox(
                                                       height: 16,
                                                     ),
                                                     Row(
@@ -314,20 +314,20 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                             color: Colors.grey[200],
                                                             borderRadius: BorderRadius.circular(24),
                                                           ),
-                                                          padding: EdgeInsets.symmetric(
+                                                          padding: const EdgeInsets.symmetric(
                                                             horizontal: 16,
                                                             vertical: 8,
                                                           ),
-                                                          child: Text("🛏 4 🚗2 🛁 4"),
+                                                          child: const Text("🛏 4 🚗2 🛁 4"),
                                                         ),
-                                                        Spacer(),
-                                                        Text(
+                                                        const Spacer(),
+                                                        const Text(
                                                           "\$512,00",
                                                           style: TextStyle(
                                                               // fontWeight: FontWeight.bold,
                                                               fontSize: 20),
                                                         ),
-                                                        Text("/12mo")
+                                                        const Text("/12mo")
                                                       ],
                                                     )
                                                   ],
@@ -335,7 +335,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                               )
                                             ],
                                           ),
-                                          Positioned(
+                                          const Positioned(
                                             top: 160,
                                             bottom: 0,
                                             right: 8,
