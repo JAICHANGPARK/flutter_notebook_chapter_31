@@ -28,12 +28,37 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
       ),
       body: Stack(
         children: [
-          Column(
-            children: [
-
-            ],
+          Positioned(
+            left: 0,
+            right: 0,
+            bottom: 0,
+            top: 0,
+            child: Column(
+              children: [],
+            ),
           ),
-          Positioned(child: )
+          Positioned(
+            left: 16,
+            right: 16,
+            bottom: 16,
+            child: Container(
+              height: 80,
+              decoration: const ShapeDecoration(
+                color: Colors.white,
+                shape: StadiumBorder(),
+              ),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 8,
+                vertical: 8,
+              ),
+              child: Row(
+                children: [
+                  Text("\$521,00"),
+                  Text("/12 mo"),
+                ],
+              ),
+            ),
+          )
         ],
       ),
     );
