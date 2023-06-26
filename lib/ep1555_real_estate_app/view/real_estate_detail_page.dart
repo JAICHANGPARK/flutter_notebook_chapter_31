@@ -96,31 +96,34 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                           ),
                           child: const Text("🛏 4 🚗2 🛁 4"),
                         ),
-                        Row(
-                          children: [
-                            const CircleAvatar(),
-                            Expanded(
-                              child: const Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Flutter"),
-                                  Text("Dream Walker"),
-                                ],
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          child: Row(
+                            children: [
+                              const CircleAvatar(),
+                              Expanded(
+                                child: const Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Flutter"),
+                                    Text("Dream Walker"),
+                                  ],
+                                ),
                               ),
-                            ),
-                            IconButton(
-                              onPressed: () {},
-                              icon: const Icon(
-                                Icons.message_outlined,
+                              IconButton(
+                                onPressed: () {},
+                                icon: const Icon(
+                                  Icons.message_outlined,
+                                ),
                               ),
-                            ),
-                            IconButton(
-                              onPressed: () {},
-                              icon: const Icon(
-                                Icons.phone_outlined,
+                              IconButton(
+                                onPressed: () {},
+                                icon: const Icon(
+                                  Icons.phone_outlined,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         )
                       ],
                     ),
