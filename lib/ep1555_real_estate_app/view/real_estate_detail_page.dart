@@ -52,15 +52,20 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                             const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Squmir House"),
-                                Row(
-                                  children: [
-                                    Icon(
-                                      Icons.location_on,
-                                      color: Colors.teal,
-                                    ),
-                                    Text("location title location title"),
-                                  ],
+                                Text("Squmir House", style: TextStyle(
+                                  fontSize: 34,
+                                ),),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 12),
+                                  child: Row(
+                                    children: [
+                                      Icon(
+                                        Icons.location_on,
+                                        color: Colors.teal,
+                                      ),
+                                      Text("location title location title"),
+                                    ],
+                                  ),
                                 ),
                               ],
                             ),
@@ -136,6 +141,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                             style: TextStyle(height: 1.5),
                           ),
                         ),
+
                       ],
                     ),
                   ),
