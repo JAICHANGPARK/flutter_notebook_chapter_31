@@ -40,6 +40,18 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 Container(
                   height: 240,
                   color: Colors.blue,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        right: 16,
+                        bottom: 16,
+                        child: CircleAvatar(
+                          radius: 32,
+                          backgroundColor: Colors.grey,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
                 Expanded(
                   child: Padding(
@@ -52,9 +64,12 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                             const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Squmir House", style: TextStyle(
-                                  fontSize: 34,
-                                ),),
+                                Text(
+                                  "Squmir House",
+                                  style: TextStyle(
+                                    fontSize: 34,
+                                  ),
+                                ),
                                 Padding(
                                   padding: EdgeInsets.symmetric(vertical: 12),
                                   child: Row(
@@ -141,7 +156,6 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                             style: TextStyle(height: 1.5),
                           ),
                         ),
-
                       ],
                     ),
                   ),
