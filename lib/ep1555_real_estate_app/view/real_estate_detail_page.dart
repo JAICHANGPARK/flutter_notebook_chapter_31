@@ -56,107 +56,146 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.all(16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            const Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                    child: SingleChildScrollView(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              const Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Squmir House",
+                                    style: TextStyle(
+                                      fontSize: 34,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.symmetric(vertical: 12),
+                                    child: Row(
+                                      children: [
+                                        Icon(
+                                          Icons.location_on,
+                                          color: Colors.teal,
+                                        ),
+                                        Text("location title location title"),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const Spacer(),
+                              Container(
+                                height: 52,
+                                width: 52,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  shape: BoxShape.circle,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey[300]!,
+                                      blurRadius: 4,
+                                    )
+                                  ],
+                                ),
+                                child: const Icon(
+                                  Icons.favorite,
+                                  color: Colors.teal,
+                                ),
+                              )
+                            ],
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 16,
+                              vertical: 8,
+                            ),
+                            child: const Text("🛏 4 🚗2 🛁 4"),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            child: Row(
                               children: [
-                                Text(
-                                  "Squmir House",
-                                  style: TextStyle(
-                                    fontSize: 34,
+                                const CircleAvatar(),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Expanded(
+                                  child: const Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("Flutter"),
+                                      Text("Dream Walker"),
+                                    ],
                                   ),
                                 ),
-                                Padding(
-                                  padding: EdgeInsets.symmetric(vertical: 12),
-                                  child: Row(
-                                    children: [
-                                      Icon(
-                                        Icons.location_on,
-                                        color: Colors.teal,
-                                      ),
-                                      Text("location title location title"),
-                                    ],
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(
+                                    Icons.message_outlined,
+                                  ),
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(
+                                    Icons.phone_outlined,
                                   ),
                                 ),
                               ],
                             ),
-                            const Spacer(),
-                            Container(
-                              height: 52,
-                              width: 52,
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                shape: BoxShape.circle,
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.grey[300]!,
-                                    blurRadius: 4,
-                                  )
-                                ],
-                              ),
-                              child: const Icon(
-                                Icons.favorite,
-                                color: Colors.teal,
-                              ),
-                            )
-                          ],
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey[200],
-                            borderRadius: BorderRadius.circular(24),
                           ),
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 16,
-                            vertical: 8,
+                          Text("Description"),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            child: Text(
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                              style: TextStyle(height: 1.5),
+                            ),
                           ),
-                          child: const Text("🛏 4 🚗2 🛁 4"),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 16),
-                          child: Row(
-                            children: [
-                              const CircleAvatar(),
-                              SizedBox(
-                                width: 8,
-                              ),
-                              Expanded(
-                                child: const Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text("Flutter"),
-                                    Text("Dream Walker"),
-                                  ],
+                          Container(
+                            height: 240,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                            ),
+                            child: Row(
+                              children: [
+                                Expanded(child: Placeholder()),
+                                VerticalDivider(
+                                  color: Colors.white,
+                                  thickness: 4,
+                                  width: 2,
                                 ),
-                              ),
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(
-                                  Icons.message_outlined,
-                                ),
-                              ),
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(
-                                  Icons.phone_outlined,
-                                ),
-                              ),
-                            ],
+                                Container(
+                                  width: 100,
+                                  child: Column(
+                                    children: [
+                                      Expanded(child: Placeholder()),
+                                      Divider(
+                                        color: Colors.white,
+                                        thickness: 4,
+                                        height: 0,
+                                      ),
+                                      Expanded(child: Placeholder()),
+                                      Divider(
+                                        color: Colors.white,
+                                        thickness: 4,
+                                        height: 0,
+                                      ),
+                                      Expanded(child: Placeholder()),
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
-                        ),
-                        Text("Description"),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 16),
-                          child: Text(
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                            style: TextStyle(height: 1.5),
-                          ),
-                        ),
-                      ],
+                          Container(height: 150,)
+                        ],
+                      ),
                     ),
                   ),
                 ),
