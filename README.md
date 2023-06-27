@@ -1,6 +1,5 @@
 # flutter_notebook_chapter_31
 
-A new Flutter project.
 
 ## EP1555-1560
 
