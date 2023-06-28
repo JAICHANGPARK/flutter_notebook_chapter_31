@@ -43,15 +43,25 @@ class _BankingHomePageState extends State<BankingHomePage> {
                   Row(
                     children: [
                       Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.1)
+                      ),
                         child: Row(
                           children: [
-                            CircleAvatar(),
+                            CircleAvatar(
+                              radius: 24,
+                              backgroundColor: Colors.white.withOpacity(0.2),
+                            ),
                             Text("Dream"),
                             Icon(
                               Icons.arrow_forward,
                             )
                           ],
                         ),
+                      ),
+                      CircleAvatar(
+                        radius: 24,
+                        backgroundColor: Colors.white.withOpacity(0.2),
                       )
                     ],
                   )
