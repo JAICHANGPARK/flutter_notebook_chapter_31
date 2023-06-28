@@ -139,6 +139,24 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               Text("+67,33\$"),
                             ],
                           ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.white,
+                            ),
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                          child: Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 18,
+                                backgroundColor: Colors.purple[100],
+                              ),
+                              Text("Add card")
+                            ],
+                          ),
                         )
                       ],
                     ),
