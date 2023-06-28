@@ -55,10 +55,16 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               radius: 24,
                               backgroundColor: Colors.white.withOpacity(0.2),
                             ),
-                            Text("Dream"),
+                            SizedBox(width: 8,),
+                            Text("Dream", style: TextStyle(
+                              color: Colors.white
+                            ),),
+                            SizedBox(width: 8,),
                             Icon(
                               Icons.arrow_forward,
-                            )
+                              color: Colors.white,
+                            ),
+                            SizedBox(width: 8,),
                           ],
                         ),
                       ),
