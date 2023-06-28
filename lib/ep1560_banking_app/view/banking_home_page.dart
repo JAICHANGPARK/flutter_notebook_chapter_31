@@ -41,6 +41,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
               child: Column(
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
                       decoration: BoxDecoration(
@@ -48,6 +49,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         borderRadius: BorderRadius.circular(24)
                       ),
                         child: Row(
+
                           children: [
                             CircleAvatar(
                               radius: 24,
