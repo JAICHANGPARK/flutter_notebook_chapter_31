@@ -12,6 +12,6 @@ class BankingHomePage extends StatefulWidget {
 class _BankingHomePageState extends State<BankingHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
