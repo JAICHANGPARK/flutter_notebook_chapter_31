@@ -15,13 +15,17 @@ class _BankingHomePageState extends State<BankingHomePage> {
         child: Stack(
           children: [
             Positioned(
-                left: 0,
-                right: 0,
-                bottom: 0,
-                top: 0,
-                child: Column(
-                  children: [],
-                ))
+              left: 0,
+              right: 0,
+              bottom: 0,
+              top: 0,
+              child: Column(
+                children: [
+                  Expanded(child: Container(color: Colors.black,)),
+                  Expanded(child: Container(color: Colors.brown[100],)),
+                ],
+              ),
+            )
           ],
         ),
       ),
