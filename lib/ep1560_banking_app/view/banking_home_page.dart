@@ -21,7 +21,9 @@ class _BankingHomePageState extends State<BankingHomePage> {
               top: 0,
               child: Column(
                 children: [
-                  Expanded(child: Container(color: Colors.black,)),
+                  Container(
+                    height: 360,
+                    color: Colors.black,),
                   Expanded(child: Container(color: Colors.brown[100],)),
                 ],
               ),
