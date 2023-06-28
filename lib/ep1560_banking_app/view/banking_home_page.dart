@@ -71,6 +71,11 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       CircleAvatar(
                         radius: 24,
                         backgroundColor: Colors.white.withOpacity(0.2),
+                        child: Badge(
+                          child: Icon(Icons.notifications_none),
+
+                        ),
+                        foregroundColor: Colors.white,
                       )
                     ],
                   )
