@@ -44,7 +44,8 @@ class _BankingHomePageState extends State<BankingHomePage> {
                     children: [
                       Container(
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.1)
+                        color: Colors.white.withOpacity(0.4),
+                        borderRadius: BorderRadius.circular(24)
                       ),
                         child: Row(
                           children: [
