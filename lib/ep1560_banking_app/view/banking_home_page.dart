@@ -23,8 +23,13 @@ class _BankingHomePageState extends State<BankingHomePage> {
                 children: [
                   Container(
                     height: 360,
-                    color: Colors.black,),
-                  Expanded(child: Container(color: Colors.brown[100],)),
+                    color: Colors.black,
+                  ),
+                  Expanded(
+                    child: Container(
+                      color: Colors.brown[100],
+                    ),
+                  ),
                 ],
               ),
             )
