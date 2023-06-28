@@ -85,7 +85,9 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       ),
                     ],
                   ),
-            
+                  SizedBox(
+                    height: 16,
+                  ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     child: Text(
@@ -98,9 +100,24 @@ class _BankingHomePageState extends State<BankingHomePage> {
                   Text(
                     "\$19,680.00",
                     style: TextStyle(
-                      fontSize: 24,
+                      fontSize: 42,
                       color: Colors.white,
                     ),
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.brown[50],
+                        ),
+                        child: Row(
+                          children: [
+                            Text("+10.5%"),
+                            Icon(Icons.show_chart),
+                          ],
+                        ),
+                      )
+                    ],
                   )
                 ],
               ),
