@@ -129,7 +129,10 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         ),
                         Container(
                           height: 38,
-                          decoration: BoxDecoration(color: Colors.brown[50], borderRadius: BorderRadius.circular(24)),
+                          decoration: BoxDecoration(
+                            color: Colors.brown[50],
+                            borderRadius: BorderRadius.circular(24),
+                          ),
                           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                           child: const Row(
                             children: [
