@@ -55,21 +55,21 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               radius: 24,
                               backgroundColor: Colors.white.withOpacity(0.2),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 8,
                             ),
-                            Text(
+                            const Text(
                               "Dream",
                               style: TextStyle(color: Colors.white),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 8,
                             ),
-                            Icon(
+                            const Icon(
                               Icons.arrow_forward,
                               color: Colors.white,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 8,
                             ),
                           ],
@@ -78,18 +78,18 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       CircleAvatar(
                         radius: 24,
                         backgroundColor: Colors.white.withOpacity(0.2),
-                        child: Badge(
+                        child: const Badge(
                           child: Icon(Icons.notifications_none),
                         ),
                         foregroundColor: Colors.white,
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 16),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 16),
                     child: Text(
                       "Total balance",
                       style: TextStyle(
@@ -97,42 +97,48 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       ),
                     ),
                   ),
-                  Text(
+                  const Text(
                     "\$19,680.00",
                     style: TextStyle(
                       fontSize: 42,
                       color: Colors.white,
                     ),
                   ),
-                  Row(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.brown[50],
-                          borderRadius: BorderRadius.circular(24)
-                        ),
-                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                        child: Row(
-                          children: [
-                            Text("+10.5%"),
-                            Icon(Icons.show_chart),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        height: 38,
-                        decoration: BoxDecoration(
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 24),
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
                             color: Colors.brown[50],
-                            borderRadius: BorderRadius.circular(24)
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 12,
+                            vertical: 8,
+                          ),
+                          child: const Row(
+                            children: [
+                              Text("+10.5%"),
+                              Icon(Icons.show_chart),
+                            ],
+                          ),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                        child: Row(
-                          children: [
-                            Text("+67,33\$"),
-                          ],
+                        const SizedBox(
+                          width: 8,
                         ),
-                      )
-                    ],
+                        Container(
+                          height: 38,
+                          decoration: BoxDecoration(color: Colors.brown[50], borderRadius: BorderRadius.circular(24)),
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                          child: const Row(
+                            children: [
+                              Text("+67,33\$"),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
