@@ -118,6 +118,19 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             Icon(Icons.show_chart),
                           ],
                         ),
+                      ),
+                      Container(
+                        height: 38,
+                        decoration: BoxDecoration(
+                            color: Colors.brown[50],
+                            borderRadius: BorderRadius.circular(24)
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                        child: Row(
+                          children: [
+                            Text("+67,33\$"),
+                          ],
+                        ),
                       )
                     ],
                   )
