@@ -154,6 +154,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               CircleAvatar(
                                 radius: 18,
                                 backgroundColor: Colors.purple[100],
+                                child: Icon(Icons.add),
                               ),
                               SizedBox(
                                 width: 8,
@@ -165,7 +166,9 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                   color: Colors.white,
                                 ),
                               ),
-                              SizedBox(width: 8,),
+                              SizedBox(
+                                width: 8,
+                              ),
                             ],
                           ),
                         )
