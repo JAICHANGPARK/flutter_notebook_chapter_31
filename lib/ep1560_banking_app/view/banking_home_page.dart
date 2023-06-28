@@ -140,6 +140,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             ],
                           ),
                         ),
+                        const Spacer(),
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
@@ -147,14 +148,24 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             ),
                             borderRadius: BorderRadius.circular(32),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                          padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                           child: Row(
                             children: [
                               CircleAvatar(
                                 radius: 18,
                                 backgroundColor: Colors.purple[100],
                               ),
-                              Text("Add card")
+                              SizedBox(
+                                width: 8,
+                              ),
+                              const Text(
+                                "Add card",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              SizedBox(width: 8,),
                             ],
                           ),
                         )
