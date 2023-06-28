@@ -85,10 +85,14 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       ),
                     ],
                   ),
-                  Text(
-                    "Total balance",
-                    style: TextStyle(
-                      color: Colors.white,
+            
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: Text(
+                      "Total balance",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                   Text(
