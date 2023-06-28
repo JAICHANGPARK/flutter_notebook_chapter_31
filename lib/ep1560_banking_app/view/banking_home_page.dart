@@ -44,27 +44,33 @@ class _BankingHomePageState extends State<BankingHomePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.4),
-                        borderRadius: BorderRadius.circular(24)
-                      ),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.4),
+                          borderRadius: BorderRadius.circular(24),
+                        ),
                         child: Row(
-
                           children: [
                             CircleAvatar(
                               radius: 24,
                               backgroundColor: Colors.white.withOpacity(0.2),
                             ),
-                            SizedBox(width: 8,),
-                            Text("Dream", style: TextStyle(
-                              color: Colors.white
-                            ),),
-                            SizedBox(width: 8,),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Text(
+                              "Dream",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            SizedBox(
+                              width: 8,
+                            ),
                             Icon(
                               Icons.arrow_forward,
                               color: Colors.white,
                             ),
-                            SizedBox(width: 8,),
+                            SizedBox(
+                              width: 8,
+                            ),
                           ],
                         ),
                       ),
@@ -73,11 +79,23 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         backgroundColor: Colors.white.withOpacity(0.2),
                         child: Badge(
                           child: Icon(Icons.notifications_none),
-
                         ),
                         foregroundColor: Colors.white,
-                      )
+                      ),
                     ],
+                  ),
+                  Text(
+                    "Total balance",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  Text(
+                    "\$19,680.00",
+                    style: TextStyle(
+                      fontSize: 24,
+                      color: Colors.white,
+                    ),
                   )
                 ],
               ),
