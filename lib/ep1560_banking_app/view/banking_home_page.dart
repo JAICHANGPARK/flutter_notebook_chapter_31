@@ -39,6 +39,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
               top: 16,
               bottom: 8,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
