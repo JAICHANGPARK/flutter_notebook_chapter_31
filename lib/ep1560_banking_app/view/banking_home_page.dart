@@ -155,6 +155,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                 radius: 18,
                                 backgroundColor: Colors.purple[100],
                                 child: Icon(Icons.add),
+                                foregroundColor: Colors.black,
                               ),
                               SizedBox(
                                 width: 8,
