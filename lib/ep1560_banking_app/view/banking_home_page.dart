@@ -32,6 +32,31 @@ class _BankingHomePageState extends State<BankingHomePage> {
                   ),
                 ],
               ),
+            ),
+            Positioned(
+              left: 16,
+              right: 16,
+              top: 16,
+              bottom: 8,
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        child: Row(
+                          children: [
+                            CircleAvatar(),
+                            Text("Dream"),
+                            Icon(
+                              Icons.arrow_forward,
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
             )
           ],
         ),
