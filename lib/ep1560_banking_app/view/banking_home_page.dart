@@ -211,7 +211,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                   ),
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 16),
-                    height: 84,
+                    height: 72,
                     decoration: BoxDecoration(
                       color: Colors.blue,
                     ),
@@ -222,14 +222,21 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           right: 0,
                           top: 0,
                           bottom: 0,
-
                           child: Center(
                             child: Container(
                               height: 24,
                               color: Colors.white,
                             ),
                           ),
-
+                        ),
+                        Positioned(
+                          child: Row(
+                            children: [
+                              Expanded(child: Container()),
+                              SizedBox(width: 16,),
+                              Expanded(child: Container()),
+                            ],
+                          ),
                         )
                       ],
                     ),
