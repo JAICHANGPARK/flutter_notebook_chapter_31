@@ -211,7 +211,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                   ),
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 16),
-                    height: 72,
+                    height: 64,
                     decoration: BoxDecoration(
                       color: Colors.blue,
                     ),
@@ -224,7 +224,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           bottom: 0,
                           child: Center(
                             child: Container(
-                              height: 24,
+                              height: 16,
                               color: Colors.white,
                             ),
                           ),
@@ -238,13 +238,17 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             children: [
                               Expanded(
                                 child: Container(
+                                  height: double.infinity,
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(48),
                                   ),
+                                  padding: EdgeInsets.symmetric(horizontal: 8),
                                   child: Row(
                                     children: [
-                                      CircleAvatar(),
+                                      CircleAvatar(
+                                        radius: 24,
+                                      ),
                                       Text("Send"),
                                     ],
                                   ),
@@ -255,13 +259,15 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               ),
                               Expanded(
                                 child: Container(
+                                  height: double.infinity,
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(48),
                                   ),
+                                  padding: EdgeInsets.symmetric(horizontal: 8),
                                   child: Row(
                                     children: [
-                                      CircleAvatar(),
+                                      CircleAvatar(  radius: 24,),
                                       Text("Receive")
                                     ],
                                   ),
