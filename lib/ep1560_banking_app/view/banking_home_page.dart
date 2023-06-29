@@ -249,8 +249,12 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                       CircleAvatar(
                                         radius: 24,
                                         backgroundColor: Colors.purple[100],
+                                        foregroundColor: Colors.white,
+                                        child: Icon(Icons.arrow_upward),
                                       ),
-                                      SizedBox(width: 8,),
+                                      SizedBox(
+                                        width: 8,
+                                      ),
                                       Text("Send"),
                                     ],
                                   ),
@@ -269,8 +273,15 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                   padding: EdgeInsets.symmetric(horizontal: 8),
                                   child: Row(
                                     children: [
-                                      CircleAvatar(  radius: 24,),
-                                      SizedBox(width: 8,),
+                                      CircleAvatar(
+                                        radius: 24,
+                                        backgroundColor: Colors.purple[100],
+                                        foregroundColor: Colors.white,
+                                        child: Icon(Icons.arrow_downward),
+                                      ),
+                                      SizedBox(
+                                        width: 8,
+                                      ),
                                       Text("Receive")
                                     ],
                                   ),
