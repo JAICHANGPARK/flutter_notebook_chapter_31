@@ -78,10 +78,10 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       CircleAvatar(
                         radius: 24,
                         backgroundColor: Colors.white.withOpacity(0.2),
+                        foregroundColor: Colors.white,
                         child: const Badge(
                           child: Icon(Icons.notifications_none),
                         ),
-                        foregroundColor: Colors.white,
                       ),
                     ],
                   ),
@@ -154,8 +154,8 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               CircleAvatar(
                                 radius: 18,
                                 backgroundColor: Colors.purple[100],
-                                child: const Icon(Icons.add),
                                 foregroundColor: Colors.black,
+                                child: const Icon(Icons.add),
                               ),
                               const SizedBox(
                                 width: 8,
@@ -176,7 +176,6 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       ],
                     ),
                   ),
-
                   SizedBox(
                     height: 160,
                     child: Row(
@@ -291,7 +290,9 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 16,),
+                  const SizedBox(
+                    height: 8,
+                  ),
                   const Text("History"),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -305,26 +306,47 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       ),
                       TextButton(
                         onPressed: () {},
-                        child: const Text("See all"),
                         style: TextButton.styleFrom(
                           foregroundColor: Colors.black,
                         ),
+                        child: const Text("See all"),
                       )
                     ],
                   ),
                   const Expanded(child: Placeholder()),
                   Container(
                     height: 64,
-                    child:  Row(
+                    child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        IconButton(onPressed: (){}, icon: Icon(Icons.apps,)),
-                        IconButton(onPressed: (){}, icon: Icon(Icons.apps,)),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.apps,
+                          ),
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.apps,
+                          ),
+                        ),
                         CircleAvatar(
                           radius: 32,
+                          backgroundColor: Colors.purple[200],
                         ),
-                        IconButton(onPressed: (){}, icon: Icon(Icons.apps,)),
-                        IconButton(onPressed: (){}, icon: Icon(Icons.apps,)),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.apps,
+                          ),
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.apps,
+                          ),
+                        ),
                       ],
                     ),
                   )
