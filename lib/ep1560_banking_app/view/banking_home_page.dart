@@ -177,7 +177,10 @@ class _BankingHomePageState extends State<BankingHomePage> {
                     ),
                   ),
                   SizedBox(
-                    height: 180,
+                    height: 16,
+                  ),
+                  SizedBox(
+                    height: 160,
                     child: Row(
                       children: [
                         Expanded(
@@ -204,6 +207,13 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           ),
                         ),
                       ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 16),
+                    height: 84,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
                     ),
                   )
                 ],
