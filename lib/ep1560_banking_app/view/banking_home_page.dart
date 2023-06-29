@@ -248,7 +248,9 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                     children: [
                                       CircleAvatar(
                                         radius: 24,
+                                        backgroundColor: Colors.purple[100],
                                       ),
+                                      SizedBox(width: 8,),
                                       Text("Send"),
                                     ],
                                   ),
@@ -268,6 +270,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                   child: Row(
                                     children: [
                                       CircleAvatar(  radius: 24,),
+                                      SizedBox(width: 8,),
                                       Text("Receive")
                                     ],
                                   ),
