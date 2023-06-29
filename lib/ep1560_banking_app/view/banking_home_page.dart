@@ -176,20 +176,35 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       ],
                     ),
                   ),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Container(
-                          height: 180,
+                  SizedBox(
+                    height: 180,
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          width: 82,
+                          margin: EdgeInsets.symmetric(horizontal: 8),
                           decoration: BoxDecoration(
-                            color: Colors.blue,
+                            color: Colors.orange,
                             borderRadius: BorderRadius.circular(16),
                           ),
                         ),
-                      ),
-                      Container(width: 64, margin: EdgeInsets.symmetric(horizontal: 8),),
-                      
-                    ],
+                        Container(
+                          width: 82,
+                          decoration: BoxDecoration(
+                            color: Colors.orange,
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                        ),
+                      ],
+                    ),
                   )
                 ],
               ),
