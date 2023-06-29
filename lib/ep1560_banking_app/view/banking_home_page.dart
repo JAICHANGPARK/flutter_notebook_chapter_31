@@ -218,8 +218,8 @@ class _BankingHomePageState extends State<BankingHomePage> {
                     child: Stack(
                       children: [
                         Positioned(
-                          left: 0,
-                          right: 0,
+                          left: 16,
+                          right: 16,
                           top: 0,
                           bottom: 0,
                           child: Center(
@@ -232,8 +232,17 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         Positioned(
                           child: Row(
                             children: [
-                              Expanded(child: Container()),
-                              SizedBox(width: 16,),
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(48),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 16,
+                              ),
                               Expanded(child: Container()),
                             ],
                           ),
