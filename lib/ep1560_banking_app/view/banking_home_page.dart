@@ -154,10 +154,10 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               CircleAvatar(
                                 radius: 18,
                                 backgroundColor: Colors.purple[100],
-                                child: Icon(Icons.add),
+                                child: const Icon(Icons.add),
                                 foregroundColor: Colors.black,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 8,
                               ),
                               const Text(
@@ -167,7 +167,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                   color: Colors.white,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 8,
                               ),
                             ],
@@ -176,7 +176,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       ],
                     ),
                   ),
-                 
+
                   SizedBox(
                     height: 160,
                     child: Row(
@@ -191,7 +191,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         ),
                         Container(
                           width: 82,
-                          margin: EdgeInsets.symmetric(horizontal: 8),
+                          margin: const EdgeInsets.symmetric(horizontal: 8),
                           decoration: BoxDecoration(
                             color: Colors.orange,
                             borderRadius: BorderRadius.circular(16),
@@ -208,7 +208,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 16),
+                    margin: const EdgeInsets.symmetric(vertical: 16),
                     height: 64,
                     // decoration: BoxDecoration(
                     //   color: Colors.blue,
@@ -241,24 +241,24 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(48),
                                   ),
-                                  padding: EdgeInsets.symmetric(horizontal: 8),
+                                  padding: const EdgeInsets.symmetric(horizontal: 8),
                                   child: Row(
                                     children: [
                                       CircleAvatar(
                                         radius: 24,
                                         backgroundColor: Colors.purple[200],
                                         foregroundColor: Colors.white,
-                                        child: Icon(Icons.arrow_upward),
+                                        child: const Icon(Icons.arrow_upward),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 8,
                                       ),
-                                      Text("Send"),
+                                      const Text("Send"),
                                     ],
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 16,
                               ),
                               Expanded(
@@ -268,19 +268,19 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(48),
                                   ),
-                                  padding: EdgeInsets.symmetric(horizontal: 8),
+                                  padding: const EdgeInsets.symmetric(horizontal: 8),
                                   child: Row(
                                     children: [
                                       CircleAvatar(
                                         radius: 24,
                                         backgroundColor: Colors.purple[200],
                                         foregroundColor: Colors.white,
-                                        child: Icon(Icons.arrow_downward),
+                                        child: const Icon(Icons.arrow_downward),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 8,
                                       ),
-                                      Text("Receive")
+                                      const Text("Receive")
                                     ],
                                   ),
                                 ),
@@ -291,12 +291,12 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 16,),
-                  Text("History"),
+                  const SizedBox(height: 16,),
+                  const Text("History"),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      const Text(
                         "Transactions",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -305,19 +305,26 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       ),
                       TextButton(
                         onPressed: () {},
-                        child: Text("See all"),
+                        child: const Text("See all"),
                         style: TextButton.styleFrom(
                           foregroundColor: Colors.black,
                         ),
                       )
                     ],
                   ),
-                  Expanded(child: Placeholder()),
+                  const Expanded(child: Placeholder()),
                   Container(
                     height: 64,
-                    child: Row(
+                    child:  Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-
+                        IconButton(onPressed: (){}, icon: Icon(Icons.apps,)),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.apps,)),
+                        CircleAvatar(
+                          radius: 32,
+                        ),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.apps,)),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.apps,)),
                       ],
                     ),
                   )
