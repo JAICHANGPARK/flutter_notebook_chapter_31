@@ -175,7 +175,21 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         )
                       ],
                     ),
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          height: 100,
+                          
+                          decoration: BoxDecoration(
+                            
+                          ),
+                        ),
+                      ),
+                    ],
                   )
+
                 ],
               ),
             )
