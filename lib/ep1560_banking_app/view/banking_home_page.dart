@@ -183,7 +183,8 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           height: 100,
                           
                           decoration: BoxDecoration(
-                            
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(16)
                           ),
                         ),
                       ),
