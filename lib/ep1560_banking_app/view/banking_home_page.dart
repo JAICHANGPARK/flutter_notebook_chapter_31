@@ -180,17 +180,15 @@ class _BankingHomePageState extends State<BankingHomePage> {
                     children: [
                       Expanded(
                         child: Container(
-                          height: 100,
-                          
+                          height: 180,
                           decoration: BoxDecoration(
                             color: Colors.blue,
-                            borderRadius: BorderRadius.circular(16)
+                            borderRadius: BorderRadius.circular(16),
                           ),
                         ),
                       ),
                     ],
                   )
-
                 ],
               ),
             )
