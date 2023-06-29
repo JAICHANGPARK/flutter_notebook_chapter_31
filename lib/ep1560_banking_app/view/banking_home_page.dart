@@ -248,7 +248,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                     children: [
                                       CircleAvatar(
                                         radius: 24,
-                                        backgroundColor: Colors.purple[100],
+                                        backgroundColor: Colors.purple[200],
                                         foregroundColor: Colors.white,
                                         child: Icon(Icons.arrow_upward),
                                       ),
@@ -275,7 +275,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                     children: [
                                       CircleAvatar(
                                         radius: 24,
-                                        backgroundColor: Colors.purple[100],
+                                        backgroundColor: Colors.purple[200],
                                         foregroundColor: Colors.white,
                                         child: Icon(Icons.arrow_downward),
                                       ),
@@ -292,6 +292,19 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         )
                       ],
                     ),
+                  ),
+                  Text("History"),
+                  Row(
+                    children: [
+                      Text("Transactions",style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24
+                      ),),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text("See all"),
+                      )
+                    ],
                   )
                 ],
               ),
