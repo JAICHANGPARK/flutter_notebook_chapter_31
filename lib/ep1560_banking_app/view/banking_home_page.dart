@@ -176,9 +176,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       ],
                     ),
                   ),
-                  SizedBox(
-                    height: 16,
-                  ),
+                 
                   SizedBox(
                     height: 160,
                     child: Row(
@@ -319,7 +317,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                     height: 64,
                     child: Row(
                       children: [
-                        
+
                       ],
                     ),
                   )
