@@ -243,7 +243,14 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               SizedBox(
                                 width: 16,
                               ),
-                              Expanded(child: Container()),
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(48),
+                                  ),
+                                ),
+                              ),
                             ],
                           ),
                         )
