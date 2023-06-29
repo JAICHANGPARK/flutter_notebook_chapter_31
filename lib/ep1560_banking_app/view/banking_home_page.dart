@@ -295,14 +295,21 @@ class _BankingHomePageState extends State<BankingHomePage> {
                   ),
                   Text("History"),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Transactions",style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 24
-                      ),),
+                      Text(
+                        "Transactions",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
+                        ),
+                      ),
                       TextButton(
                         onPressed: () {},
                         child: Text("See all"),
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.black,
+                        ),
                       )
                     ],
                   )
