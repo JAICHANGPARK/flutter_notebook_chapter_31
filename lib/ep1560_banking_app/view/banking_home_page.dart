@@ -230,6 +230,10 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           ),
                         ),
                         Positioned(
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          top: 0,
                           child: Row(
                             children: [
                               Expanded(
@@ -237,6 +241,12 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(48),
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      CircleAvatar(),
+                                      Text("Send"),
+                                    ],
                                   ),
                                 ),
                               ),
@@ -248,6 +258,12 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(48),
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      CircleAvatar(),
+                                      Text("Receive")
+                                    ],
                                   ),
                                 ),
                               ),
