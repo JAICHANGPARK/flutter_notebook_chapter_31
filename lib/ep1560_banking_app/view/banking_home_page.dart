@@ -293,6 +293,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       ],
                     ),
                   ),
+                  SizedBox(height: 16,),
                   Text("History"),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -312,6 +313,15 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         ),
                       )
                     ],
+                  ),
+                  Expanded(child: Placeholder()),
+                  Container(
+                    height: 64,
+                    child: Row(
+                      children: [
+                        
+                      ],
+                    ),
                   )
                 ],
               ),
