@@ -187,6 +187,8 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           ),
                         ),
                       ),
+                      Container(width: 64, margin: EdgeInsets.symmetric(horizontal: 8),),
+                      
                     ],
                   )
                 ],
