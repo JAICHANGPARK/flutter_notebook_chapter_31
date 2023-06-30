@@ -330,9 +330,15 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                 width: 64,
                                 decoration: BoxDecoration(
                                   color: Colors.black,
+                                  borderRadius: BorderRadius.circular(8),
                                 ),
                               ),
-                              Expanded(child: Column()),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [],
+                                ),
+                              ),
                               Text(
                                 "-15\$",
                                 style: TextStyle(
