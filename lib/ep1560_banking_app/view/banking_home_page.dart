@@ -314,20 +314,20 @@ class _BankingHomePageState extends State<BankingHomePage> {
                     ],
                   ),
                   const Expanded(child: Placeholder()),
-                  Container(
+                  SizedBox(
                     height: 64,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         IconButton(
                           onPressed: () {},
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.apps,
                           ),
                         ),
                         IconButton(
                           onPressed: () {},
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.apps,
                           ),
                         ),
@@ -337,13 +337,13 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         ),
                         IconButton(
                           onPressed: () {},
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.apps,
                           ),
                         ),
                         IconButton(
                           onPressed: () {},
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.apps,
                           ),
                         ),
