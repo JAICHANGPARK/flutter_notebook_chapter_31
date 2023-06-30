@@ -333,14 +333,25 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                               ),
-                              SizedBox(width: 12,),
+                              SizedBox(
+                                width: 12,
+                              ),
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("Service Title"),
-                                    SizedBox(height: 6,),
-                                    Text("Today, 14:40")
+                                    Text(
+                                      "Service Title",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 6,
+                                    ),
+                                    Text(
+                                      "Today, 14:40",
+                                    )
                                   ],
                                 ),
                               ),
