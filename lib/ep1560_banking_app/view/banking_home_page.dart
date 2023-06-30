@@ -336,7 +336,10 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [],
+                                  children: [
+                                    Text("Service Title"),
+                                    Text("Today, 14:40")
+                                  ],
                                 ),
                               ),
                               Text(
