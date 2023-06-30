@@ -328,12 +328,13 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         IconButton(
                           onPressed: () {},
                           icon: const Icon(
-                            Icons.apps,
+                            Icons.pie_chart_outline,
                           ),
                         ),
                         CircleAvatar(
                           radius: 32,
                           backgroundColor: Colors.purple[200],
+                          child: Icon(Icons.qr_code_scanner),
                         ),
                         IconButton(
                           onPressed: () {},
