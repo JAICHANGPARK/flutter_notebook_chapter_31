@@ -153,7 +153,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             children: [
                               CircleAvatar(
                                 radius: 18,
-                                backgroundColor: Colors.purple[100],
+                                backgroundColor: Color.fromRGBO(140, 145, 212, 1),
                                 foregroundColor: Colors.black,
                                 child: const Icon(Icons.add),
                               ),
@@ -227,6 +227,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             color: Colors.green[100],
                             borderRadius: BorderRadius.circular(16),
                           ),
+                          padding: EdgeInsets.symmetric(vertical: 16),
                           child: const Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -279,7 +280,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                     children: [
                                       CircleAvatar(
                                         radius: 24,
-                                        backgroundColor: Colors.purple[200],
+                                        backgroundColor: Color.fromRGBO(140, 145, 212, 1),
                                         foregroundColor: Colors.white,
                                         child: const Icon(Icons.arrow_upward),
                                       ),
@@ -306,7 +307,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                     children: [
                                       CircleAvatar(
                                         radius: 24,
-                                        backgroundColor: Colors.purple[200],
+                                        backgroundColor:Color.fromRGBO(140, 145, 212, 1),
                                         foregroundColor: Colors.white,
                                         child: const Icon(Icons.arrow_downward),
                                       ),
@@ -420,7 +421,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         ),
                         CircleAvatar(
                           radius: 32,
-                          backgroundColor: Colors.purple[200],
+                          backgroundColor: Color.fromRGBO(140, 145, 212, 1),
                           foregroundColor: Colors.white,
                           child: const Icon(Icons.qr_code_scanner),
                         ),
