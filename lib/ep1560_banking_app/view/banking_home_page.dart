@@ -334,18 +334,20 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         CircleAvatar(
                           radius: 32,
                           backgroundColor: Colors.purple[200],
+                          foregroundColor: Colors.white,
                           child: Icon(Icons.qr_code_scanner),
                         ),
                         IconButton(
                           onPressed: () {},
                           icon: const Icon(
-                            Icons.apps,
+                            Icons.layers,
+
                           ),
                         ),
                         IconButton(
                           onPressed: () {},
                           icon: const Icon(
-                            Icons.apps,
+                            Icons.settings_outlined,
                           ),
                         ),
                       ],
