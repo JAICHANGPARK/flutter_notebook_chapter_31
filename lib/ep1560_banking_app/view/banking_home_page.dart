@@ -27,7 +27,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                   ),
                   Expanded(
                     child: Container(
-                      color: Colors.brown[50],
+                      color: Color.fromRGBO(236, 233, 236, 1)
                     ),
                   ),
                 ],
