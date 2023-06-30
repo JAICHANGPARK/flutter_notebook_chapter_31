@@ -321,8 +321,8 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(8),
                           ),
-                          padding: EdgeInsets.all(12),
-                          margin: EdgeInsets.only(bottom: 16),
+                          padding: const EdgeInsets.all(12),
+                          margin: const EdgeInsets.only(bottom: 16),
                           child: Row(
                             children: [
                               Container(
@@ -333,10 +333,10 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 12,
                               ),
-                              Expanded(
+                              const Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -355,7 +355,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                   ],
                                 ),
                               ),
-                              Text(
+                              const Text(
                                 "-15\$",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -388,7 +388,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           radius: 32,
                           backgroundColor: Colors.purple[200],
                           foregroundColor: Colors.white,
-                          child: Icon(Icons.qr_code_scanner),
+                          child: const Icon(Icons.qr_code_scanner),
                         ),
                         IconButton(
                           onPressed: () {},
