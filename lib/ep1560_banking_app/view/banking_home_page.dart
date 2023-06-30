@@ -319,6 +319,27 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         return Container(
                           decoration: BoxDecoration(
                             color: Colors.white,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          padding: EdgeInsets.all(12),
+                          margin: EdgeInsets.only(bottom: 16),
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 64,
+                                width: 64,
+                                decoration: BoxDecoration(
+                                  color: Colors.black,
+                                ),
+                              ),
+                              Expanded(child: Column()),
+                              Text(
+                                "-15\$",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
+                            ],
                           ),
                         );
                       },
