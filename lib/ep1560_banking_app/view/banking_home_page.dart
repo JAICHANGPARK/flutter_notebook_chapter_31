@@ -313,7 +313,17 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       )
                     ],
                   ),
-                  const Expanded(child: Placeholder()),
+                  Expanded(
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                        );
+                      },
+                    ),
+                  ),
                   SizedBox(
                     height: 64,
                     child: Row(
@@ -341,7 +351,6 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           onPressed: () {},
                           icon: const Icon(
                             Icons.layers,
-
                           ),
                         ),
                         IconButton(
