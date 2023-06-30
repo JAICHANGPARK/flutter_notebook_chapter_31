@@ -186,8 +186,8 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               color: Colors.blue[100],
                               borderRadius: BorderRadius.circular(16),
                             ),
-                            padding: EdgeInsets.all(16),
-                            child: Column(
+                            padding: const EdgeInsets.all(16),
+                            child: const Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Row(
@@ -197,10 +197,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                 ),
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Text("**** 1234"),
-                                    Text("05/26")
-                                  ],
+                                  children: [Text("**** 1234"), Text("05/26")],
                                 )
                               ],
                             ),
@@ -213,20 +210,31 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             color: Colors.orange[100],
                             borderRadius: BorderRadius.circular(16),
                           ),
-                          padding: EdgeInsets.symmetric(vertical: 16),
-                          child: Column(
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          child: const Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text("V"),
-                              Text("**** 5689",)
+                              Text(
+                                "**** 5689",
+                              )
                             ],
                           ),
                         ),
                         Container(
                           width: 82,
                           decoration: BoxDecoration(
-                            color: Colors.orange,
+                            color: Colors.green[100],
                             borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("V"),
+                              Text(
+                                "**** 7984",
+                              )
+                            ],
                           ),
                         ),
                       ],
