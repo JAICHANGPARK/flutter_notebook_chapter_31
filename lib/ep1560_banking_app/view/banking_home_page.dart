@@ -210,8 +210,16 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           width: 82,
                           margin: const EdgeInsets.symmetric(horizontal: 8),
                           decoration: BoxDecoration(
-                            color: Colors.orange,
+                            color: Colors.orange[100],
                             borderRadius: BorderRadius.circular(16),
+                          ),
+                          padding: EdgeInsets.symmetric(vertical: 16),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("V"),
+                              Text("**** 5689",)
+                            ],
                           ),
                         ),
                         Container(
