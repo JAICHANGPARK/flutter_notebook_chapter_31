@@ -183,8 +183,26 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
-                              color: Colors.blue,
+                              color: Colors.blue[100],
                               borderRadius: BorderRadius.circular(16),
+                            ),
+                            padding: EdgeInsets.all(16),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Row(
+                                  children: [
+                                    Text("Dream"),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text("**** 1234"),
+                                    Text("05/26")
+                                  ],
+                                )
+                              ],
                             ),
                           ),
                         ),
