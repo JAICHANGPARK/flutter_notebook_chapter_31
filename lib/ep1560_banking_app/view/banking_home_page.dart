@@ -27,7 +27,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                   ),
                   Expanded(
                     child: Container(
-                      color: Color.fromRGBO(236, 233, 236, 1)
+                      color: const Color.fromRGBO(236, 233, 236, 1)
                     ),
                   ),
                 ],
@@ -149,25 +149,25 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             borderRadius: BorderRadius.circular(32),
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                          child: Row(
+                          child: const Row(
                             children: [
                               CircleAvatar(
                                 radius: 18,
                                 backgroundColor: Color.fromRGBO(140, 145, 212, 1),
                                 foregroundColor: Colors.black,
-                                child: const Icon(Icons.add),
+                                child: Icon(Icons.add),
                               ),
-                              const SizedBox(
+                              SizedBox(
                                 width: 8,
                               ),
-                              const Text(
+                              Text(
                                 "Add card",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
                                 ),
                               ),
-                              const SizedBox(
+                              SizedBox(
                                 width: 8,
                               ),
                             ],
@@ -227,7 +227,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             color: Colors.green[100],
                             borderRadius: BorderRadius.circular(16),
                           ),
-                          padding: EdgeInsets.symmetric(vertical: 16),
+                          padding: const EdgeInsets.symmetric(vertical: 16),
                           child: const Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -276,18 +276,18 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                     borderRadius: BorderRadius.circular(48),
                                   ),
                                   padding: const EdgeInsets.symmetric(horizontal: 8),
-                                  child: Row(
+                                  child: const Row(
                                     children: [
                                       CircleAvatar(
                                         radius: 24,
                                         backgroundColor: Color.fromRGBO(140, 145, 212, 1),
                                         foregroundColor: Colors.white,
-                                        child: const Icon(Icons.arrow_upward),
+                                        child: Icon(Icons.arrow_upward),
                                       ),
-                                      const SizedBox(
+                                      SizedBox(
                                         width: 8,
                                       ),
-                                      const Text("Send"),
+                                      Text("Send"),
                                     ],
                                   ),
                                 ),
@@ -303,18 +303,18 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                     borderRadius: BorderRadius.circular(48),
                                   ),
                                   padding: const EdgeInsets.symmetric(horizontal: 8),
-                                  child: Row(
+                                  child: const Row(
                                     children: [
                                       CircleAvatar(
                                         radius: 24,
                                         backgroundColor:Color.fromRGBO(140, 145, 212, 1),
                                         foregroundColor: Colors.white,
-                                        child: const Icon(Icons.arrow_downward),
+                                        child: Icon(Icons.arrow_downward),
                                       ),
-                                      const SizedBox(
+                                      SizedBox(
                                         width: 8,
                                       ),
-                                      const Text("Receive")
+                                      Text("Receive")
                                     ],
                                   ),
                                 ),
@@ -419,11 +419,11 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             Icons.pie_chart_outline,
                           ),
                         ),
-                        CircleAvatar(
+                        const CircleAvatar(
                           radius: 32,
                           backgroundColor: Color.fromRGBO(140, 145, 212, 1),
                           foregroundColor: Colors.white,
-                          child: const Icon(Icons.qr_code_scanner),
+                          child: Icon(Icons.qr_code_scanner),
                         ),
                         IconButton(
                           onPressed: () {},
