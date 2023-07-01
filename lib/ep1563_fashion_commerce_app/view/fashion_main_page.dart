@@ -13,6 +13,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: EdgeInsets.all(16),
