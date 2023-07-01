@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_31/ep1563_fashion_commerce_app/view/fashion_main_page.dart';
 
 void main() {
   runApp(FashionCommerceApp());
@@ -9,6 +10,8 @@ class FashionCommerceApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: FashionMainPage(),
+    );
   }
 }
