@@ -46,16 +46,13 @@ class _FashionMainPageState extends State<FashionMainPage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(16.0, 16,0,16),
+              padding: const EdgeInsets.fromLTRB(16.0, 16, 0, 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     "New Arrival",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,),
                   ),
                   Container(
                     margin: EdgeInsets.only(top: 8),
@@ -65,11 +62,11 @@ class _FashionMainPageState extends State<FashionMainPage> {
                 ],
               ),
             ),
-            Expanded(child: Padding(
-              padding: const EdgeInsets.fromLTRB(16,0,0,0),
+            Expanded(
+                child: Padding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 0, 0),
               child: Placeholder(),
             ))
-
           ],
         ),
       ),
