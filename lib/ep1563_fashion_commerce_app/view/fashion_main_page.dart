@@ -36,6 +36,19 @@ class _FashionMainPageState extends State<FashionMainPage> {
                   ],
                 ),
               ),
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 16),
+              height: 160,
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+            ),
+            Text(
+              "New Arrival",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
             )
           ],
         ),
