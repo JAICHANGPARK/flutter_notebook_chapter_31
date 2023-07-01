@@ -58,14 +58,17 @@ class _FashionMainPageState extends State<FashionMainPage> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 8),
+                    margin: EdgeInsets.only(top: 8),
                     height: 64,
                     color: Colors.blue,
                   )
                 ],
               ),
             ),
-            Expanded(child: Placeholder())
+            Expanded(child: Padding(
+              padding: const EdgeInsets.fromLTRB(16,0,0,0),
+              child: Placeholder(),
+            ))
 
           ],
         ),
