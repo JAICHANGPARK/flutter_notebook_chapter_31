@@ -14,18 +14,28 @@ class _FashionMainPageState extends State<FashionMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Expanded(
-                  child: Container(
-
-                  ),
+            Padding(
+              padding: EdgeInsets.all(16),
+              child: SizedBox(
+                height: 48,
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 16,
+                    ),
+                    CircleAvatar(
+                      radius: 24,
+                    )
+                  ],
                 ),
-                SizedBox(width: 16,),
-                CircleAvatar(
-
-                )
-              ],
+              ),
             )
           ],
         ),
