@@ -15,7 +15,13 @@ class _FashionMainPageState extends State<FashionMainPage> {
         children: [
           Row(
             children: [
-              Container(
+              Expanded(
+                child: Container(
+
+                ),
+              ),
+              SizedBox(width: 16,),
+              CircleAvatar(
 
               )
             ],
