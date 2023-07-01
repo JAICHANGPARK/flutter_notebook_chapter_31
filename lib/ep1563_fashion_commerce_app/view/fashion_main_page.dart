@@ -15,7 +15,9 @@ class _FashionMainPageState extends State<FashionMainPage> {
         children: [
           Row(
             children: [
-              
+              Container(
+
+              )
             ],
           )
         ],
