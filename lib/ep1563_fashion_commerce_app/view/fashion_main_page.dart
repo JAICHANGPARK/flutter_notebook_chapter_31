@@ -45,12 +45,27 @@ class _FashionMainPageState extends State<FashionMainPage> {
                 color: Colors.blue,
               ),
             ),
-            Text(
-              "New Arrival",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16.0, 16,0,16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "New Arrival",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 8),
+                    height: 64,
+                    color: Colors.blue,
+                  )
+                ],
               ),
             )
+
           ],
         ),
       ),
