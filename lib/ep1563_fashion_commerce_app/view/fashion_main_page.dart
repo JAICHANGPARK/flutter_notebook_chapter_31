@@ -52,7 +52,10 @@ class _FashionMainPageState extends State<FashionMainPage> {
                 children: [
                   Text(
                     "New Arrival",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
                   ),
                   Container(
                     margin: EdgeInsets.only(top: 8),
