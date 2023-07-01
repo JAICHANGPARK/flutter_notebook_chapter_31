@@ -64,7 +64,8 @@ class _FashionMainPageState extends State<FashionMainPage> {
                   )
                 ],
               ),
-            )
+            ),
+            Expanded(child: Placeholder())
 
           ],
         ),
