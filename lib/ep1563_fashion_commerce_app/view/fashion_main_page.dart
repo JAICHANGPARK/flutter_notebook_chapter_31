@@ -67,15 +67,19 @@ class _FashionMainPageState extends State<FashionMainPage> {
                     "Today only",
                     style: TextStyle(color: Colors.white),
                   ),
-                  Text(
-                    "Up to 50% off",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: Text(
+                      "Up to 50% off",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18
+                      ),
                     ),
                   ),
                   Container(
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                     decoration: BoxDecoration(color: Colors.white),
                     child: Text("Get now"),
                   )
