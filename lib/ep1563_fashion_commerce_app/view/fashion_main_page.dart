@@ -71,16 +71,15 @@ class _FashionMainPageState extends State<FashionMainPage> {
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     child: Text(
                       "Up to 50% off",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18
-                      ),
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
                     ),
                   ),
                   Container(
                     padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                    decoration: BoxDecoration(color: Colors.white),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(16)
+                    ),
                     child: Text("Get now"),
                   )
                 ],
