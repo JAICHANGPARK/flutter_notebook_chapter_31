@@ -206,10 +206,13 @@ class _FashionMainPageState extends State<FashionMainPage> {
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 16),
-                        child: Text("Most popular", style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18
-                        ),),
+                        child: Text(
+                          "Most popular",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
                       ),
                       Container(
                         height: 340,
