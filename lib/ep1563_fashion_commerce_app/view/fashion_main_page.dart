@@ -202,7 +202,40 @@ class _FashionMainPageState extends State<FashionMainPage> {
                             )
                           ],
                         ),
-                      )
+                      ),
+                      Text("Most popular"),
+                      Container(
+                        height: 340,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                        ),
+                        child: ListView(
+                          scrollDirection: Axis.horizontal,
+                          children: [
+                            Container(
+                              margin: EdgeInsets.only(right: 16),
+                              color: Colors.orange,
+                              width: 240,
+                              child: Column(
+                                children: [
+                                  Expanded(child: Container()),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              // padding: EdgeInsets.symmetric(vertical: 16),
+                              margin: EdgeInsets.only(right: 16, top: 16, bottom: 16),
+                              color: Colors.orange,
+                              width: 240,
+                              child: Column(
+                                children: [
+                                  Expanded(child: Container()),
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 ),
