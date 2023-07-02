@@ -122,7 +122,23 @@ class _FashionMainPageState extends State<FashionMainPage> {
                               ),
                             ),
                           ),
-                        )
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(16)
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          child: Center(
+                            child: Text(
+                              "Men Shop",
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                          ),
+                        ),
+
                       ],
                     ),
                   )
