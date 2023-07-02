@@ -16,7 +16,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: SizedBox(
                 height: 48,
                 child: Row(
@@ -25,13 +25,14 @@ class _FashionMainPageState extends State<FashionMainPage> {
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.grey[400],
+                          borderRadius: BorderRadius.circular(32)
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 16,
                     ),
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 24,
                     )
                   ],
@@ -39,9 +40,9 @@ class _FashionMainPageState extends State<FashionMainPage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 16),
+              margin: const EdgeInsets.symmetric(horizontal: 16),
               height: 160,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.blue,
               ),
             ),
@@ -50,7 +51,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "New Arrival",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -58,16 +59,16 @@ class _FashionMainPageState extends State<FashionMainPage> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(top: 8),
+                    margin: const EdgeInsets.only(top: 8),
                     height: 64,
                     color: Colors.blue,
                   )
                 ],
               ),
             ),
-            Expanded(
+             Expanded(
                 child: Padding(
-              padding: const EdgeInsets.fromLTRB(16, 0, 0, 0),
+              padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
               child: Placeholder(),
             ))
           ],
