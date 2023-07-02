@@ -53,9 +53,21 @@ class _FashionMainPageState extends State<FashionMainPage> {
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 16),
               height: 150,
-              decoration:  BoxDecoration(
+              decoration: BoxDecoration(
                 color: Colors.blue,
-                borderRadius: BorderRadius.circular(12)
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Column(
+                children: [
+                  Text("Today only"),
+                  Text("Up to 50% off"),
+                  Container(
+                    decoration: BoxDecoration(color: Colors.white),
+                    child: Text(
+                      "Get now",
+                    ),
+                  )
+                ],
               ),
             ),
             Padding(
