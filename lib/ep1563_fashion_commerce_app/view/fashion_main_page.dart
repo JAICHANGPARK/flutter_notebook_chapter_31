@@ -27,8 +27,8 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(32),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 8),
-                        child: TextField(
+                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                        child: const TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
                             hintText: "Search",
@@ -44,7 +44,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                       radius: 24,
                       backgroundColor: Colors.grey[200]!,
                       foregroundColor: Colors.grey,
-                      child: Icon(Icons.inbox),
+                      child: const Icon(Icons.inbox),
                     )
                   ],
                 ),
@@ -58,17 +58,17 @@ class _FashionMainPageState extends State<FashionMainPage> {
                 color: Colors.blue,
                 borderRadius: BorderRadius.circular(12),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     "Today only",
                     style: TextStyle(color: Colors.white),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 16),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 16),
                     child: Text(
                       "Up to 50% off",
                       style: TextStyle(
@@ -79,12 +79,12 @@ class _FashionMainPageState extends State<FashionMainPage> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    child: Text("Get now"),
+                    child: const Text("Get now"),
                   )
                 ],
               ),
@@ -113,8 +113,9 @@ class _FashionMainPageState extends State<FashionMainPage> {
                             color: Colors.black,
                             borderRadius: BorderRadius.circular(16)
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 16),
-                          child: Center(
+                          margin: const EdgeInsets.only(right: 8),
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: const Center(
                             child: Text(
                               "All",
                               style: TextStyle(
@@ -128,10 +129,43 @@ class _FashionMainPageState extends State<FashionMainPage> {
                               color: Colors.grey[200],
                               borderRadius: BorderRadius.circular(16)
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 16),
-                          child: Center(
+                          margin: const EdgeInsets.only(right: 8),
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: const Center(
                             child: Text(
                               "Men Shop",
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(16)
+                          ),
+                          margin: const EdgeInsets.only(right: 8),
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: const Center(
+                            child: Text(
+                              "Women Shop",
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(16)
+                          ),
+                          margin: const EdgeInsets.only(right: 8),
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: const Center(
+                            child: Text(
+                              "Kids Shop",
                               style: TextStyle(
                                 color: Colors.black,
                               ),
@@ -145,7 +179,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                 ],
               ),
             ),
-            Expanded(
+            const Expanded(
                 child: Padding(
               padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
               child: Placeholder(),
