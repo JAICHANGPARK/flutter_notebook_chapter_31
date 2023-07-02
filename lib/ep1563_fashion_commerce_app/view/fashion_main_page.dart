@@ -182,7 +182,18 @@ class _FashionMainPageState extends State<FashionMainPage> {
                             Container(
                               margin: EdgeInsets.only(right: 16),
                               color: Colors.orange,
-                              width: 200,
+                              width: 240,
+                              child: Column(
+                                children: [
+                                  Expanded(child: Container()),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              // padding: EdgeInsets.symmetric(vertical: 16),
+                              margin: EdgeInsets.only(right: 16, top: 16, bottom: 16),
+                              color: Colors.orange,
+                              width: 240,
                               child: Column(
                                 children: [
                                   Expanded(child: Container()),
