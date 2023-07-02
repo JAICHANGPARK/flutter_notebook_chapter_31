@@ -61,6 +61,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
               padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
                     "Today only",
