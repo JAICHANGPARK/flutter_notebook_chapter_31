@@ -111,6 +111,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.black,
+                            borderRadius: BorderRadius.circular(16)
                           ),
                           padding: EdgeInsets.symmetric(horizontal: 16),
                           child: Center(
