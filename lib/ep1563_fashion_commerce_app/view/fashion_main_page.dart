@@ -177,8 +177,18 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           color: Colors.blue,
                         ),
                         child: ListView(
+                          scrollDirection: Axis.horizontal,
                           children: [
-                            
+                            Container(
+                              margin: EdgeInsets.only(right: 16),
+                              color: Colors.orange,
+                              width: 200,
+                              child: Column(
+                                children: [
+                                  Expanded(child: Container()),
+                                ],
+                              ),
+                            )
                           ],
                         ),
                       )
