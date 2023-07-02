@@ -170,6 +170,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                 padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
                 child: SingleChildScrollView(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
                         height: 340,
@@ -203,7 +204,13 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           ],
                         ),
                       ),
-                      Text("Most popular"),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text("Most popular", style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18
+                        ),),
+                      ),
                       Container(
                         height: 340,
                         decoration: BoxDecoration(
