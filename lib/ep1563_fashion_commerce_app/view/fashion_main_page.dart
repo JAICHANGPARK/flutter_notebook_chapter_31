@@ -27,9 +27,12 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(32),
                         ),
+                        padding: EdgeInsets.symmetric(horizontal: 8),
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
+                            hintText: "Search",
+                            icon: Icon(Icons.search),
                           ),
                         ),
                       ),
