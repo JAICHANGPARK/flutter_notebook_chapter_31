@@ -40,8 +40,11 @@ class _FashionMainPageState extends State<FashionMainPage> {
                     const SizedBox(
                       width: 16,
                     ),
-                    const CircleAvatar(
+                    CircleAvatar(
                       radius: 24,
+                      backgroundColor: Colors.grey[200]!,
+                      foregroundColor: Colors.grey,
+                      child: Icon(Icons.inbox),
                     )
                   ],
                 ),
