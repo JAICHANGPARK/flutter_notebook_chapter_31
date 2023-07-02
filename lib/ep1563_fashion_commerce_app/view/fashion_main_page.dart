@@ -52,9 +52,10 @@ class _FashionMainPageState extends State<FashionMainPage> {
             ),
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 16),
-              height: 160,
+              height: 150,
               decoration: const BoxDecoration(
                 color: Colors.blue,
+                
               ),
             ),
             Padding(
