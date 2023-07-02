@@ -102,19 +102,23 @@ class _FashionMainPageState extends State<FashionMainPage> {
                     ),
                   ),
                   Container(
-                    margin: const EdgeInsets.only(top: 8),
-                    height: 64,
+                    margin: const EdgeInsets.only(top: 12),
+                    height: 32,
                     color: Colors.blue,
                     child: ListView(
+                      scrollDirection: Axis.horizontal,
                       children: [
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.black,
                           ),
-                          child: Text(
-                            "All",
-                            style: TextStyle(
-                              color: Colors.white,
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          child: Center(
+                            child: Text(
+                              "All",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                         )
