@@ -24,8 +24,13 @@ class _FashionMainPageState extends State<FashionMainPage> {
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.grey[400],
-                          borderRadius: BorderRadius.circular(32)
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(32),
+                        ),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                          ),
                         ),
                       ),
                     ),
@@ -66,7 +71,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                 ],
               ),
             ),
-             Expanded(
+            Expanded(
                 child: Padding(
               padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
               child: Placeholder(),
