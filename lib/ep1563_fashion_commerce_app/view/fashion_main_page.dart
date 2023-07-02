@@ -104,15 +104,11 @@ class _FashionMainPageState extends State<FashionMainPage> {
                   Container(
                     margin: const EdgeInsets.only(top: 12),
                     height: 32,
-                    color: Colors.blue,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
-                          decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(16)
-                          ),
+                          decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
                           margin: const EdgeInsets.only(right: 8),
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: const Center(
@@ -125,10 +121,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           ),
                         ),
                         Container(
-                          decoration: BoxDecoration(
-                              color: Colors.grey[200],
-                              borderRadius: BorderRadius.circular(16)
-                          ),
+                          decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(16)),
                           margin: const EdgeInsets.only(right: 8),
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: const Center(
@@ -141,10 +134,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           ),
                         ),
                         Container(
-                          decoration: BoxDecoration(
-                              color: Colors.grey[200],
-                              borderRadius: BorderRadius.circular(16)
-                          ),
+                          decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(16)),
                           margin: const EdgeInsets.only(right: 8),
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: const Center(
@@ -157,10 +147,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           ),
                         ),
                         Container(
-                          decoration: BoxDecoration(
-                              color: Colors.grey[200],
-                              borderRadius: BorderRadius.circular(16)
-                          ),
+                          decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(16)),
                           margin: const EdgeInsets.only(right: 8),
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: const Center(
@@ -172,18 +159,34 @@ class _FashionMainPageState extends State<FashionMainPage> {
                             ),
                           ),
                         ),
-
                       ],
                     ),
                   )
                 ],
               ),
             ),
-            const Expanded(
-                child: Padding(
-              padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
-              child: Placeholder(),
-            ))
+            Expanded(
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 340,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                        ),
+                        child: ListView(
+                          children: [
+                            
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            )
           ],
         ),
       ),
