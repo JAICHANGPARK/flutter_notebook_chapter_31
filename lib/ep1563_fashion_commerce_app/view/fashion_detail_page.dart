@@ -116,23 +116,31 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
           Row(
             children: [
               Expanded(
-                  child: Column(
-                children: [
-                  Text("Price"),
-                  Text("\$2,299.00"),
-                ],
-              )),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Price"),
+                    Text("\$2,299.00"),
+                  ],
+                ),
+              ),
               Expanded(
                   child: Container(
                 decoration: BoxDecoration(
                   color: Colors.black,
-                  borderRadius: BorderRadius.circular(32)
+                  borderRadius: BorderRadius.circular(32),
                 ),
-                padding: EdgeInsets.all(16),
+                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.shopping_bag_outlined),
+                    Icon(
+                      Icons.shopping_bag_outlined,
+                      color: Colors.white,
+                    ),
+                    SizedBox(
+                      width: 8,
+                    ),
                     Text(
                       "Add to Cart",
                       style: TextStyle(
