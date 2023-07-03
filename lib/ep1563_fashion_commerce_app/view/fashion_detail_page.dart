@@ -126,6 +126,20 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                   child: Container(
                 decoration: BoxDecoration(
                   color: Colors.black,
+                  borderRadius: BorderRadius.circular(32)
+                ),
+                padding: EdgeInsets.all(16),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.shopping_bag_outlined),
+                    Text(
+                      "Add to Cart",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
                 ),
               ))
             ],
