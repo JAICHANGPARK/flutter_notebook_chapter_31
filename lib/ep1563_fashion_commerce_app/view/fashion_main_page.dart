@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_31/ep1563_fashion_commerce_app/view/fashion_detail_page.dart';
 
 class FashionMainPage extends StatefulWidget {
   const FashionMainPage({super.key});
@@ -180,60 +181,71 @@ class _FashionMainPageState extends State<FashionMainPage> {
                         child: ListView(
                           scrollDirection: Axis.horizontal,
                           children: [
-                            Container(
-                              margin: const EdgeInsets.only(right: 16),
-                              width: 240,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Expanded(
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.brown[100],
-                                        borderRadius: BorderRadius.circular(8),
-                                        image: const DecorationImage(
-                                          image: NetworkImage(
-                                              "https://cdn.pixabay.com/photo/2019/08/01/05/59/girl-4376755_1280.jpg"),
-                                          fit: BoxFit.cover,
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) {
+                                      return const FashionDetailPage();
+                                    },
+                                  ),
+                                );
+                              },
+                              child: Container(
+                                margin: const EdgeInsets.only(right: 16),
+                                width: 240,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Expanded(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.brown[100],
+                                          borderRadius: BorderRadius.circular(8),
+                                          image: const DecorationImage(
+                                            image: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2019/08/01/05/59/girl-4376755_1280.jpg"),
+                                            fit: BoxFit.cover,
+                                          ),
                                         ),
                                       ),
                                     ),
-                                  ),
-                                  const SizedBox(
-                                    height: 16,
-                                  ),
-                                  const Row(
-                                    children: [
-                                      Icon(
-                                        Icons.star,
-                                        size: 16,
-                                        color: Colors.orange,
-                                      ),
-                                      SizedBox(
-                                        width: 6,
-                                      ),
-                                      Text(
-                                        "4.9 (78 reviews)",
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(
-                                    height: 8,
-                                  ),
-                                  const Text(
-                                    "Title Title Title Title Title Title ",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
+                                    const SizedBox(
+                                      height: 16,
                                     ),
-                                  ),
-                                  const SizedBox(
-                                    height: 8,
-                                  ),
-                                  const Text(
-                                    '\$125.65',
-                                    style: TextStyle(fontSize: 12),
-                                  )
-                                ],
+                                    const Row(
+                                      children: [
+                                        Icon(
+                                          Icons.star,
+                                          size: 16,
+                                          color: Colors.orange,
+                                        ),
+                                        SizedBox(
+                                          width: 6,
+                                        ),
+                                        Text(
+                                          "4.9 (78 reviews)",
+                                        ),
+                                      ],
+                                    ),
+                                    const SizedBox(
+                                      height: 8,
+                                    ),
+                                    const Text(
+                                      "Title Title Title Title Title Title ",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    const SizedBox(
+                                      height: 8,
+                                    ),
+                                    const Text(
+                                      '\$125.65',
+                                      style: TextStyle(fontSize: 12),
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                             Container(
