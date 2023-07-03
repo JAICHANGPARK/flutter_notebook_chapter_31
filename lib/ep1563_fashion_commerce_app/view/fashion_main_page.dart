@@ -182,9 +182,10 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           children: [
                             Container(
                               margin: const EdgeInsets.only(right: 16),
-                              color: Colors.orange,
+                              color: Colors.grey,
                               width: 240,
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Expanded(
                                     child: Container(
@@ -200,14 +201,21 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                         size: 16,
                                         color: Colors.orange,
                                       ),
+                                      SizedBox(
+                                        width: 6,
+                                      ),
                                       Text(
                                         "4.9 (78 reviews)",
                                       ),
                                     ],
                                   ),
-                                  SizedBox(height: 8,),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
                                   Text("Title Title Title Title "),
-                                  SizedBox(height: 8,),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
                                   Text('\$125.65')
                                 ],
                               ),
