@@ -167,32 +167,38 @@ class _FashionMainPageState extends State<FashionMainPage> {
             ),
             Expanded(
               child: Padding(
-                padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
+                padding: const EdgeInsets.fromLTRB(16, 0, 0, 0),
                 child: SingleChildScrollView(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
                         height: 340,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.blue,
                         ),
                         child: ListView(
                           scrollDirection: Axis.horizontal,
                           children: [
                             Container(
-                              margin: EdgeInsets.only(right: 16),
+                              margin: const EdgeInsets.only(right: 16),
                               color: Colors.orange,
                               width: 240,
                               child: Column(
                                 children: [
-                                  Expanded(child: Container()),
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.brown[100],
+                                      ),
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
                             Container(
                               // padding: EdgeInsets.symmetric(vertical: 16),
-                              margin: EdgeInsets.only(right: 16, top: 16, bottom: 16),
+                              margin: const EdgeInsets.only(right: 16, top: 16, bottom: 16),
                               color: Colors.orange,
                               width: 240,
                               child: Column(
@@ -204,8 +210,8 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           ],
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 16),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(vertical: 16),
                         child: Text(
                           "Most popular",
                           style: TextStyle(
@@ -216,14 +222,14 @@ class _FashionMainPageState extends State<FashionMainPage> {
                       ),
                       Container(
                         height: 340,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.blue,
                         ),
                         child: ListView(
                           scrollDirection: Axis.horizontal,
                           children: [
                             Container(
-                              margin: EdgeInsets.only(right: 16),
+                              margin: const EdgeInsets.only(right: 16),
                               color: Colors.orange,
                               width: 240,
                               child: Column(
@@ -234,7 +240,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                             ),
                             Container(
                               // padding: EdgeInsets.symmetric(vertical: 16),
-                              margin: EdgeInsets.only(right: 16, top: 16, bottom: 16),
+                              margin: const EdgeInsets.only(right: 16, top: 16, bottom: 16),
                               color: Colors.orange,
                               width: 240,
                               child: Column(
