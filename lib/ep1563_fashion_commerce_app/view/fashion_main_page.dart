@@ -191,8 +191,16 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                     child: Container(
                                       decoration: BoxDecoration(
                                         color: Colors.brown[100],
+                                        image: DecorationImage(
+                                          image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2019/08/01/05/59/girl-4376755_1280.jpg"),
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
                                     ),
+                                  ),
+                                  SizedBox(
+                                    height: 16,
                                   ),
                                   Row(
                                     children: [
@@ -212,11 +220,19 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                   SizedBox(
                                     height: 8,
                                   ),
-                                  Text("Title Title Title Title "),
+                                  Text(
+                                    "Title Title Title Title Title Title ",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                   SizedBox(
                                     height: 8,
                                   ),
-                                  Text('\$125.65')
+                                  Text(
+                                    '\$125.65',
+                                    style: TextStyle(fontSize: 12),
+                                  )
                                 ],
                               ),
                             ),
