@@ -41,117 +41,126 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
               ),
             ),
           ),
-          Row(
-            children: [
-              Text("Title Title Title Title Title"),
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.grey,
-                ),
-                child: Row(
-                  children: [
-                    Icon(Icons.star),
-                    Text("4.9"),
-                  ],
-                ),
-              )
-            ],
-          ),
-          Text("Size"),
-          SizedBox(
-            height: 32,
-            child: ListView(
-              scrollDirection: Axis.horizontal,
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(16)),
-                  padding: EdgeInsets.symmetric(horizontal: 16),
-                  child: Text("S"),
-                )
-              ],
-            ),
-          ),
-          Text("Color"),
-          Row(
-            children: [
-              Container(
-                height: 40,
-                width: 40,
-                decoration: BoxDecoration(
-                  color: Colors.brown,
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                    color: Colors.black,
-                  ),
-                ),
-              ),
-              Container(
-                height: 40,
-                width: 40,
-                decoration: BoxDecoration(
-                  color: Colors.green,
-                  shape: BoxShape.circle,
-                ),
-              ),
-              Container(
-                height: 40,
-                width: 40,
-                decoration: BoxDecoration(
-                  color: Colors.indigo,
-                  shape: BoxShape.circle,
-                ),
-              ),
-              Container(
-                height: 40,
-                width: 40,
-                decoration: BoxDecoration(
-                  color: Colors.grey,
-                  shape: BoxShape.circle,
-                ),
-              ),
-            ],
-          ),
-          Text("Description"),
-          Text("~~~~~~"),
-          Row(
-            children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                Row(
                   children: [
-                    Text("Price"),
-                    Text("\$2,299.00"),
-                  ],
-                ),
-              ),
-              Expanded(
-                  child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.circular(32),
-                ),
-                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.shopping_bag_outlined,
-                      color: Colors.white,
-                    ),
-                    SizedBox(
-                      width: 8,
-                    ),
-                    Text(
-                      "Add to Cart",
-                      style: TextStyle(
-                        color: Colors.white,
+                    Text("Title Title Title Title Title"),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(Icons.star),
+                          Text("4.9"),
+                        ],
                       ),
                     )
                   ],
                 ),
-              ))
-            ],
+                Text("Size"),
+                SizedBox(
+                  height: 32,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(16)),
+                        padding: EdgeInsets.symmetric(horizontal: 16),
+                        child: Text("S"),
+                      )
+                    ],
+                  ),
+                ),
+                Text("Color"),
+                Row(
+                  children: [
+                    Container(
+                      height: 40,
+                      width: 40,
+                      decoration: BoxDecoration(
+                        color: Colors.brown,
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      height: 40,
+                      width: 40,
+                      decoration: BoxDecoration(
+                        color: Colors.green,
+                        shape: BoxShape.circle,
+                      ),
+                    ),
+                    Container(
+                      height: 40,
+                      width: 40,
+                      decoration: BoxDecoration(
+                        color: Colors.indigo,
+                        shape: BoxShape.circle,
+                      ),
+                    ),
+                    Container(
+                      height: 40,
+                      width: 40,
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                        shape: BoxShape.circle,
+                      ),
+                    ),
+                  ],
+                ),
+                Text("Description"),
+                Text("~~~~~~"),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Price"),
+                          Text("\$2,299.00"),
+                        ],
+                      ),
+                    ),
+                    Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.shopping_bag_outlined,
+                                color: Colors.white,
+                              ),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Text(
+                                "Add to Cart",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              )
+                            ],
+                          ),
+                        ))
+                  ],
+                )
+              ],
+            ),
           )
+
         ],
       ),
     );
