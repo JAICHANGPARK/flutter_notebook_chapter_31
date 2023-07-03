@@ -191,7 +191,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                       decoration: BoxDecoration(
                                         color: Colors.brown[100],
                                         borderRadius: BorderRadius.circular(8),
-                                        image: DecorationImage(
+                                        image: const DecorationImage(
                                           image: NetworkImage(
                                               "https://cdn.pixabay.com/photo/2019/08/01/05/59/girl-4376755_1280.jpg"),
                                           fit: BoxFit.cover,
@@ -199,10 +199,10 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 16,
                                   ),
-                                  Row(
+                                  const Row(
                                     children: [
                                       Icon(
                                         Icons.star,
@@ -217,19 +217,19 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                       ),
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
-                                  Text(
+                                  const Text(
                                     "Title Title Title Title Title Title ",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
-                                  Text(
+                                  const Text(
                                     '\$125.65',
                                     style: TextStyle(fontSize: 12),
                                   )
@@ -247,7 +247,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                       decoration: BoxDecoration(
                                         color: Colors.brown[100],
                                         borderRadius: BorderRadius.circular(8),
-                                        image: DecorationImage(
+                                        image: const DecorationImage(
                                           image: NetworkImage(
                                               "https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_1280.jpg"),
                                           fit: BoxFit.cover,
@@ -255,10 +255,10 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 16,
                                   ),
-                                  Row(
+                                  const Row(
                                     children: [
                                       Icon(
                                         Icons.star,
@@ -273,19 +273,19 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                       ),
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
-                                  Text(
+                                  const Text(
                                     "Title Title Title Title Title Title ",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
-                                  Text(
+                                  const Text(
                                     '\$125.65',
                                     style: TextStyle(fontSize: 12),
                                   )
