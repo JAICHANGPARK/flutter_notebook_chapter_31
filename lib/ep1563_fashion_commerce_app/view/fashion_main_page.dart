@@ -315,22 +315,113 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           children: [
                             Container(
                               margin: const EdgeInsets.only(right: 16),
-                              color: Colors.orange,
                               width: 240,
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Expanded(child: Container()),
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.brown[100],
+                                        borderRadius: BorderRadius.circular(8),
+                                        image: const DecorationImage(
+                                          image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2019/08/01/05/59/girl-4376755_1280.jpg"),
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 16,
+                                  ),
+                                  const Row(
+                                    children: [
+                                      Icon(
+                                        Icons.star,
+                                        size: 16,
+                                        color: Colors.orange,
+                                      ),
+                                      SizedBox(
+                                        width: 6,
+                                      ),
+                                      Text(
+                                        "4.9 (78 reviews)",
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(
+                                    height: 8,
+                                  ),
+                                  const Text(
+                                    "Title Title Title Title Title Title ",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 8,
+                                  ),
+                                  const Text(
+                                    '\$125.65',
+                                    style: TextStyle(fontSize: 12),
+                                  )
                                 ],
                               ),
                             ),
                             Container(
-                              // padding: EdgeInsets.symmetric(vertical: 16),
                               margin: const EdgeInsets.only(right: 16, top: 16, bottom: 16),
-                              color: Colors.orange,
                               width: 240,
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Expanded(child: Container()),
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.brown[100],
+                                        borderRadius: BorderRadius.circular(8),
+                                        image: const DecorationImage(
+                                          image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_1280.jpg"),
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 16,
+                                  ),
+                                  const Row(
+                                    children: [
+                                      Icon(
+                                        Icons.star,
+                                        size: 16,
+                                        color: Colors.orange,
+                                      ),
+                                      SizedBox(
+                                        width: 6,
+                                      ),
+                                      Text(
+                                        "4.9 (78 reviews)",
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(
+                                    height: 8,
+                                  ),
+                                  const Text(
+                                    "Title Title Title Title Title Title ",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 8,
+                                  ),
+                                  const Text(
+                                    '\$125.65',
+                                    style: TextStyle(fontSize: 12),
+                                  )
                                 ],
                               ),
                             )
