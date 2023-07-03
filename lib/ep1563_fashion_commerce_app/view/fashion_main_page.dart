@@ -193,6 +193,22 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                       ),
                                     ),
                                   ),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.star,
+                                        size: 16,
+                                        color: Colors.orange,
+                                      ),
+                                      Text(
+                                        "4.9 (78 reviews)",
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(height: 8,),
+                                  Text("Title Title Title Title "),
+                                  SizedBox(height: 8,),
+                                  Text('\$125.65')
                                 ],
                               ),
                             ),
