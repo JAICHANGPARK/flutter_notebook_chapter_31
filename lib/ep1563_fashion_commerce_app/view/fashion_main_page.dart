@@ -182,7 +182,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           children: [
                             Container(
                               margin: const EdgeInsets.only(right: 16),
-                              color: Colors.grey,
+                              
                               width: 240,
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -191,7 +191,9 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                     child: Container(
                                       decoration: BoxDecoration(
                                         color: Colors.brown[100],
+                                        borderRadius: BorderRadius.circular(8),
                                         image: DecorationImage(
+                                          
                                           image: NetworkImage(
                                               "https://cdn.pixabay.com/photo/2019/08/01/05/59/girl-4376755_1280.jpg"),
                                           fit: BoxFit.cover,
