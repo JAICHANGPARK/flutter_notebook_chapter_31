@@ -307,9 +307,6 @@ class _FashionMainPageState extends State<FashionMainPage> {
                       ),
                       Container(
                         height: 340,
-                        decoration: const BoxDecoration(
-                          color: Colors.blue,
-                        ),
                         child: ListView(
                           scrollDirection: Axis.horizontal,
                           children: [
