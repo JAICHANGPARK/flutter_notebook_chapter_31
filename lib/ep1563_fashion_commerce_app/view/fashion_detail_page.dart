@@ -32,10 +32,14 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                   CircleAvatar(
                     backgroundColor: Colors.white,
                     radius: 24,
+                    child: Icon(Icons.keyboard_arrow_left),
+                    foregroundColor: Colors.black,
                   ),
                   CircleAvatar(
                     backgroundColor: Colors.white,
                     radius: 24,
+                    child: Icon(Icons.keyboard_arrow_left),
+                    foregroundColor: Colors.black,
                   )
                 ],
               ),
