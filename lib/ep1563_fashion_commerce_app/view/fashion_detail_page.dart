@@ -41,6 +41,7 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
               ),
             ),
           ),
+          SizedBox(height: 16,),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
@@ -114,7 +115,10 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                         ),
                       ),
                       Container(
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(16), color: Colors.black),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                          color: Colors.black,
+                        ),
                         margin: EdgeInsets.only(right: 12),
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: Center(
