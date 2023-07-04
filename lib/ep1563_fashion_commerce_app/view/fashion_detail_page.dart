@@ -116,14 +116,68 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                       Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(16),
+                          color: Colors.black
+                        ),
+                        margin: EdgeInsets.only(right: 12),
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Center(
+                          child: const Text(
+                            "M",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
                           color: Colors.grey[200],
                         ),
                         margin: EdgeInsets.only(right: 12),
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: Center(
-                          child: const Text("S"),
+                          child: const Text(
+                            "L",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
-                      )
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                          color: Colors.grey[200],
+                        ),
+                        margin: EdgeInsets.only(right: 12),
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Center(
+                          child: const Text(
+                            "XL",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                          color: Colors.grey[200],
+                        ),
+                        margin: EdgeInsets.only(right: 12),
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Center(
+                          child: const Text(
+                            "XXL",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
