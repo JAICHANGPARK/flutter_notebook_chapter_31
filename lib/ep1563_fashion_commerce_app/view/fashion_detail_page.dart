@@ -15,16 +15,16 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
         children: [
           Container(
             height: 420,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.grey,
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(24),
                 bottomLeft: Radius.circular(24),
               ),
             ),
-            padding: EdgeInsets.only(top: 48),
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.only(top: 48),
+            child: const Padding(
+              padding: EdgeInsets.all(16.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -48,12 +48,12 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
               children: [
                 Row(
                   children: [
-                    Text("Title Title Title Title Title"),
+                    const Text("Title Title Title Title Title"),
                     Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.grey,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Icon(Icons.star),
                           Text("4.9"),
@@ -62,7 +62,7 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                     )
                   ],
                 ),
-                Text("Size"),
+                const Text("Size"),
                 SizedBox(
                   height: 32,
                   child: ListView(
@@ -70,13 +70,13 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                     children: [
                       Container(
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(16)),
-                        padding: EdgeInsets.symmetric(horizontal: 16),
-                        child: Text("S"),
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: const Text("S"),
                       )
                     ],
                   ),
                 ),
-                Text("Color"),
+                const Text("Color"),
                 Row(
                   children: [
                     Container(
@@ -93,7 +93,7 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                     Container(
                       height: 40,
                       width: 40,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.green,
                         shape: BoxShape.circle,
                       ),
@@ -101,7 +101,7 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                     Container(
                       height: 40,
                       width: 40,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.indigo,
                         shape: BoxShape.circle,
                       ),
@@ -109,18 +109,18 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                     Container(
                       height: 40,
                       width: 40,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.grey,
                         shape: BoxShape.circle,
                       ),
                     ),
                   ],
                 ),
-                Text("Description"),
-                Text("~~~~~~"),
+                const Text("Description"),
+                const Text("~~~~~~"),
                 Row(
                   children: [
-                    Expanded(
+                    const Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -135,8 +135,8 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                             color: Colors.black,
                             borderRadius: BorderRadius.circular(32),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                          child: Row(
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                          child: const Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(
