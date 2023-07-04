@@ -98,14 +98,42 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                     scrollDirection: Axis.horizontal,
                     children: [
                       Container(
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(16)),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                          color: Colors.grey[200],
+                        ),
+                        margin: EdgeInsets.only(right: 12),
                         padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: const Text("S"),
+                        child: Center(
+                          child: const Text(
+                            "S",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                          color: Colors.grey[200],
+                        ),
+                        margin: EdgeInsets.only(right: 12),
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Center(
+                          child: const Text("S"),
+                        ),
                       )
                     ],
                   ),
                 ),
+                SizedBox(
+                  height: 16,
+                ),
                 const Text("Color"),
+                SizedBox(
+                  height: 16,
+                ),
                 Row(
                   children: [
                     Container(
