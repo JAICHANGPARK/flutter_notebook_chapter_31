@@ -48,11 +48,21 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
               children: [
                 Row(
                   children: [
-                    const Text("Title Title Title Title Title"),
-                    Container(
-                      decoration: const BoxDecoration(
-                        color: Colors.grey,
+                    const Text(
+                      "Title Title Title Title Title",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
                       ),
+                    ),
+                    SizedBox(
+                      width: 8,
+                    ),
+                    Container(
+                      decoration:  BoxDecoration(
+                        color: Colors.grey[300]!,
+                        borderRadius: BorderRadius.circular(24)
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 4,vertical: 4),
                       child: const Row(
                         children: [
                           Icon(Icons.star),
@@ -131,36 +141,35 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                     ),
                     Expanded(
                         child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(32),
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(32),
+                      ),
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                      child: const Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.shopping_bag_outlined,
+                            color: Colors.white,
                           ),
-                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                          child: const Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(
-                                Icons.shopping_bag_outlined,
-                                color: Colors.white,
-                              ),
-                              SizedBox(
-                                width: 8,
-                              ),
-                              Text(
-                                "Add to Cart",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                ),
-                              )
-                            ],
+                          SizedBox(
+                            width: 8,
                           ),
-                        ))
+                          Text(
+                            "Add to Cart",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          )
+                        ],
+                      ),
+                    ))
                   ],
                 )
               ],
             ),
           )
-
         ],
       ),
     );
