@@ -241,11 +241,15 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                  const SizedBox(
+                    height: 16,
+                  ),
                   const Text(
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "),
                   const SizedBox(
-                    height: 12,
+                    height: 16,
                   ),
+                  Spacer(),
                   Row(
                     children: [
                       const Expanded(
