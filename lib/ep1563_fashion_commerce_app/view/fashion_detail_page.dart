@@ -114,19 +114,13 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                         ),
                       ),
                       Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          color: Colors.black
-                        ),
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(16), color: Colors.black),
                         margin: EdgeInsets.only(right: 12),
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: Center(
                           child: const Text(
                             "M",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white
-                            ),
+                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
                           ),
                         ),
                       ),
@@ -193,6 +187,7 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                     Container(
                       height: 40,
                       width: 40,
+                      margin: EdgeInsets.only(right: 16),
                       decoration: BoxDecoration(
                         color: Colors.brown,
                         shape: BoxShape.circle,
@@ -204,6 +199,7 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                     Container(
                       height: 40,
                       width: 40,
+                      margin: EdgeInsets.only(right: 16),
                       decoration: const BoxDecoration(
                         color: Colors.green,
                         shape: BoxShape.circle,
@@ -212,6 +208,7 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                     Container(
                       height: 40,
                       width: 40,
+                      margin: EdgeInsets.only(right: 16),
                       decoration: const BoxDecoration(
                         color: Colors.indigo,
                         shape: BoxShape.circle,
@@ -220,6 +217,7 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                     Container(
                       height: 40,
                       width: 40,
+                      margin: EdgeInsets.only(right: 16),
                       decoration: const BoxDecoration(
                         color: Colors.grey,
                         shape: BoxShape.circle,
@@ -227,8 +225,16 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                     ),
                   ],
                 ),
-                const Text("Description"),
-                const Text("~~~~~~"),
+                SizedBox(
+                  height: 16,
+                ),
+                const Text(
+                  "Description",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "),
                 Row(
                   children: [
                     const Expanded(
