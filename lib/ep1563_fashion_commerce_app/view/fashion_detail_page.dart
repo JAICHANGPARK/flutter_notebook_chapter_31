@@ -52,27 +52,46 @@ class _FashionDetailPageState extends State<FashionDetailPage> {
                       "Title Title Title Title Title",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
+                        fontSize: 20,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 8,
                     ),
                     Container(
-                      decoration:  BoxDecoration(
+                      decoration: BoxDecoration(
                         color: Colors.grey[300]!,
-                        borderRadius: BorderRadius.circular(24)
+                        borderRadius: BorderRadius.circular(24),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 4,vertical: 4),
+                      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                       child: const Row(
                         children: [
-                          Icon(Icons.star),
-                          Text("4.9"),
+                          Icon(
+                            Icons.star,
+                            size: 16,
+                            color: Colors.orange,
+                          ),
+                          SizedBox(width: 4),
+                          Text(
+                            "4.9",
+                            style: TextStyle(
+                              fontSize: 14,
+                            ),
+                          ),
                         ],
                       ),
                     )
                   ],
                 ),
-                const Text("Size"),
+                SizedBox(
+                  height: 16,
+                ),
+                const Text(
+                  "Size",
+                ),
+                SizedBox(
+                  height: 8,
+                ),
                 SizedBox(
                   height: 32,
                   child: ListView(
