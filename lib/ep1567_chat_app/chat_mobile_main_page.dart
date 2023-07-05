@@ -8,9 +8,10 @@ class ChatMobileMainPage extends StatefulWidget {
 }
 
 class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
+  int menuIndex = 0;
+
   @override
   Widget build(BuildContext context) {
-    int menuIndex = 0;
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -19,26 +20,26 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
             children: [
               Row(
                 children: [
-                  Text(
+                  const Text(
                     "Chat",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 34,
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(4),
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.camera_alt_outlined),
+                      icon: const Icon(Icons.camera_alt_outlined),
                       onPressed: () {},
                       color: Colors.blue,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   Container(
@@ -48,11 +49,18 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                     ),
                     child: IconButton(
                       color: Colors.blue,
-                      icon: Icon(Icons.edit_square),
+                      icon: const Icon(Icons.edit_square),
                       onPressed: () {},
                     ),
                   ),
                 ],
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 16),
+                decoration: BoxDecoration(
+                  color: Colors.grey[200],
+                ),
+                child: TextField(),
               )
             ],
           ),
@@ -61,23 +69,23 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.chat_outlined),
             label: "Chat",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.workspaces),
             label: "Story",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.groups),
             label: "Group",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.call),
             label: "Call",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.settings),
             label: "Setting",
           ),
