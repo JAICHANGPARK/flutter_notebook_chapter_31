@@ -74,24 +74,24 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
             menuIndex = idx;
           });
         },
-        items: [
-          const BottomNavigationBarItem(
+        items: const [
+          BottomNavigationBarItem(
             icon: Icon(Icons.chat_outlined),
             label: "Chat",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.workspaces),
             label: "Story",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.groups),
             label: "Group",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.call),
             label: "Call",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.settings),
             label: "Setting",
           ),
