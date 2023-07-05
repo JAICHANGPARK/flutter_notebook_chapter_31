@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_31/ep1567_chat_app/chat_mobile_main_page.dart';
 
 void main() {
   runApp(ChatMobileApp());
@@ -9,6 +10,8 @@ class ChatMobileApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: ChatMobileMainPage(),
+    );
   }
 }
