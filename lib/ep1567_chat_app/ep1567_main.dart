@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-
 void main() {
-  runApp(app)
+  runApp(ChatMobileApp());
 }
 
 class ChatMobileApp extends StatelessWidget {
