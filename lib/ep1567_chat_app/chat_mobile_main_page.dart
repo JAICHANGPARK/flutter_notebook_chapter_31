@@ -26,9 +26,10 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                       fontSize: 34,
                     ),
                   ),
+                  Spacer(),
                   Container(
                     decoration: BoxDecoration(
-                      color: Colors.grey[100],
+                      color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(4),
                     ),
                     child: IconButton(
@@ -42,7 +43,7 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                      color: Colors.grey[100],
+                      color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(4),
                     ),
                     child: IconButton(
