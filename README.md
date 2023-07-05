@@ -1,12 +1,12 @@
 # flutter_notebook_chapter_31
 
-## EP1563-1566
+## EP1567
 
-- Fashionist- Fashion E-Commerce Application
-- by Mayursinh Jadeja ✪ for Redlio Designs
-- https://dribbble.com/shots/21875387-Fashionist-Fashion-E-Commerce-Application
+- Chat Mobile App
+- by Rayyan Al Firdausi⚡ for ever
+- https://dribbble.com/shots/21911111-Chat-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/8202692/file/original-8714a1baa7013d746dd9fd5442ee6b78.jpg?compress=1&resize=1600x1200" width="500px"/>
+<img src="https://cdn.dribbble.com/userupload/8307929/file/original-674ad52a1ffe98e8919219ff7ec04af9.jpg?compress=1&resize=1600x1200" width="500px"/>
 
 ## EP1563-1566
 
