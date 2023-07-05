@@ -68,6 +68,12 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
+        currentIndex: menuIndex,
+        onTap: (idx) {
+          setState(() {
+            menuIndex = idx;
+          });
+        },
         items: [
           const BottomNavigationBarItem(
             icon: Icon(Icons.chat_outlined),
