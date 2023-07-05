@@ -37,6 +37,9 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                       color: Colors.blue,
                     ),
                   ),
+                  SizedBox(
+                    width: 8,
+                  ),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.grey[100],
@@ -44,7 +47,7 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                     ),
                     child: IconButton(
                       color: Colors.blue,
-                      icon: Icon(Icons.),
+                      icon: Icon(Icons.edit_square),
                       onPressed: () {},
                     ),
                   ),
