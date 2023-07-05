@@ -12,8 +12,47 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
   Widget build(BuildContext context) {
     int menuIndex = 0;
     return Scaffold(
-      body: Column(
-        children: [],
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Text(
+                    "Chat",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 34,
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[100],
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    child: IconButton(
+                      icon: Icon(Icons.camera_alt_outlined),
+                      onPressed: () {},
+                      color: Colors.blue,
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[100],
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    child: IconButton(
+                      color: Colors.blue,
+                      icon: Icon(Icons.),
+                      onPressed: () {},
+                    ),
+                  ),
+                ],
+              )
+            ],
+          ),
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
