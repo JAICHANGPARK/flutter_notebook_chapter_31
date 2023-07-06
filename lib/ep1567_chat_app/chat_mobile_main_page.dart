@@ -56,18 +56,18 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                 ],
               ),
               Container(
-                margin: EdgeInsets.symmetric(vertical: 16),
+                margin: const EdgeInsets.symmetric(vertical: 16),
                 decoration: BoxDecoration(
                   color: Colors.grey[200],
                 ),
-                child: TextField(),
+                child: const TextField(),
               ),
-              Column(
+              const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text("PINNED MESSAGE"),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    padding: EdgeInsets.symmetric(vertical: 8),
                     child: Row(
                       children: [
                         CircleAvatar(
@@ -76,7 +76,7 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                         ),
                         Expanded(
                             child: Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: EdgeInsets.all(8.0),
                               child: Column(
                           children: [
                               Row(
@@ -89,7 +89,7 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                                 ],
                               ),
                               SizedBox(
-                                height: 8,
+                                height: 4,
                               ),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -103,6 +103,47 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                               )
                           ],
                         ),
+                            ))
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: 8),
+                    child: Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 28,
+                          backgroundColor: Colors.green,
+                        ),
+                        Expanded(
+                            child: Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("Dreamwalker", style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),),
+                                      Text("21:39"),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("Let's Flutter"),
+                                      Icon(
+                                        Icons.done_all,
+                                        color: Colors.blue,
+                                      ),
+                                    ],
+                                  )
+                                ],
+                              ),
                             ))
                       ],
                     ),
