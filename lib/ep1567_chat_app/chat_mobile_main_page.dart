@@ -17,6 +17,7 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
@@ -163,11 +164,14 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
               ),
               Text("All MESSAGE"),
               Expanded(
-                child: ListView.builder(itemBuilder: (context, index) {
-                  return Row(
-                    children: [],
-                  );
-                }),
+                child: ListView.builder(
+                  itemCount: 10,
+                  itemBuilder: (context, index) {
+                    return Row(
+                      children: [],
+                    );
+                  },
+                ),
               ),
             ],
           ),
