@@ -68,16 +68,26 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                   Text("PINNED MESSAGE"),
                   Row(
                     children: [
-
                       CircleAvatar(
                         radius: 28,
                         backgroundColor: Colors.green,
-                      )
+                      ),
+                      Expanded(
+                          child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Ever Team"),
+                              Text("22:21"),
+                            ],
+                          )
+                        ],
+                      ))
                     ],
                   )
                 ],
               ),
-
             ],
           ),
         ),
