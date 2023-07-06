@@ -82,7 +82,9 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text("Ever Team"),
+                                  Text("Ever Team", style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),),
                                   Text("22:21"),
                                 ],
                               ),
