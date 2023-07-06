@@ -81,6 +81,12 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                               Text("Ever Team"),
                               Text("22:21"),
                             ],
+                          ),
+                          Row(
+                            children: [
+                              Text("Hello~! 🔥"),
+                              Icon(Icons.done_all)
+                            ],
                           )
                         ],
                       ))
