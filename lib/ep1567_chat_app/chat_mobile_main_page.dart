@@ -65,7 +65,10 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
               const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("PINNED MESSAGE"),
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: 8),
+                    child: Text("PINNED MESSAGE"),
+                  ),
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 8),
                     child: Row(
@@ -76,15 +79,18 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                         ),
                         Expanded(
                             child: Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Column(
-                          children: [
+                          padding: EdgeInsets.all(8.0),
+                          child: Column(
+                            children: [
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text("Ever Team", style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),),
+                                  Text(
+                                    "Ever Team",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                   Text("22:21"),
                                 ],
                               ),
@@ -101,9 +107,9 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                                   ),
                                 ],
                               )
-                          ],
-                        ),
-                            ))
+                            ],
+                          ),
+                        ))
                       ],
                     ),
                   ),
@@ -117,34 +123,38 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                         ),
                         Expanded(
                             child: Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Column(
+                          padding: EdgeInsets.all(8.0),
+                          child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text("Dreamwalker", style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                      ),),
-                                      Text("21:39"),
-                                    ],
+                                  Text(
+                                    "Dreamwalker",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
-                                  SizedBox(
-                                    height: 4,
-                                  ),
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text("Let's Flutter"),
-                                      Icon(
-                                        Icons.done_all,
-                                        color: Colors.blue,
-                                      ),
-                                    ],
-                                  )
+                                  Text("21:39"),
                                 ],
                               ),
-                            ))
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text("Let's Flutter"),
+                                  CircleAvatar(
+                                    radius: 12,
+                                    backgroundColor: Colors.blue,
+                                    child: Text("1"),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ))
                       ],
                     ),
                   )
