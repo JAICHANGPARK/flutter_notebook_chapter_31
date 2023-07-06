@@ -122,39 +122,40 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                           backgroundColor: Colors.green,
                         ),
                         Expanded(
-                            child: Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Column(
-                            children: [
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text(
-                                    "Dreamwalker",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
+                          child: Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: Column(
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "Dreamwalker",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
-                                  ),
-                                  Text("21:39"),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 4,
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text("Let's Flutter"),
-                                  CircleAvatar(
-                                    radius: 12,
-                                    backgroundColor: Colors.blue,
-                                    child: Text("1"),
-                                  )
-                                ],
-                              )
-                            ],
+                                    Text("21:39"),
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 6,
+                                ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text("Let's Flutter"),
+                                    CircleAvatar(
+                                      radius: 10,
+                                      backgroundColor: Colors.blue,
+                                      child: Text("1"),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
-                        ))
+                        )
                       ],
                     ),
                   )
