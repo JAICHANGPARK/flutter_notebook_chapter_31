@@ -83,9 +83,13 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                             ],
                           ),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text("Hello~! 🔥"),
-                              Icon(Icons.done_all)
+                              Icon(
+                                Icons.done_all,
+                                color: Colors.blue,
+                              ),
                             ],
                           )
                         ],
