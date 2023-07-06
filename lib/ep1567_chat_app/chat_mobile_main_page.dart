@@ -66,35 +66,44 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text("PINNED MESSAGE"),
-                  Row(
-                    children: [
-                      CircleAvatar(
-                        radius: 28,
-                        backgroundColor: Colors.green,
-                      ),
-                      Expanded(
-                          child: Column(
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text("Ever Team"),
-                              Text("22:21"),
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text("Hello~! 🔥"),
-                              Icon(
-                                Icons.done_all,
-                                color: Colors.blue,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 28,
+                          backgroundColor: Colors.green,
+                        ),
+                        Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                          children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text("Ever Team"),
+                                  Text("22:21"),
+                                ],
                               ),
-                            ],
-                          )
-                        ],
-                      ))
-                    ],
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text("Hello~! 🔥"),
+                                  Icon(
+                                    Icons.done_all,
+                                    color: Colors.blue,
+                                  ),
+                                ],
+                              )
+                          ],
+                        ),
+                            ))
+                      ],
+                    ),
                   )
                 ],
               ),
