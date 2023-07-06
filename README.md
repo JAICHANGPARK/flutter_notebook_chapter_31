@@ -1,5 +1,8 @@
 # flutter_notebook_chapter_31
 
+How to run
+- flutter run
+
 ## EP1567
 
 - Chat Mobile App
