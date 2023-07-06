@@ -155,11 +155,19 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                               ],
                             ),
                           ),
-                        )
+                        ),
                       ],
                     ),
-                  )
+                  ),
                 ],
+              ),
+              Text("All MESSAGE"),
+              Expanded(
+                child: ListView.builder(itemBuilder: (context, index) {
+                  return Row(
+                    children: [],
+                  );
+                }),
               ),
             ],
           ),
