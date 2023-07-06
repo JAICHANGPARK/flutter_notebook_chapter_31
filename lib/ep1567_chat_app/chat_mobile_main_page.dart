@@ -61,6 +61,16 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                   color: Colors.grey[200],
                 ),
                 child: TextField(),
+              ),
+              Text("PINNED MESSAGE"),
+              Row(
+                children: [
+
+                  CircleAvatar(
+                    radius: 28,
+                    backgroundColor: Colors.green,
+                  )
+                ],
               )
             ],
           ),
