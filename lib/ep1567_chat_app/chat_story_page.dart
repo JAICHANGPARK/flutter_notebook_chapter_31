@@ -21,7 +21,7 @@ class _ChatStoryPageState extends State<ChatStoryPage> {
                 "Story",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 20,
+                  fontSize: 28,
                 ),
               ),
               Container(
@@ -36,7 +36,23 @@ class _ChatStoryPageState extends State<ChatStoryPage> {
                 ),
               ),
             ],
-          )
+          ),
+
+          Container(
+            margin: EdgeInsets.only(top: 24, bottom: 16),
+            decoration: BoxDecoration(
+              color: Colors.grey[200],
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: TextField(
+              decoration: InputDecoration(
+                prefixIcon: Icon(
+                  Icons.search,
+                ),
+                hintText: "Search Story...",
+              ),
+            ),
+          ),
         ],
       ),
     );
