@@ -59,25 +59,28 @@ class _ChatStoryPageState extends State<ChatStoryPage> {
               children: [
                 Row(
                   children: [
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 30,
                     ),
-                    Text(
+                    const SizedBox(
+                      width: 8,
+                    ),
+                    const Text(
                       "Dream Walker",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 18
+                        fontSize: 18,
                       ),
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.more_horiz,
                       ),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
                 Expanded(
@@ -87,8 +90,8 @@ class _ChatStoryPageState extends State<ChatStoryPage> {
                     itemBuilder: (context, index) {
                       return Container(
                         width: 130,
-                        margin: EdgeInsets.only(right: 8),
-                        decoration: BoxDecoration(color: Colors.grey),
+                        margin: const EdgeInsets.only(right: 8),
+                        decoration: const BoxDecoration(color: Colors.grey),
                       );
                     },
                   ),
