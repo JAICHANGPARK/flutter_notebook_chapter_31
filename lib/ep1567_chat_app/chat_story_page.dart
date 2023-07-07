@@ -14,25 +14,28 @@ class _ChatStoryPageState extends State<ChatStoryPage> {
       padding: const EdgeInsets.all(8.0),
       child: Column(
         children: [
-          Text(
-            "Story",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-            ),
-          ),
-          Container(
-            decoration: BoxDecoration(
-              color: Colors.grey[200],
-              borderRadius: BorderRadius.circular(4),
-            ),
-            child: IconButton(
-              icon: const Icon(Icons.camera_alt_outlined),
-              onPressed: () {},
-              color: Colors.blue,
-            ),
-          ),
-
+          Row(
+            children: [
+              Text(
+                "Story",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.grey[200],
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: IconButton(
+                  icon: const Icon(Icons.camera_alt_outlined),
+                  onPressed: () {},
+                  color: Colors.blue,
+                ),
+              ),
+            ],
+          )
         ],
       ),
     );
