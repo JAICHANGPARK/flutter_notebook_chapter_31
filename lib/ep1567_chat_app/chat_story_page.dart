@@ -72,6 +72,7 @@ class _ChatStoryPageState extends State<ChatStoryPage> {
                         fontSize: 18,
                       ),
                     ),
+                    Spacer(),
                     IconButton(
                       onPressed: () {},
                       icon: const Icon(
