@@ -18,7 +18,7 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
       body: SafeArea(
         child: IndexedStack(
           index: menuIndex,
-          children: [
+          children: const [
             ChatListPage(),
             ChatStoryPage(),
           ],
