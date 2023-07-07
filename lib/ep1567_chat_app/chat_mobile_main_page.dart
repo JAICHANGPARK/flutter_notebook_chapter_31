@@ -61,7 +61,12 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                 decoration: BoxDecoration(
                   color: Colors.grey[200],
                 ),
-                child: const TextField(),
+                child: const TextField(
+                  decoration: InputDecoration(
+                    border: InputBorder.none,
+                    suffixIcon: Icon(Icons.search),
+                  ),
+                ),
               ),
               const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
