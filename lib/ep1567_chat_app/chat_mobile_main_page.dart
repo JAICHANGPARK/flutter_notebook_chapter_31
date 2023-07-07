@@ -20,7 +20,7 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
           index: menuIndex,
           children: const [
             ChatListPage(),
-            ChatStoryPage(),
+            ChatListPage(),
           ],
         ),
       ),
