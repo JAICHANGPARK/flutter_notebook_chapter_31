@@ -92,7 +92,10 @@ class _ChatStoryPageState extends State<ChatStoryPage> {
                       return Container(
                         width: 130,
                         margin: const EdgeInsets.only(right: 8),
-                        decoration: const BoxDecoration(color: Colors.grey),
+                        decoration:  BoxDecoration(
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(8)
+                        ),
                       );
                     },
                   ),
