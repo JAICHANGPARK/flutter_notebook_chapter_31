@@ -64,7 +64,8 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                 child: const TextField(
                   decoration: InputDecoration(
                     border: InputBorder.none,
-                    suffixIcon: Icon(Icons.search),
+                    prefixIcon: Icon(Icons.search),
+                    hintText: "Search chat..."
                   ),
                 ),
               ),
