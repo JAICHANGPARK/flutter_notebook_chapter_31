@@ -15,6 +15,7 @@ class _ChatStoryPageState extends State<ChatStoryPage> {
       child: Column(
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
                 "Story",
