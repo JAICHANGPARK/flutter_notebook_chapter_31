@@ -53,6 +53,37 @@ class _ChatStoryPageState extends State<ChatStoryPage> {
               ),
             ),
           ),
+          Container(
+            height: 240,
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    CircleAvatar(),
+                    Text("Dream Walker"),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.more_horiz,
+                      ),
+                    ),
+                  ],
+                ),
+                Expanded(
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 20,
+                    itemBuilder: (context, index) {
+                      return Container(
+                        margin: EdgeInsets.only(right: 8),
+                        decoration: BoxDecoration(color: Colors.grey),
+                      );
+                    },
+                  ),
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );
