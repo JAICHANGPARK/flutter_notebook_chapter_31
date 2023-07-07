@@ -60,6 +60,7 @@ class _ChatMobileMainPageState extends State<ChatMobileMainPage> {
                 margin: const EdgeInsets.symmetric(vertical: 16),
                 decoration: BoxDecoration(
                   color: Colors.grey[200],
+                  borderRadius: BorderRadius.circular(8)
                 ),
                 child: const TextField(
                   decoration: InputDecoration(
