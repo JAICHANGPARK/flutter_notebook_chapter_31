@@ -53,56 +53,60 @@ class _ChatStoryPageState extends State<ChatStoryPage> {
               ),
             ),
           ),
-          Container(
-            height: 240,
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    const CircleAvatar(
-                      radius: 30,
-                    ),
-                    const SizedBox(
-                      width: 8,
-                    ),
-                    const Text(
-                      "Dream Walker",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18,
+          Expanded(
+            child: ListView.builder(
+              itemBuilder: (context, index) {
+                return Container(
+                  margin: EdgeInsets.only(top: 16),
+                  height: 240,
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          const CircleAvatar(
+                            radius: 30,
+                          ),
+                          const SizedBox(
+                            width: 8,
+                          ),
+                          const Text(
+                            "Dream Walker",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                          Spacer(),
+                          IconButton(
+                            onPressed: () {},
+                            icon: const Icon(
+                              Icons.more_horiz,
+                            ),
+                          ),
+                        ],
                       ),
-                    ),
-                    Spacer(),
-                    IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.more_horiz,
+                      const SizedBox(
+                        height: 16,
                       ),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  height: 16,
-                ),
-                Expanded(
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 20,
-                    itemBuilder: (context, index) {
-                      return Container(
-                        width: 130,
-                        margin: const EdgeInsets.only(right: 8),
-                        decoration:  BoxDecoration(
-                          color: Colors.grey,
-                          borderRadius: BorderRadius.circular(8)
+                      Expanded(
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: 20,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              width: 130,
+                              margin: const EdgeInsets.only(right: 8),
+                              decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
+                            );
+                          },
                         ),
-                      );
-                    },
+                      ),
+                    ],
                   ),
-                ),
-              ],
+                );
+              },
             ),
-          )
+          ),
         ],
       ),
     );
