@@ -57,7 +57,7 @@ class _ChatStoryPageState extends State<ChatStoryPage> {
             child: ListView.builder(
               itemBuilder: (context, index) {
                 return Container(
-                  margin: EdgeInsets.only(top: 16),
+                  margin: const EdgeInsets.only(top: 16),
                   height: 240,
                   child: Column(
                     children: [
@@ -76,7 +76,7 @@ class _ChatStoryPageState extends State<ChatStoryPage> {
                               fontSize: 18,
                             ),
                           ),
-                          Spacer(),
+                          const Spacer(),
                           IconButton(
                             onPressed: () {},
                             icon: const Icon(
