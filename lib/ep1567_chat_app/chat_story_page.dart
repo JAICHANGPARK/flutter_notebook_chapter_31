@@ -10,16 +10,31 @@ class ChatStoryPage extends StatefulWidget {
 class _ChatStoryPageState extends State<ChatStoryPage> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          "Story",
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 20
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Column(
+        children: [
+          Text(
+            "Story",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
           ),
-        )
-      ],
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.grey[200],
+              borderRadius: BorderRadius.circular(4),
+            ),
+            child: IconButton(
+              icon: const Icon(Icons.camera_alt_outlined),
+              onPressed: () {},
+              color: Colors.blue,
+            ),
+          ),
+
+        ],
+      ),
     );
   }
 }
