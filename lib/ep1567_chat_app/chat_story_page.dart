@@ -17,7 +17,7 @@ class _ChatStoryPageState extends State<ChatStoryPage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
+              const Text(
                 "Story",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -37,19 +37,19 @@ class _ChatStoryPageState extends State<ChatStoryPage> {
               ),
             ],
           ),
-
           Container(
-            margin: EdgeInsets.only(top: 24, bottom: 16),
+            margin: const EdgeInsets.only(top: 24, bottom: 16),
             decoration: BoxDecoration(
               color: Colors.grey[200],
               borderRadius: BorderRadius.circular(8),
             ),
-            child: TextField(
+            child: const TextField(
               decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.search,
                 ),
                 hintText: "Search Story...",
+                border: InputBorder.none,
               ),
             ),
           ),
