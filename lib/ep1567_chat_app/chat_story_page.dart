@@ -59,8 +59,16 @@ class _ChatStoryPageState extends State<ChatStoryPage> {
               children: [
                 Row(
                   children: [
-                    CircleAvatar(),
-                    Text("Dream Walker"),
+                    CircleAvatar(
+                      radius: 30,
+                    ),
+                    Text(
+                      "Dream Walker",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18
+                      ),
+                    ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(
@@ -69,12 +77,16 @@ class _ChatStoryPageState extends State<ChatStoryPage> {
                     ),
                   ],
                 ),
+                SizedBox(
+                  height: 16,
+                ),
                 Expanded(
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemCount: 20,
                     itemBuilder: (context, index) {
                       return Container(
+                        width: 130,
                         margin: EdgeInsets.only(right: 8),
                         decoration: BoxDecoration(color: Colors.grey),
                       );
