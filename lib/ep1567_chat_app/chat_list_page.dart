@@ -49,10 +49,16 @@ class ChatListPage extends StatelessWidget {
           ),
           Container(
             margin: const EdgeInsets.symmetric(vertical: 16),
-            decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
+            decoration: BoxDecoration(
+              color: Colors.grey[200],
+              borderRadius: BorderRadius.circular(8),
+            ),
             child: const TextField(
-              decoration:
-                  InputDecoration(border: InputBorder.none, prefixIcon: Icon(Icons.search), hintText: "Search chat..."),
+              decoration: InputDecoration(
+                border: InputBorder.none,
+                prefixIcon: Icon(Icons.search),
+                hintText: "Search chat...",
+              ),
             ),
           ),
           const Column(
