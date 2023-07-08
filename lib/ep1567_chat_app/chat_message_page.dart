@@ -84,11 +84,21 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                 ),
                 child: Row(
                   children: [
-                    IconButton(onPressed: () {}, icon: const Icon(Icons.mic_none_outlined)),
+                    IconButton(
+                      onPressed: () {},
+                      icon: const Icon(
+                        Icons.mic_none_outlined,
+                      ),
+                    ),
                     const Expanded(
                       child: TextField(),
                     ),
-                    IconButton(onPressed: () {}, icon: const Icon(Icons.camera_alt_outlined)),
+                    IconButton(
+                      onPressed: () {},
+                      icon: const Icon(
+                        Icons.camera_alt_outlined,
+                      ),
+                    ),
                     IconButton(
                       onPressed: () {},
                       icon: const Icon(Icons.emoji_emotions_outlined),
