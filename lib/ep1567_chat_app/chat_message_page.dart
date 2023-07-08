@@ -109,7 +109,12 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                                 color: Colors.blue,
                               ),
                               padding: EdgeInsets.all(8),
-                              child: Text("${item.message}"),
+                              child: Text(
+                                "${item.message}",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
                             ),
                             Text("${item.time}")
                           ],
