@@ -23,6 +23,14 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
+    );
   }
 }
