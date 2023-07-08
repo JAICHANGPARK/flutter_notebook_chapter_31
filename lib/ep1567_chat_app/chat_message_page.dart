@@ -39,14 +39,28 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                       Icons.arrow_back_ios,
                     ),
                   ),
-                  const CircleAvatar(),
-                  const Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text("Dreamwalker"),
-                        Text("Flutter Typing.."),
-                      ],
+                  const CircleAvatar(
+                    radius: 28,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                    child: Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Dreamwalker",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text("Flutter Typing.."),
+                        ],
+                      ),
                     ),
                   ),
                   IconButton(
