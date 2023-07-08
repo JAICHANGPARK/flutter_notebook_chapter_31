@@ -64,7 +64,30 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
               child: Container(
                 color: Colors.grey[300],
                 child: ListView.builder(
+                  itemCount: messages.length,
                   itemBuilder: (context, index) {
+                    final item = messages[index];
+                    if (item.isSender ?? false) {
+                      return Container(
+                        child: Column(
+                          children: [
+                            Text("You"),
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(8),
+                                  bottomLeft: Radius.circular(8),
+                                  bottomRight: Radius.circular(8),
+                                ),
+                                color: Colors.blue,
+                              ),
+                              child: Text("${item.message}"),
+                            ),
+                            Text("${item.time}")
+                          ],
+                        ),
+                      );
+                    }
                     return Container(
                       child: const Row(
                         children: [],
