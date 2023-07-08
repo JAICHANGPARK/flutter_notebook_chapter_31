@@ -24,6 +24,10 @@ class ChatMessagePage extends StatefulWidget {
 class _ChatMessagePageState extends State<ChatMessagePage> {
   List<ChatMessage> messages = [
     ChatMessage(
+      isSender: true,
+      name: "",
+      message: "Can't wait to see blahblsldjsald",
+      time: "22:13",
     )
   ];
 
@@ -47,9 +51,9 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                   const CircleAvatar(
                     radius: 28,
                   ),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 8),
-                    child: Expanded(
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -82,6 +86,7 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
             ),
             Expanded(
               child: Container(
+                padding: EdgeInsets.all(16),
                 color: Colors.grey[300],
                 child: ListView.builder(
                   itemCount: messages.length,
@@ -90,9 +95,11 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                     if (item.isSender ?? false) {
                       return Container(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             const Text("You"),
                             Container(
+                              margin: EdgeInsets.symmetric(vertical: 8),
                               decoration: const BoxDecoration(
                                 borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(8),
@@ -101,6 +108,7 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                                 ),
                                 color: Colors.blue,
                               ),
+                              padding: EdgeInsets.all(8),
                               child: Text("${item.message}"),
                             ),
                             Text("${item.time}")
