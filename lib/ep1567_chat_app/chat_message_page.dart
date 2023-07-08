@@ -35,14 +35,23 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                 children: [
                   IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_ios)),
                   CircleAvatar(),
-                  Column(
-                    children: [
-                      Text("Dreamwalker"),
-                      Text("Flutter Typing.."),
-                    ],
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Dreamwalker"),
+                        Text("Flutter Typing.."),
+                      ],
+                    ),
                   ),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.videocam_outlined)),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.call_outlined)),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.videocam_outlined),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.call_outlined),
+                  ),
                 ],
               ),
             ),
