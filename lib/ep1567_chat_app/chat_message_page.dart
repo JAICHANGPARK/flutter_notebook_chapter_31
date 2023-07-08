@@ -33,8 +33,11 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
               color: Colors.white,
             ),
             Expanded(
-              child: ListView.builder(
-                itemBuilder: (context, index) {return Container();},
+              child: Container(
+                color: Colors.grey[300],
+                child: ListView.builder(
+                  itemBuilder: (context, index) {return Container();},
+                ),
               ),
             ),
             Container(
