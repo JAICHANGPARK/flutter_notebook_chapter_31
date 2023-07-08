@@ -9,6 +9,7 @@ class ChatMessage {
   String? name;
   String? message;
   String? time;
+  bool? isSender;
 }
 
 class ChatMessagePage extends StatefulWidget {
