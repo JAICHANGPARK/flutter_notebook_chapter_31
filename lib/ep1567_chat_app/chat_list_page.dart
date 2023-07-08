@@ -180,7 +180,11 @@ class ChatListPage extends StatelessWidget {
               itemBuilder: (context, index) {
                 return GestureDetector(
                   onTap: (){
-                    
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => const ChatMessagePage(),
+                      ),
+                    );
                   },
                   child: const Padding(
                     padding: EdgeInsets.symmetric(vertical: 8),
