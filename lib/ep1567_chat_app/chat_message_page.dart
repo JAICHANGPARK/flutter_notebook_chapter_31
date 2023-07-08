@@ -66,8 +66,9 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
               ),
             ),
             Container(
-              height: 72,
+              height: 84,
               color: Colors.white,
+              padding: EdgeInsets.all(8),
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.grey,
@@ -75,7 +76,9 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                 child: Row(
                   children: [
                     IconButton(onPressed: () {}, icon: Icon(Icons.mic_none_outlined)),
-                    Expanded(child: TextField()),
+                    Expanded(
+                      child: TextField(),
+                    ),
                     IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt_outlined)),
                     IconButton(
                       onPressed: () {},
