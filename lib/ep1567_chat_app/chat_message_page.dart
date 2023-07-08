@@ -33,9 +33,14 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
               color: Colors.white,
               child: Row(
                 children: [
-                  IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_ios)),
-                  CircleAvatar(),
-                  Expanded(
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.arrow_back_ios,
+                    ),
+                  ),
+                  const CircleAvatar(),
+                  const Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -46,11 +51,11 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.videocam_outlined),
+                    icon: const Icon(Icons.videocam_outlined),
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.call_outlined),
+                    icon: const Icon(Icons.call_outlined),
                   ),
                 ],
               ),
@@ -60,7 +65,11 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                 color: Colors.grey[300],
                 child: ListView.builder(
                   itemBuilder: (context, index) {
-                    return Container();
+                    return Container(
+                      child: const Row(
+                        children: [],
+                      ),
+                    );
                   },
                 ),
               ),
@@ -68,21 +77,21 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
             Container(
               height: 84,
               color: Colors.white,
-              padding: EdgeInsets.all(8),
+              padding: const EdgeInsets.all(8),
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.grey,
                 ),
                 child: Row(
                   children: [
-                    IconButton(onPressed: () {}, icon: Icon(Icons.mic_none_outlined)),
-                    Expanded(
+                    IconButton(onPressed: () {}, icon: const Icon(Icons.mic_none_outlined)),
+                    const Expanded(
                       child: TextField(),
                     ),
-                    IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt_outlined)),
+                    IconButton(onPressed: () {}, icon: const Icon(Icons.camera_alt_outlined)),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.emoji_emotions_outlined),
+                      icon: const Icon(Icons.emoji_emotions_outlined),
                     ),
                   ],
                 ),
