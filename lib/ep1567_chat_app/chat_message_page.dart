@@ -100,11 +100,9 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
             Container(
               height: 84,
               color: Colors.white,
-              padding: const EdgeInsets.all(8),
+              padding: const EdgeInsets.fromLTRB(12, 12, 12, 16),
               child: Container(
-                decoration: const BoxDecoration(
-                  color: Colors.grey,
-                ),
+                decoration: BoxDecoration(color: Colors.grey[200]!, borderRadius: BorderRadius.circular(8)),
                 child: Row(
                   children: [
                     IconButton(
@@ -113,8 +111,13 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                         Icons.mic_none_outlined,
                       ),
                     ),
-                    const Expanded(
-                      child: TextField(),
+                    Expanded(
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: "Type here...",
+                          border: InputBorder.none,
+                        ),
+                      ),
                     ),
                     IconButton(
                       onPressed: () {},
