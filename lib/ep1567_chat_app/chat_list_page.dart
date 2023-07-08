@@ -62,19 +62,22 @@ class ChatListPage extends StatelessWidget {
               ),
             ),
           ),
-           Column(
+          Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
+              const Padding(
                 padding: EdgeInsets.symmetric(vertical: 8),
                 child: Text("PINNED MESSAGE"),
               ),
               GestureDetector(
-                onTap: (){
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
-                  ChatMessagePage()));
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const ChatMessagePage(),
+                    ),
+                  );
                 },
-                child: Padding(
+                child: const Padding(
                   padding: EdgeInsets.symmetric(vertical: 8),
                   child: Row(
                     children: [
@@ -119,7 +122,7 @@ class ChatListPage extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.symmetric(vertical: 8),
                 child: Row(
                   children: [
