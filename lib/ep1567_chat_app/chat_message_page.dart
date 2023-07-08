@@ -1,5 +1,16 @@
 import 'package:flutter/material.dart';
 
+class Message {
+  String? type;
+}
+
+class ChatMessage {
+  String? name;
+  String? message;
+  String? time;
+}
+
+
 class ChatMessagePage extends StatefulWidget {
   const ChatMessagePage({super.key});
 
@@ -8,6 +19,9 @@ class ChatMessagePage extends StatefulWidget {
 }
 
 class _ChatMessagePageState extends State<ChatMessagePage> {
+  List<ChatMessage> messages = [
+
+  ];
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
