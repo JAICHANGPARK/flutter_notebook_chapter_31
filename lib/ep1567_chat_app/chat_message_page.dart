@@ -29,7 +29,7 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
         child: Column(
           children: [
             Container(
-              height: 72,
+              height: 84,
               color: Colors.white,
               child: Row(
                 children: [
@@ -42,8 +42,8 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                   const CircleAvatar(
                     radius: 28,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 8),
                     child: Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,6 +63,7 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                       ),
                     ),
                   ),
+                  const Spacer(),
                   IconButton(
                     onPressed: () {},
                     icon: const Icon(Icons.videocam_outlined),
@@ -85,9 +86,9 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                       return Container(
                         child: Column(
                           children: [
-                            Text("You"),
+                            const Text("You"),
                             Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(8),
                                   bottomLeft: Radius.circular(8),
@@ -126,7 +127,7 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                       ),
                       color: Colors.blue,
                     ),
-                    Expanded(
+                    const Expanded(
                       child: TextField(
                         decoration: InputDecoration(
                           hintText: "Type here...",
