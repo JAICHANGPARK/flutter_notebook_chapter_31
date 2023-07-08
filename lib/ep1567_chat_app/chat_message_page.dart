@@ -93,7 +93,7 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
             Expanded(
               child: Container(
                 padding: EdgeInsets.all(16),
-                color: Colors.grey[300],
+                color: Colors.grey[200],
                 child: ListView.builder(
                   itemCount: messages.length,
                   itemBuilder: (context, index) {
@@ -158,7 +158,7 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                                   child: Text(
                                     "${item.message}",
                                     style: TextStyle(
-                                      color: Colors.white,
+                                      color: Colors.black,
                                     ),
                                   ),
                                 ),
