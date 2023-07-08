@@ -143,7 +143,7 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Text("${item.name}"),
+                                 Text("${item.name}"),
                                 Container(
                                   margin: EdgeInsets.symmetric(vertical: 8),
                                   decoration: const BoxDecoration(
@@ -152,7 +152,7 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                                       bottomLeft: Radius.circular(8),
                                       bottomRight: Radius.circular(8),
                                     ),
-                                    color: Colors.blue,
+                                    color: Colors.white,
                                   ),
                                   padding: EdgeInsets.all(8),
                                   child: Text(
