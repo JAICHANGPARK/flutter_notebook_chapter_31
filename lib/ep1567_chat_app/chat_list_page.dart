@@ -178,48 +178,53 @@ class ChatListPage extends StatelessWidget {
             child: ListView.builder(
               itemCount: 10,
               itemBuilder: (context, index) {
-                return const Padding(
-                  padding: EdgeInsets.symmetric(vertical: 8),
-                  child: Row(
-                    children: [
-                      CircleAvatar(
-                        radius: 28,
-                        backgroundColor: Colors.green,
-                      ),
-                      Expanded(
-                          child: Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Column(
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Ever Team",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                Text("22:21"),
-                              ],
-                            ),
-                            SizedBox(
-                              height: 4,
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Hello~! 🔥"),
-                                Icon(
-                                  Icons.done_all,
-                                  color: Colors.blue,
-                                ),
-                              ],
-                            )
-                          ],
+                return GestureDetector(
+                  onTap: (){
+                    
+                  },
+                  child: const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 8),
+                    child: Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 28,
+                          backgroundColor: Colors.green,
                         ),
-                      ))
-                    ],
+                        Expanded(
+                            child: Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Ever Team",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text("22:21"),
+                                ],
+                              ),
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text("Hello~! 🔥"),
+                                  Icon(
+                                    Icons.done_all,
+                                    color: Colors.blue,
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
+                        ))
+                      ],
+                    ),
                   ),
                 );
               },
