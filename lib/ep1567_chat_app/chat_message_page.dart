@@ -133,15 +133,17 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                       margin: EdgeInsets.only(bottom: 16),
                       child: Row(
                         children: [
-                          CircleAvatar(),
+                          CircleAvatar(
+                            radius:28,
+                          ),
                           SizedBox(
                             width: 8,
                           ),
                           Container(
                             child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.end,
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Text("You"),
+                                const Text("${item.name}"),
                                 Container(
                                   margin: EdgeInsets.symmetric(vertical: 8),
                                   decoration: const BoxDecoration(
