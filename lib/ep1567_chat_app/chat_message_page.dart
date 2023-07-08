@@ -27,7 +27,19 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Container(height: 72,color: Colors.white,),
+            Container(
+              height: 72,
+              color: Colors.white,
+            ),
+            Expanded(
+              child: ListView.builder(
+                itemBuilder: (context, index) {return Container();},
+              ),
+            ),
+            Container(
+              height: 72,
+              color: Colors.white,
+            )
           ],
         ),
       ),
