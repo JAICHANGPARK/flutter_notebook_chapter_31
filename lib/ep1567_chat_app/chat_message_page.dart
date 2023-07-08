@@ -5,11 +5,11 @@ class Message {
 }
 
 class ChatMessage {
+  String? profileImg;
   String? name;
   String? message;
   String? time;
 }
-
 
 class ChatMessagePage extends StatefulWidget {
   const ChatMessagePage({super.key});
@@ -19,9 +19,8 @@ class ChatMessagePage extends StatefulWidget {
 }
 
 class _ChatMessagePageState extends State<ChatMessagePage> {
-  List<ChatMessage> messages = [
+  List<ChatMessage> messages = [];
 
-  ];
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
