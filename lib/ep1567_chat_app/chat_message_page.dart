@@ -10,6 +10,8 @@ class ChatMessage {
   String? message;
   String? time;
   bool? isSender;
+
+  ChatMessage({this.profileImg, this.name, this.message, this.time, this.isSender});
 }
 
 class ChatMessagePage extends StatefulWidget {
