@@ -31,12 +31,28 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
             Container(
               height: 72,
               color: Colors.white,
+              child: Row(
+                children: [
+                  IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_ios)),
+                  CircleAvatar(),
+                  Column(
+                    children: [
+                      Text("Dreamwalker"),
+                      Text("Flutter Typing.."),
+                    ],
+                  ),
+                  IconButton(onPressed: () {}, icon: Icon(Icons.videocam_outlined)),
+                  IconButton(onPressed: () {}, icon: Icon(Icons.call_outlined)),
+                ],
+              ),
             ),
             Expanded(
               child: Container(
                 color: Colors.grey[300],
                 child: ListView.builder(
-                  itemBuilder: (context, index) {return Container();},
+                  itemBuilder: (context, index) {
+                    return Container();
+                  },
                 ),
               ),
             ),
