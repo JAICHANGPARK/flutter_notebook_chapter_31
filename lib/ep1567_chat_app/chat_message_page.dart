@@ -20,7 +20,10 @@ class ChatMessagePage extends StatefulWidget {
 }
 
 class _ChatMessagePageState extends State<ChatMessagePage> {
-  List<ChatMessage> messages = [];
+  List<ChatMessage> messages = [
+    ChatMessage(
+    )
+  ];
 
   @override
   Widget build(BuildContext context) {
