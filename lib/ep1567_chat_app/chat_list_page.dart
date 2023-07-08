@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_31/ep1567_chat_app/chat_message_page.dart';
 
 class ChatListPage extends StatelessWidget {
   const ChatListPage({super.key});
@@ -61,55 +62,61 @@ class ChatListPage extends StatelessWidget {
               ),
             ),
           ),
-          const Column(
+           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 8),
                 child: Text("PINNED MESSAGE"),
               ),
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 8),
-                child: Row(
-                  children: [
-                    CircleAvatar(
-                      radius: 28,
-                      backgroundColor: Colors.green,
-                    ),
-                    Expanded(
-                        child: Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Column(
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "Ever Team",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              Text("22:21"),
-                            ],
-                          ),
-                          SizedBox(
-                            height: 4,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text("Hello~! 🔥"),
-                              Icon(
-                                Icons.done_all,
-                                color: Colors.blue,
-                              ),
-                            ],
-                          )
-                        ],
+              GestureDetector(
+                onTap: (){
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
+                  ChatMessagePage()));
+                },
+                child: Padding(
+                  padding: EdgeInsets.symmetric(vertical: 8),
+                  child: Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 28,
+                        backgroundColor: Colors.green,
                       ),
-                    ))
-                  ],
+                      Expanded(
+                          child: Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Ever Team",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text("22:21"),
+                              ],
+                            ),
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text("Hello~! 🔥"),
+                                Icon(
+                                  Icons.done_all,
+                                  color: Colors.blue,
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                      ))
+                    ],
+                  ),
                 ),
               ),
               Padding(
