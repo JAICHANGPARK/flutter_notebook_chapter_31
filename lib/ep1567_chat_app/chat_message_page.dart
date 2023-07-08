@@ -24,6 +24,12 @@ class ChatMessagePage extends StatefulWidget {
 class _ChatMessagePageState extends State<ChatMessagePage> {
   List<ChatMessage> messages = [
     ChatMessage(
+      isSender: false,
+      name: "Draft Person",
+      message: "Can't wait to see blahblsldjsald",
+      time: "22:13",
+    ),
+    ChatMessage(
       isSender: true,
       name: "",
       message: "Can't wait to see blahblsldjsald",
@@ -94,11 +100,13 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                     final item = messages[index];
                     if (item.isSender ?? false) {
                       return Container(
+                        margin: EdgeInsets.only(bottom: 16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             const Text("You"),
                             Container(
+
                               margin: EdgeInsets.symmetric(vertical: 8),
                               decoration: const BoxDecoration(
                                 borderRadius: BorderRadius.only(
@@ -122,8 +130,41 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                       );
                     }
                     return Container(
-                      child: const Row(
-                        children: [],
+                      margin: EdgeInsets.only(bottom: 16),
+                      child: Row(
+                        children: [
+                          CircleAvatar(),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Container(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                const Text("You"),
+                                Container(
+                                  margin: EdgeInsets.symmetric(vertical: 8),
+                                  decoration: const BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(8),
+                                      bottomLeft: Radius.circular(8),
+                                      bottomRight: Radius.circular(8),
+                                    ),
+                                    color: Colors.blue,
+                                  ),
+                                  padding: EdgeInsets.all(8),
+                                  child: Text(
+                                    "${item.message}",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                                Text("${item.time}")
+                              ],
+                            ),
+                          )
+                        ],
                       ),
                     );
                   },
