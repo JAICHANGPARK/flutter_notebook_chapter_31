@@ -110,6 +110,7 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                       icon: const Icon(
                         Icons.mic_none_outlined,
                       ),
+                      color: Colors.blue,
                     ),
                     Expanded(
                       child: TextField(
@@ -121,13 +122,17 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                     ),
                     IconButton(
                       onPressed: () {},
+                      color: Colors.blue,
                       icon: const Icon(
                         Icons.camera_alt_outlined,
                       ),
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: const Icon(Icons.emoji_emotions_outlined),
+                      icon: const Icon(
+                        Icons.emoji_emotions_outlined,
+                      ),
+                      color: Colors.blue,
                     ),
                   ],
                 ),
