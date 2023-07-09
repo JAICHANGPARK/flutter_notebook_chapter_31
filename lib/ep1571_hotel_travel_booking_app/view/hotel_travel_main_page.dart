@@ -82,16 +82,19 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
             ),
             Text("Top properties"),
             Expanded(
-                child: ListView.builder(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 16,0,16),
+                  child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: 10,
               itemBuilder: (context, index) {
-                return Container(
-                  width: 420,
-                  color: Colors.pink,
-                );
+                  return Container(
+                    width: 420,
+                    color: Colors.pink,
+                  );
               },
-            )),
+            ),
+                )),
           ],
         ),
       ),
