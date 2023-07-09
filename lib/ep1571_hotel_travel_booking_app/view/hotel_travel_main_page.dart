@@ -81,21 +81,30 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                 ),
               ),
             ),
-            Text("Top properties"),
+            Padding(
+              padding: const EdgeInsets.only(top: 16, left: 16),
+              child: Text(
+                "Top properties",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18
+                ),
+              ),
+            ),
             Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 16,0,16),
-                  child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              itemCount: 10,
-              itemBuilder: (context, index) {
+              padding: const EdgeInsets.fromLTRB(16, 16, 0, 16),
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 10,
+                itemBuilder: (context, index) {
                   return Container(
                     width: 420,
                     color: Colors.pink,
                   );
-              },
-            ),
-                )),
+                },
+              ),
+            )),
           ],
         ),
       ),
