@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HotelTravelMainPage extends StatefulWidget {
@@ -16,24 +17,50 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("TripTrekssss"),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.notifications_none,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "TripTrekssss",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                      color: Colors.green,
+                    ),
                   ),
-                )
-              ],
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.notifications_none,
+                    ),
+                  )
+                ],
+              ),
             ),
             Container(
+              margin: EdgeInsets.symmetric(horizontal: 16),
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               decoration: BoxDecoration(
                 border: Border.all(
                   color: Colors.grey[200]!,
                 ),
-                
+                borderRadius: BorderRadius.circular(32),
+              ),
+              child: Row(
+                children: [
+                  Icon(CupertinoIcons.search),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Where to Stay?"),
+                        Text("Hotels, Homes, Villas and more"),
+                      ],
+                    ),
+                  )
+                ],
               ),
             )
           ],
