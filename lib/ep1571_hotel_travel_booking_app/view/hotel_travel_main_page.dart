@@ -79,7 +79,16 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                   color: Colors.blue,
                 ),
               ),
-            )
+            ),
+            Text("Top properties"),
+            Expanded(
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 10,
+              itemBuilder: (context, index) {
+                    return Container();
+              },
+            )),
           ],
         ),
       ),
