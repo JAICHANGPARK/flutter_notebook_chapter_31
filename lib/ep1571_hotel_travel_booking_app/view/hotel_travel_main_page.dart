@@ -83,10 +83,13 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
             Text("Top properties"),
             Expanded(
                 child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: 10,
+              scrollDirection: Axis.horizontal,
+              itemCount: 10,
               itemBuilder: (context, index) {
-                    return Container();
+                return Container(
+                  width: 420,
+                  color: Colors.pink,
+                );
               },
             )),
           ],
