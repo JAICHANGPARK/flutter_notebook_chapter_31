@@ -66,11 +66,11 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
             Container(
               margin: EdgeInsets.symmetric(vertical: 16),
               color: Colors.red,
-              height: 42,
+              height: 48,
               child: ListView(),
             ),
             Container(
-              height: 180,
+              height: 160,
               margin: EdgeInsets.symmetric(horizontal: 16),
               decoration: BoxDecoration(
                 color: Colors.blue[200],
