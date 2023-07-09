@@ -65,14 +65,14 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(vertical: 16),
+              margin: const EdgeInsets.symmetric(vertical: 16),
               color: Colors.red,
               height: 48,
               child: ListView(),
             ),
             Container(
               height: 160,
-              margin: EdgeInsets.symmetric(horizontal: 16),
+              margin: const EdgeInsets.symmetric(horizontal: 16),
               decoration: BoxDecoration(
                 color: Colors.blue[200],
                 borderRadius: BorderRadius.circular(8),
@@ -81,8 +81,8 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 16, left: 16),
+            const Padding(
+              padding: EdgeInsets.only(top: 16, left: 16),
               child: Text(
                 "Top properties",
                 style: TextStyle(
