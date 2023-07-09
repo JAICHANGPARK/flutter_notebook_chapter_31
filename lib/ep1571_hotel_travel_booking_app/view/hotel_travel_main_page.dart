@@ -14,7 +14,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-
+            
           ],
         ),
 
