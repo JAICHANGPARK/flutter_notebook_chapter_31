@@ -22,7 +22,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     "TripTrekssss",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -32,7 +32,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.notifications_none,
                     ),
                   )
@@ -40,15 +40,15 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 16),
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              margin: const EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               decoration: BoxDecoration(
                 border: Border.all(
                   color: Colors.grey[200]!,
                 ),
                 borderRadius: BorderRadius.circular(32),
               ),
-              child: Row(
+              child: const Row(
                 children: [
                   Icon(CupertinoIcons.search),
                   Expanded(
@@ -61,6 +61,14 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                     ),
                   )
                 ],
+              ),
+            ),
+            SizedBox(height: 32,
+            child: ListView(),),
+            Container(
+              height: 180,
+              decoration: BoxDecoration(
+                
               ),
             )
           ],
@@ -79,19 +87,19 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
           unselectedItemColor: Colors.grey,
           type: BottomNavigationBarType.fixed,
           items: [
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(Icons.language),
               label: "Explore",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(Icons.luggage),
               label: "Trip",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(Icons.favorite_border),
               label: "Saved",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(Icons.account_circle_outlined),
               label: "Profile",
             ),
