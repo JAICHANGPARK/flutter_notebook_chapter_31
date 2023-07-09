@@ -20,6 +20,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
         onTap: (idx) {},
         selectedItemColor: Colors.green,
         unselectedItemColor: Colors.grey,
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.language),
