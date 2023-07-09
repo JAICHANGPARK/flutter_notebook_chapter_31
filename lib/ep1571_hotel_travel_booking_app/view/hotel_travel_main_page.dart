@@ -16,6 +16,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.all(16.0),
