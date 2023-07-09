@@ -15,7 +15,28 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("TripTrekssss"),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.notifications_none,
+                  ),
+                )
+              ],
+            ),
+            Container(
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.grey[200]!,
+                ),
+                
+              ),
+            )
+          ],
         ),
       ),
       bottomNavigationBar: SizedBox(
