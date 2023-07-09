@@ -63,12 +63,21 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                 ],
               ),
             ),
-            SizedBox(height: 32,
-            child: ListView(),),
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 16),
+              color: Colors.red,
+              height: 42,
+              child: ListView(),
+            ),
             Container(
               height: 180,
+              margin: EdgeInsets.symmetric(horizontal: 16),
               decoration: BoxDecoration(
-                
+                color: Colors.blue[200],
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(
+                  color: Colors.blue,
+                ),
               ),
             )
           ],
