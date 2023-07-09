@@ -8,6 +8,8 @@ class HotelTravelMainPage extends StatefulWidget {
 }
 
 class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
+  int menuIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +21,12 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
       bottomNavigationBar: SizedBox(
         height: 72,
         child: BottomNavigationBar(
-          onTap: (idx) {},
+          onTap: (idx) {
+            setState(() {
+              menuIndex = idx;
+            });
+          },
+          currentIndex: menuIndex,
           selectedItemColor: Colors.green,
           unselectedItemColor: Colors.grey,
           type: BottomNavigationBarType.fixed,
