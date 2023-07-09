@@ -13,14 +13,31 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [
-            
-          ],
+          children: [],
         ),
-
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: [],
+        onTap: (idx) {},
+        selectedItemColor: Colors.green,
+        unselectedItemColor: Colors.grey,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.language),
+            label: "Explore",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.luggage),
+            label: "Trip",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.favorite_border),
+            label: "Saved",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_circle_outlined),
+            label: "Profile",
+          ),
+        ],
       ),
     );
   }
