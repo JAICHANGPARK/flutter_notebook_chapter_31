@@ -57,9 +57,9 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                   const CircleAvatar(
                     radius: 28,
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(8.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -92,7 +92,7 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
             ),
             Expanded(
               child: Container(
-                padding: EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 color: Colors.grey[200],
                 child: ListView.builder(
                   itemCount: messages.length,
@@ -100,14 +100,14 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                     final item = messages[index];
                     if (item.isSender ?? false) {
                       return Container(
-                        margin: EdgeInsets.only(bottom: 16),
+                        margin: const EdgeInsets.only(bottom: 16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             const Text("You"),
                             Container(
 
-                              margin: EdgeInsets.symmetric(vertical: 8),
+                              margin: const EdgeInsets.symmetric(vertical: 8),
                               decoration: const BoxDecoration(
                                 borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(8),
@@ -116,10 +116,10 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                                 ),
                                 color: Colors.blue,
                               ),
-                              padding: EdgeInsets.all(8),
+                              padding: const EdgeInsets.all(8),
                               child: Text(
                                 "${item.message}",
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: Colors.white,
                                 ),
                               ),
@@ -130,13 +130,13 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                       );
                     }
                     return Container(
-                      margin: EdgeInsets.only(bottom: 16),
+                      margin: const EdgeInsets.only(bottom: 16),
                       child: Row(
                         children: [
-                          CircleAvatar(
+                          const CircleAvatar(
                             radius:28,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
                           Container(
@@ -145,7 +145,7 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                               children: [
                                  Text("${item.name}"),
                                 Container(
-                                  margin: EdgeInsets.symmetric(vertical: 8),
+                                  margin: const EdgeInsets.symmetric(vertical: 8),
                                   decoration: const BoxDecoration(
                                     borderRadius: BorderRadius.only(
                                       topLeft: Radius.circular(8),
@@ -154,10 +154,10 @@ class _ChatMessagePageState extends State<ChatMessagePage> {
                                     ),
                                     color: Colors.white,
                                   ),
-                                  padding: EdgeInsets.all(8),
+                                  padding: const EdgeInsets.all(8),
                                   child: Text(
                                     "${item.message}",
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       color: Colors.black,
                                     ),
                                   ),
