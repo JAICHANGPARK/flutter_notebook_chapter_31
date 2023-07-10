@@ -100,10 +100,10 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
               width: double.infinity,
               margin: const EdgeInsets.symmetric(horizontal: 16),
               decoration: BoxDecoration(
-                color: Colors.blue[100],
+                color: Colors.blue[50],
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(
-                  color: Colors.blue,
+                  color: Colors.blue[400]!,
                 ),
               ),
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
