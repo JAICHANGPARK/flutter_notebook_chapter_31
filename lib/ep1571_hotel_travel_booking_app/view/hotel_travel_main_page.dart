@@ -68,7 +68,13 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
               margin: const EdgeInsets.symmetric(vertical: 16),
               color: Colors.red,
               height: 48,
-              child: ListView(),
+              child: ListView(
+                children: ["Sort", "When", "Stay type", "Add Geust"]
+                    .map(
+                      (e) => Container(),
+                    )
+                    .toList(),
+              ),
             ),
             Container(
               height: 160,
@@ -85,10 +91,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
               padding: EdgeInsets.only(top: 16, left: 16),
               child: Text(
                 "Top properties",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18
-                ),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
             ),
             Expanded(
@@ -120,20 +123,20 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
           selectedItemColor: Colors.green,
           unselectedItemColor: Colors.grey,
           type: BottomNavigationBarType.fixed,
-          items: [
-            const BottomNavigationBarItem(
+          items: const [
+            BottomNavigationBarItem(
               icon: Icon(Icons.language),
               label: "Explore",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(Icons.luggage),
               label: "Trip",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(Icons.favorite_border),
               label: "Saved",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(Icons.account_circle_outlined),
               label: "Profile",
             ),
