@@ -97,6 +97,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
             ),
             Container(
               height: 160,
+              width: double.infinity,
               margin: const EdgeInsets.symmetric(horizontal: 16),
               decoration: BoxDecoration(
                 color: Colors.blue[200],
@@ -105,7 +106,9 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                   color: Colors.blue,
                 ),
               ),
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text("Discover and Save Your Favorite Hotels"),
                   Text("Personalize Your Stay with Curated\nHotel Recommendation"),
