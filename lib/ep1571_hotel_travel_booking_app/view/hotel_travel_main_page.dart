@@ -185,12 +185,14 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                                   )
                                 ],
                               ),
+                              SizedBox(height: 12,),
                               Text(
                                 "Title, Title",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
+                              SizedBox(height: 4,),
                               Row(
                                 children: [
                                   Icon(
@@ -200,6 +202,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                                   Text("Location Location Location Location"),
                                 ],
                               ),
+                              SizedBox(height: 12,),
                               Text(
                                 "AED 11,706 night",
                                 style: TextStyle(
