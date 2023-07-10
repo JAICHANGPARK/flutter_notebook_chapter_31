@@ -185,7 +185,14 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                                     Icons.location_on,
                                     color: Colors.green,
                                   ),
+                                  Text("Location Location Location Location"),
                                 ],
+                              ),
+                              Text(
+                                "AED 11,706 night",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
                               )
                             ],
                           ),
