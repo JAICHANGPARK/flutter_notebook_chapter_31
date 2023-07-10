@@ -66,7 +66,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
             ),
             Container(
               margin: const EdgeInsets.fromLTRB(16, 16, 0, 16),
-              padding: EdgeInsets.symmetric(vertical: 8),
+              padding: const EdgeInsets.symmetric(vertical: 8),
               color: Colors.red,
               height: 48,
               child: ListView(
@@ -78,14 +78,14 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(32),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 12),
-                        margin: EdgeInsets.only(right: 8),
+                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                        margin: const EdgeInsets.only(right: 8),
                         child: Row(
                           children: [
                             Text(
                               "$e",
                             ),
-                            Icon(
+                            const Icon(
                               Icons.keyboard_arrow_down,
                             )
                           ],
@@ -106,26 +106,28 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                   color: Colors.blue,
                 ),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "Discover and Save Your Favorite Hotels",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 12),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
                     child: Text("Personalize Your Stay with Curated\nHotel Recommendation"),
                   ),
                   Container(
-                    decoration: BoxDecoration(
+                    decoration:  BoxDecoration(
                       color: Colors.green,
+                      borderRadius: BorderRadius.circular(24)
                     ),
-                    child: Text(
+                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                    child: const Text(
                       "Let's Discover",
                       style: TextStyle(
                         color: Colors.white,
