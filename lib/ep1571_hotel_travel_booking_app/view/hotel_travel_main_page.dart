@@ -110,8 +110,17 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Discover and Save Your Favorite Hotels"),
-                  Text("Personalize Your Stay with Curated\nHotel Recommendation"),
+                  Text(
+                    "Discover and Save Your Favorite Hotels",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    child: Text("Personalize Your Stay with Curated\nHotel Recommendation"),
+                  ),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.green,
