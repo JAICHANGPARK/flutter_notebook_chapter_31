@@ -151,6 +151,17 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                   return Container(
                     width: 420,
                     color: Colors.pink,
+                    child: Column(
+                      children: [
+                        Expanded(child: Container()),
+                        Expanded(child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+
+                          ],
+                        )),
+                      ],
+                    ),
                   );
                 },
               ),
