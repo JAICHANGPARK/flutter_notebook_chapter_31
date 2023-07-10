@@ -112,20 +112,14 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                 children: [
                   const Text(
                     "Discover and Save Your Favorite Hotels",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                   ),
                   const Padding(
                     padding: EdgeInsets.symmetric(vertical: 12),
                     child: Text("Personalize Your Stay with Curated\nHotel Recommendation"),
                   ),
                   Container(
-                    decoration:  BoxDecoration(
-                      color: Colors.green,
-                      borderRadius: BorderRadius.circular(24)
-                    ),
+                    decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(24)),
                     padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                     child: const Text(
                       "Let's Discover",
@@ -141,7 +135,10 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
               padding: EdgeInsets.only(top: 16, left: 16),
               child: Text(
                 "Top properties",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
               ),
             ),
             Expanded(
