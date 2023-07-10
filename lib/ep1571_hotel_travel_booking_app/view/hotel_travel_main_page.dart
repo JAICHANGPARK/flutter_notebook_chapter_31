@@ -105,6 +105,23 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                   color: Colors.blue,
                 ),
               ),
+              child: Column(
+                children: [
+                  Text("Discover and Save Your Favorite Hotels"),
+                  Text("Personalize Your Stay with Curated\nHotel Recommendation"),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.green,
+                    ),
+                    child: Text(
+                      "Let's Discover",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
             const Padding(
               padding: EdgeInsets.only(top: 16, left: 16),
