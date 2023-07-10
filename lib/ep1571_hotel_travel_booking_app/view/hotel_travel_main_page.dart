@@ -66,9 +66,11 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
             ),
             Container(
               margin: const EdgeInsets.symmetric(vertical: 16),
+              padding: EdgeInsets.symmetric(vertical: 8),
               color: Colors.red,
               height: 48,
               child: ListView(
+                scrollDirection: Axis.horizontal,
                 children: ["Sort", "When", "Stay type", "Add Geust"]
                     .map(
                       (e) => Container(
@@ -76,6 +78,8 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(32),
                         ),
+                        padding: EdgeInsets.symmetric(horizontal: 12),
+                        margin: EdgeInsets.only(right: 8),
                         child: Row(
                           children: [
                             Text(
