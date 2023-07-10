@@ -65,7 +65,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
               ),
             ),
             Container(
-              margin: const EdgeInsets.symmetric(vertical: 16),
+              margin: const EdgeInsets.fromLTRB(16, 16, 0, 16),
               padding: EdgeInsets.symmetric(vertical: 8),
               color: Colors.red,
               height: 48,
