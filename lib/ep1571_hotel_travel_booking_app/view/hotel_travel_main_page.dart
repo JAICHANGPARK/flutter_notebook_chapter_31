@@ -154,8 +154,20 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                     margin: EdgeInsets.only(right: 16),
                     child: Column(
                       children: [
-                        Expanded(child: Container()),
                         Expanded(
+                          flex: 6,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              color: Colors.blue,
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        Expanded(
+                          flex: 4,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
