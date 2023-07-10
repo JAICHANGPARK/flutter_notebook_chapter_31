@@ -71,7 +71,22 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
               child: ListView(
                 children: ["Sort", "When", "Stay type", "Add Geust"]
                     .map(
-                      (e) => Container(),
+                      (e) => Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(32),
+                        ),
+                        child: Row(
+                          children: [
+                            Text(
+                              "$e",
+                            ),
+                            Icon(
+                              Icons.keyboard_arrow_down,
+                            )
+                          ],
+                        ),
+                      ),
                     )
                     .toList(),
               ),
