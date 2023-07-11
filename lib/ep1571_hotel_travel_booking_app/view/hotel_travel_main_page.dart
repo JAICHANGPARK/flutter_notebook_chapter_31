@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_31/ep1571_hotel_travel_booking_app/view/hotel_travel_detail_page.dart';
 
 class HotelTravelMainPage extends StatefulWidget {
   const HotelTravelMainPage({super.key});
@@ -152,106 +153,115 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                 scrollDirection: Axis.horizontal,
                 itemCount: 10,
                 itemBuilder: (context, index) {
-                  return Container(
-                    width: 340,
-                    // color: Colors.pink,
-                    margin: const EdgeInsets.only(right: 16),
-                    child: Column(
-                      children: [
-                        Expanded(
-                          flex: 6,
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(8),
-                              color: Colors.blue,
-                              image: const DecorationImage(
-                                image: NetworkImage(
-                                    "https://cdn.pixabay.com/photo/2019/03/31/14/31/houses-4093227_1280.jpg"),
-                                fit: BoxFit.cover,
+                  return GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => HotelTravelDetailPage(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      width: 340,
+                      // color: Colors.pink,
+                      margin: const EdgeInsets.only(right: 16),
+                      child: Column(
+                        children: [
+                          Expanded(
+                            flex: 6,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                color: Colors.blue,
+                                image: const DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2019/03/31/14/31/houses-4093227_1280.jpg"),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    right: 4,
+                                    top: 4,
+                                    child: IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(
+                                        Icons.favorite_border,
+                                      ),
+                                      color: Colors.white,
+                                    ),
+                                  )
+                                ],
                               ),
                             ),
-                            child: Stack(
+                          ),
+                          const SizedBox(
+                            height: 16,
+                          ),
+                          const Expanded(
+                            flex: 4,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Positioned(
-                                  right: 4,
-                                  top: 4,
-                                  child: IconButton(
-                                    onPressed: () {},
-                                    icon: Icon(
-                                      Icons.favorite_border,
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange,
+                                      size: 14,
                                     ),
-                                    color: Colors.white,
+                                    Text(
+                                      "5 Start Hotel",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 6,
+                                    ),
+                                    Text(
+                                      "37 reviews",
+                                      style: TextStyle(decoration: TextDecoration.underline),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 12,
+                                ),
+                                Text(
+                                  "Title, Title",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 6,
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.location_on,
+                                      color: Colors.green,
+                                      size: 14,
+                                    ),
+                                    Text("Location Location Location Location"),
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 12,
+                                ),
+                                Text(
+                                  "AED 11,706 night",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 )
                               ],
                             ),
                           ),
-                        ),
-                        const SizedBox(
-                          height: 16,
-                        ),
-                        const Expanded(
-                          flex: 4,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: [
-                                  Icon(
-                                    Icons.star,
-                                    color: Colors.orange,
-                                    size: 14,
-                                  ),
-                                  Text(
-                                    "5 Start Hotel",
-                                    style: TextStyle(
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 6,
-                                  ),
-                                  Text(
-                                    "37 reviews",
-                                    style: TextStyle(decoration: TextDecoration.underline),
-                                  )
-                                ],
-                              ),
-                              SizedBox(
-                                height: 12,
-                              ),
-                              Text(
-                                "Title, Title",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              SizedBox(
-                                height: 6,
-                              ),
-                              Row(
-                                children: [
-                                  Icon(
-                                    Icons.location_on,
-                                    color: Colors.green,
-                                    size: 14,
-                                  ),
-                                  Text("Location Location Location Location"),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 12,
-                              ),
-                              Text(
-                                "AED 11,706 night",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   );
                 },
