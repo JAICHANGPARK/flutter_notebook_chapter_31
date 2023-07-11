@@ -208,7 +208,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                                 ),
                               ),
                               SizedBox(
-                                height: 4,
+                                height: 6,
                               ),
                               Row(
                                 children: [
