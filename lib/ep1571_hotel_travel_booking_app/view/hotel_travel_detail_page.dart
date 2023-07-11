@@ -14,47 +14,63 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_ios)),
-                Expanded(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        "Hotels",
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_ios)),
+                  Expanded(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Hotels",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                      SizedBox(height: 4,),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          ...List.generate(
-                            5,
-                            (index) => Container(
-                              height: 8,
-                              width: 24,
-                              margin: EdgeInsets.symmetric(horizontal: 2),
-                              decoration: BoxDecoration(
-                                color: Colors.grey,
-                                borderRadius: BorderRadius.circular(8),
+                        SizedBox(height: 4,),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            ...List.generate(
+                              5,
+                              (index) => Container(
+                                height: 8,
+                                width: 24,
+                                margin: EdgeInsets.symmetric(horizontal: 2),
+                                decoration: BoxDecoration(
+                                  color: Colors.grey,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
                               ),
                             ),
-                          ),
-                        ],
-                      )
-                    ],
+                          ],
+                        )
+                      ],
+                    ),
                   ),
-                ),
-                TextButton(
-                  onPressed: () {},
-                  child: Text("Skip"),
-                )
-              ],
+                  TextButton(
+                    onPressed: () {},
+                    child: Text("Skip"),
+                  )
+                ],
+              ),
+            ),
+            Text("Would you like to stay here?"),
+            Text("Save hotels you like and get price alerts for greet deals!"),
+            Expanded(child: Placeholder()),
+            Divider(height: 0,),
+            Container(
+              height: 84,
+              decoration: BoxDecoration(),
+              child: Row(
+                children: [
+                  
+                ],
+              ),
             )
           ],
         ),
