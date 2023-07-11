@@ -76,9 +76,9 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                   Container(
                     decoration: BoxDecoration(
                       border: Border.all(),
-
+                      borderRadius: BorderRadius.circular(32),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    padding: EdgeInsets.symmetric(horizontal: 24),
                     child: Center(
                       child: Text(
                         "Don't Like",
@@ -91,18 +91,20 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                   SizedBox(
                     width: 12,
                   ),
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 16),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(32),
-                      color: Colors.green,
-                    ),
-                    child: Center(
-                      child: Text(
-                        "Save for 2,665 AED",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                  Expanded(
+                    child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 24),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(32),
+                        color: Colors.green,
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Save for 2,665 AED",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ),
