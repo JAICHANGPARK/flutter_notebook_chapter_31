@@ -167,6 +167,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                               image: DecorationImage(
                                 image: NetworkImage(
                                     "https://cdn.pixabay.com/photo/2019/03/31/14/31/houses-4093227_1280.jpg"),
+                                fit: BoxFit.cover,
                               ),
                             ),
                           ),
