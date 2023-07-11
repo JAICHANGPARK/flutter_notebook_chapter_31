@@ -18,7 +18,10 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
               padding: const EdgeInsets.all(8.0),
               child: Row(
                 children: [
-                  IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_ios)),
+                  IconButton(onPressed: () {
+                    Navigator.of(context).pop();
+
+                  }, icon: Icon(Icons.arrow_back_ios)),
                   Expanded(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
