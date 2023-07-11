@@ -25,21 +25,24 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                         children: [
                           ...List.generate(
                             5,
-                                (index) => Container(
+                            (index) => Container(
                               height: 8,
                               width: 24,
                               margin: EdgeInsets.symmetric(horizontal: 2),
                               decoration: BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.circular(8)
+                                color: Colors.grey,
+                                borderRadius: BorderRadius.circular(8),
                               ),
                             ),
                           ),
                         ],
                       )
-
                     ],
                   ),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: Text("Skip"),
                 )
               ],
             )
