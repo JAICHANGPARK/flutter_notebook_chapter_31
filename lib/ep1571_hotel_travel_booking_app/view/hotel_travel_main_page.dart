@@ -109,6 +109,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   const Text(
                     "Discover and Save Your Favorite Hotels",
@@ -119,7 +120,10 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                     child: Text("Personalize Your Stay with Curated\nHotel Recommendation"),
                   ),
                   Container(
-                    decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(24)),
+                    decoration: BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: BorderRadius.circular(24),
+                    ),
                     padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                     child: const Text(
                       "Let's Discover",
@@ -185,14 +189,18 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                                   )
                                 ],
                               ),
-                              SizedBox(height: 12,),
+                              SizedBox(
+                                height: 12,
+                              ),
                               Text(
                                 "Title, Title",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              SizedBox(height: 4,),
+                              SizedBox(
+                                height: 4,
+                              ),
                               Row(
                                 children: [
                                   Icon(
@@ -202,7 +210,9 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                                   Text("Location Location Location Location"),
                                 ],
                               ),
-                              SizedBox(height: 12,),
+                              SizedBox(
+                                height: 12,
+                              ),
                               Text(
                                 "AED 11,706 night",
                                 style: TextStyle(
