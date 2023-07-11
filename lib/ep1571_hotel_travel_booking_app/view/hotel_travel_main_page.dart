@@ -192,11 +192,15 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                                     style: TextStyle(
                                       color: Colors.grey,
                                     ),
-                                  ),  SizedBox(
+                                  ),
+                                  SizedBox(
                                     width: 6,
                                   ),
                                   Text(
                                     "37 reviews",
+                                    style: TextStyle(
+                                      decoration: TextDecoration.underline
+                                    ),
                                   )
                                 ],
                               ),
