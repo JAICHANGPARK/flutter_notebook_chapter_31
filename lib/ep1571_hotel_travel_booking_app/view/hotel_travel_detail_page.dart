@@ -75,6 +75,7 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                 children: [
                   Container(
                     decoration: BoxDecoration(),
+                    padding: EdgeInsets.symmetric(horizontal: 16 ),
                     child: Center(
                       child: Text(
                         "Don't Like",
@@ -88,6 +89,7 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                     width: 12,
                   ),
                   Container(
+                    padding: EdgeInsets.symmetric(horizontal: 16 ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(32),
                       color: Colors.green,
