@@ -172,10 +172,15 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                             ),
                             child: Stack(
                               children: [
-                                IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(
-                                    Icons.favorite_border,
+                                Positioned(
+                                  right: 4,
+                                  top: 4,
+                                  child: IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.favorite_border,
+                                    ),
+                                    color: Colors.white,
                                   ),
                                 )
                               ],
