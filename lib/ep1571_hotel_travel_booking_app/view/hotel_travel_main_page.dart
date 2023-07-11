@@ -189,6 +189,9 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                                   ),
                                   Text(
                                     "5 Start Hotel",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
                                   ),
                                   Text(
                                     "37 reviews",
