@@ -19,9 +19,19 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                 IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_ios)),
                 Expanded(
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Text("Hotels"),
+                      Text(
+                        "Hotels",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(height: 4,),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           ...List.generate(
                             5,
