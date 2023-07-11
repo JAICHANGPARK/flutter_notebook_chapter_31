@@ -70,12 +70,15 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
             Container(
               height: 84,
               decoration: BoxDecoration(),
-              padding: EdgeInsets.symmetric(horizontal: 16 , vertical: 16),
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               child: Row(
                 children: [
                   Container(
-                    decoration: BoxDecoration(),
-                    padding: EdgeInsets.symmetric(horizontal: 16 ),
+                    decoration: BoxDecoration(
+                      border: Border.all(),
+
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
                     child: Center(
                       child: Text(
                         "Don't Like",
@@ -89,7 +92,7 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                     width: 12,
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 16 ),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(32),
                       color: Colors.green,
