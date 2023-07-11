@@ -164,11 +164,21 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(8),
                               color: Colors.blue,
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: NetworkImage(
                                     "https://cdn.pixabay.com/photo/2019/03/31/14/31/houses-4093227_1280.jpg"),
                                 fit: BoxFit.cover,
                               ),
+                            ),
+                            child: Stack(
+                              children: [
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(
+                                    Icons.favorite_border,
+                                  ),
+                                )
+                              ],
                             ),
                           ),
                         ),
@@ -198,9 +208,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                                   ),
                                   Text(
                                     "37 reviews",
-                                    style: TextStyle(
-                                      decoration: TextDecoration.underline
-                                    ),
+                                    style: TextStyle(decoration: TextDecoration.underline),
                                   )
                                 ],
                               ),
