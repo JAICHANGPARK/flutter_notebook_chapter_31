@@ -70,6 +70,7 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
             Container(
               height: 84,
               decoration: BoxDecoration(),
+              padding: EdgeInsets.symmetric(horizontal: 16 , vertical: 16),
               child: Row(
                 children: [
                   Container(
@@ -87,12 +88,16 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                     width: 12,
                   ),
                   Container(
-                    decoration: BoxDecoration(),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(32),
+                      color: Colors.green,
+                    ),
                     child: Center(
                       child: Text(
                         "Save for 2,665 AED",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          color: Colors.white,
                         ),
                       ),
                     ),
