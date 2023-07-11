@@ -120,7 +120,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                   ),
                   Container(
                     decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(24)),
-                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                    padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                     child: const Text(
                       "Let's Discover",
                       style: TextStyle(
@@ -151,7 +151,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                   return Container(
                     width: 340,
                     color: Colors.pink,
-                    margin: EdgeInsets.only(right: 16),
+                    margin: const EdgeInsets.only(right: 16),
                     child: Column(
                       children: [
                         Expanded(
@@ -163,10 +163,10 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
-                        Expanded(
+                        const Expanded(
                           flex: 4,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
