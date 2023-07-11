@@ -31,7 +31,9 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 4,),
+                        SizedBox(
+                          height: 4,
+                        ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -62,13 +64,39 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
             Text("Would you like to stay here?"),
             Text("Save hotels you like and get price alerts for greet deals!"),
             Expanded(child: Placeholder()),
-            Divider(height: 0,),
+            Divider(
+              height: 0,
+            ),
             Container(
               height: 84,
               decoration: BoxDecoration(),
               child: Row(
                 children: [
-                  
+                  Container(
+                    decoration: BoxDecoration(),
+                    child: Center(
+                      child: Text(
+                        "Don't Like",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 12,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(),
+                    child: Center(
+                      child: Text(
+                        "Save for 2,665 AED",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             )
