@@ -154,7 +154,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                 itemBuilder: (context, index) {
                   return Container(
                     width: 340,
-                    color: Colors.pink,
+                    // color: Colors.pink,
                     margin: const EdgeInsets.only(right: 16),
                     child: Column(
                       children: [
@@ -185,6 +185,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                                   Icon(
                                     Icons.star,
                                     color: Colors.orange,
+                                    size: 14,
                                   ),
                                   Text(
                                     "5 Start Hotel",
@@ -211,6 +212,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                                   Icon(
                                     Icons.location_on,
                                     color: Colors.green,
+                                    size: 14,
                                   ),
                                   Text("Location Location Location Location"),
                                 ],
