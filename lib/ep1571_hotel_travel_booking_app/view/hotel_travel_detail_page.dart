@@ -168,11 +168,7 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                                 Expanded(
                                   child: Text(
                                     "Location Location Location Location Location Location Location Location",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.teal,
-                                      fontSize: 16
-                                    ),
+                                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.teal, fontSize: 16),
                                   ),
                                 ),
                               ],
@@ -185,9 +181,30 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                         padding: EdgeInsets.only(left: 16, top: 8),
                         child: Text(
                           "Most popular facilities",
-                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
+                      Container(
+                        height: 120,
+                        color: Colors.blue,
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: 8,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              width: 200,
+                              margin: EdgeInsets.only(right: 16),
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.grey),
+                                borderRadius: BorderRadius.circular(8)
+                              ),
+                            );
+                          },
+                        ),
+                      )
                     ],
                   ),
                 ),
