@@ -65,7 +65,7 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(24.0),
+              padding: const EdgeInsets.all(16.0),
               child: const Text(
                 "Would you like to stay here?",
                 style: TextStyle(
@@ -74,7 +74,13 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                 ),
               ),
             ),
-            const Text("Save hotels you like and get price alerts for greet deals!"),
+            const Text(
+              "Save hotels you like and get price alerts for greet deals!",
+              style: TextStyle(
+                color: Colors.grey,
+                fontWeight: FontWeight.bold
+              ),
+            ),
             Expanded(
               child: Container(
                 margin: const EdgeInsets.symmetric(horizontal: 16),
