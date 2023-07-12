@@ -86,7 +86,9 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                 textAlign: TextAlign.center,
               ),
             ),
-            SizedBox(height: 16,),
+            SizedBox(
+              height: 16,
+            ),
             Expanded(
               child: Container(
                 margin: const EdgeInsets.symmetric(horizontal: 16),
@@ -105,11 +107,54 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                       Container(
                         margin: EdgeInsets.all(12),
                         height: 180,
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(16)
+                        decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(16)),
+                      ),
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.star,
+                            color: Colors.orange,
+                            size: 14,
+                          ),
+                          Text(
+                            "5 Start Hotel",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 6,
+                          ),
+                          Text(
+                            "37 reviews",
+                            style: TextStyle(decoration: TextDecoration.underline),
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        height: 12,
+                      ),
+                      Text(
+                        "Title, Title",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
                         ),
-                      )
+                      ),
+                      SizedBox(
+                        height: 6,
+                      ),
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.location_on,
+                            color: Colors.green,
+                            size: 14,
+                          ),
+                          Text("Location Location Location Location"),
+                        ],
+                      ),
+                      Divider(),
+                      Text("Most popular facilities"),
                     ],
                   ),
                 ),
