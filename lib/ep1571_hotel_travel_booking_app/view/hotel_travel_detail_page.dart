@@ -188,15 +188,16 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                         ),
                       ),
                       Container(
-                        height: 120,
+                        margin: const EdgeInsets.only(top: 16, left: 16, ),
+                        height: 200,
                         color: Colors.blue,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount: 8,
                           itemBuilder: (context, index) {
                             return Container(
-                              width: 200,
-                              margin: EdgeInsets.only(right: 16),
+                              width: 140,
+                              margin: const EdgeInsets.only(right: 16),
                               decoration: BoxDecoration(
                                 border: Border.all(color: Colors.grey),
                                 borderRadius: BorderRadius.circular(8)
