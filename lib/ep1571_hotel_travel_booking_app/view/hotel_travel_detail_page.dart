@@ -86,15 +86,19 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                 textAlign: TextAlign.center,
               ),
             ),
+            SizedBox(height: 16,),
             Expanded(
               child: Container(
                 margin: const EdgeInsets.symmetric(horizontal: 16),
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(16),
-                      topRight: Radius.circular(16),
-                    ),
-                    border: Border.all(color: Colors.grey)),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                    topRight: Radius.circular(16),
+                  ),
+                  border: Border.all(
+                    color: Colors.grey[300]!,
+                  ),
+                ),
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
@@ -103,6 +107,7 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                         height: 180,
                         decoration: BoxDecoration(
                           color: Colors.blue,
+                          borderRadius: BorderRadius.circular(16)
                         ),
                       )
                     ],
