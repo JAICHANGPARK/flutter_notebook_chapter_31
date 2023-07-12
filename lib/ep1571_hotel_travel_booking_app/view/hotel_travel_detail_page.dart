@@ -169,10 +169,14 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                         ),
                       ),
                       Divider(),
-                      Text(
-                        "Most popular facilities",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
+                      Padding(
+                        padding: const EdgeInsets.only(left: 16, top: 8),
+                        child: Text(
+                          "Most popular facilities",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16
+                          ),
                         ),
                       ),
                     ],
