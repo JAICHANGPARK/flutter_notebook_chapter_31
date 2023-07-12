@@ -80,9 +80,10 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                 "Save hotels you like and get price alerts for greet deals!",
                 style: TextStyle(
                   color: Colors.grey,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16,
+                  fontWeight: FontWeight.normal,
+                  fontSize: 15,
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
             Expanded(
