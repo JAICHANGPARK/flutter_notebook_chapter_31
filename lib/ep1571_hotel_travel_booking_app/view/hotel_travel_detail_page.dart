@@ -19,24 +19,22 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
               child: Row(
                 children: [
                   IconButton(
-                    onPressed: () {
-                      Navigator.of(context).pop();
-                    },
-                    icon: Icon(Icons.arrow_back_ios),
+                    onPressed: () => Navigator.of(context).pop(),
+                    icon: const Icon(Icons.arrow_back_ios),
                   ),
                   Expanded(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           "Hotels",
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 4,
                         ),
                         Row(
@@ -47,7 +45,7 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                               (index) => Container(
                                 height: 8,
                                 width: 24,
-                                margin: EdgeInsets.symmetric(horizontal: 2),
+                                margin: const EdgeInsets.symmetric(horizontal: 2),
                                 decoration: BoxDecoration(
                                   color: Colors.grey,
                                   borderRadius: BorderRadius.circular(8),
@@ -61,25 +59,25 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: Text("Skip"),
+                    child: const Text("Skip"),
                   )
                 ],
               ),
             ),
-            Text("Would you like to stay here?"),
-            Text("Save hotels you like and get price alerts for greet deals!"),
+            const Text("Would you like to stay here?"),
+            const Text("Save hotels you like and get price alerts for greet deals!"),
             Expanded(
                 child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 16),
+              margin: const EdgeInsets.symmetric(horizontal: 16),
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(16)),
             )),
-            Divider(
+            const Divider(
               height: 0,
             ),
             Container(
               height: 84,
-              decoration: BoxDecoration(),
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              decoration: const BoxDecoration(),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               child: Row(
                 children: [
                   Container(
@@ -87,8 +85,8 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                       border: Border.all(),
                       borderRadius: BorderRadius.circular(32),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 24),
-                    child: Center(
+                    padding: const EdgeInsets.symmetric(horizontal: 24),
+                    child: const Center(
                       child: Text(
                         "Don't Like",
                         style: TextStyle(
@@ -97,17 +95,17 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 12,
                   ),
                   Expanded(
                     child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 24),
+                      padding: const EdgeInsets.symmetric(horizontal: 24),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(32),
                         color: Colors.green,
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           "Save for 2,665 AED",
                           style: TextStyle(
