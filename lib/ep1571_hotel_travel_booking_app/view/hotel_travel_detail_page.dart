@@ -103,7 +103,7 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                   child: Column(
                     children: [
                       Container(
-                        margin: EdgeInsets.all(8),
+                        margin: EdgeInsets.all(12),
                         height: 180,
                         decoration: BoxDecoration(
                           color: Colors.blue,
