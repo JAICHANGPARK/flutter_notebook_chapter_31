@@ -157,7 +157,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => HotelTravelDetailPage(),
+                          builder: (context) => const HotelTravelDetailPage(),
                         ),
                       );
                     },
@@ -186,7 +186,7 @@ class _HotelTravelMainPageState extends State<HotelTravelMainPage> {
                                     top: 4,
                                     child: IconButton(
                                       onPressed: () {},
-                                      icon: Icon(
+                                      icon: const Icon(
                                         Icons.favorite_border,
                                       ),
                                       color: Colors.white,
