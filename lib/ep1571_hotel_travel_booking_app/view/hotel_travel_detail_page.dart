@@ -35,7 +35,7 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                           ),
                         ),
                         const SizedBox(
-                          height: 4,
+                          height: 8,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
