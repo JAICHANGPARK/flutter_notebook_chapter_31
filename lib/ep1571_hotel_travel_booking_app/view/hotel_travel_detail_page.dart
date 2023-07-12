@@ -19,10 +19,11 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
               child: Row(
                 children: [
                   IconButton(
-                      onPressed: () {
-                        Navigator.of(context).pop();
-                      },
-                      icon: Icon(Icons.arrow_back_ios)),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                    icon: Icon(Icons.arrow_back_ios),
+                  ),
                   Expanded(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
