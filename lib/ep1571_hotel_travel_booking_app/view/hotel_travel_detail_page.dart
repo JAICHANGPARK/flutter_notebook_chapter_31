@@ -18,10 +18,11 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
               padding: const EdgeInsets.all(8.0),
               child: Row(
                 children: [
-                  IconButton(onPressed: () {
-                    Navigator.of(context).pop();
-
-                  }, icon: Icon(Icons.arrow_back_ios)),
+                  IconButton(
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
+                      icon: Icon(Icons.arrow_back_ios)),
                   Expanded(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -66,11 +67,10 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
             ),
             Text("Would you like to stay here?"),
             Text("Save hotels you like and get price alerts for greet deals!"),
-            Expanded(child: Container(
+            Expanded(
+                child: Container(
               margin: EdgeInsets.symmetric(horizontal: 16),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16)
-              ),
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(16)),
             )),
             Divider(
               height: 0,
