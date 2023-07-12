@@ -64,10 +64,14 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                 ],
               ),
             ),
-            const Text(
-              "Would you like to stay here?",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.all(24.0),
+              child: const Text(
+                "Would you like to stay here?",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                ),
               ),
             ),
             const Text("Save hotels you like and get price alerts for greet deals!"),
