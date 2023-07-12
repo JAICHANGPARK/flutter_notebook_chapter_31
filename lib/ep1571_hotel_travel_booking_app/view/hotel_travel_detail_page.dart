@@ -92,6 +92,18 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(16),
                 ),
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 180,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ),
             ),
             const Divider(
