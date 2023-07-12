@@ -74,11 +74,15 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                 ),
               ),
             ),
-            const Text(
-              "Save hotels you like and get price alerts for greet deals!",
-              style: TextStyle(
-                color: Colors.grey,
-                fontWeight: FontWeight.bold
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 32),
+              child: const Text(
+                "Save hotels you like and get price alerts for greet deals!",
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                ),
               ),
             ),
             Expanded(
