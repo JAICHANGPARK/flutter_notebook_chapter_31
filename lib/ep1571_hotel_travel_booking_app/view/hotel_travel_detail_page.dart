@@ -67,10 +67,13 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
             const Text("Would you like to stay here?"),
             const Text("Save hotels you like and get price alerts for greet deals!"),
             Expanded(
-                child: Container(
-              margin: const EdgeInsets.symmetric(horizontal: 16),
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(16)),
-            )),
+              child: Container(
+                margin: const EdgeInsets.symmetric(horizontal: 16),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(16),
+                ),
+              ),
+            ),
             const Divider(
               height: 0,
             ),
