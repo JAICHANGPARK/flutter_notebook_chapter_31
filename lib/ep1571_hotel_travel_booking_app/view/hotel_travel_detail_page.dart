@@ -64,9 +64,9 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: const Text(
+            const Padding(
+              padding: EdgeInsets.all(16.0),
+              child: Text(
                 "Would you like to stay here?",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -74,9 +74,9 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 32),
-              child: const Text(
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 32),
+              child: Text(
                 "Save hotels you like and get price alerts for greet deals!",
                 style: TextStyle(
                   color: Colors.grey,
@@ -86,14 +86,14 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                 textAlign: TextAlign.center,
               ),
             ),
-            SizedBox(
-              height: 16,
+            const SizedBox(
+              height: 24,
             ),
             Expanded(
               child: Container(
                 margin: const EdgeInsets.symmetric(horizontal: 16),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(16),
                     topRight: Radius.circular(16),
                   ),
@@ -106,15 +106,15 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        margin: EdgeInsets.all(12),
-                        height: 180,
+                        margin: const EdgeInsets.all(12),
+                        height: 200,
                         decoration: BoxDecoration(
                           color: Colors.blue,
                           borderRadius: BorderRadius.circular(16),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(16.0),
+                      const Padding(
+                        padding: EdgeInsets.all(16.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -146,37 +146,46 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                               height: 12,
                             ),
                             Text(
-                              "Title, Title",
+                              "Title, Title Title Title Title",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 24,
                               ),
                             ),
                             SizedBox(
-                              height: 6,
+                              height: 8,
                             ),
                             Row(
                               children: [
                                 Icon(
                                   Icons.location_on,
-                                  color: Colors.green,
-                                  size: 14,
+                                  color: Colors.teal,
+                                  size: 20,
                                 ),
-                                Text("Location Location Location Location"),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Expanded(
+                                  child: Text(
+                                    "Location Location Location Location Location Location Location Location",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.teal,
+                                      fontSize: 16
+                                    ),
+                                  ),
+                                ),
                               ],
                             ),
                           ],
                         ),
                       ),
-                      Divider(),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 16, top: 8),
+                      const Divider(),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 16, top: 8),
                         child: Text(
                           "Most popular facilities",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16
-                          ),
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                         ),
                       ),
                     ],
