@@ -90,12 +90,16 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
               child: Container(
                 margin: const EdgeInsets.symmetric(horizontal: 16),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
-                ),
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(16),
+                      topRight: Radius.circular(16),
+                    ),
+                    border: Border.all(color: Colors.grey)),
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
                       Container(
+                        margin: EdgeInsets.all(8),
                         height: 180,
                         decoration: BoxDecoration(
                           color: Colors.blue,
