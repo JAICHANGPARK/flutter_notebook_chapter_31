@@ -116,6 +116,7 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                       Padding(
                         padding: const EdgeInsets.all(16.0),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Row(
                               children: [
@@ -135,7 +136,9 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                                 ),
                                 Text(
                                   "37 reviews",
-                                  style: TextStyle(decoration: TextDecoration.underline),
+                                  style: TextStyle(
+                                    decoration: TextDecoration.underline,
+                                  ),
                                 )
                               ],
                             ),
@@ -146,7 +149,7 @@ class _HotelTravelDetailPageState extends State<HotelTravelDetailPage> {
                               "Title, Title",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 24
+                                fontSize: 24,
                               ),
                             ),
                             SizedBox(
