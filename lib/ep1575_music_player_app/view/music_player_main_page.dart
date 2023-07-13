@@ -8,12 +8,28 @@ class MusicPlayerMainPage extends StatefulWidget {
 }
 
 class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
+  int menuIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Good Evening"),
+        titleTextStyle: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 24,
+        ),
+        foregroundColor: Colors.black,
+      ),
       body: SafeArea(
         child: Stack(
-          children: [],
+          children: [
+            Positioned.fill(child: Column(
+              children: [
+
+              ],
+            )),
+          ],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
@@ -40,7 +56,10 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                   child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.search, color: Colors.grey,),
+                  Icon(
+                    Icons.search,
+                    color: Colors.grey,
+                  ),
                   SizedBox(
                     height: 8,
                   ),
@@ -55,7 +74,10 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                   child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.favorite_border, color: Colors.grey,),
+                  Icon(
+                    Icons.favorite_border,
+                    color: Colors.grey,
+                  ),
                   SizedBox(
                     height: 8,
                   ),
@@ -69,7 +91,10 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                   child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.person_outline, color: Colors.grey,),
+                  Icon(
+                    Icons.person_outline,
+                    color: Colors.grey,
+                  ),
                   SizedBox(
                     height: 8,
                   ),
