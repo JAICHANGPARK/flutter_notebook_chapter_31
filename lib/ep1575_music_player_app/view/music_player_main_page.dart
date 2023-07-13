@@ -13,9 +13,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Stack(
-          children: [
-
-          ],
+          children: [],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
@@ -24,7 +22,18 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
           height: 84,
           child: Row(
             children: [
-
+              Expanded(
+                  child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.home),
+                  SizedBox(height: 8,),
+                  CircleAvatar(
+                    radius: 4,
+                    backgroundColor: Colors.blue,
+                  )
+                ],
+              )),
             ],
           ),
         ),
