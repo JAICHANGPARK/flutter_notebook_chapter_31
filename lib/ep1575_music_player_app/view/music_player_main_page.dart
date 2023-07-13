@@ -40,7 +40,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                   child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.search),
+                  Icon(Icons.search, color: Colors.grey,),
                   SizedBox(
                     height: 8,
                   ),
