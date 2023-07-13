@@ -15,19 +15,28 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Good Evening"),
-        titleTextStyle: TextStyle(
-          fontWeight: FontWeight.bold,
-          fontSize: 24,
-        ),
+        // titleTextStyle: TextStyle(
+        //   fontWeight: FontWeight.bold,
+        //   fontSize: 24,
+        // ),
+        elevation: 0,
         foregroundColor: Colors.black,
+        backgroundColor: Colors.white,
+        actions: [
+          Badge(),
+          IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.settings_outlined,
+              ))
+        ],
       ),
       body: SafeArea(
         child: Stack(
           children: [
-            Positioned.fill(child: Column(
-              children: [
-
-              ],
+            Positioned.fill(
+                child: Column(
+              children: [],
             )),
           ],
         ),
