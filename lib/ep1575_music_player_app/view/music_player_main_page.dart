@@ -10,6 +10,25 @@ class MusicPlayerMainPage extends StatefulWidget {
 class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Stack(
+          children: [
+
+          ],
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        elevation: 0,
+        child: Container(
+          height: 84,
+          child: Row(
+            children: [
+
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
