@@ -24,25 +24,27 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
         backgroundColor: Colors.white,
         actions: [
           Badge(
+            backgroundColor: Colors.blue,
             child: Icon(
               Icons.notifications_none,
             ),
-            backgroundColor: Colors.blue,
           ),
           IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.settings_outlined,
-              ))
+            onPressed: () {},
+            icon: Icon(
+              Icons.settings_outlined,
+            ),
+          )
         ],
       ),
       body: SafeArea(
         child: Stack(
           children: [
             Positioned.fill(
-                child: Column(
-              children: [],
-            )),
+              child: Column(
+                children: [],
+              ),
+            ),
           ],
         ),
       ),
