@@ -1,15 +1,16 @@
 # flutter_notebook_chapter_31
 
 How to run
+
 - flutter run
 
 ## EP1575
 
-- Hotel & Travel Booking App
-- by Mahima Mahajan
-- https://dribbble.com/shots/21936059-Hotel-Travel-Booking-App
+- Smuly - Music Player App
+- by Rizal🔥 for Kretya
+- https://dribbble.com/shots/21983717-Smuly-Music-Player-App
 
-<img src="https://cdn.dribbble.com/userupload/8378802/file/original-fc59bee3e39618f3fb026249f1d5fdd1.jpg?compress=1&resize=1504x1128" width="500px"/>
+<img src="https://cdn.dribbble.com/userupload/8525683/file/original-8b1e457223cff2b5e75f089862c9cf21.png?compress=1&resize=1600x1200"/>
 
 ## EP1571-1574
 
