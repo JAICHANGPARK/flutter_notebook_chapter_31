@@ -14,7 +14,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Good Evening"),
+        title: const Text("Good Evening"),
         // titleTextStyle: TextStyle(
         //   fontWeight: FontWeight.bold,
         //   fontSize: 24,
@@ -23,7 +23,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
         foregroundColor: Colors.black,
         backgroundColor: Colors.white,
         actions: [
-          Badge(
+          const Badge(
             backgroundColor: Colors.blue,
             child: Icon(
               Icons.notifications_none,
@@ -31,13 +31,13 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.settings_outlined,
             ),
           )
         ],
       ),
-      body: SafeArea(
+      body: const SafeArea(
         child: Stack(
           children: [
             Positioned.fill(
@@ -52,7 +52,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
         elevation: 0,
         child: Container(
           height: 84,
-          child: Row(
+          child: const Row(
             children: [
               Expanded(
                   child: Column(
