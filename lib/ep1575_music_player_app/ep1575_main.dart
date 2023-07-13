@@ -11,6 +11,10 @@ class MusicPlayerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData.light().copyWith(
+        scaffoldBackgroundColor: Colors.white,
+        useMaterial3: true
+      ),
       home: MusicPlayerMainPage(),
     );
   }
