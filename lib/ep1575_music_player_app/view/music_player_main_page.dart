@@ -27,7 +27,9 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(Icons.home_outlined),
-                  SizedBox(height: 8,),
+                  SizedBox(
+                    height: 8,
+                  ),
                   CircleAvatar(
                     radius: 4,
                     backgroundColor: Colors.blue,
@@ -36,41 +38,48 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
               )),
               Expanded(
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(Icons.search),
-                      SizedBox(height: 8,),
-                      CircleAvatar(
-                        radius: 4,
-                        // backgroundColor: Colors.blue,
-                      )
-                    ],
-                  )),
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.search),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  CircleAvatar(
+                    radius: 4,
+                    backgroundColor: Colors.transparent,
+                    // backgroundColor: Colors.blue,
+                  )
+                ],
+              )),
               Expanded(
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(Icons.favorite_border),
-                      SizedBox(height: 8,),
-                      CircleAvatar(
-                        radius: 4,
-                        // backgroundColor: Colors.blue,
-                      )
-                    ],
-                  )),
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.favorite_border),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  CircleAvatar(
+                    radius: 4,
+                    backgroundColor: Colors.transparent,
+                  )
+                ],
+              )),
               Expanded(
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(Icons.person_outline),
-                      SizedBox(height: 8,),
-                      CircleAvatar(
-                        radius: 4,
-                        // backgroundColor: Colors.blue,
-                      )
-                    ],
-                  )),
-
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.person_outline),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  CircleAvatar(
+                    radius: 4,
+                    backgroundColor: Colors.transparent,
+                    // backgroundColor: Colors.blue,
+                  )
+                ],
+              )),
             ],
           ),
         ),
