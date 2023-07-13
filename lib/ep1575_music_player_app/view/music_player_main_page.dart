@@ -26,7 +26,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                   child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.home),
+                  Icon(Icons.home_outlined),
                   SizedBox(height: 8,),
                   CircleAvatar(
                     radius: 4,
