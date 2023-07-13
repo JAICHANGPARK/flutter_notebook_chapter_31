@@ -55,7 +55,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                   child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.favorite_border),
+                  Icon(Icons.favorite_border, color: Colors.grey,),
                   SizedBox(
                     height: 8,
                   ),
@@ -69,7 +69,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                   child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.person_outline),
+                  Icon(Icons.person_outline, color: Colors.grey,),
                   SizedBox(
                     height: 8,
                   ),
