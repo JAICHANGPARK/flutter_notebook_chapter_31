@@ -34,6 +34,43 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                   )
                 ],
               )),
+              Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.search),
+                      SizedBox(height: 8,),
+                      CircleAvatar(
+                        radius: 4,
+                        // backgroundColor: Colors.blue,
+                      )
+                    ],
+                  )),
+              Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.favorite_border),
+                      SizedBox(height: 8,),
+                      CircleAvatar(
+                        radius: 4,
+                        // backgroundColor: Colors.blue,
+                      )
+                    ],
+                  )),
+              Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.person_outline),
+                      SizedBox(height: 8,),
+                      CircleAvatar(
+                        radius: 4,
+                        // backgroundColor: Colors.blue,
+                      )
+                    ],
+                  )),
+
             ],
           ),
         ),
