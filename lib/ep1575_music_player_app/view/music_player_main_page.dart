@@ -37,12 +37,22 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
           )
         ],
       ),
-      body: const SafeArea(
+      body: SafeArea(
         child: Stack(
           children: [
             Positioned.fill(
               child: Column(
-                children: [],
+                children: [
+                  Row(
+                    children: [
+                      Text("Followed Artist"),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text(""),
+                      ),
+                    ],
+                  )
+                ],
               ),
             ),
           ],
