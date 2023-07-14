@@ -168,7 +168,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                             padding: const EdgeInsets.only(right: 12, bottom: 16),
                             child: Container(
                               height: 120,
-                              width: 120,
+                              width: 140,
                               decoration: BoxDecoration(
                                 color: Colors.blue,
                                 borderRadius: BorderRadius.circular(12),
@@ -182,6 +182,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                 ],
               ),
             ),
+            
           ],
         ),
       ),
