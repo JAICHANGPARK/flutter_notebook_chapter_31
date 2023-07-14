@@ -202,16 +202,19 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                       ),
                     ),
                     Expanded(
-                      child: Column(
-                        children: [
-                          Text("Flutter Live Coding Podcast"),
-                          Text("Dreamwalker"),
-                        ],
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Flutter Live Coding Podcast"),
+                            Text("Dreamwalker"),
+                          ],
+                        ),
                       ),
                     ),
                     IconButton(onPressed: () {}, icon: Icon(Icons.cast)),
                     IconButton(onPressed: () {}, icon: Icon(Icons.play_arrow)),
-
                   ],
                 ),
               ),
