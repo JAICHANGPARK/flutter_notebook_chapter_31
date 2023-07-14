@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class MusicPlayerMainPage extends StatefulWidget {
   const MusicPlayerMainPage({super.key});
@@ -187,42 +188,53 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
               right: 16,
               bottom: 16,
               child: Container(
-                padding: EdgeInsets.all(8),
-                decoration: BoxDecoration(
+                padding: const EdgeInsets.all(8),
+                decoration: const BoxDecoration(
                   color: Colors.white,
                 ),
-                child: Row(
+                child: Column(
                   children: [
-                    Container(
-                      height: 56,
-                      width: 56,
-                      decoration: BoxDecoration(
-                        color: Colors.pink,
-                        borderRadius: BorderRadius.circular(4),
-                      ),
-                    ),
-                    Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 12),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Flutter Live Coding Podcast",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 4,
-                            ),
-                            Text("Dreamwalker"),
-                          ],
+                    Row(
+                      children: [
+                        Container(
+                          height: 56,
+                          width: 56,
+                          decoration: BoxDecoration(
+                            color: Colors.pink,
+                            borderRadius: BorderRadius.circular(4),
+                          ),
                         ),
-                      ),
+                        const Expanded(
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 12),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Flutter Live Coding Podcast",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text("Dreamwalker"),
+                              ],
+                            ),
+                          ),
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: const Icon(Icons.cast),
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: const Icon(Icons.play_arrow),
+                        ),
+                      ],
                     ),
-                    IconButton(onPressed: () {}, icon: Icon(Icons.cast)),
-                    IconButton(onPressed: () {}, icon: Icon(Icons.play_arrow)),
+                    LinearPercentIndicator(),
                   ],
                 ),
               ),
