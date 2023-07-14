@@ -43,14 +43,23 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
             Positioned.fill(
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      Text("Followed Artist"),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text(""),
-                      ),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Followed Artist",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("see all"),
+                        ),
+                      ],
+                    ),
                   )
                 ],
               ),
