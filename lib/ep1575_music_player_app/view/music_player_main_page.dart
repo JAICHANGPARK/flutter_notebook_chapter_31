@@ -108,16 +108,26 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(right: 16, top: 8, bottom: 8),
+                    padding: EdgeInsets.only(left: 16, top: 8, bottom: 8),
                     child: SizedBox(
                       height: 160,
                       child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 10,
                         itemBuilder: (context, index) {
-                          return PhysicalModel(
-                            color: Colors.white,
-                            child: Container(color: Colors.blue,
-                              height: 120,
-                              width: 300,
+                          return Padding(
+                            padding: const EdgeInsets.only(right: 16),
+                            child: PhysicalModel(
+                              color: Colors.white,
+                              elevation: 16,
+                              shadowColor: Colors.black,
+                              shape: BoxShape.rectangle,
+                              child: Container(
+
+                                color: Colors.blue,
+                                height: 120,
+                                width: 300,
+                              ),
                             ),
                           );
                         },
