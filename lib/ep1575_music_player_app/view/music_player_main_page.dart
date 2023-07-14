@@ -187,7 +187,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
               right: 16,
               bottom: 16,
               child: Container(
-                padding: EdgeInsets.all(4),
+                padding: EdgeInsets.all(8),
                 decoration: BoxDecoration(
                   color: Colors.white,
                 ),
@@ -207,7 +207,15 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Flutter Live Coding Podcast"),
+                            Text(
+                              "Flutter Live Coding Podcast",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 4,
+                            ),
                             Text("Dreamwalker"),
                           ],
                         ),
