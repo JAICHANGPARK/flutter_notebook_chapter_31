@@ -182,7 +182,40 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                 ],
               ),
             ),
-            
+            Positioned(
+              left: 16,
+              right: 16,
+              bottom: 16,
+              child: Container(
+                padding: EdgeInsets.all(4),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 56,
+                      width: 56,
+                      decoration: BoxDecoration(
+                        color: Colors.pink,
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                    ),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          Text("Flutter Live Coding Podcast"),
+                          Text("Dreamwalker"),
+                        ],
+                      ),
+                    ),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.cast)),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.play_arrow)),
+
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
