@@ -138,7 +138,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 16, top: 16),
+                    padding: const EdgeInsets.only(left: 16, top: 8),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -154,6 +154,29 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                           child: const Text("see all"),
                         ),
                       ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16, top: 8),
+                    child: SizedBox(
+                      height: 200,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 10,
+                        itemBuilder: (context, index) {
+                          return Padding(
+                            padding: const EdgeInsets.only(right: 12, bottom: 16),
+                            child: Container(
+                              height: 120,
+                              width: 120,
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                            ),
+                          );
+                        },
+                      ),
                     ),
                   ),
                 ],
