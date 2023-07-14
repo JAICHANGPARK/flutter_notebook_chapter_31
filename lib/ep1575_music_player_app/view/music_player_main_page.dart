@@ -108,10 +108,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(
-                      left: 16,
-                      top: 8
-                    ),
+                    padding: const EdgeInsets.only(left: 16, top: 8),
                     child: SizedBox(
                       height: 200,
                       child: ListView.builder(
