@@ -44,21 +44,84 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.only(left: 16),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Followed Artist",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
+                            fontSize: 18,
                           ),
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text("see all"),
+                          child: const Text("see all"),
                         ),
                       ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: SizedBox(
+                      height: 54 + 8 + 24,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 10,
+                        itemBuilder: (context, index) {
+                          return const Padding(
+                            padding: EdgeInsets.only(right: 16),
+                            child: Column(
+                              children: [
+                                CircleAvatar(
+                                  radius: 28,
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text("Dream"),
+                              ],
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          "New Album",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: const Text("see all"),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 16, top: 8, bottom: 8),
+                    child: SizedBox(
+                      height: 160,
+                      child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return PhysicalModel(
+                            color: Colors.white,
+                            child: Container(color: Colors.blue,
+                              height: 120,
+                              width: 300,
+                            ),
+                          );
+                        },
+                      ),
                     ),
                   )
                 ],
