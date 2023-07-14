@@ -139,7 +139,26 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                         },
                       ),
                     ),
-                  )
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16, top: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          "Popular Song",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: const Text("see all"),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
