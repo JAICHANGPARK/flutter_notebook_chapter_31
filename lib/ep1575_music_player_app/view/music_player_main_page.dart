@@ -108,7 +108,9 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 16,),
+                    padding: EdgeInsets.only(
+                      left: 16,
+                    ),
                     child: SizedBox(
                       height: 200,
                       child: ListView.builder(
@@ -122,11 +124,14 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                               elevation: 16,
                               shadowColor: Colors.black,
                               shape: BoxShape.rectangle,
+                              borderRadius: BorderRadius.circular(12),
                               child: Container(
-
                                 height: 120,
-                                width: 340,
-                                decoration: BoxDecoration(  color: Colors.blue,),
+                                width: 360,
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
                               ),
                             ),
                           );
