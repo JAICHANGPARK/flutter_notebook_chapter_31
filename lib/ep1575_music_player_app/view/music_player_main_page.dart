@@ -19,26 +19,28 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
       appBar: AppBar(
         title: Text(switch (menuIndex) {
           0 => "Good Evening",
-        1 => 
+          1 => "Search",
           _ => "",
         }),
         elevation: 0,
         foregroundColor: Colors.black,
         backgroundColor: Colors.white,
-        actions: [
-          const Badge(
-            backgroundColor: Colors.blue,
-            child: Icon(
-              Icons.notifications_none,
-            ),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.settings_outlined,
-            ),
-          )
-        ],
+        actions: menuIndex == 0
+            ? [
+                const Badge(
+                  backgroundColor: Colors.blue,
+                  child: Icon(
+                    Icons.notifications_none,
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.settings_outlined,
+                  ),
+                )
+              ]
+            : [],
       ),
       body: SafeArea(
         child: IndexedStack(
