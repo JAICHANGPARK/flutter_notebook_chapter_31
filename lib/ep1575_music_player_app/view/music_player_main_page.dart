@@ -278,10 +278,10 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                         ),
                       ],
                     ),
-                    SizedBox(height: 6,),
+                    const SizedBox(height: 6,),
                     LinearPercentIndicator(
                       padding: EdgeInsets.zero,
-                      barRadius: Radius.circular(8),
+                      barRadius: const Radius.circular(8),
                       progressColor: Colors.blue,
                       percent: 0.45,
                     ),
