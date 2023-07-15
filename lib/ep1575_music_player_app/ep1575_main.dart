@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_31/ep1575_music_player_app/view/music_player_main_page.dart';
 
 void main() {
-  runApp(MusicPlayerApp());
+  runApp(const MusicPlayerApp());
 }
 
 class MusicPlayerApp extends StatelessWidget {
@@ -15,7 +15,7 @@ class MusicPlayerApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         useMaterial3: true
       ),
-      home: MusicPlayerMainPage(),
+      home: const MusicPlayerMainPage(),
     );
   }
 }
