@@ -315,9 +315,9 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                   children: [
                     Icon(
                       Icons.home_outlined,
-                      color: menuIndex == 0 ? Colors.black : Colors.transparent,
+                      color: menuIndex == 0 ? Colors.black : Colors.grey,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
                     CircleAvatar(
@@ -342,7 +342,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                       Icons.search,
                       color: menuIndex == 1 ? Colors.black : Colors.grey,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
                     CircleAvatar(
@@ -365,12 +365,12 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                   children: [
                     Icon(
                       Icons.favorite_border,
-                      color: Colors.grey,
+                      color: menuIndex == 2 ? Colors.black : Colors.grey,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 4,
                       backgroundColor: Colors.transparent,
                     )
@@ -384,7 +384,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                     menuIndex = 3;
                   });
                 },
-                child: Column(
+                child: const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(
