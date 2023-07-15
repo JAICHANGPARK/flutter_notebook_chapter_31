@@ -336,7 +336,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                   children: [
                     Icon(
                       Icons.search,
-                      color: Colors.grey,
+                      color: menuIndex == 1 ? Colors.black : Colors.grey,
                     ),
                     SizedBox(
                       height: 8,
@@ -345,7 +345,6 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                       radius: 4,
                       backgroundColor:
                           menuIndex == 1 ? Colors.blue : Colors.transparent,
-                      // backgroundColor: Colors.blue,
                     )
                   ],
                 ),
