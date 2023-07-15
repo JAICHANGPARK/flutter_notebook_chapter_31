@@ -18,10 +18,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Good Evening"),
-        // titleTextStyle: TextStyle(
-        //   fontWeight: FontWeight.bold,
-        //   fontSize: 24,
-        // ),
+      
         elevation: 0,
         foregroundColor: Colors.black,
         backgroundColor: Colors.white,
@@ -43,9 +40,9 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
       body: SafeArea(
         child: IndexedStack(
           index: menuIndex,
-          children: [
-            const MusicPlayerHomePage(),
-            const MusicPlayerSearchPage(),
+          children: const [
+            MusicPlayerHomePage(),
+            MusicPlayerSearchPage(),
           ],
         ),
       ),
