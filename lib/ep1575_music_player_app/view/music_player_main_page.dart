@@ -294,24 +294,29 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
       ),
       bottomNavigationBar: BottomAppBar(
         elevation: 0,
-        child: Container(
+        child: SizedBox(
           height: 84,
           child: const Row(
             children: [
               Expanded(
-                  child: Column(
+                  child: GestureDetector(
+                    onTap: (){
+
+                    },
+                    child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.home_outlined),
-                  SizedBox(
-                    height: 8,
-                  ),
-                  CircleAvatar(
-                    radius: 4,
-                    backgroundColor: Colors.blue,
-                  )
+                    Icon(Icons.home_outlined),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    CircleAvatar(
+                      radius: 4,
+                      backgroundColor: Colors.blue,
+                    )
                 ],
-              )),
+              ),
+                  )),
               Expanded(
                   child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
