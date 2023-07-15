@@ -17,8 +17,11 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Good Evening"),
-      
+        title: Text(switch (menuIndex) {
+          0 => "Good Evening",
+        1 => 
+          _ => "",
+        }),
         elevation: 0,
         foregroundColor: Colors.black,
         backgroundColor: Colors.white,
