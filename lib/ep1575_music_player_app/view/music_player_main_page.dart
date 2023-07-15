@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_31/ep1575_music_player_app/view/music_player_home_page.dart';
+import 'package:flutter_notebook_chapter_31/ep1575_music_player_app/view/music_player_search_page.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class MusicPlayerMainPage extends StatefulWidget {
@@ -42,7 +44,8 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
         child: IndexedStack(
           index: menuIndex,
           children: [
-
+            MusicPlayerHomePage(),
+            MusicPlayerSearchPage(),
           ],
         ),
       ),
