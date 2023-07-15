@@ -370,9 +370,10 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                     const SizedBox(
                       height: 8,
                     ),
-                    const CircleAvatar(
+                    CircleAvatar(
                       radius: 4,
-                      backgroundColor: Colors.transparent,
+                      backgroundColor:
+                          menuIndex == 2 ? Colors.blue : Colors.transparent,
                     )
                   ],
                 ),
