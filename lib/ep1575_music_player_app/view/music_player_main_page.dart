@@ -315,7 +315,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                   children: [
                     Icon(
                       Icons.home_outlined,
-                      color: menuIndex == 0 ? Colors.blue : Colors.transparent,
+                      color: menuIndex == 0 ? Colors.black : Colors.transparent,
                     ),
                     SizedBox(
                       height: 8,
