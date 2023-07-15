@@ -310,16 +310,20 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                     menuIndex = 0;
                   });
                 },
-                child: const Column(
+                child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.home_outlined),
+                    Icon(
+                      Icons.home_outlined,
+                      color: menuIndex == 0 ? Colors.blue : Colors.transparent,
+                    ),
                     SizedBox(
                       height: 8,
                     ),
                     CircleAvatar(
                       radius: 4,
-                      backgroundColor: Colors.blue,
+                      backgroundColor:
+                          menuIndex == 0 ? Colors.blue : Colors.transparent,
                     )
                   ],
                 ),
