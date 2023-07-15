@@ -44,8 +44,8 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
         child: IndexedStack(
           index: menuIndex,
           children: [
-            MusicPlayerHomePage(),
-            MusicPlayerSearchPage(),
+            const MusicPlayerHomePage(),
+            const MusicPlayerSearchPage(),
           ],
         ),
       ),
