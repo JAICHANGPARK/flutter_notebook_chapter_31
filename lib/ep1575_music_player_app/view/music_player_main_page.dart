@@ -118,7 +118,8 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                           itemCount: 10,
                           itemBuilder: (context, index) {
                             return Padding(
-                              padding: const EdgeInsets.only(right: 16, bottom: 24,left: 8),
+                              padding: const EdgeInsets.only(
+                                  right: 16, bottom: 24, left: 8),
                               child: PhysicalModel(
                                 color: Colors.white,
                                 elevation: 16,
@@ -167,7 +168,8 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                           itemCount: 10,
                           itemBuilder: (context, index) {
                             return Padding(
-                              padding: const EdgeInsets.only(right: 12, bottom: 16),
+                              padding:
+                                  const EdgeInsets.only(right: 12, bottom: 16),
                               child: Container(
                                 height: 120,
                                 width: 140,
@@ -209,7 +211,8 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                           itemCount: 10,
                           itemBuilder: (context, index) {
                             return Padding(
-                              padding: const EdgeInsets.only(right: 12, bottom: 16),
+                              padding:
+                                  const EdgeInsets.only(right: 12, bottom: 16),
                               child: Container(
                                 height: 120,
                                 width: 140,
@@ -278,7 +281,9 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 6,),
+                    const SizedBox(
+                      height: 6,
+                    ),
                     LinearPercentIndicator(
                       padding: EdgeInsets.zero,
                       barRadius: const Radius.circular(8),
@@ -296,16 +301,18 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
         elevation: 0,
         child: SizedBox(
           height: 84,
-          child: const Row(
+          child: Row(
             children: [
               Expanded(
                   child: GestureDetector(
-                    onTap: (){
-
-                    },
-                    child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                onTap: () {
+                  setState(() {
+                    menuIndex = 0;
+                  });
+                },
+                child: const Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
                     Icon(Icons.home_outlined),
                     SizedBox(
                       height: 8,
@@ -314,10 +321,10 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                       radius: 4,
                       backgroundColor: Colors.blue,
                     )
-                ],
-              ),
-                  )),
-              Expanded(
+                  ],
+                ),
+              )),
+              const Expanded(
                   child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -335,7 +342,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                   )
                 ],
               )),
-              Expanded(
+              const Expanded(
                   child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -352,7 +359,7 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                   )
                 ],
               )),
-              Expanded(
+              const Expanded(
                   child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
