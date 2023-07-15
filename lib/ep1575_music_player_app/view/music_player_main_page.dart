@@ -324,58 +324,80 @@ class _MusicPlayerMainPageState extends State<MusicPlayerMainPage> {
                   ],
                 ),
               )),
-              const Expanded(
-                  child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.search,
-                    color: Colors.grey,
-                  ),
-                  SizedBox(
-                    height: 8,
-                  ),
-                  CircleAvatar(
-                    radius: 4,
-                    backgroundColor: Colors.transparent,
-                    // backgroundColor: Colors.blue,
-                  )
-                ],
+              Expanded(
+                  child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    menuIndex = 1;
+                  });
+                },
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.search,
+                      color: Colors.grey,
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    CircleAvatar(
+                      radius: 4,
+                      backgroundColor:
+                          menuIndex == 1 ? Colors.blue : Colors.transparent,
+                      // backgroundColor: Colors.blue,
+                    )
+                  ],
+                ),
               )),
-              const Expanded(
-                  child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.favorite_border,
-                    color: Colors.grey,
-                  ),
-                  SizedBox(
-                    height: 8,
-                  ),
-                  CircleAvatar(
-                    radius: 4,
-                    backgroundColor: Colors.transparent,
-                  )
-                ],
+              Expanded(
+                  child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    menuIndex = 2;
+                  });
+                },
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.favorite_border,
+                      color: Colors.grey,
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    CircleAvatar(
+                      radius: 4,
+                      backgroundColor: Colors.transparent,
+                    )
+                  ],
+                ),
               )),
-              const Expanded(
-                  child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.person_outline,
-                    color: Colors.grey,
-                  ),
-                  SizedBox(
-                    height: 8,
-                  ),
-                  CircleAvatar(
-                    radius: 4,
-                    backgroundColor: Colors.transparent,
-                    // backgroundColor: Colors.blue,
-                  )
-                ],
+              Expanded(
+                  child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    menuIndex = 3;
+                  });
+                },
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.person_outline,
+                      color: Colors.grey,
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    CircleAvatar(
+                      radius: 4,
+                      backgroundColor: Colors.transparent,
+                      // backgroundColor: Colors.blue,
+                    )
+                  ],
+                ),
               )),
             ],
           ),
