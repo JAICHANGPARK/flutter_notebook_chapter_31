@@ -11,6 +11,17 @@ class MusicPlayerSearchPage extends StatefulWidget {
 class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Container(
+          decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(32),
+            border: Border.all()
+          ),
+          child: TextField(),
+        )
+      ],
+    );
   }
 }
