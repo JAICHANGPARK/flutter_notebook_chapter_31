@@ -79,12 +79,14 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
               color: Colors.grey,
               borderRadius: BorderRadius.circular(16),
             ),
+            padding: EdgeInsets.all(16),
             child: Column(
               children: [
                 Row(
                   children: [
                     Text("Flutter Live Coding"),
                     Text("EP"),
+                    Icon(Icons.volume_up_outlined),
                   ],
                 )
               ],
