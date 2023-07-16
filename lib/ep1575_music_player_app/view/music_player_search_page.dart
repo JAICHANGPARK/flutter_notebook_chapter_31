@@ -17,11 +17,15 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(32),
             border: Border.all(
-              color: Colors.grey[200]!,
+              color: Colors.grey[400]!,
             ),
           ),
           margin: EdgeInsets.symmetric(horizontal: 16),
-          child: TextField(),
+          child: TextField(
+            decoration: InputDecoration(
+              border: InputBorder.none,
+            ),
+          ),
         )
       ],
     );
