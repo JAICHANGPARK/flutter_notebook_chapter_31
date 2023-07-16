@@ -171,8 +171,12 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
                     ),
                     Expanded(
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Flutter Live Coding"),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Text("Dreamwalker"),
                         ],
                       ),
@@ -189,7 +193,6 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
                       backgroundColor: Colors.white,
                       foregroundColor: Colors.black,
                       child: Icon(Icons.play_arrow),
-
                     )
                   ],
                 )
