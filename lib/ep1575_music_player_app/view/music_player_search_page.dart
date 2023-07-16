@@ -169,15 +169,20 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
+                    SizedBox(width: 16,),
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Flutter Live Coding"),
+                          Text("Flutter Live Coding", style: TextStyle(
+                              color: Colors.white
+                          ),),
                           SizedBox(
                             height: 8,
                           ),
-                          Text("Dreamwalker"),
+                          Text("Dreamwalker", style: TextStyle(
+                              color: Colors.white
+                          ),),
                         ],
                       ),
                     ),
@@ -185,15 +190,25 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
                 ),
                 Row(
                   children: [
-                    IconButton(onPressed: () {}, icon: Icon(Icons.add_circle_outline_rounded)),
-                    IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz)),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.add_circle_outline_rounded),
+                      color: Colors.white,
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.more_horiz),
+                      color: Colors.white,
+                    ),
                     Spacer(),
-                    Text("2023 ", style: TextStyle(
-                      color: Colors.white
-                    ),),
-                    Text("50 episode", style: TextStyle(
-                        color: Colors.white
-                    ),),
+                    Text(
+                      "2023 ",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    Text(
+                      "50 episode",
+                      style: TextStyle(color: Colors.white),
+                    ),
                     CircleAvatar(
                       backgroundColor: Colors.white,
                       foregroundColor: Colors.black,
