@@ -86,7 +86,58 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
                   children: [
                     Text("Flutter Live Coding"),
                     Text("EP"),
+                    Spacer(),
                     Icon(Icons.volume_up_outlined),
+                  ],
+                ),
+                SizedBox(height: 16,),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        height: 4,
+                        margin: EdgeInsets.only(right: 8),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        height: 4,
+                        margin: EdgeInsets.only(right: 8),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.4),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        height: 4,
+                        margin: EdgeInsets.only(right: 8),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.4),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        height: 4,
+                        margin: EdgeInsets.only(right: 8),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.4),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        height: 4,
+
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.4),
+                        ),
+                      ),
+                    )
                   ],
                 )
               ],
