@@ -84,13 +84,28 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
               children: [
                 Row(
                   children: [
-                    Text("Flutter Live Coding"),
-                    Text("EP"),
+                    Text(
+                      "Flutter Live Coding",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      "EP",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
                     Spacer(),
-                    Icon(Icons.volume_up_outlined),
+                    Icon(
+                      Icons.volume_up_outlined,
+                      color: Colors.white,
+                    ),
                   ],
                 ),
-                SizedBox(height: 16,),
+                SizedBox(
+                  height: 16,
+                ),
                 Row(
                   children: [
                     Expanded(
@@ -132,7 +147,6 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
                     Expanded(
                       child: Container(
                         height: 4,
-
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(0.4),
                         ),
