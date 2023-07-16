@@ -21,9 +21,12 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
             ),
           ),
           margin: EdgeInsets.symmetric(horizontal: 16),
+          padding: EdgeInsets.symmetric(horizontal: 8),
           child: TextField(
             decoration: InputDecoration(
               border: InputBorder.none,
+              hintText: "What do you want to listen to?",
+              prefixIcon: Icon(Icons.search)
             ),
           ),
         )
