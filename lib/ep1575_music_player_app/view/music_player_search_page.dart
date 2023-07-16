@@ -73,11 +73,21 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
           ),
         ),
         Expanded(
-          
           child: Container(
             margin: EdgeInsets.all(16),
             decoration: BoxDecoration(
               color: Colors.grey,
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Text("Flutter Live Coding"),
+                    Text("EP"),
+                  ],
+                )
+              ],
             ),
           ),
         )
