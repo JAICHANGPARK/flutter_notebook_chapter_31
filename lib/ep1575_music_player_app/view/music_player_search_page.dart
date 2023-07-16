@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class MusicPlayerSearchPage extends StatefulWidget {
   const MusicPlayerSearchPage({super.key});
 
@@ -16,9 +15,12 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
       children: [
         Container(
           decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(32),
-            border: Border.all()
+            borderRadius: BorderRadius.circular(32),
+            border: Border.all(
+              color: Colors.grey[200]!,
+            ),
           ),
+          margin: EdgeInsets.symmetric(horizontal: 16),
           child: TextField(),
         )
       ],
