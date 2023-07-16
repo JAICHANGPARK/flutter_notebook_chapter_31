@@ -181,8 +181,13 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
                 ),
                 Row(
                   children: [
-                    IconButton(onPressed: (){}, icon: Icon(Icons.add_circle_outline_rounded)),
-                    IconButton(onPressed: (){}, icon: Icon(Icons.add_circle_outline_rounded)),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.add_circle_outline_rounded)),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz)),
+                    Text("2023 "),
+                    Text("50 episode"),
+                    CircleAvatar(
+                      backgroundColor: Colors.white,
+                    )
                   ],
                 )
               ],
