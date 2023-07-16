@@ -187,6 +187,9 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
                     Text("50 episode"),
                     CircleAvatar(
                       backgroundColor: Colors.white,
+                      foregroundColor: Colors.black,
+                      child: Icon(Icons.play_arrow),
+
                     )
                   ],
                 )
