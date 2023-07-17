@@ -97,9 +97,19 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                     Text("-1:48"),
                   ],
                 ),
+                SizedBox(
+                  height: 32,
+                ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    
+                    IconButton(onPressed: () {}, icon: Icon(Icons.shuffle)),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.skip_previous)),
+                    CircleAvatar(
+                      radius: 32,
+                    ),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.skip_next)),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.shuffle)),
                   ],
                 )
               ],
