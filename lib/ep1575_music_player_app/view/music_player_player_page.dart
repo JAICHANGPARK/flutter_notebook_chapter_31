@@ -20,10 +20,27 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
               right: 16,
               child: Column(
                 children: [
-                  
+                  Row(
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.keyboard_arrow_down_outlined),
+                      ),
+                      Expanded(
+                        child: Column(
+                          children: [],
+                        ),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.more_horiz,
+                        ),
+                      )
+                    ],
+                  )
                 ],
               )),
-
         ],
       ),
     );
