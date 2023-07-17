@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_31/ep1575_music_player_app/view/music_player_player_page.dart';
 
 class MusicPlayerSearchPage extends StatefulWidget {
   const MusicPlayerSearchPage({super.key});
@@ -213,11 +214,22 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
                       "50 episode",
                       style: TextStyle(color: Colors.white),
                     ),
-                    SizedBox(width: 16,),
-                    const CircleAvatar(
-                      backgroundColor: Colors.white,
-                      foregroundColor: Colors.black,
-                      child: Icon(Icons.play_arrow),
+                    const SizedBox(
+                      width: 16,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => const MusicPlayerPlayerPage(),
+                          ),
+                        );
+                      },
+                      child: const CircleAvatar(
+                        backgroundColor: Colors.white,
+                        foregroundColor: Colors.black,
+                        child: Icon(Icons.play_arrow),
+                      ),
                     )
                   ],
                 )
