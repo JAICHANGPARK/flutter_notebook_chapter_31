@@ -63,13 +63,25 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                   children: [
                     Expanded(
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Flutter Widgets"),
                           Text("Dreamwalker"),
                         ],
                       ),
                     ),
-                    IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border)
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.favorite_border),
+                    ),
+                  ],
+                ),
+                Slider(value: 0, onChanged: (v) {}),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("0:30"),
+                    Text("-1:48"),
                   ],
                 )
               ],
