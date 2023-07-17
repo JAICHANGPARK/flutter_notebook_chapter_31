@@ -213,6 +213,7 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
                       "50 episode",
                       style: TextStyle(color: Colors.white),
                     ),
+                    SizedBox(width: 16,),
                     const CircleAvatar(
                       backgroundColor: Colors.white,
                       foregroundColor: Colors.black,
