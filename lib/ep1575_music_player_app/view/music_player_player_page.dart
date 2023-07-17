@@ -76,12 +76,30 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                     ),
                   ],
                 ),
-                Slider(value: 0, onChanged: (v) {}),
+                SizedBox(
+                  height: 24,
+                ),
+                SliderTheme(
+                  data: SliderThemeData(
+                    overlayShape: SliderComponentShape.noOverlay,
+                  ),
+                  child: Slider(
+                    value: 0.3,
+                    onChanged: (v) {},
+                    inactiveColor: Colors.grey,
+                    activeColor: Colors.blue,
+                  ),
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("0:30"),
                     Text("-1:48"),
+                  ],
+                ),
+                Row(
+                  children: [
+                    
                   ],
                 )
               ],
