@@ -15,32 +15,66 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
         children: [
           Positioned.fill(child: Container()),
           Positioned(
-              top: 72,
-              left: 16,
-              right: 16,
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(Icons.keyboard_arrow_down_outlined),
+            top: 72,
+            left: 16,
+            right: 16,
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.keyboard_arrow_down_outlined),
+                    ),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          Text("Playing from"),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text(
+                            "Flutter Live",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          )
+                        ],
                       ),
-                      Expanded(
-                        child: Column(
-                          children: [],
-                        ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.more_horiz,
                       ),
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.more_horiz,
-                        ),
-                      )
-                    ],
-                  )
-                ],
-              )),
+                    ),
+                  ],
+                ),
+                Container(
+                  height: 400,
+                  margin: EdgeInsets.symmetric(vertical: 24),
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Column(
+                        children: [
+                          Text("Flutter Widgets"),
+                          Text("Dreamwalker"),
+                        ],
+                      ),
+                    ),
+                    IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border)
+                  ],
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );
