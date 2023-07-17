@@ -18,6 +18,7 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
             top: 72,
             left: 16,
             right: 16,
+            bottom: 0,
             child: Column(
               children: [
                 Row(
@@ -111,6 +112,14 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                     IconButton(onPressed: () {}, icon: Icon(Icons.skip_next)),
                     IconButton(onPressed: () {}, icon: Icon(Icons.shuffle)),
                   ],
+                ),
+                Spacer(),
+                Container(
+                  height: 64,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+
+                  ),
                 )
               ],
             ),
