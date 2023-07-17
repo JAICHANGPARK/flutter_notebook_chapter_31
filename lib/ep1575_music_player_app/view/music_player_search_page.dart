@@ -78,7 +78,7 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
             decoration: BoxDecoration(
               color: Colors.grey,
               borderRadius: BorderRadius.circular(16),
-              image: DecorationImage(
+              image: const DecorationImage(
                 image: NetworkImage("https://cdn.pixabay.com/photo/2016/08/11/23/55/trees-1587301_1280.jpg"),
                 fit: BoxFit.cover,
               ),
@@ -158,7 +158,7 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
                     )
                   ],
                 ),
-                Spacer(),
+                const Spacer(),
                 Row(
                   children: [
                     Container(
@@ -169,20 +169,24 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
-                    SizedBox(width: 16,),
-                    Expanded(
+                    const SizedBox(
+                      width: 16,
+                    ),
+                    const Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Flutter Live Coding", style: TextStyle(
-                              color: Colors.white
-                          ),),
+                          Text(
+                            "Flutter Live Coding",
+                            style: TextStyle(color: Colors.white),
+                          ),
                           SizedBox(
                             height: 8,
                           ),
-                          Text("Dreamwalker", style: TextStyle(
-                              color: Colors.white
-                          ),),
+                          Text(
+                            "Dreamwalker",
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ],
                       ),
                     ),
@@ -192,24 +196,24 @@ class _MusicPlayerSearchPageState extends State<MusicPlayerSearchPage> {
                   children: [
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.add_circle_outline_rounded),
+                      icon: const Icon(Icons.add_circle_outline_rounded),
                       color: Colors.white,
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.more_horiz),
+                      icon: const Icon(Icons.more_horiz),
                       color: Colors.white,
                     ),
-                    Spacer(),
-                    Text(
+                    const Spacer(),
+                    const Text(
                       "2023 ",
                       style: TextStyle(color: Colors.white),
                     ),
-                    Text(
+                    const Text(
                       "50 episode",
                       style: TextStyle(color: Colors.white),
                     ),
-                    CircleAvatar(
+                    const CircleAvatar(
                       backgroundColor: Colors.white,
                       foregroundColor: Colors.black,
                       child: Icon(Icons.play_arrow),
