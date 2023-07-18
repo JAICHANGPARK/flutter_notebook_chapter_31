@@ -109,7 +109,8 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                     const CircleAvatar(
                       radius: 32,
                       backgroundColor: Colors.white,
-                      
+                      foregroundColor: Colors.black,
+                      child: Icon(Icons.play_circle),
                     ),
                     IconButton(onPressed: () {}, icon: const Icon(Icons.skip_next)),
                     IconButton(onPressed: () {}, icon: const Icon(Icons.shuffle)),
@@ -120,7 +121,10 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                   height: 64,
                   decoration: const BoxDecoration(
                     color: Colors.blue,
-
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(16),
+                      topRight: Radius.circular(16)
+                    )
                   ),
                 )
               ],
