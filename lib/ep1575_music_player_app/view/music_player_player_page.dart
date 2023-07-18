@@ -123,13 +123,16 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                     color: Colors.blue,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(16),
-                      topRight: Radius.circular(16)
-                    )
+                      topRight: Radius.circular(16),
+                    ),
                   ),
                   child: Row(
                     children: [
                       Text("Lyrics"),
-                      
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.ios_share),
+                      ),
                     ],
                   ),
                 )
