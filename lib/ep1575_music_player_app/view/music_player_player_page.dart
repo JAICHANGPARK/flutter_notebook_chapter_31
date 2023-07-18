@@ -52,19 +52,16 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                     const Expanded(
                       child: Column(
                         children: [
-                          Text("Playing from",style: TextStyle(
-                            color: Colors.white
-                          ),),
+                          Text(
+                            "Playing from",
+                            style: TextStyle(color: Colors.white),
+                          ),
                           SizedBox(
                             height: 8,
                           ),
                           Text(
                             "Flutter Live",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18,
-                              color: Colors.white
-                            ),
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: Colors.white),
                           )
                         ],
                       ),
@@ -120,8 +117,18 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("0:30"),
-                    Text("-1:48"),
+                    Text(
+                      "0:30",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      "-1:48",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
                   ],
                 ),
                 const SizedBox(
@@ -130,16 +137,32 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    IconButton(onPressed: () {}, icon: const Icon(Icons.shuffle)),
-                    IconButton(onPressed: () {}, icon: const Icon(Icons.skip_previous)),
+                    IconButton(
+                      onPressed: () {},
+                      icon: const Icon(Icons.shuffle),
+                      color: Colors.white,
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: const Icon(Icons.skip_previous),
+                      color: Colors.white,
+                    ),
                     const CircleAvatar(
                       radius: 32,
                       backgroundColor: Colors.white,
                       foregroundColor: Colors.black,
-                      child: Icon(Icons.play_circle),
+                      child: Icon(Icons.play_arrow),
                     ),
-                    IconButton(onPressed: () {}, icon: const Icon(Icons.skip_next)),
-                    IconButton(onPressed: () {}, icon: const Icon(Icons.shuffle)),
+                    IconButton(
+                      onPressed: () {},
+                      icon: const Icon(Icons.skip_next),
+                      color: Colors.white,
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: const Icon(Icons.shuffle),
+                      color: Colors.white,
+                    ),
                   ],
                 ),
                 const Spacer(),
