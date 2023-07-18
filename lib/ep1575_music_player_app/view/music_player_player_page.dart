@@ -202,16 +202,22 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                     children: [
                       Text(
                         "Lyrics",
-                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 16),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 16,
+                        ),
                       ),
                       Spacer(),
                       IconButton(
                         onPressed: () {},
                         icon: Icon(Icons.ios_share),
+                        color: Colors.white,
                       ),
                       IconButton(
                         onPressed: () {},
                         icon: Icon(Icons.open_in_full),
+                        color: Colors.white,
                       ),
                     ],
                   ),
