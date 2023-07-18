@@ -126,6 +126,12 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                       topRight: Radius.circular(16)
                     )
                   ),
+                  child: Row(
+                    children: [
+                      Text("Lyrics"),
+                      
+                    ],
+                  ),
                 )
               ],
             ),
