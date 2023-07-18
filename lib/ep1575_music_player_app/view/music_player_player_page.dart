@@ -47,11 +47,14 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                     IconButton(
                       onPressed: () {},
                       icon: const Icon(Icons.keyboard_arrow_down_outlined),
+                      color: Colors.white,
                     ),
                     const Expanded(
                       child: Column(
                         children: [
-                          Text("Playing from"),
+                          Text("Playing from",style: TextStyle(
+                            color: Colors.white
+                          ),),
                           SizedBox(
                             height: 8,
                           ),
@@ -60,6 +63,7 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 18,
+                              color: Colors.white
                             ),
                           )
                         ],
@@ -70,6 +74,7 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                       icon: const Icon(
                         Icons.more_horiz,
                       ),
+                      color: Colors.white,
                     ),
                   ],
                 ),
