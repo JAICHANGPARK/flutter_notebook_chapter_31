@@ -108,6 +108,8 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                     IconButton(onPressed: () {}, icon: const Icon(Icons.skip_previous)),
                     const CircleAvatar(
                       radius: 32,
+                      backgroundColor: Colors.white,
+                      
                     ),
                     IconButton(onPressed: () {}, icon: const Icon(Icons.skip_next)),
                     IconButton(onPressed: () {}, icon: const Icon(Icons.shuffle)),
