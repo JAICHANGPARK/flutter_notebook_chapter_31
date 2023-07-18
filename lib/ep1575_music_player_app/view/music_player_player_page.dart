@@ -85,6 +85,11 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                   decoration: BoxDecoration(
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(8),
+                    image: DecorationImage(
+                      image:
+                          NetworkImage("https://cdn.pixabay.com/photo/2023/05/23/18/12/hummingbird-8013214_1280.jpg"),
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
                 Row(
