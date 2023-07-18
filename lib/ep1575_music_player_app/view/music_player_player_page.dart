@@ -13,7 +13,12 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned.fill(child: Container()),
+          Positioned.fill(
+            child: BackdropFilter(
+              filter: null,
+              child: Container(),
+            ),
+          ),
           Positioned(
             top: 72,
             left: 16,
@@ -131,11 +136,7 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                     children: [
                       Text(
                         "Lyrics",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontSize: 16
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 16),
                       ),
                       Spacer(),
                       IconButton(
