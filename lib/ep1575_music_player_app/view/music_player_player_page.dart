@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class MusicPlayerPlayerPage extends StatefulWidget {
@@ -14,9 +16,23 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
       body: Stack(
         children: [
           Positioned.fill(
-            child: BackdropFilter(
-              filter: null,
-              child: Container(),
+            child: Container(
+              decoration: BoxDecoration(
+                // color: Colors.white,
+                image: DecorationImage(
+                  image: NetworkImage("https://cdn.pixabay.com/photo/2023/07/08/09/53/monastery-8114076_1280.jpg"),
+                  fit: BoxFit.cover,
+                ),
+              ),
+              child: BackdropFilter(
+                filter: ImageFilter.blur(
+                  sigmaX: 20,
+                  sigmaY: 10,
+                ),
+                child: Container(
+                  color: Colors.white.withOpacity(0.2),
+                ),
+              ),
             ),
           ),
           Positioned(
