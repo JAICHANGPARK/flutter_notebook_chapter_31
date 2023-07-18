@@ -61,7 +61,11 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                           ),
                           Text(
                             "Flutter Live",
-                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: Colors.white),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                              color: Colors.white,
+                            ),
                           )
                         ],
                       ),
@@ -89,14 +93,27 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Flutter Widgets"),
-                          Text("Dreamwalker"),
+                          Text(
+                            "Flutter Widgets",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                              color: Colors.white,
+                            ),
+                          ),
+                          Text(
+                            "Dreamwalker",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
                         ],
                       ),
                     ),
                     IconButton(
                       onPressed: () {},
                       icon: const Icon(Icons.favorite_border),
+                      color: Colors.white,
                     ),
                   ],
                 ),
