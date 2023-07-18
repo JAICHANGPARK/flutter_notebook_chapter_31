@@ -25,9 +25,9 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                   children: [
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.keyboard_arrow_down_outlined),
+                      icon: const Icon(Icons.keyboard_arrow_down_outlined),
                     ),
-                    Expanded(
+                    const Expanded(
                       child: Column(
                         children: [
                           Text("Playing from"),
@@ -46,7 +46,7 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.more_horiz,
                       ),
                     ),
@@ -54,7 +54,7 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                 ),
                 Container(
                   height: 400,
-                  margin: EdgeInsets.symmetric(vertical: 24),
+                  margin: const EdgeInsets.symmetric(vertical: 24),
                   decoration: BoxDecoration(
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(8),
@@ -62,7 +62,7 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                 ),
                 Row(
                   children: [
-                    Expanded(
+                    const Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -73,11 +73,11 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.favorite_border),
+                      icon: const Icon(Icons.favorite_border),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 24,
                 ),
                 SliderTheme(
@@ -91,32 +91,32 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                     activeColor: Colors.blue,
                   ),
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("0:30"),
                     Text("-1:48"),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 32,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    IconButton(onPressed: () {}, icon: Icon(Icons.shuffle)),
-                    IconButton(onPressed: () {}, icon: Icon(Icons.skip_previous)),
-                    CircleAvatar(
+                    IconButton(onPressed: () {}, icon: const Icon(Icons.shuffle)),
+                    IconButton(onPressed: () {}, icon: const Icon(Icons.skip_previous)),
+                    const CircleAvatar(
                       radius: 32,
                     ),
-                    IconButton(onPressed: () {}, icon: Icon(Icons.skip_next)),
-                    IconButton(onPressed: () {}, icon: Icon(Icons.shuffle)),
+                    IconButton(onPressed: () {}, icon: const Icon(Icons.skip_next)),
+                    IconButton(onPressed: () {}, icon: const Icon(Icons.shuffle)),
                   ],
                 ),
-                Spacer(),
+                const Spacer(),
                 Container(
                   height: 64,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.blue,
 
                   ),
