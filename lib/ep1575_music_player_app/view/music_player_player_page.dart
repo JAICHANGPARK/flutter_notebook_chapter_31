@@ -137,9 +137,14 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                           fontSize: 16
                         ),
                       ),
+                      Spacer(),
                       IconButton(
                         onPressed: () {},
                         icon: Icon(Icons.ios_share),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.open_in_full),
                       ),
                     ],
                   ),
