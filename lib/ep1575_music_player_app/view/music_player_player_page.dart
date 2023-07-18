@@ -126,9 +126,17 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                       topRight: Radius.circular(16),
                     ),
                   ),
+                  
                   child: Row(
                     children: [
-                      Text("Lyrics"),
+                      Text(
+                        "Lyrics",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 16
+                        ),
+                      ),
                       IconButton(
                         onPressed: () {},
                         icon: Icon(Icons.ios_share),
