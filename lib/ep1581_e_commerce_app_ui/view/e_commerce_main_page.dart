@@ -15,10 +15,10 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(Icons.menu),
+          icon: const Icon(Icons.menu),
           onPressed: () {},
         ),
-        title: Text("Hi There!"),
+        title: const Text("Hi There!"),
         centerTitle: true,
         backgroundColor: Colors.white,
         elevation: 0,
@@ -26,31 +26,47 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.notifications_none),
+            icon: const Icon(Icons.notifications_none),
           ),
         ],
       ),
       body: SafeArea(
-        child: Column(),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              height: 250,
+
+            ),
+            Text(
+              "Popular Brand",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            )
+          ],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         showUnselectedLabels: false,
         showSelectedLabels: false,
         currentIndex: _index,
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.grey,
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
             label: "Home",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.shopping_cart_outlined),
             label: "Cart",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.favorite_border),
             label: "",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.person_outline),
             label: "",
           ),
