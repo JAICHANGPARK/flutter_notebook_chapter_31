@@ -36,12 +36,17 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
           children: [
             Container(
               height: 250,
-
+              color: Colors.blue,
+              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
             ),
-            Text(
-              "Popular Brand",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Text(
+                "Popular Brand",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18
+                ),
               ),
             )
           ],
