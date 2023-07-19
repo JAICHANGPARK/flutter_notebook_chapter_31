@@ -14,6 +14,6 @@ class ECommerceAppUI extends StatefulWidget {
 class _ECommerceAppUIState extends State<ECommerceAppUI> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp();
   }
 }
