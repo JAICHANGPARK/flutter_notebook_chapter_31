@@ -43,11 +43,60 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
               padding: const EdgeInsets.all(16.0),
               child: Text(
                 "Popular Brand",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18
-                ),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    children: [
+                      CircleAvatar(
+                        radius: 24,
+
+                      ),
+                      SizedBox(height: 8,),
+                      Text("Nike"),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: Column(
+                    children: [
+                      CircleAvatar(
+                        radius: 24,
+
+                      ),
+                      SizedBox(height: 8,),
+                      Text("Nike"),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: Column(
+                    children: [
+                      CircleAvatar(),
+                      Text("Nike"),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: Column(
+                    children: [
+                      CircleAvatar(),
+                      Text("Nike"),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: Column(
+                    children: [
+                      CircleAvatar(),
+                      Text("Nike"),
+                    ],
+                  ),
+                )
+              ],
             )
           ],
         ),
