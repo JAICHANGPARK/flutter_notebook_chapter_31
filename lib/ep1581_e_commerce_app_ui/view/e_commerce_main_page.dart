@@ -8,6 +8,8 @@ class ECommerceMainPage extends StatefulWidget {
 }
 
 class _ECommerceMainPageState extends State<ECommerceMainPage> {
+  int _index = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,23 +36,23 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
       bottomNavigationBar: BottomNavigationBar(
         showUnselectedLabels: false,
         showSelectedLabels: false,
-        currentIndex: ,
+        currentIndex: _index,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
-            label: "Home"
+            label: "Home",
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_cart_outlined),
-              label: "Cart"
+            icon: Icon(Icons.shopping_cart_outlined),
+            label: "Cart",
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.favorite_border),
-              label: ""
+            icon: Icon(Icons.favorite_border),
+            label: "",
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.person_outline),
-              label: ""
+            icon: Icon(Icons.person_outline),
+            label: "",
           ),
         ],
       ),
