@@ -37,19 +37,25 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
             Container(
               height: 250,
               color: Colors.blue,
-              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Text(
-                "Popular Brand",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+              margin: const EdgeInsets.symmetric(
+                horizontal: 16,
+                vertical: 16,
               ),
             ),
-            SizedBox(
+            const Padding(
+              padding: EdgeInsets.all(16.0),
+              child: Text(
+                "Popular Brand",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
+              ),
+            ),
+            const SizedBox(
               height: 16,
             ),
-            Row(
+            const Row(
               children: [
                 Expanded(
                   child: Column(
@@ -117,7 +123,26 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                   ),
                 )
               ],
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text(
+                    "Most Popular",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: const Text("View all(8)"),
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
