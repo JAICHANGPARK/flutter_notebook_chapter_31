@@ -53,9 +53,10 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                     children: [
                       CircleAvatar(
                         radius: 24,
-
                       ),
-                      SizedBox(height: 8,),
+                      SizedBox(
+                        height: 8,
+                      ),
                       Text("Nike"),
                     ],
                   ),
@@ -65,9 +66,10 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                     children: [
                       CircleAvatar(
                         radius: 24,
-
                       ),
-                      SizedBox(height: 8,),
+                      SizedBox(
+                        height: 8,
+                      ),
                       Text("Nike"),
                     ],
                   ),
@@ -75,7 +77,12 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                 Expanded(
                   child: Column(
                     children: [
-                      CircleAvatar(),
+                      CircleAvatar(
+                        radius: 28,
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
                       Text("Nike"),
                     ],
                   ),
@@ -83,7 +90,11 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                 Expanded(
                   child: Column(
                     children: [
-                      CircleAvatar(),
+                      CircleAvatar(
+                        radius: 24,
+                      ), SizedBox(
+                        height: 8,
+                      ),
                       Text("Nike"),
                     ],
                   ),
@@ -91,7 +102,11 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                 Expanded(
                   child: Column(
                     children: [
-                      CircleAvatar(),
+                      CircleAvatar(
+                        radius: 24,
+                      ), SizedBox(
+                        height: 8,
+                      ),
                       Text("Nike"),
                     ],
                   ),
