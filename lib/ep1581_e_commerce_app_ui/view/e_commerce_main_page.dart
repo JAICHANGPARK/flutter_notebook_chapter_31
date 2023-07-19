@@ -16,6 +16,11 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
           icon: Icon(Icons.menu),
           onPressed: () {},
         ),
+        title: Text("Hi There!"),
+        centerTitle: true,
+        backgroundColor: Colors.white,
+        elevation: 0,
+        foregroundColor: Colors.black,
         actions: [
           IconButton(
             onPressed: () {},
