@@ -46,6 +46,9 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
             ),
+            SizedBox(
+              height: 16,
+            ),
             Row(
               children: [
                 Expanded(
@@ -92,7 +95,8 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                     children: [
                       CircleAvatar(
                         radius: 24,
-                      ), SizedBox(
+                      ),
+                      SizedBox(
                         height: 8,
                       ),
                       Text("Nike"),
@@ -104,7 +108,8 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                     children: [
                       CircleAvatar(
                         radius: 24,
-                      ), SizedBox(
+                      ),
+                      SizedBox(
                         height: 8,
                       ),
                       Text("Nike"),
