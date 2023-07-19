@@ -17,7 +17,7 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
         children: [
           Positioned.fill(
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 // color: Colors.white,
                 image: DecorationImage(
                   image: NetworkImage("https://cdn.pixabay.com/photo/2023/07/08/09/53/monastery-8114076_1280.jpg"),
@@ -85,7 +85,7 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                   decoration: BoxDecoration(
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(8),
-                    image: DecorationImage(
+                    image: const DecorationImage(
                       image:
                           NetworkImage("https://cdn.pixabay.com/photo/2023/05/23/18/12/hummingbird-8013214_1280.jpg"),
                       fit: BoxFit.cover,
@@ -197,10 +197,10 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                       topRight: Radius.circular(16),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
                     children: [
-                      Text(
+                      const Text(
                         "Lyrics",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -208,15 +208,15 @@ class _MusicPlayerPlayerPageState extends State<MusicPlayerPlayerPage> {
                           fontSize: 16,
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(Icons.ios_share),
+                        icon: const Icon(Icons.ios_share),
                         color: Colors.white,
                       ),
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(Icons.open_in_full),
+                        icon: const Icon(Icons.open_in_full),
                         color: Colors.white,
                       ),
                     ],
