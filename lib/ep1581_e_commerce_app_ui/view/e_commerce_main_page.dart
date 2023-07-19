@@ -127,6 +127,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                 ],
               ),
             ),
+            SizedBox(height: 16,),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
@@ -147,7 +148,10 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
               ),
             ),
             Container(
-              height: 160,
+              margin: EdgeInsets.only(left: 16),
+              height: 220,
+              color: Colors.blue,
+
             )
           ],
         ),
