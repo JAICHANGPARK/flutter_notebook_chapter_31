@@ -31,6 +31,29 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
       body: SafeArea(
         child: Column(),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        showUnselectedLabels: false,
+        showSelectedLabels: false,
+        currentIndex: ,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_filled),
+            label: "Home"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.shopping_cart_outlined),
+              label: "Cart"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.favorite_border),
+              label: ""
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.person_outline),
+              label: ""
+          ),
+        ],
+      ),
     );
   }
 }
