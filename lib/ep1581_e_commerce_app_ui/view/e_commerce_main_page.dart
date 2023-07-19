@@ -152,20 +152,20 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
         currentIndex: _index,
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
-        items: [
-          const BottomNavigationBarItem(
+        items: const [
+          BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
             label: "Home",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.shopping_cart_outlined),
             label: "Cart",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.favorite_border),
             label: "",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.person_outline),
             label: "",
           ),
