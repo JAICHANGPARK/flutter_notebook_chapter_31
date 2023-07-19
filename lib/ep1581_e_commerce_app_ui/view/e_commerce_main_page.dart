@@ -35,7 +35,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              height: 250,
+              height: 200,
               color: Colors.blue,
               margin: const EdgeInsets.symmetric(
                 horizontal: 16,
@@ -48,81 +48,84 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                 "Popular Brand",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 18,
+                  fontSize: 20,
                 ),
               ),
             ),
             const SizedBox(
               height: 16,
             ),
-            const Row(
-              children: [
-                Expanded(
-                  child: Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 24,
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text("Nike"),
-                    ],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: const Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 26,
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text("Nike"),
+                      ],
+                    ),
                   ),
-                ),
-                Expanded(
-                  child: Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 24,
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text("Nike"),
-                    ],
+                  Expanded(
+                    child: Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 26,
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text("Nike"),
+                      ],
+                    ),
                   ),
-                ),
-                Expanded(
-                  child: Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 28,
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text("Nike"),
-                    ],
+                  Expanded(
+                    child: Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 28,
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text("Nike"),
+                      ],
+                    ),
                   ),
-                ),
-                Expanded(
-                  child: Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 24,
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text("Nike"),
-                    ],
+                  Expanded(
+                    child: Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 26,
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text("Nike"),
+                      ],
+                    ),
                   ),
-                ),
-                Expanded(
-                  child: Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 24,
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text("Nike"),
-                    ],
-                  ),
-                )
-              ],
+                  Expanded(
+                    child: Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 26,
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text("Nike"),
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(16.0),
@@ -133,7 +136,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                     "Most Popular",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 18,
+                      fontSize: 20,
                     ),
                   ),
                   TextButton(
@@ -143,6 +146,9 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                 ],
               ),
             ),
+            Container(
+              height: 160,
+            )
           ],
         ),
       ),
