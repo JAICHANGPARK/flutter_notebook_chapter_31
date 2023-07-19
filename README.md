@@ -4,7 +4,7 @@ How to run
 
 - flutter run
 
-## EP1575
+## EP1575-1580
 
 - Smuly - Music Player App
 - by Rizal🔥 for Kretya
