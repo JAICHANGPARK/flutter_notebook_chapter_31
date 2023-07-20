@@ -171,10 +171,15 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                     child: Column(
                       children: [
                         Expanded(
-                          child: Container(),
+                          child: Container(
+                            margin: EdgeInsets.all(4),
+                            decoration: BoxDecoration(
+                              color: Colors.brown[100],
+                            ),
+                          ),
                         ),
                         SizedBox(
-                          height: 16,
+                          height: 8,
                         ),
                         Expanded(
                           child: Padding(
@@ -225,7 +230,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                                       "\$34.96",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 24,
+                                        fontSize: 22,
                                       ),
                                     ),
                                     Text("5 in stack"),
