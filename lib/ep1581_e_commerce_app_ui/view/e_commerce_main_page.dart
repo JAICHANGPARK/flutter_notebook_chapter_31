@@ -185,6 +185,10 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                                   children: [
                                     Text(
                                       "Flutter Shirt",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.black,
+                                      ),
                                     ),
                                     Spacer(),
                                     Icon(
