@@ -171,6 +171,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                     child: Column(
                       children: [
                         Expanded(
+                          flex: 7,
                           child: Container(
                             margin: EdgeInsets.fromLTRB(4, 4, 4, 0),
                             decoration: BoxDecoration(
@@ -182,6 +183,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                           height: 4,
                         ),
                         Expanded(
+                          flex: 6,
                           child: Padding(
                             padding: const EdgeInsets.only(top: 8, left: 12, right: 12),
                             child: Column(
