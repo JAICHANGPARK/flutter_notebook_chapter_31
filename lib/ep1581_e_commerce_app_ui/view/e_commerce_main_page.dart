@@ -55,9 +55,9 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
             const SizedBox(
               height: 16,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: const Row(
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
                 children: [
                   Expanded(
                     child: Column(
@@ -127,7 +127,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             Padding(
@@ -151,7 +151,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(left: 16),
+              margin: const EdgeInsets.only(left: 16),
               height: 220,
               color: Colors.blue,
               child: ListView.builder(
@@ -167,28 +167,42 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                         color: Colors.grey[200]!,
                       ),
                     ),
-                    margin: EdgeInsets.only(right: 8),
+                    margin: const EdgeInsets.only(right: 8),
                     child: Column(
                       children: [
                         Expanded(
                           flex: 7,
                           child: Container(
-                            margin: EdgeInsets.fromLTRB(4, 4, 4, 0),
+                            margin: const EdgeInsets.fromLTRB(4, 4, 4, 0),
                             decoration: BoxDecoration(
                               color: Colors.brown[100],
                             ),
-                            child: Stack(
-                              children: [],
+                            child:  Stack(
+                              children: [
+                                Positioned(
+                                  right: 8,
+                                  top: 8,
+                                  child: CircleAvatar(
+                                    radius: 16,
+                                    backgroundColor: Colors.white.withOpacity(0.6),
+                                    child: Icon(
+                                      Icons.favorite_border,
+                                      size: 16,
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 4,
                         ),
-                        Expanded(
+                        const Expanded(
                           flex: 6,
                           child: Padding(
-                            padding: const EdgeInsets.only(
+                            padding: EdgeInsets.only(
                               top: 8,
                               left: 12,
                               right: 12,
