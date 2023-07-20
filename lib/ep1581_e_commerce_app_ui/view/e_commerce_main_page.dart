@@ -127,7 +127,9 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                 ],
               ),
             ),
-            SizedBox(height: 16,),
+            SizedBox(
+              height: 16,
+            ),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
@@ -151,7 +153,15 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
               margin: EdgeInsets.only(left: 16),
               height: 220,
               color: Colors.blue,
-
+              child: ListView.builder(
+                itemCount: 10,
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  return Container(
+                    width: 200,
+                  );
+                },
+              ),
             )
           ],
         ),
