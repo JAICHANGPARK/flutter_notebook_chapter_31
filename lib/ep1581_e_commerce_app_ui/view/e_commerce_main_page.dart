@@ -145,9 +145,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                   TextButton(
                     onPressed: () {},
                     child: const Text("View all(8)"),
-                    style: TextButton.styleFrom(
-                      foregroundColor: Colors.black
-                    ),
+                    style: TextButton.styleFrom(foregroundColor: Colors.black),
                   )
                 ],
               ),
@@ -162,6 +160,11 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                 itemBuilder: (context, index) {
                   return Container(
                     width: 200,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(4),
+                      border: Border.all(),
+                    ),
                   );
                 },
               ),
