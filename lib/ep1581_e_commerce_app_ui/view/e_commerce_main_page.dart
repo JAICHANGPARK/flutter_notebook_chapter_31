@@ -178,7 +178,17 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                         ),
                         Expanded(
                           child: Column(
-                            children: [],
+                            children: [
+                              Row(
+                                children: [
+                                  Text(
+                                    "Flutter Shirt",
+                                  ),
+                                  Icon(Icons.star),
+                                  Text("4.8"),
+                                ],
+                              )
+                            ],
                           ),
                         )
                       ],
