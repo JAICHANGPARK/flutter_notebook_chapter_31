@@ -55,7 +55,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
             const SizedBox(
               height: 16,
             ),
-            const Padding(
+            Padding(
               padding: EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
@@ -64,6 +64,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                       children: [
                         CircleAvatar(
                           radius: 26,
+                          backgroundColor: Colors.brown[50]!,
                         ),
                         SizedBox(
                           height: 8,
@@ -77,6 +78,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                       children: [
                         CircleAvatar(
                           radius: 26,
+                          backgroundColor: Colors.brown[50]!,
                         ),
                         SizedBox(
                           height: 8,
@@ -90,6 +92,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                       children: [
                         CircleAvatar(
                           radius: 28,
+                          backgroundColor: Colors.brown[50]!,
                         ),
                         SizedBox(
                           height: 8,
@@ -103,6 +106,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                       children: [
                         CircleAvatar(
                           radius: 26,
+                          backgroundColor: Colors.brown[50]!,
                         ),
                         SizedBox(
                           height: 8,
@@ -116,6 +120,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                       children: [
                         CircleAvatar(
                           radius: 26,
+                          backgroundColor: Colors.brown[50]!,
                         ),
                         SizedBox(
                           height: 8,
@@ -145,7 +150,9 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                   TextButton(
                     onPressed: () {},
                     child: const Text("View all(8)"),
-                    style: TextButton.styleFrom(foregroundColor: Colors.black),
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.black,
+                    ),
                   )
                 ],
               ),
