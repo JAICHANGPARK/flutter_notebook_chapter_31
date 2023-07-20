@@ -174,7 +174,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                           child: Container(),
                         ),
                         SizedBox(
-                          height: 14,
+                          height: 16,
                         ),
                         Expanded(
                           child: Column(
@@ -191,6 +191,11 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                                     size: 14,
                                   ),
                                   Text("4.8"),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Text("Adidas"),
                                 ],
                               )
                             ],
