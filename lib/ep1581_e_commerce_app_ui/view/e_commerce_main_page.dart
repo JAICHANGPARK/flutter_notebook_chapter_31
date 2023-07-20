@@ -159,12 +159,14 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
-                    width: 200,
+                    width: 180,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(4),
                       border: Border.all(),
+
                     ),
+                    margin: EdgeInsets.only(right: 8),
                     child: Column(
                       children: [
                         Expanded(
