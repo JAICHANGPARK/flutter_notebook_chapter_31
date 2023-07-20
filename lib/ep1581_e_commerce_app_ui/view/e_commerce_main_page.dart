@@ -205,6 +205,9 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                                 Row(
                                   children: [
                                     Text("Adidas"),
+                                    SizedBox(
+                                      width: 4,
+                                    ),
                                     Icon(
                                       Icons.verified,
                                       color: Colors.blue,
