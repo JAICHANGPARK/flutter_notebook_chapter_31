@@ -163,8 +163,9 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(4),
-                      border: Border.all(),
-
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
                     ),
                     margin: EdgeInsets.only(right: 8),
                     child: Column(
