@@ -165,6 +165,21 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                       borderRadius: BorderRadius.circular(4),
                       border: Border.all(),
                     ),
+                    child: Column(
+                      children: [
+                        Expanded(
+                          child: Container(),
+                        ),
+                        SizedBox(
+                          height: 14,
+                        ),
+                        Expanded(
+                          child: Column(
+                            children: [],
+                          ),
+                        )
+                      ],
+                    ),
                   );
                 },
               ),
