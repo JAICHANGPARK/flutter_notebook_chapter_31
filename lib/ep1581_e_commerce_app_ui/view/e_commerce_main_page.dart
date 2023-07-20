@@ -184,7 +184,12 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                                   Text(
                                     "Flutter Shirt",
                                   ),
-                                  Icon(Icons.star),
+                                  Spacer(),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orange,
+                                    size: 14,
+                                  ),
                                   Text("4.8"),
                                 ],
                               )
