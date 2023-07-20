@@ -153,7 +153,6 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
             Container(
               margin: const EdgeInsets.only(left: 16),
               height: 220,
-              color: Colors.blue,
               child: ListView.builder(
                 itemCount: 10,
                 scrollDirection: Axis.horizontal,
@@ -177,7 +176,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                             decoration: BoxDecoration(
                               color: Colors.brown[100],
                             ),
-                            child:  Stack(
+                            child: Stack(
                               children: [
                                 Positioned(
                                   right: 8,
