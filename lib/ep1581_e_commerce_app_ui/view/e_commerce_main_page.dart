@@ -193,9 +193,17 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                                   Text("4.8"),
                                 ],
                               ),
+                              SizedBox(
+                                height: 8,
+                              ),
                               Row(
                                 children: [
                                   Text("Adidas"),
+                                  Icon(
+                                    Icons.verified,
+                                    color: Colors.blue,
+                                    size: 16,
+                                  ),
                                 ],
                               )
                             ],
