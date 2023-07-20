@@ -145,6 +145,9 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                   TextButton(
                     onPressed: () {},
                     child: const Text("View all(8)"),
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.black
+                    ),
                   )
                 ],
               ),
