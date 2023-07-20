@@ -177,6 +177,9 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                             decoration: BoxDecoration(
                               color: Colors.brown[100],
                             ),
+                            child: Stack(
+                              children: [],
+                            ),
                           ),
                         ),
                         SizedBox(
@@ -185,7 +188,11 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                         Expanded(
                           flex: 6,
                           child: Padding(
-                            padding: const EdgeInsets.only(top: 8, left: 12, right: 12),
+                            padding: const EdgeInsets.only(
+                              top: 8,
+                              left: 12,
+                              right: 12,
+                            ),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
