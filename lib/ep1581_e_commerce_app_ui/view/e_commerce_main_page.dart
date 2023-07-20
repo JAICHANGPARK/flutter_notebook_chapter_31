@@ -218,7 +218,13 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text("\$34.96"),
+                                    Text(
+                                      "\$34.96",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 24
+                                      ),
+                                    ),
                                     Text("5 in stack"),
                                   ],
                                 )
