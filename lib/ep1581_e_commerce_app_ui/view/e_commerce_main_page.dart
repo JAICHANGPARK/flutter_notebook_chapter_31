@@ -172,19 +172,20 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                       children: [
                         Expanded(
                           child: Container(
-                            margin: EdgeInsets.all(4),
+                            margin: EdgeInsets.fromLTRB(4, 4, 4, 0),
                             decoration: BoxDecoration(
                               color: Colors.brown[100],
                             ),
                           ),
                         ),
                         SizedBox(
-                          height: 8,
+                          height: 4,
                         ),
                         Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.only(top: 8, left: 12, right: 12),
                             child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Row(
                                   children: [
