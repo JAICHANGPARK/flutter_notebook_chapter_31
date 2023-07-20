@@ -215,6 +215,9 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                                     ),
                                   ],
                                 ),
+                                SizedBox(
+                                  height: 8,
+                                ),
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
@@ -222,7 +225,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                                       "\$34.96",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 24
+                                        fontSize: 24,
                                       ),
                                     ),
                                     Text("5 in stack"),
