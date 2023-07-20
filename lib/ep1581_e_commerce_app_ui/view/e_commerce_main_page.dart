@@ -177,36 +177,39 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                           height: 16,
                         ),
                         Expanded(
-                          child: Column(
-                            children: [
-                              Row(
-                                children: [
-                                  Text(
-                                    "Flutter Shirt",
-                                  ),
-                                  Spacer(),
-                                  Icon(
-                                    Icons.star,
-                                    color: Colors.orange,
-                                    size: 14,
-                                  ),
-                                  Text("4.8"),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 8,
-                              ),
-                              Row(
-                                children: [
-                                  Text("Adidas"),
-                                  Icon(
-                                    Icons.verified,
-                                    color: Colors.blue,
-                                    size: 16,
-                                  ),
-                                ],
-                              )
-                            ],
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Text(
+                                      "Flutter Shirt",
+                                    ),
+                                    Spacer(),
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange,
+                                      size: 14,
+                                    ),
+                                    Text("4.8"),
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Row(
+                                  children: [
+                                    Text("Adidas"),
+                                    Icon(
+                                      Icons.verified,
+                                      color: Colors.blue,
+                                      size: 16,
+                                    ),
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                         )
                       ],
