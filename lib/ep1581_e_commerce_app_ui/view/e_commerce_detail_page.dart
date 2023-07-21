@@ -50,8 +50,15 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                   ),
                   child: Center(
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.shopping_cart_outlined),
+                        Icon(
+                          Icons.shopping_cart_outlined,
+                          color: Colors.white,
+                        ),
+                        SizedBox(
+                          width: 8,
+                        ),
                         Text(
                           "Add to cart",
                           style: TextStyle(
