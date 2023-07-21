@@ -75,19 +75,34 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       Container(
                         child: Row(
                           children: [
-                            IconButton(onPressed: (){}, icon: Icon(Icons.remove_circle)),
+                            IconButton(onPressed: () {}, icon: Icon(Icons.remove_circle)),
                             Text("01"),
-                            IconButton(onPressed: (){}, icon: Icon(Icons.add_circle)),
+                            IconButton(onPressed: () {}, icon: Icon(Icons.add_circle)),
                           ],
                         ),
                       ),
-                      Row(
-                        children: [
-                          
-                        ],
-                      )
+
+
                     ],
-                  )
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                          child: OutlinedButton(
+                            onPressed: () {},
+                            child: Text("S"),
+                          )),
+                    ],
+                  ),
+                  Text("Product Details"),
+                  Divider(),
+                  Row(
+                    children: [
+                      CircleAvatar(),
+                      
+                    ],
+                  ),
+
                 ],
               ),
             ),
