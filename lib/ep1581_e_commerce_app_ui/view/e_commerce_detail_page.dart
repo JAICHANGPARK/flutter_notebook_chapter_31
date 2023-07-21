@@ -22,6 +22,9 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                 children: [
                   Positioned(
                     left: 16,
+                    top: 72,
+                    right: 16,
+                    bottom: 16,
                     child: Column(
                       children: [
                         Row(
