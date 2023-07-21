@@ -43,7 +43,17 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
               ),
               child: Stack(
                 children: [
-                  
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    top: 16,
+                    bottom: 48,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.brown[100],
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
