@@ -36,8 +36,20 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         Row(
                           children: [
                             Text("5 in stock Nike"),
+                            Icon(
+                              Icons.verified,
+                              color: Colors.blue,
+                            ),
                           ],
                         ),
+                        Text("Flutter T-Shirt"),
+                        Row(
+                          children: [
+                            Icon(Icons.star),
+                            Text("4.7"),
+                            Text("Free Shipping")
+                          ],
+                        )
                       ],
                     ),
                   )
