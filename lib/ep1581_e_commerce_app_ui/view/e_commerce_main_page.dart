@@ -81,6 +81,13 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                         children: [
                           Text("A look at the outfits"),
                           Text("of the month."),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.brown[400],
+                              borderRadius: BorderRadius.circular(24)
+                            ),
+                            child: Text("Buy Now"),
+                          )
                         ],
                       ),
                     ),
