@@ -22,16 +22,36 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
           ),
           Expanded(
             child: Container(
-              decoration: BoxDecoration(
-                color: Colors.white
-              ),
+              decoration: BoxDecoration(color: Colors.white),
             ),
           ),
         ],
       ),
       bottomNavigationBar: BottomAppBar(
         color: Colors.white,
-        child: Container(),
+        elevation: 16,
+        child: Container(
+          height: 72,
+          padding: EdgeInsets.symmetric(horizontal: 16),
+          child: Row(
+            children: [
+              OutlinedButton(
+                onPressed: () {},
+                child: Text(
+                  "\$32.49",
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.brown,
+                    borderRadius: BorderRadius.circular(12)
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
