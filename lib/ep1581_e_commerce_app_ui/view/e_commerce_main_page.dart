@@ -34,6 +34,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            SizedBox(height: 16,),
             Container(
               height: 200,
               // color: Colors.blue,
@@ -79,6 +80,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                       ),
                       padding: EdgeInsets.all(16),
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
