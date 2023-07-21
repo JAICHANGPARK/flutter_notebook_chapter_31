@@ -18,6 +18,28 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               decoration: BoxDecoration(
                 color: Colors.brown[50],
               ),
+              child: Stack(
+                children: [
+                  Positioned(
+                    left: 16,
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_ios)),
+                            Text("Back"),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Text("5 in stock Nike"),
+                          ],
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
           Expanded(
