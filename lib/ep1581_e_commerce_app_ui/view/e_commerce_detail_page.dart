@@ -15,7 +15,9 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
         children: [
           Expanded(
             child: Container(
-              height: Container(),
+              decoration: BoxDecoration(
+                color: Colors.brown[50],
+              ),
             ),
           )
         ],
