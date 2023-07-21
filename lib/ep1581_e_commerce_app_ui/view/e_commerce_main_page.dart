@@ -56,7 +56,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
               height: 16,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
                   Expanded(
@@ -66,10 +66,10 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                           radius: 26,
                           backgroundColor: Colors.brown[50]!,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
-                        Text("Nike"),
+                        const Text("Nike"),
                       ],
                     ),
                   ),
@@ -80,10 +80,10 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                           radius: 26,
                           backgroundColor: Colors.brown[50]!,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
-                        Text("Nike"),
+                        const Text("Nike"),
                       ],
                     ),
                   ),
@@ -94,10 +94,10 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                           radius: 28,
                           backgroundColor: Colors.brown[50]!,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
-                        Text("Nike"),
+                        const Text("Nike"),
                       ],
                     ),
                   ),
@@ -108,10 +108,10 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                           radius: 26,
                           backgroundColor: Colors.brown[50]!,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
-                        Text("Nike"),
+                        const Text("Nike"),
                       ],
                     ),
                   ),
@@ -122,10 +122,10 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                           radius: 26,
                           backgroundColor: Colors.brown[50]!,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
-                        Text("Nike"),
+                        const Text("Nike"),
                       ],
                     ),
                   )
@@ -191,7 +191,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                                   child: CircleAvatar(
                                     radius: 16,
                                     backgroundColor: Colors.white.withOpacity(0.6),
-                                    child: Icon(
+                                    child: const Icon(
                                       Icons.favorite_border,
                                       size: 16,
                                       color: Colors.black,
