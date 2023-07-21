@@ -34,7 +34,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 16,),
+            const SizedBox(height: 16,),
             Container(
               height: 200,
               // color: Colors.blue,
@@ -78,19 +78,19 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                         color: Colors.brown[200],
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             "A look at the outfits",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 18
                             ),
                           ),
-                          Text("of the month.",style: TextStyle(
+                          const Text("of the month.",style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 18
                           ),),
@@ -99,8 +99,8 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                               color: Colors.brown[400],
                               borderRadius: BorderRadius.circular(24),
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                            child: Text("Buy Now"),
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                            child: const Text("Buy Now"),
                           )
                         ],
                       ),
