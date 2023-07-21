@@ -44,13 +44,37 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
               child: Stack(
                 children: [
                   Positioned(
+                    left: 32,
+                    right: 32,
+                    top: 16,
+                    bottom: 16,
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.brown[50],
+                          borderRadius: BorderRadius.circular(8)
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    left: 16,
+                    right: 16,
+                    top: 16,
+                    bottom: 32,
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.brown[100],
+                          borderRadius: BorderRadius.circular(8)
+                      ),
+                    ),
+                  ),
+                  Positioned(
                     left: 0,
                     right: 0,
                     top: 16,
                     bottom: 48,
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.brown[100],
+                        color: Colors.brown[200],
                         borderRadius: BorderRadius.circular(8)
                       ),
                     ),
