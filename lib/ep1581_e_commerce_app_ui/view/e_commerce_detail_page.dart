@@ -43,15 +43,23 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               ),
               Expanded(
                 child: Container(
-                  margin: EdgeInsets.all(16),
+                  margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                   decoration: BoxDecoration(
                     color: Colors.brown,
-                    borderRadius: BorderRadius.circular(12)
+                    borderRadius: BorderRadius.circular(8),
                   ),
-                  child: Row(
-                    children: [
-                      
-                    ],
+                  child: Center(
+                    child: Row(
+                      children: [
+                        Icon(Icons.shopping_cart_outlined),
+                        Text(
+                          "Add to cart",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
