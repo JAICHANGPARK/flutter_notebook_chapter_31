@@ -81,13 +81,23 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("A look at the outfits"),
-                          Text("of the month."),
+                          Text(
+                            "A look at the outfits",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18
+                            ),
+                          ),
+                          Text("of the month.",style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18
+                          ),),
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.brown[400],
                               borderRadius: BorderRadius.circular(24),
                             ),
+                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                             child: Text("Buy Now"),
                           )
                         ],
