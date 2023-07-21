@@ -47,11 +47,11 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                     left: 32,
                     right: 32,
                     top: 16,
-                    bottom: 16,
+                    bottom: 24,
                     child: Container(
                       decoration: BoxDecoration(
                           color: Colors.brown[50],
-                          borderRadius: BorderRadius.circular(8)
+                          borderRadius: BorderRadius.circular(16)
                       ),
                     ),
                   ),
@@ -59,11 +59,11 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                     left: 16,
                     right: 16,
                     top: 16,
-                    bottom: 32,
+                    bottom: 38,
                     child: Container(
                       decoration: BoxDecoration(
                           color: Colors.brown[100],
-                          borderRadius: BorderRadius.circular(8)
+                          borderRadius: BorderRadius.circular(16)
                       ),
                     ),
                   ),
