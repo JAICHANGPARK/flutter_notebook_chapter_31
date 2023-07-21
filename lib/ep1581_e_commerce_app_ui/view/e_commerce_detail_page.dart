@@ -19,8 +19,19 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                 color: Colors.brown[50],
               ),
             ),
-          )
+          ),
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white
+              ),
+            ),
+          ),
         ],
+      ),
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.white,
+        child: Container(),
       ),
     );
   }
