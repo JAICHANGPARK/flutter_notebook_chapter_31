@@ -35,7 +35,9 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 16,),
+            const SizedBox(
+              height: 16,
+            ),
             Container(
               height: 200,
               // color: Colors.blue,
@@ -86,15 +88,12 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                         children: [
                           const Text(
                             "A look at the outfits",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18
-                            ),
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                           ),
-                          const Text("of the month.",style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18
-                          ),),
+                          const Text(
+                            "of the month.",
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                          ),
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.brown[400],
@@ -233,9 +232,12 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return GestureDetector(
-                    onTap: (){
-                      Navigator.of(context).push(MaterialPageRoute(builder: (context)
-                      => ECommerceDetailPage()));
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => ECommerceDetailPage(),
+                        ),
+                      );
                     },
                     child: Container(
                       width: 180,
