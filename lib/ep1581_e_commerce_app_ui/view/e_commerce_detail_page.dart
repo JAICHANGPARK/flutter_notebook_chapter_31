@@ -26,6 +26,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                     right: 16,
                     bottom: 16,
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
@@ -47,8 +48,13 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           children: [
                             Icon(Icons.star),
                             Text("4.7"),
-                            Text("Free Shipping")
+                            Text("Free Shipping"),
                           ],
+                        ),
+                        Spacer(),
+                        Container(
+                          height: 64,
+                          color: Colors.white,
                         )
                       ],
                     ),
@@ -60,6 +66,23 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
           Expanded(
             child: Container(
               decoration: BoxDecoration(color: Colors.white),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text("Size"),
+                      Container(
+                        child: Row(
+                          children: [
+                            IconButton(onPressed: (){}, icon: Icon(Icons.remove_circle)),
+                            Text("01"),
+                          ],
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
         ],
