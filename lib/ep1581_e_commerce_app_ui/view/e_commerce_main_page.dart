@@ -51,6 +51,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                     child: Container(
                       decoration: BoxDecoration(
                         color: Colors.brown[100],
+                        borderRadius: BorderRadius.circular(8)
                       ),
                     ),
                   ),
