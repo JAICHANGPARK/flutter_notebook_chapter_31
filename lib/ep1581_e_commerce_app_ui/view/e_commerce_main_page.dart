@@ -36,7 +36,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
           children: [
             Container(
               height: 200,
-              color: Colors.blue,
+              // color: Colors.blue,
               margin: const EdgeInsets.symmetric(
                 horizontal: 16,
                 vertical: 16,
@@ -49,10 +49,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                     top: 16,
                     bottom: 24,
                     child: Container(
-                      decoration: BoxDecoration(
-                          color: Colors.brown[50],
-                          borderRadius: BorderRadius.circular(16)
-                      ),
+                      decoration: BoxDecoration(color: Colors.brown[50], borderRadius: BorderRadius.circular(16)),
                     ),
                   ),
                   Positioned(
@@ -61,10 +58,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                     top: 16,
                     bottom: 38,
                     child: Container(
-                      decoration: BoxDecoration(
-                          color: Colors.brown[100],
-                          borderRadius: BorderRadius.circular(16)
-                      ),
+                      decoration: BoxDecoration(color: Colors.brown[100], borderRadius: BorderRadius.circular(16)),
                     ),
                   ),
                   Positioned(
@@ -73,9 +67,12 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                     top: 16,
                     bottom: 48,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.brown[200],
-                        borderRadius: BorderRadius.circular(8)
+                      decoration: BoxDecoration(color: Colors.brown[200], borderRadius: BorderRadius.circular(8)),
+                      child: Column(
+                        children: [
+                          Text("A look at the outfits"),
+                          Text("of the month."),
+                        ],
                       ),
                     ),
                   ),
