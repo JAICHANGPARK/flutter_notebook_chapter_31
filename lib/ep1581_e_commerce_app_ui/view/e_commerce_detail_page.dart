@@ -10,6 +10,16 @@ class ECommerceDetailPage extends StatefulWidget {
 class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Expanded(
+            child: Container(
+              height: Container(),
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
