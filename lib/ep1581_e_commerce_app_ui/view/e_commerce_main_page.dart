@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_31/ep1581_e_commerce_app_ui/view/e_commerce_detail_page.dart';
 
 class ECommerceMainPage extends StatefulWidget {
   const ECommerceMainPage({super.key});
@@ -231,113 +232,119 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                 itemCount: 10,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return Container(
-                    width: 180,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(4),
-                      border: Border.all(
-                        color: Colors.grey[200]!,
+                  return GestureDetector(
+                    onTap: (){
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context)
+                      => ECommerceDetailPage()));
+                    },
+                    child: Container(
+                      width: 180,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(4),
+                        border: Border.all(
+                          color: Colors.grey[200]!,
+                        ),
                       ),
-                    ),
-                    margin: const EdgeInsets.only(right: 8),
-                    child: Column(
-                      children: [
-                        Expanded(
-                          flex: 7,
-                          child: Container(
-                            margin: const EdgeInsets.fromLTRB(4, 4, 4, 0),
-                            decoration: BoxDecoration(
-                              color: Colors.brown[100],
-                            ),
-                            child: Stack(
-                              children: [
-                                Positioned(
-                                  right: 8,
-                                  top: 8,
-                                  child: CircleAvatar(
-                                    radius: 16,
-                                    backgroundColor: Colors.white.withOpacity(0.6),
-                                    child: const Icon(
-                                      Icons.favorite_border,
-                                      size: 16,
-                                      color: Colors.black,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 4,
-                        ),
-                        const Expanded(
-                          flex: 6,
-                          child: Padding(
-                            padding: EdgeInsets.only(
-                              top: 8,
-                              left: 12,
-                              right: 12,
-                            ),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Row(
-                                  children: [
-                                    Text(
-                                      "Flutter Shirt",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
+                      margin: const EdgeInsets.only(right: 8),
+                      child: Column(
+                        children: [
+                          Expanded(
+                            flex: 7,
+                            child: Container(
+                              margin: const EdgeInsets.fromLTRB(4, 4, 4, 0),
+                              decoration: BoxDecoration(
+                                color: Colors.brown[100],
+                              ),
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    right: 8,
+                                    top: 8,
+                                    child: CircleAvatar(
+                                      radius: 16,
+                                      backgroundColor: Colors.white.withOpacity(0.6),
+                                      child: const Icon(
+                                        Icons.favorite_border,
+                                        size: 16,
                                         color: Colors.black,
                                       ),
                                     ),
-                                    Spacer(),
-                                    Icon(
-                                      Icons.star,
-                                      color: Colors.orange,
-                                      size: 14,
-                                    ),
-                                    Text("4.8"),
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: 8,
-                                ),
-                                Row(
-                                  children: [
-                                    Text("Adidas"),
-                                    SizedBox(
-                                      width: 4,
-                                    ),
-                                    Icon(
-                                      Icons.verified,
-                                      color: Colors.blue,
-                                      size: 16,
-                                    ),
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: 8,
-                                ),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Text(
-                                      "\$34.96",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 22,
-                                      ),
-                                    ),
-                                    Text("5 in stack"),
-                                  ],
-                                )
-                              ],
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
-                        )
-                      ],
+                          const SizedBox(
+                            height: 4,
+                          ),
+                          const Expanded(
+                            flex: 6,
+                            child: Padding(
+                              padding: EdgeInsets.only(
+                                top: 8,
+                                left: 12,
+                                right: 12,
+                              ),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text(
+                                        "Flutter Shirt",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.black,
+                                        ),
+                                      ),
+                                      Spacer(),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.orange,
+                                        size: 14,
+                                      ),
+                                      Text("4.8"),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text("Adidas"),
+                                      SizedBox(
+                                        width: 4,
+                                      ),
+                                      Icon(
+                                        Icons.verified,
+                                        color: Colors.blue,
+                                        size: 16,
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        "\$34.96",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 22,
+                                        ),
+                                      ),
+                                      Text("5 in stack"),
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   );
                 },
