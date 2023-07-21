@@ -41,6 +41,11 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                 horizontal: 16,
                 vertical: 16,
               ),
+              child: Stack(
+                children: [
+                  
+                ],
+              ),
             ),
             const Padding(
               padding: EdgeInsets.all(16.0),
