@@ -66,6 +66,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
           Expanded(
             child: Container(
               decoration: BoxDecoration(color: Colors.white),
+              padding: EdgeInsets.all(16),
               child: Column(
                 children: [
                   Row(
@@ -76,8 +77,14 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           children: [
                             IconButton(onPressed: (){}, icon: Icon(Icons.remove_circle)),
                             Text("01"),
+                            IconButton(onPressed: (){}, icon: Icon(Icons.add_circle)),
                           ],
                         ),
+                      ),
+                      Row(
+                        children: [
+                          
+                        ],
                       )
                     ],
                   )
