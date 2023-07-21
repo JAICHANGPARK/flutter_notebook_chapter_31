@@ -81,17 +81,15 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           ],
                         ),
                       ),
-
-
                     ],
                   ),
                   Row(
                     children: [
                       Expanded(
                           child: OutlinedButton(
-                            onPressed: () {},
-                            child: Text("S"),
-                          )),
+                        onPressed: () {},
+                        child: Text("S"),
+                      )),
                     ],
                   ),
                   Text("Product Details"),
@@ -99,10 +97,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                   Row(
                     children: [
                       CircleAvatar(),
-                      
+                      Text("4.73 + people pinned this"),
                     ],
                   ),
-
+                  Divider(),
                 ],
               ),
             ),
