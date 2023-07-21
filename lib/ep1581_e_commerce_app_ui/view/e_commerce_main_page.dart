@@ -77,14 +77,16 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                         color: Colors.brown[200],
                         borderRadius: BorderRadius.circular(8),
                       ),
+                      padding: EdgeInsets.all(16),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("A look at the outfits"),
                           Text("of the month."),
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.brown[400],
-                              borderRadius: BorderRadius.circular(24)
+                              borderRadius: BorderRadius.circular(24),
                             ),
                             child: Text("Buy Now"),
                           )
