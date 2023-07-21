@@ -235,7 +235,7 @@ class _ECommerceMainPageState extends State<ECommerceMainPage> {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ECommerceDetailPage(),
+                          builder: (context) => const ECommerceDetailPage(),
                         ),
                       );
                     },
