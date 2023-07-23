@@ -171,10 +171,22 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       ],
                     ),
                   ),
-                  const Text("Product Details"),
+                  const Text(
+                    "Product Details",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
                   const Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
                     "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
                   ),
                   const Divider(),
                   const Row(
