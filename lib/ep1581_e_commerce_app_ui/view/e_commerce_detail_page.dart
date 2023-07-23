@@ -188,10 +188,49 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       color: Colors.grey,
                     ),
                   ),
+                  SizedBox(
+                    height: 16,
+                  ),
                   const Divider(),
                   const Row(
                     children: [
-                      CircleAvatar(),
+                      SizedBox(
+                        width: 100,
+                        height: 48,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                                left: 0,
+                                bottom: 0,
+                                top: 0,
+                                child: CircleAvatar(
+                                  radius: 18,
+                                )),
+                            Positioned(
+                                left: 16,
+                                bottom: 0,
+                                top: 0,
+                                child: CircleAvatar(
+                                  radius: 18,
+                                )),
+                            Positioned(
+                                left: 32,
+                                bottom: 0,
+                                top: 0,
+                                child: CircleAvatar(
+                                  radius: 18,
+                                )),
+                            Positioned(
+                                left: 48,
+                                bottom: 0,
+                                top: 0,
+                                child: CircleAvatar(
+                                  radius: 18,
+                                )),
+                          ],
+
+                        ),
+                      ),
                       Text("4.73 + people pinned this"),
                     ],
                   ),
