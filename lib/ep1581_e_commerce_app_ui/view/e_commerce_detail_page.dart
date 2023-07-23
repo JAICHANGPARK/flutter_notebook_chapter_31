@@ -37,11 +37,15 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             const Text("Back"),
                           ],
                         ),
-                        SizedBox(height: 32,),
+                        SizedBox(
+                          height: 32,
+                        ),
                         const Row(
                           children: [
                             Text("5 in stock Nike"),
-                            SizedBox(width: 8,),
+                            SizedBox(
+                              width: 8,
+                            ),
                             Icon(
                               Icons.verified,
                               color: Colors.blue,
@@ -49,7 +53,9 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             ),
                           ],
                         ),
-                        SizedBox(height: 8,),
+                        SizedBox(
+                          height: 8,
+                        ),
                         const Text(
                           "Flutter T-Shirt",
                           style: TextStyle(
@@ -57,10 +63,15 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             fontSize: 24,
                           ),
                         ),
-                        SizedBox(height: 8,),
+                        SizedBox(
+                          height: 8,
+                        ),
                         const Row(
                           children: [
-                            Icon(Icons.star, size: 16,),
+                            Icon(
+                              Icons.star,
+                              size: 16,
+                            ),
                             Text("4.7"),
                             Text(" Free Shipping"),
                           ],
@@ -99,8 +110,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               ),
                               Expanded(
                                 child: Container(
-                                  decoration:
-                                      BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(4)),
+                                  decoration: BoxDecoration(
+                                    color: Colors.orange,
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
                                 ),
                               ),
                               const SizedBox(
@@ -108,8 +121,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               ),
                               Expanded(
                                 child: Container(
-                                  decoration:
-                                      BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(4)),
+                                  decoration: BoxDecoration(
+                                    color: Colors.orange,
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
                                 ),
                               ),
                               const SizedBox(
@@ -117,8 +132,18 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               ),
                               Expanded(
                                 child: Container(
-                                  decoration:
-                                      BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(4)),
+                                  decoration: BoxDecoration(
+                                    color: Colors.black.withOpacity(0.3),
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "+2",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
                                 ),
                               ),
                             ],
