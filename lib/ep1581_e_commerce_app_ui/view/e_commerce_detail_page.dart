@@ -72,7 +72,14 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                 children: [
                   Row(
                     children: [
-                      const Text("Size"),
+                      const Text(
+                        "Size",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
+                      ),
+                      const Spacer(),
                       Container(
                         child: Row(
                           children: [
@@ -95,7 +102,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                     ],
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical:16 ),
+                    padding: const EdgeInsets.symmetric(vertical: 16),
                     child: Row(
                       children: [
                         Expanded(
@@ -107,7 +114,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             child: const Text("S"),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 16,
                         ),
                         Expanded(
@@ -119,7 +126,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             child: const Text("M"),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 16,
                         ),
                         Expanded(
@@ -132,7 +139,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             child: const Text("L"),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 16,
                         ),
                         Expanded(
@@ -144,7 +151,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             child: const Text("XL"),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 16,
                         ),
                         Expanded(
