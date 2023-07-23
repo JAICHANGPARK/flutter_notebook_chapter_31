@@ -94,10 +94,21 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         width: 16,
                       ),
                       Expanded(
-                          child: OutlinedButton(
-                        onPressed: () {},
-                        child: const Text("M"),
-                      )),
+                        child: OutlinedButton(
+                          onPressed: () {},
+                          child: const Text("M"),
+                        ),
+                      ),
+                      Expanded(
+                        child: OutlinedButton(
+                          onPressed: () {},
+                          style: OutlinedButton.styleFrom(
+                            backgroundColor: Colors.brown,
+                            foregroundColor: Colors.white
+                          ),
+                          child: const Text("L"),
+                        ),
+                      ),
                     ],
                   ),
                   const Text("Product Details"),
