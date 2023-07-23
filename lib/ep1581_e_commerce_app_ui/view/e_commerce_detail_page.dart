@@ -30,7 +30,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       children: [
                         Row(
                           children: [
-                            IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_back_ios)),
+                            IconButton(
+                              onPressed: () {},
+                              icon: const Icon(Icons.arrow_back_ios),
+                            ),
                             const Text("Back"),
                           ],
                         ),
@@ -63,8 +66,9 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             children: [
                               Expanded(
                                 child: Container(
-                                  decoration: const BoxDecoration(
+                                  decoration: BoxDecoration(
                                     color: Colors.orange,
+                                    borderRadius: BorderRadius.circular(4),
                                   ),
                                 ),
                               ),
@@ -73,8 +77,9 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               ),
                               Expanded(
                                 child: Container(
-                                  decoration: const BoxDecoration(
+                                  decoration: BoxDecoration(
                                     color: Colors.orange,
+                                    borderRadius: BorderRadius.circular(4),
                                   ),
                                 ),
                               ),
@@ -83,9 +88,8 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               ),
                               Expanded(
                                 child: Container(
-                                  decoration: const BoxDecoration(
-                                    color: Colors.orange,
-                                  ),
+                                  decoration:
+                                      BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(4)),
                                 ),
                               ),
                               const SizedBox(
@@ -93,9 +97,8 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               ),
                               Expanded(
                                 child: Container(
-                                  decoration: const BoxDecoration(
-                                    color: Colors.orange,
-                                  ),
+                                  decoration:
+                                      BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(4)),
                                 ),
                               ),
                               const SizedBox(
@@ -103,10 +106,8 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               ),
                               Expanded(
                                 child: Container(
-                                  decoration: const BoxDecoration(
-                                    color: Colors.orange,
-                                    borderRadius: BorderRadius.circular(4)
-                                  ),
+                                  decoration:
+                                      BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(4)),
                                 ),
                               ),
                             ],
