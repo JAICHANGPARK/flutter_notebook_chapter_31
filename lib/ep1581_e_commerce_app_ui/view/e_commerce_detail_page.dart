@@ -186,6 +186,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                     "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
                     style: TextStyle(
                       color: Colors.grey,
+                      height: 1.5
                     ),
                   ),
                   SizedBox(
