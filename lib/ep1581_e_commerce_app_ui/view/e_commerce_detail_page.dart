@@ -81,6 +81,11 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       ),
                       const Spacer(),
                       Container(
+                        decoration: BoxDecoration(
+                          color: Colors.brown[100],
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 0),
                         child: Row(
                           children: [
                             IconButton(
