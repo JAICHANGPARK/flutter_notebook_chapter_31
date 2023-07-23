@@ -54,7 +54,18 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         const Spacer(),
                         Container(
                           height: 64,
-                          color: Colors.white,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(4),
+
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                          child: Row(
+                            children: [
+                              Expanded(child: Container()),
+                              SizedBox(width: 8,),
+                            ],
+                          ),
                         )
                       ],
                     ),
@@ -184,10 +195,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                   const Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
                     "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
-                    style: TextStyle(
-                      color: Colors.grey,
-                      height: 1.5
-                    ),
+                    style: TextStyle(color: Colors.grey, height: 1.5),
                   ),
                   const SizedBox(
                     height: 16,
@@ -229,7 +237,6 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                   radius: 18,
                                 )),
                           ],
-
                         ),
                       ),
                       Text("4.73 + people pinned this"),
