@@ -46,7 +46,13 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             ),
                           ],
                         ),
-                        const Text("Flutter T-Shirt"),
+                        const Text(
+                          "Flutter T-Shirt",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
+                          ),
+                        ),
                         const Row(
                           children: [
                             Icon(Icons.star),
