@@ -94,67 +94,70 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       ),
                     ],
                   ),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: OutlinedButton(
-                          onPressed: () {},
-                          style: OutlinedButton.styleFrom(
-                            foregroundColor: Colors.brown,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical:16 ),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: OutlinedButton(
+                            onPressed: () {},
+                            style: OutlinedButton.styleFrom(
+                              foregroundColor: Colors.brown,
+                            ),
+                            child: const Text("S"),
                           ),
-                          child: const Text("S"),
                         ),
-                      ),
-                      SizedBox(
-                        width: 16,
-                      ),
-                      Expanded(
-                        child: OutlinedButton(
-                          onPressed: () {},
-                          style: OutlinedButton.styleFrom(
-                            foregroundColor: Colors.brown,
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Expanded(
+                          child: OutlinedButton(
+                            onPressed: () {},
+                            style: OutlinedButton.styleFrom(
+                              foregroundColor: Colors.brown,
+                            ),
+                            child: const Text("M"),
                           ),
-                          child: const Text("M"),
                         ),
-                      ),
-                      SizedBox(
-                        width: 16,
-                      ),
-                      Expanded(
-                        child: OutlinedButton(
-                          onPressed: () {},
-                          style: OutlinedButton.styleFrom(
-                            backgroundColor: Colors.brown,
-                            foregroundColor: Colors.white,
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Expanded(
+                          child: OutlinedButton(
+                            onPressed: () {},
+                            style: OutlinedButton.styleFrom(
+                              backgroundColor: Colors.brown,
+                              foregroundColor: Colors.white,
+                            ),
+                            child: const Text("L"),
                           ),
-                          child: const Text("L"),
                         ),
-                      ),
-                      SizedBox(
-                        width: 16,
-                      ),
-                      Expanded(
-                        child: OutlinedButton(
-                          onPressed: () {},
-                          style: OutlinedButton.styleFrom(
-                            foregroundColor: Colors.brown,
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Expanded(
+                          child: OutlinedButton(
+                            onPressed: () {},
+                            style: OutlinedButton.styleFrom(
+                              foregroundColor: Colors.brown,
+                            ),
+                            child: const Text("XL"),
                           ),
-                          child: const Text("XL"),
                         ),
-                      ),
-                      SizedBox(
-                        width: 16,
-                      ),
-                      Expanded(
-                        child: OutlinedButton(
-                          onPressed: () {},
-                          style: OutlinedButton.styleFrom(
-                            foregroundColor: Colors.brown,
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Expanded(
+                          child: OutlinedButton(
+                            onPressed: () {},
+                            style: OutlinedButton.styleFrom(
+                              foregroundColor: Colors.brown,
+                            ),
+                            child: const Text("XXL"),
                           ),
-                          child: const Text("XXL"),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                   const Text("Product Details"),
                   const Text(
