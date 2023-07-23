@@ -105,6 +105,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                 child: Container(
                                   decoration: const BoxDecoration(
                                     color: Colors.orange,
+                                    borderRadius: BorderRadius.circular(4)
                                   ),
                                 ),
                               ),
