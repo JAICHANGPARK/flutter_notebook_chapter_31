@@ -97,16 +97,19 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                   Row(
                     children: [
                       Expanded(
-                          child: OutlinedButton(
-                        onPressed: () {},
-                        child: const Text("S"),
-                      )),
+                        child: OutlinedButton(
+                          onPressed: () {},
+                          style: OutlinedButton.styleFrom(foregroundColor: Colors.brown),
+                          child: const Text("S"),
+                        ),
+                      ),
                       SizedBox(
                         width: 16,
                       ),
                       Expanded(
                         child: OutlinedButton(
                           onPressed: () {},
+                          style: OutlinedButton.styleFrom(foregroundColor: Colors.brown),
                           child: const Text("M"),
                         ),
                       ),
@@ -116,7 +119,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       Expanded(
                         child: OutlinedButton(
                           onPressed: () {},
-                          style: OutlinedButton.styleFrom(backgroundColor: Colors.brown, foregroundColor: Colors.white),
+                          style: OutlinedButton.styleFrom(
+                            backgroundColor: Colors.brown,
+                            foregroundColor: Colors.white,
+                          ),
                           child: const Text("L"),
                         ),
                       ),
