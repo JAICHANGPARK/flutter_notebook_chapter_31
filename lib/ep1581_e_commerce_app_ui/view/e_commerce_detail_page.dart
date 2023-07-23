@@ -98,6 +98,8 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           onPressed: () {},
                           child: const Text("M"),
                         ),
+                      ),  SizedBox(
+                        width: 16,
                       ),
                       Expanded(
                         child: OutlinedButton(
@@ -108,12 +110,16 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           ),
                           child: const Text("L"),
                         ),
+                      ),  SizedBox(
+                        width: 16,
                       ),
                       Expanded(
                         child: OutlinedButton(
                           onPressed: () {},
                           child: const Text("XL"),
                         ),
+                      ),  SizedBox(
+                        width: 16,
                       ),
                       Expanded(
                         child: OutlinedButton(
