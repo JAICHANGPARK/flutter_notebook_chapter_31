@@ -68,6 +68,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               decoration: const BoxDecoration(color: Colors.white),
               padding: const EdgeInsets.all(16),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     children: [
@@ -75,9 +76,19 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       Container(
                         child: Row(
                           children: [
-                            IconButton(onPressed: () {}, icon: const Icon(Icons.remove_circle)),
+                            IconButton(
+                              onPressed: () {},
+                              icon: const Icon(
+                                Icons.remove_circle,
+                              ),
+                            ),
                             const Text("01"),
-                            IconButton(onPressed: () {}, icon: const Icon(Icons.add_circle)),
+                            IconButton(
+                              onPressed: () {},
+                              icon: const Icon(
+                                Icons.add_circle,
+                              ),
+                            ),
                           ],
                         ),
                       ),
@@ -98,19 +109,18 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           onPressed: () {},
                           child: const Text("M"),
                         ),
-                      ),  SizedBox(
+                      ),
+                      SizedBox(
                         width: 16,
                       ),
                       Expanded(
                         child: OutlinedButton(
                           onPressed: () {},
-                          style: OutlinedButton.styleFrom(
-                            backgroundColor: Colors.brown,
-                            foregroundColor: Colors.white
-                          ),
+                          style: OutlinedButton.styleFrom(backgroundColor: Colors.brown, foregroundColor: Colors.white),
                           child: const Text("L"),
                         ),
-                      ),  SizedBox(
+                      ),
+                      SizedBox(
                         width: 16,
                       ),
                       Expanded(
@@ -118,7 +128,8 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           onPressed: () {},
                           child: const Text("XL"),
                         ),
-                      ),  SizedBox(
+                      ),
+                      SizedBox(
                         width: 16,
                       ),
                       Expanded(
