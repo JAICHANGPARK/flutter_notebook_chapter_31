@@ -99,7 +99,9 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       Expanded(
                         child: OutlinedButton(
                           onPressed: () {},
-                          style: OutlinedButton.styleFrom(foregroundColor: Colors.brown),
+                          style: OutlinedButton.styleFrom(
+                            foregroundColor: Colors.brown,
+                          ),
                           child: const Text("S"),
                         ),
                       ),
@@ -109,7 +111,9 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       Expanded(
                         child: OutlinedButton(
                           onPressed: () {},
-                          style: OutlinedButton.styleFrom(foregroundColor: Colors.brown),
+                          style: OutlinedButton.styleFrom(
+                            foregroundColor: Colors.brown,
+                          ),
                           child: const Text("M"),
                         ),
                       ),
@@ -132,6 +136,9 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       Expanded(
                         child: OutlinedButton(
                           onPressed: () {},
+                          style: OutlinedButton.styleFrom(
+                            foregroundColor: Colors.brown,
+                          ),
                           child: const Text("XL"),
                         ),
                       ),
@@ -141,6 +148,9 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       Expanded(
                         child: OutlinedButton(
                           onPressed: () {},
+                          style: OutlinedButton.styleFrom(
+                            foregroundColor: Colors.brown,
+                          ),
                           child: const Text("XXL"),
                         ),
                       ),
