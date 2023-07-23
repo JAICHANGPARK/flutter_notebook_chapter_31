@@ -41,6 +41,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         const Row(
                           children: [
                             Text("5 in stock Nike"),
+                            SizedBox(width: 8,),
                             Icon(
                               Icons.verified,
                               color: Colors.blue,
@@ -59,9 +60,9 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         SizedBox(height: 8,),
                         const Row(
                           children: [
-                            Icon(Icons.star),
+                            Icon(Icons.star, size: 16,),
                             Text("4.7"),
-                            Text("Free Shipping"),
+                            Text(" Free Shipping"),
                           ],
                         ),
                         const Spacer(),
