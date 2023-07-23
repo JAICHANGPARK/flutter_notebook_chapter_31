@@ -83,7 +83,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.brown[100],
-                          borderRadius: BorderRadius.circular(16),
+                          borderRadius: BorderRadius.circular(32),
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 0),
                         child: Row(
