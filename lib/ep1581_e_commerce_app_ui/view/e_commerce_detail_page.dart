@@ -31,7 +31,9 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         Row(
                           children: [
                             IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                              },
                               icon: const Icon(Icons.arrow_back_ios),
                             ),
                             const Text("Back"),
@@ -163,7 +165,9 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 16,),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Row(
                     children: [
                       const Text(
