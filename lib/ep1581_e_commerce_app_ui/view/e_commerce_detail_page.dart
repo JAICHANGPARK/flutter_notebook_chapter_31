@@ -163,6 +163,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  SizedBox(height: 16,),
                   Row(
                     children: [
                       const Text(
