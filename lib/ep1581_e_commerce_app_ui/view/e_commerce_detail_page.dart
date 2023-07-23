@@ -37,15 +37,18 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             const Text("Back"),
                           ],
                         ),
+                        SizedBox(height: 32,),
                         const Row(
                           children: [
                             Text("5 in stock Nike"),
                             Icon(
                               Icons.verified,
                               color: Colors.blue,
+                              size: 16,
                             ),
                           ],
                         ),
+                        SizedBox(height: 8,),
                         const Text(
                           "Flutter T-Shirt",
                           style: TextStyle(
@@ -53,6 +56,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             fontSize: 24,
                           ),
                         ),
+                        SizedBox(height: 8,),
                         const Row(
                           children: [
                             Icon(Icons.star),
