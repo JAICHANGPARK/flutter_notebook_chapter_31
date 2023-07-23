@@ -39,7 +39,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             const Text("Back"),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 32,
                         ),
                         const Row(
@@ -55,7 +55,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
                         const Text(
@@ -65,7 +65,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             fontSize: 24,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
                         const Row(
@@ -138,7 +138,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                     color: Colors.black.withOpacity(0.3),
                                     borderRadius: BorderRadius.circular(4),
                                   ),
-                                  child: Center(
+                                  child: const Center(
                                     child: Text(
                                       "+2",
                                       style: TextStyle(
@@ -165,7 +165,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   Row(
