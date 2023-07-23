@@ -85,7 +85,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           color: Colors.brown[100],
                           borderRadius: BorderRadius.circular(32),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 0),
+                        padding: const EdgeInsets.symmetric(horizontal: 0),
                         child: Row(
                           children: [
                             IconButton(
@@ -178,7 +178,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       fontSize: 20,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   const Text(
@@ -189,7 +189,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       height: 1.5
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   const Divider(),
