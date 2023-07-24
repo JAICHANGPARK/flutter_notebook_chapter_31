@@ -19,7 +19,10 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
             children: [
               const Text(
                 "Login in to Dream's",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                ),
               ),
               const SizedBox(
                 height: 32,
@@ -96,7 +99,13 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
                       child: Container(
                         padding: const EdgeInsets.symmetric(horizontal: 8),
                         color: Colors.white,
-                        child: const Text("or continue with"),
+                        child: const Text(
+                          "or continue with",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey,
+                          ),
+                        ),
                       ),
                     ),
                   ],
