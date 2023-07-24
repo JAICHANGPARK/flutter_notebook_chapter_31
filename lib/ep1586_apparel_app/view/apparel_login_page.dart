@@ -108,7 +108,7 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
               OutlinedButton(
                 onPressed: () {},
                 style: OutlinedButton.styleFrom(
-                  minimumSize: Size(double.infinity, 42),
+                  minimumSize: Size(double.infinity, 46),
                   foregroundColor: Colors.black,
                   side: BorderSide(color: Colors.black, width: 1.5),
                 ),
@@ -120,7 +120,7 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
               OutlinedButton(
                 onPressed: () {},
                 style: OutlinedButton.styleFrom(
-                  minimumSize: Size(double.infinity, 42),
+                  minimumSize: Size(double.infinity, 46),
                   foregroundColor: Colors.black,
                   side: BorderSide(color: Colors.black, width: 1.5),
                 ),
@@ -132,15 +132,20 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
               OutlinedButton(
                 onPressed: () {},
                 style: OutlinedButton.styleFrom(
-                  minimumSize: Size(double.infinity, 42),
+                  minimumSize: Size(double.infinity, 46),
                   foregroundColor: Colors.black,
-                  side: BorderSide(
-                      color: Colors.black,
-                      width: 1.5
-                  ),
+                  side: BorderSide(color: Colors.black, width: 1.5),
                 ),
                 child: Text("Continue with Apple ID"),
               ),
+              SizedBox(
+                height: 24,
+              ),
+              Row(
+                children: [
+                  Text("")
+                ],
+              )
             ],
           ),
         ),
