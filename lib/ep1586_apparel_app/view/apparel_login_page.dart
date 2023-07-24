@@ -102,13 +102,23 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
                   ],
                 ),
               ),
+              SizedBox(
+                height: 16,
+              ),
               OutlinedButton(
                 onPressed: () {},
+                style: OutlinedButton.styleFrom(
+                  minimumSize: Size(double.infinity, 42),
+                ),
                 child: Text("Continue with Facebook"),
+              ), SizedBox(
+                height: 8,
               ),
               OutlinedButton(
                 onPressed: () {},
                 child: Text("Continue with Google"),
+              ), SizedBox(
+                height: 8,
               ),
               OutlinedButton(
                 onPressed: () {},
