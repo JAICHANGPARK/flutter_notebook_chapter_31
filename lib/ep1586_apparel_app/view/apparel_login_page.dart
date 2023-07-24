@@ -142,8 +142,13 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
                 height: 24,
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("")
+                  Text("Don't have an account?"),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text("Sign up"),
+                  )
                 ],
               )
             ],
