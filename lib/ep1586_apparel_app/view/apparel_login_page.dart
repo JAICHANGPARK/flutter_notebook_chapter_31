@@ -13,46 +13,46 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.fromLTRB(16.0, 42, 16, 16),
+          padding: const EdgeInsets.fromLTRB(16.0, 42, 16, 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 "Login in to Dream's",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 32,
               ),
-              Text(
+              const Text(
                 "Email",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
-              TextField(
+              const TextField(
                 decoration: InputDecoration(
                   filled: true,
                   border: InputBorder.none,
                   hintText: "Enter your Email",
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 24,
               ),
-              Text(
+              const Text(
                 "Password",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
-              TextField(
+              const TextField(
                 decoration: InputDecoration(
                   filled: true,
                   border: InputBorder.none,
@@ -65,7 +65,7 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
                 children: [
                   TextButton(
                     onPressed: () {},
-                    child: Text("Forgot Password?"),
+                    child: const Text("Forgot Password?"),
                   ),
                 ],
               ),
@@ -73,7 +73,7 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
                 onPressed: () {},
                 color: Colors.black,
                 height: 54,
-                child: Center(
+                child: const Center(
                   child: Text(
                     "Log in",
                     style: TextStyle(
@@ -82,26 +82,38 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 child: Stack(
                   children: [
-                    Divider(
+                    const Divider(
                       color: Colors.grey,
                     ),
                     Center(
                       child: Container(
-                        padding: EdgeInsets.symmetric(horizontal: 8),
+                        padding: const EdgeInsets.symmetric(horizontal: 8),
                         color: Colors.white,
-                        child: Text("or continue with"),
+                        child: const Text("or continue with"),
                       ),
                     ),
                   ],
                 ),
-              )
+              ),
+              OutlinedButton(
+                onPressed: () {},
+                child: Text("Continue with Facebook"),
+              ),
+              OutlinedButton(
+                onPressed: () {},
+                child: Text("Continue with Google"),
+              ),
+              OutlinedButton(
+                onPressed: () {},
+                child: Text("Continue with Apple ID"),
+              ),
             ],
           ),
         ),
