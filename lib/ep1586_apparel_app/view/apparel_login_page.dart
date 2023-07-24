@@ -10,7 +10,7 @@ class ApparelLoginPage extends StatefulWidget {
 class _ApparelLoginPageState extends State<ApparelLoginPage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.fromLTRB(16.0, 42, 16, 16),
@@ -40,7 +40,9 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
                   hintText: "Enter your Email",
                 ),
               ),
-              SizedBox(height: 24,),
+              SizedBox(
+                height: 24,
+              ),
               Text(
                 "Password",
                 style: TextStyle(
@@ -59,6 +61,47 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
                 ),
                 obscureText: true,
               ),
+              ButtonBar(
+                children: [
+                  TextButton(
+                    onPressed: () {},
+                    child: Text("Forgot Password?"),
+                  ),
+                ],
+              ),
+              MaterialButton(
+                onPressed: () {},
+                color: Colors.black,
+                height: 54,
+                child: Center(
+                  child: Text(
+                    "Log in",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                child: Stack(
+                  children: [
+                    Divider(
+                      color: Colors.grey,
+                    ),
+                    Center(
+                      child: Container(
+                        padding: EdgeInsets.symmetric(horizontal: 8),
+                        color: Colors.white,
+                        child: Text("or continue with"),
+                      ),
+                    ),
+                  ],
+                ),
+              )
             ],
           ),
         ),
