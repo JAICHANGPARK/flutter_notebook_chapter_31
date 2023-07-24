@@ -107,21 +107,23 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
               ),
               OutlinedButton(
                 onPressed: () {},
-                style: OutlinedButton.styleFrom(
-                  minimumSize: Size(double.infinity, 42),
-                ),
+                style: OutlinedButton.styleFrom(minimumSize: Size(double.infinity, 42), foregroundColor: Colors.black),
                 child: Text("Continue with Facebook"),
-              ), SizedBox(
+              ),
+              SizedBox(
                 height: 8,
               ),
               OutlinedButton(
                 onPressed: () {},
+                style: OutlinedButton.styleFrom(minimumSize: Size(double.infinity, 42), foregroundColor: Colors.black),
                 child: Text("Continue with Google"),
-              ), SizedBox(
+              ),
+              SizedBox(
                 height: 8,
               ),
               OutlinedButton(
                 onPressed: () {},
+                style: OutlinedButton.styleFrom(minimumSize: Size(double.infinity, 42), foregroundColor: Colors.black),
                 child: Text("Continue with Apple ID"),
               ),
             ],
