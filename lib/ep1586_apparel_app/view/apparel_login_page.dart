@@ -11,6 +11,6 @@ class ApparelLoginPage extends StatefulWidget {
 class _ApparelLoginPageState extends State<ApparelLoginPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold()
+    return Scaffold();
   }
 }
