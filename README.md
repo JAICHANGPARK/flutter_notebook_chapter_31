@@ -6,11 +6,11 @@ How to run
 
 ## EP1586-
 
-- E-commerce App UI
+- Fashion Apparel Marketplace Mobile Design
 - by Rezha Aaron 🎃
 - https://dribbble.com/shots/22073649-Fashion-Apparel-Marketplace-Mobile-Design
 
-<img src="https://cdn.dribbble.com/userupload/8684881/file/original-9f4640a588313d2ca0fc63cc8b89e459.png?resize=1504x1128"/>
+<img src="https://cdn.dribbble.com/userupload/8772511/file/original-988343056191d5f0e38a07d824b8bbe3.png?resize=1600x1200"/>
 
 ## EP1581-1585
 
