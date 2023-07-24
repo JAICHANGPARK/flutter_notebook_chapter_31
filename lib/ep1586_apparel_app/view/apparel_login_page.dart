@@ -13,7 +13,7 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.fromLTRB(16.0, 42, 16, 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -22,9 +22,14 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
               ),
               SizedBox(
-                height: 24,
+                height: 32,
               ),
-              Text("Email"),
+              Text(
+                "Email",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               SizedBox(
                 height: 8,
               ),
@@ -32,6 +37,7 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
                 decoration: InputDecoration(
                   filled: true,
                   border: InputBorder.none,
+                  hintText: "Enter your Email",
                 ),
               )
             ],
