@@ -10,10 +10,10 @@ class ApparelLoginPage extends StatefulWidget {
 class _ApparelLoginPageState extends State<ApparelLoginPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(16.0, 42, 16, 16),
+          padding: EdgeInsets.fromLTRB(16.0, 42, 16, 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -39,7 +39,26 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
                   border: InputBorder.none,
                   hintText: "Enter your Email",
                 ),
-              )
+              ),
+              SizedBox(height: 24,),
+              Text(
+                "Password",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(
+                height: 8,
+              ),
+              TextField(
+                decoration: InputDecoration(
+                  filled: true,
+                  border: InputBorder.none,
+                  hintText: "Enter your Password",
+                  suffixIcon: Icon(Icons.visibility),
+                ),
+                obscureText: true,
+              ),
             ],
           ),
         ),
