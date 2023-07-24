@@ -17,11 +17,21 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Login in to Dream's"),
+              Text(
+                "Login in to Dream's",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+              ),
+              SizedBox(
+                height: 24,
+              ),
               Text("Email"),
+              SizedBox(
+                height: 8,
+              ),
               TextField(
                 decoration: InputDecoration(
                   filled: true,
+                  border: InputBorder.none,
                 ),
               )
             ],
