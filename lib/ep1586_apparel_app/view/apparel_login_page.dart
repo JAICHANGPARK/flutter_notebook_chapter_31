@@ -107,7 +107,11 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
               ),
               OutlinedButton(
                 onPressed: () {},
-                style: OutlinedButton.styleFrom(minimumSize: Size(double.infinity, 42), foregroundColor: Colors.black),
+                style: OutlinedButton.styleFrom(
+                  minimumSize: Size(double.infinity, 42),
+                  foregroundColor: Colors.black,
+                  side: BorderSide(color: Colors.black, width: 1.5),
+                ),
                 child: Text("Continue with Facebook"),
               ),
               SizedBox(
@@ -115,7 +119,11 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
               ),
               OutlinedButton(
                 onPressed: () {},
-                style: OutlinedButton.styleFrom(minimumSize: Size(double.infinity, 42), foregroundColor: Colors.black),
+                style: OutlinedButton.styleFrom(
+                  minimumSize: Size(double.infinity, 42),
+                  foregroundColor: Colors.black,
+                  side: BorderSide(color: Colors.black, width: 1.5),
+                ),
                 child: Text("Continue with Google"),
               ),
               SizedBox(
@@ -123,7 +131,14 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
               ),
               OutlinedButton(
                 onPressed: () {},
-                style: OutlinedButton.styleFrom(minimumSize: Size(double.infinity, 42), foregroundColor: Colors.black),
+                style: OutlinedButton.styleFrom(
+                  minimumSize: Size(double.infinity, 42),
+                  foregroundColor: Colors.black,
+                  side: BorderSide(
+                      color: Colors.black,
+                      width: 1.5
+                  ),
+                ),
                 child: Text("Continue with Apple ID"),
               ),
             ],
