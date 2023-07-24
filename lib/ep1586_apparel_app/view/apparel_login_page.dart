@@ -13,7 +13,7 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(16.0, 42, 16, 16),
+          padding: const EdgeInsets.fromLTRB(16.0, 52, 16, 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -68,7 +68,9 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
                 children: [
                   TextButton(
                     onPressed: () {},
-                    child: const Text("Forgot Password?"),
+                    child: const Text(
+                      "Forgot Password?",
+                    ),
                   ),
                 ],
               ),
