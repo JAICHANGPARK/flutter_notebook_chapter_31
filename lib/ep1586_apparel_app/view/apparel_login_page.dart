@@ -12,17 +12,20 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text("Login in to Dream's"),
-            Text("Email"),
-            TextField(
-              decoration: InputDecoration(
-                filled: true,
-              ),
-            )
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("Login in to Dream's"),
+              Text("Email"),
+              TextField(
+                decoration: InputDecoration(
+                  filled: true,
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
