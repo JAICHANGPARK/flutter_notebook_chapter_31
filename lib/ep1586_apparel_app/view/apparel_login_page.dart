@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class ApparelLoginPage extends StatefulWidget {
   const ApparelLoginPage({super.key});
 
@@ -11,6 +10,21 @@ class ApparelLoginPage extends StatefulWidget {
 class _ApparelLoginPageState extends State<ApparelLoginPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("Login in to Dream's"),
+            Text("Email"),
+            TextField(
+              decoration: InputDecoration(
+                filled: true,
+              ),
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
