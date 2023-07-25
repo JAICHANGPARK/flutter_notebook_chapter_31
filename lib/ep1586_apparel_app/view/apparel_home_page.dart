@@ -50,7 +50,44 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                     )),
               ],
             ),
-          )
+          ),
+          Expanded(
+              child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Discover"),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text("See All"),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  height: 280,
+                  color: Colors.blue,
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Categories"),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text("See All"),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ))
         ],
       ),
       bottomNavigationBar: SizedBox(
