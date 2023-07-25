@@ -36,10 +36,17 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                     bottom: 0,
                     left: 16,
                     right: 16,
-                    child: Container(
-                      padding: EdgeInsets.all(4),
-                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
-                      child: TextField(),
+                    child: PhysicalModel(
+                      color: Colors.white,
+                      elevation: 4,
+                      child: Container(
+                        padding: EdgeInsets.all(4),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        child: TextField(),
+                      ),
                     )),
               ],
             ),
