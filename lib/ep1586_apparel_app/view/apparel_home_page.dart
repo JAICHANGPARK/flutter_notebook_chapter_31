@@ -14,7 +14,29 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [],
+        children: [
+          Container(
+            height: 240,
+            decoration: BoxDecoration(
+              color: Colors.blue,
+            ),
+            child: Stack(
+              children: [
+                Positioned(
+                  bottom: 0,
+                    left: 16,
+                    right: 16,
+                    child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(4)
+                  ),
+                      child: TextField(),
+                )),
+              ],
+            ),
+          )
+        ],
       ),
       bottomNavigationBar: SizedBox(
         height: 72,
