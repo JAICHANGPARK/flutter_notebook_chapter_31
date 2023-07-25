@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_31/ep1586_apparel_app/view/apparel_home_page.dart';
 
 class ApparelLoginPage extends StatefulWidget {
   const ApparelLoginPage({super.key});
@@ -76,16 +77,19 @@ class _ApparelLoginPageState extends State<ApparelLoginPage> {
                   ],
                 ),
                 MaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => ApparelHomePage(),
+                      ),
+                    );
+                  },
                   color: Colors.black,
                   height: 48,
                   child: const Center(
                     child: Text(
                       "Log in",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16
-                      ),
+                      style: TextStyle(color: Colors.white, fontSize: 16),
                     ),
                   ),
                 ),
