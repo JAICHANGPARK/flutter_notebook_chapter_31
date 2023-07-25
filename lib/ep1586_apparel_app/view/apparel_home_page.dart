@@ -23,16 +23,24 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
             child: Stack(
               children: [
                 Positioned(
-                  bottom: 0,
+                  bottom: 32,
+                  left: 0,
+                  right: 0,
+                  top: 0,
+                  child: Container(
+                    padding: EdgeInsets.all(4),
+                    color: Colors.pink,
+                  ),
+                ),
+                Positioned(
+                    bottom: 0,
                     left: 16,
                     right: 16,
                     child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(4)
-                  ),
+                      padding: EdgeInsets.all(4),
+                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
                       child: TextField(),
-                )),
+                    )),
               ],
             ),
           )
