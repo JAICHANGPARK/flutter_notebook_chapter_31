@@ -19,7 +19,7 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
       bottomNavigationBar: SizedBox(
         height: 72,
         child: BottomNavigationBar(
-
+          type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.black,
           unselectedItemColor: Colors.grey,
           currentIndex: _menuIndex,
