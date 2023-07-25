@@ -23,7 +23,7 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
             child: Stack(
               children: [
                 Positioned(
-                  bottom: 32,
+                  bottom: 30,
                   left: 0,
                   right: 0,
                   top: 0,
