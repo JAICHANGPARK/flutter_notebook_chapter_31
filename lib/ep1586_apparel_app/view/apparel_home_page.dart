@@ -72,7 +72,7 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                   ),
                 ),
                 Container(
-                  height: 280,
+                  height: 300,
                   color: Colors.blue,
                 ),
                 Padding(
@@ -87,6 +87,10 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                       ),
                     ],
                   ),
+                ),
+                Container(
+                  height: 120,
+                  color: Colors.blue,
                 ),
               ],
             ),
