@@ -15,6 +15,8 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
         children: [],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(
               icon: Icon(
