@@ -36,6 +36,11 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                 Icons.shopping_bag_outlined,
               ),
               label: "Your Cart"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person_outline,
+              ),
+              label: "Profile"),
         ],
       ),
     );
