@@ -8,6 +8,8 @@ class ApparelHomePage extends StatefulWidget {
 }
 
 class _ApparelHomePageState extends State<ApparelHomePage> {
+  int _menuIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,6 +19,11 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
+        onTap: (idx) {
+          setState(() {
+            _menuIndex = idx;
+          });
+        },
         items: [
           BottomNavigationBarItem(
               icon: Icon(
