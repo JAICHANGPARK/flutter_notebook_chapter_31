@@ -51,6 +51,9 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
               ],
             ),
           ),
+          SizedBox(
+            height: 16,
+          ),
           Expanded(
               child: SingleChildScrollView(
             child: Column(
@@ -91,7 +94,7 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
         ],
       ),
       bottomNavigationBar: SizedBox(
-        height: 72,
+        height: 84,
         child: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.black,
