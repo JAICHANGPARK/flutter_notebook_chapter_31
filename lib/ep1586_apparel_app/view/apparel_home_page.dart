@@ -17,11 +17,25 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home_filled,
-            ),
-            label: "Home"
-          )
+              icon: Icon(
+                Icons.home_filled,
+              ),
+              label: "Home"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.bolt_outlined,
+              ),
+              label: "Promo"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.favorite_border,
+              ),
+              label: "Favorite"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.shopping_bag_outlined,
+              ),
+              label: "Your Cart"),
         ],
       ),
     );
