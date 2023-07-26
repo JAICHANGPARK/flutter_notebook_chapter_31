@@ -110,7 +110,7 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                   ),
                 ),
                 Container(
-                  height: 300,
+                  height: 280,
                   decoration: const BoxDecoration(
                     color: Colors.blue,
                   ),
@@ -118,7 +118,7 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       return Container(
-                        width: 160,
+                        width: 170,
                         margin: EdgeInsets.only(right: 8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -127,6 +127,7 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                               child: Container(
                                 decoration: BoxDecoration(
                                   color: Colors.orange,
+                                  borderRadius: BorderRadius.circular(4),
                                 ),
                               ),
                             ),
