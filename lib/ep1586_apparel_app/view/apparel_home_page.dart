@@ -174,7 +174,11 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                   height: 16,
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.only(
+                      left: 16,
+                      top: 8,
+                      bottom: 8
+                  ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
