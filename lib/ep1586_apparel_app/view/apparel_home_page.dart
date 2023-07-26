@@ -196,12 +196,15 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                       itemBuilder: (context, index) {
                         return Container(
                           width: 120,
+                          margin: EdgeInsets.only(right: 12),
                           child: Column(
                             children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(4),
-                                  color: Colors.green,
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(4),
+                                    color: Colors.green,
+                                  ),
                                 ),
                               ),
                               Text("hoodies"),
