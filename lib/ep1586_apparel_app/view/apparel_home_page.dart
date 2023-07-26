@@ -87,125 +87,133 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
             height: 16,
           ),
           Expanded(
-              child: SingleChildScrollView(
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 16, top: 8, bottom: 8),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Text(
-                        "Discover",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 24,
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16, top: 8, bottom: 8),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          "Discover",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
+                          ),
                         ),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text("See All"),
-                      ),
-                    ],
+                        TextButton(
+                          onPressed: () {},
+                          child: const Text("See All"),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Container(
-                  height: 280,
-                  // decoration: const BoxDecoration(
-                  //   color: Colors.blue,
-                  // ),
-                  padding: const EdgeInsets.only(left: 16),
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemBuilder: (context, index) {
-                      return Container(
-                        width: 170,
-                        margin: const EdgeInsets.only(right: 8),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Expanded(
-                              child: Container(
+                  Container(
+                    height: 280,
+                    // decoration: const BoxDecoration(
+                    //   color: Colors.blue,
+                    // ),
+                    padding: const EdgeInsets.only(left: 16),
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 170,
+                          margin: const EdgeInsets.only(right: 8),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.orange,
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 8,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  const Text(
+                                    "Flutter Shirt",
+                                  ),
+                                  const Text("Shirt"),
+                                  const Text(
+                                    "\$950.00",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      const Text("\$1,500.00"),
+                                      Container(
+                                        child: const Text(
+                                          "-49%",
+                                        ),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16, top: 8, bottom: 8),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          "Categories",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: const Text("See All"),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 120,
+                    color: Colors.blue,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 120,
+                          child: Column(
+                            children: [
+                              Container(
                                 decoration: BoxDecoration(
-                                  color: Colors.orange,
                                   borderRadius: BorderRadius.circular(4),
                                 ),
                               ),
-                            ),
-                            const SizedBox(
-                              height: 8,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const Text(
-                                  "Flutter Shirt",
-                                ),
-                                const Text("Shirt"),
-                                const Text(
-                                  "\$950.00",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                Row(
-                                  children: [
-                                    const Text("\$1,500.00"),
-                                    Container(
-                                      child: const Text(
-                                        "-49%",
-                                      ),
-                                    )
-                                  ],
-                                )
-                              ],
-                            )
-                          ],
-                        ),
-                      );
-                    },
+                              Text("hoodies"),
+                            ],
+                          ),
+                        );
+                      },
+                    ),
                   ),
-                ),
-                SizedBox(
-                  height: 16,
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 16, top: 8, bottom: 8),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Text(
-                        "Categories",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 24,
-                        ),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text("See All"),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  height: 120,
-                  color: Colors.blue,
-                  child: ListView.builder(
-                    itemBuilder: (context, index) {
-                      return Container(
-                        child: Column(
-                          children: [
-
-                          ],
-                        ),
-                      );
-                    },
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ))
+          )
         ],
       ),
       bottomNavigationBar: SizedBox(
