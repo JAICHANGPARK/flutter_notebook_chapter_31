@@ -91,11 +91,7 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(
-                    left: 16,
-                    top: 8,
-                    bottom: 8
-                  ),
+                  padding: const EdgeInsets.only(left: 16, top: 8, bottom: 8),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -174,17 +170,16 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                   height: 16,
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(
-                      left: 16,
-                      top: 8,
-                      bottom: 8
-                  ),
+                  padding: const EdgeInsets.only(left: 16, top: 8, bottom: 8),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const Text(
                         "Categories",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
+                        ),
                       ),
                       TextButton(
                         onPressed: () {},
