@@ -30,6 +30,18 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                   child: Container(
                     padding: EdgeInsets.all(4),
                     color: Colors.pink,
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          child: Column(
+                            children: [
+                              Text("Jine Special Sale"),
+                              Text("Get 60% discount during\nour special month!"),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
                 Positioned(
