@@ -73,10 +73,9 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                       ),
                       child: TextField(
                         decoration: InputDecoration(
-                          icon: Icon(Icons.search),
-                          border: InputBorder.none,
-                          hintText: "Search by categories, name, or brands.."
-                        ),
+                            icon: Icon(Icons.search),
+                            border: InputBorder.none,
+                            hintText: "Search by categories, name, or brands.."),
                       ),
                     ),
                   ),
@@ -96,7 +95,13 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Discover"),
+                      Text(
+                        "Discover",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
+                        ),
+                      ),
                       TextButton(
                         onPressed: () {},
                         child: Text("See All"),
