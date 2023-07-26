@@ -33,7 +33,7 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                     child: const Stack(
                       children: [
                         Positioned(
-                          left: 8,
+                          left: 16,
                           top: 72,
                           bottom: 0,
                           child: Column(
