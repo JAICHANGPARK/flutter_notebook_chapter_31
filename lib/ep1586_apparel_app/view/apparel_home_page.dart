@@ -29,7 +29,7 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                   top: 0,
                   child: Container(
                     padding: const EdgeInsets.all(4),
-                    color: Colors.pink,
+                    color: Colors.brown[50],
                     child: const Stack(
                       children: [
                         Positioned(
@@ -40,10 +40,10 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Jine Special Sale",
+                                "June Special Sale",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 20,
+                                  fontSize: 24,
                                 ),
                               ),
                               SizedBox(
@@ -111,16 +111,16 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                 ),
                 Container(
                   height: 280,
-                  decoration: const BoxDecoration(
-                    color: Colors.blue,
-                  ),
-                  padding: EdgeInsets.only(left: 16),
+                  // decoration: const BoxDecoration(
+                  //   color: Colors.blue,
+                  // ),
+                  padding: const EdgeInsets.only(left: 16),
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       return Container(
                         width: 170,
-                        margin: EdgeInsets.only(right: 8),
+                        margin: const EdgeInsets.only(right: 8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -132,17 +132,17 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                                 ),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 8,
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
+                                const Text(
                                   "Flutter Shirt",
                                 ),
-                                Text("Shirt"),
-                                Text(
+                                const Text("Shirt"),
+                                const Text(
                                   "\$950.00",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -150,9 +150,9 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                                 ),
                                 Row(
                                   children: [
-                                    Text("\$1,500.00"),
+                                    const Text("\$1,500.00"),
                                     Container(
-                                      child: Text(
+                                      child: const Text(
                                         "-49%",
                                       ),
                                     )
@@ -166,12 +166,16 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                     },
                   ),
                 ),
+                SizedBox(height: 16,),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text("Categories"),
+                      const Text("Categories", style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24
+                      ),),
                       TextButton(
                         onPressed: () {},
                         child: const Text("See All"),
