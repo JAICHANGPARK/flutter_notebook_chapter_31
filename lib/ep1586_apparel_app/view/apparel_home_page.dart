@@ -191,6 +191,17 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                 Container(
                   height: 120,
                   color: Colors.blue,
+                  child: ListView.builder(
+                    itemBuilder: (context, index) {
+                      return Container(
+                        child: Column(
+                          children: [
+                            
+                          ],
+                        ),
+                      );
+                    },
+                  ),
                 ),
               ],
             ),
