@@ -196,7 +196,7 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                       return Container(
                         child: Column(
                           children: [
-                            
+
                           ],
                         ),
                       );
