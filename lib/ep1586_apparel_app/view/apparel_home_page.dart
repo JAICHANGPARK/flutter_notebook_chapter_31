@@ -33,9 +33,18 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                     child: Stack(
                       children: [
                         Positioned(
+                          left: 8,
+                          top: 72,
+                          bottom: 0,
                           child: Column(
                             children: [
-                              Text("Jine Special Sale"),
+                              Text(
+                                "Jine Special Sale",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20
+                                ),
+                              ),
                               Text("Get 60% discount during\nour special month!"),
                             ],
                           ),
