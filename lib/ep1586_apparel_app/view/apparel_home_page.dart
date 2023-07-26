@@ -17,9 +17,9 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
         children: [
           Container(
             height: 240,
-            decoration: const BoxDecoration(
-              color: Colors.blue,
-            ),
+            // decoration: const BoxDecoration(
+            //   color: Colors.blue,
+            // ),
             child: Stack(
               children: [
                 Positioned(
@@ -91,7 +91,11 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.only(
+                    left: 16,
+                    top: 8,
+                    bottom: 8
+                  ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -166,16 +170,18 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                     },
                   ),
                 ),
-                SizedBox(height: 16,),
+                SizedBox(
+                  height: 16,
+                ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text("Categories", style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 24
-                      ),),
+                      const Text(
+                        "Categories",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                      ),
                       TextButton(
                         onPressed: () {},
                         child: const Text("See All"),
