@@ -111,7 +111,33 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                 ),
                 Container(
                   height: 300,
-                  color: Colors.blue,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                  ),
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return Column(
+                        children: [
+                          Expanded(child: Container()),
+                          Column(
+                            children: [
+                              Text(
+                                "Flutter Shirt",
+                              ),
+                              Text("Shirt"),
+                              Text(
+                                "\$950.00",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      );
+                    },
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
