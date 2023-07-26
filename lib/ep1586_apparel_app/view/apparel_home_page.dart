@@ -58,21 +58,29 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                   ),
                 ),
                 Positioned(
-                    bottom: 0,
-                    left: 16,
-                    right: 16,
-                    child: PhysicalModel(
-                      color: Colors.white,
-                      elevation: 4,
-                      child: Container(
-                        padding: EdgeInsets.all(4),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        child: TextField(),
+                  bottom: 0,
+                  left: 16,
+                  right: 16,
+                  child: PhysicalModel(
+                    color: Colors.white,
+                    elevation: 4,
+                    borderRadius: BorderRadius.circular(4),
+                    child: Container(
+                      padding: EdgeInsets.all(4),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(4),
                       ),
-                    )),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          icon: Icon(Icons.search),
+                          border: InputBorder.none,
+                          hintText: "Search by categories, name, or brands.."
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
