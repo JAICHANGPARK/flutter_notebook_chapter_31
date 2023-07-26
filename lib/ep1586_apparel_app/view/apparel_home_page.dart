@@ -114,6 +114,7 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                   decoration: const BoxDecoration(
                     color: Colors.blue,
                   ),
+                  padding: EdgeInsets.only(left: 16),
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
@@ -134,7 +135,7 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                             SizedBox(
                               height: 8,
                             ),
-                            const Column(
+                            Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
@@ -146,6 +147,16 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                   ),
+                                ),
+                                Row(
+                                  children: [
+                                    Text("\$1,500.00"),
+                                    Container(
+                                      child: Text(
+                                        "-49%",
+                                      ),
+                                    )
+                                  ],
                                 )
                               ],
                             )
