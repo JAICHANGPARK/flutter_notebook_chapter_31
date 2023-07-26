@@ -190,12 +190,13 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                   ),
                   Container(
                     height: 120,
+                    margin: EdgeInsets.only(left: 16),
                     color: Colors.blue,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
-                          width: 120,
+                          width: 94,
                           margin: EdgeInsets.only(right: 12),
                           child: Column(
                             children: [
@@ -206,6 +207,9 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                                     color: Colors.green,
                                   ),
                                 ),
+                              ),
+                              SizedBox(
+                                height: 8,
                               ),
                               Text("hoodies"),
                             ],
