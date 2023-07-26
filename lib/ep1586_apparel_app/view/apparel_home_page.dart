@@ -201,6 +201,7 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                               Container(
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(4),
+                                  color: Colors.green,
                                 ),
                               ),
                               Text("hoodies"),
