@@ -17,7 +17,7 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
         children: [
           Container(
             height: 240,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.blue,
             ),
             child: Stack(
@@ -28,9 +28,9 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                   right: 0,
                   top: 0,
                   child: Container(
-                    padding: EdgeInsets.all(4),
+                    padding: const EdgeInsets.all(4),
                     color: Colors.pink,
-                    child: Stack(
+                    child: const Stack(
                       children: [
                         Positioned(
                           left: 8,
@@ -66,12 +66,12 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                     elevation: 4,
                     borderRadius: BorderRadius.circular(4),
                     child: Container(
-                      padding: EdgeInsets.all(4),
+                      padding: const EdgeInsets.all(4),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(4),
                       ),
-                      child: TextField(
+                      child: const TextField(
                         decoration: InputDecoration(
                             icon: Icon(Icons.search),
                             border: InputBorder.none,
@@ -83,7 +83,7 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
           Expanded(
@@ -95,7 +95,7 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      const Text(
                         "Discover",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -104,37 +104,52 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                       ),
                       TextButton(
                         onPressed: () {},
-                        child: Text("See All"),
+                        child: const Text("See All"),
                       ),
                     ],
                   ),
                 ),
                 Container(
                   height: 300,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.blue,
                   ),
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
-                      return Column(
-                        children: [
-                          Expanded(child: Container()),
-                          Column(
-                            children: [
-                              Text(
-                                "Flutter Shirt",
-                              ),
-                              Text("Shirt"),
-                              Text(
-                                "\$950.00",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
+                      return Container(
+                        width: 160,
+                        margin: EdgeInsets.only(right: 8),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.orange,
                                 ),
-                              )
-                            ],
-                          )
-                        ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            const Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Flutter Shirt",
+                                ),
+                                Text("Shirt"),
+                                Text(
+                                  "\$950.00",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       );
                     },
                   ),
@@ -144,10 +159,10 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Categories"),
+                      const Text("Categories"),
                       TextButton(
                         onPressed: () {},
-                        child: Text("See All"),
+                        child: const Text("See All"),
                       ),
                     ],
                   ),
@@ -174,27 +189,27 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
             });
           },
           items: [
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home_filled,
                 ),
                 label: "Home"),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(
                   Icons.bolt_outlined,
                 ),
                 label: "Promo"),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(
                   Icons.favorite_border,
                 ),
                 label: "Favorite"),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(
                   Icons.shopping_bag_outlined,
                 ),
                 label: "Your Cart"),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(
                   Icons.person_outline,
                 ),
