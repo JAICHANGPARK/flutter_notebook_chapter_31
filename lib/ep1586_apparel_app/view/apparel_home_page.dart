@@ -37,13 +37,17 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                           top: 72,
                           bottom: 0,
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
                                 "Jine Special Sale",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 20
+                                  fontSize: 20,
                                 ),
+                              ),
+                              SizedBox(
+                                height: 6,
                               ),
                               Text("Get 60% discount during\nour special month!"),
                             ],
