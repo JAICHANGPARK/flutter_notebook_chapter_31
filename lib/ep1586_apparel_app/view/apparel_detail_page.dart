@@ -43,6 +43,18 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                         ),
                       ),
                     ],
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                        ),
+                      ),
+                      Expanded(child: Container()),
+                    ],
                   )
                 ],
               ),
@@ -54,7 +66,7 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
         height: 80,
         child: Row(
           children: [
-            Column(
+            const Column(
               children: [
                 Text("Size"),
                 Text("\$120,00"),
@@ -67,17 +79,17 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
               ),
               child: IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.shopping_bag_outlined,
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 8,
             ),
             Container(
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(4), color: Colors.black),
-              child: Text(
+              child: const Text(
                 "Buy Now",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
