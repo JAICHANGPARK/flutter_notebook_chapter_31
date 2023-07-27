@@ -76,6 +76,15 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                               color: Colors.grey[200]!,
                             ),
                           ),
+                          child: Row(
+                            children: [
+                              Text("Size:"),
+                              Text("S"),
+                              Icon(
+                                Icons.keyboard_arrow_down,
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ],
