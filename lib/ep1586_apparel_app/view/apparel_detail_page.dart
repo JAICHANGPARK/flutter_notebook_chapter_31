@@ -50,6 +50,9 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(4),
+                            border: Border.all(
+                              color: Colors.grey[200]!,
+                            ),
                           ),
                         ),
                       ),
