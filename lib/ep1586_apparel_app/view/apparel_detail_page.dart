@@ -41,16 +41,17 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
               ),
             ),
             Container(
-                decoration: BoxDecoration(
-                  border: Border.all(),
-                  borderRadius: BorderRadius.circular(4),
+              decoration: BoxDecoration(
+                border: Border.all(),
+                borderRadius: BorderRadius.circular(4),
+              ),
+              child: Text(
+                "Buy Now",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
                 ),
-                child: Text(
-                  "Buy Now",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
-                )),
+              ),
+            ),
           ],
         ),
       ),
