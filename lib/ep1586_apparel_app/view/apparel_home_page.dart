@@ -121,7 +121,11 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                       itemBuilder: (context, index) {
                         return GestureDetector(
                           onTap: () {
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => ApparelDetailPage()));
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => ApparelDetailPage(),
+                              ),
+                            );
                           },
                           child: Container(
                             width: 170,
