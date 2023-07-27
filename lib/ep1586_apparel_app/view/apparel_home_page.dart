@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_31/ep1586_apparel_app/view/apparel_detail_page.dart';
 
 class ApparelHomePage extends StatefulWidget {
   const ApparelHomePage({super.key});
@@ -118,49 +119,54 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return Container(
-                          width: 170,
-                          margin: const EdgeInsets.only(right: 8),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.orange,
-                                    borderRadius: BorderRadius.circular(4),
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 8,
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const Text(
-                                    "Flutter Shirt",
-                                  ),
-                                  const Text("Shirt"),
-                                  const Text(
-                                    "\$950.00",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
+                        return GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => ApparelDetailPage()));
+                          },
+                          child: Container(
+                            width: 170,
+                            margin: const EdgeInsets.only(right: 8),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.orange,
+                                      borderRadius: BorderRadius.circular(4),
                                     ),
                                   ),
-                                  Row(
-                                    children: [
-                                      const Text("\$1,500.00"),
-                                      Container(
-                                        child: const Text(
-                                          "-49%",
-                                        ),
-                                      )
-                                    ],
-                                  )
-                                ],
-                              )
-                            ],
+                                ),
+                                const SizedBox(
+                                  height: 8,
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    const Text(
+                                      "Flutter Shirt",
+                                    ),
+                                    const Text("Shirt"),
+                                    const Text(
+                                      "\$950.00",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Row(
+                                      children: [
+                                        const Text("\$1,500.00"),
+                                        Container(
+                                          child: const Text(
+                                            "-49%",
+                                          ),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                         );
                       },
