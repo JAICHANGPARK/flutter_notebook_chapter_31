@@ -20,9 +20,9 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Text("Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt"),
-                  Text("\$120,00"),
-                  Row(
+                  const Text("Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt"),
+                  const Text("\$120,00"),
+                  const Row(
                     children: [
                       Expanded(
                         child: Column(
@@ -54,7 +54,7 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                               color: Colors.grey[200]!,
                             ),
                           ),
-                          child: Row(
+                          child: const Row(
                             children: [
                               Text("Color"),
                               CircleAvatar(),
@@ -65,7 +65,7 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Expanded(
@@ -76,7 +76,7 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                               color: Colors.grey[200]!,
                             ),
                           ),
-                          child: Row(
+                          child: const Row(
                             children: [
                               Text("Size:"),
                               Text("S"),
@@ -121,7 +121,10 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
               width: 8,
             ),
             Container(
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(4), color: Colors.black),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(4),
+                color: Colors.black,
+              ),
               child: const Text(
                 "Buy Now",
                 style: TextStyle(
