@@ -40,10 +40,11 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                 ),
               ),
             ),
+            SizedBox(width: 8,),
             Container(
               decoration: BoxDecoration(
-                border: Border.all(),
                 borderRadius: BorderRadius.circular(4),
+                color: Colors.black
               ),
               child: Text(
                 "Buy Now",
