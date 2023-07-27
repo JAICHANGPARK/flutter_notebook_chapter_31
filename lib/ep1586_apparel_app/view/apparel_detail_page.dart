@@ -39,7 +39,18 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                   Icons.shopping_bag_outlined,
                 ),
               ),
-            )
+            ),
+            Container(
+                decoration: BoxDecoration(
+                  border: Border.all(),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: Text(
+                  "Buy Now",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                )),
           ],
         ),
       ),
