@@ -18,7 +18,12 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
           ),
           Expanded(
             child: SingleChildScrollView(
-              child: Column(),
+              child: Column(
+                children: [
+                  Text("Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt"),
+                ]
+                ,
+              ),
             ),
           )
         ],
