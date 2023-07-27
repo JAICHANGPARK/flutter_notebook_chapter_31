@@ -10,6 +10,33 @@ class ApparelDetailPage extends StatefulWidget {
 class _ApparelDetailPageState extends State<ApparelDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Container(
+            height: 520,
+          ),
+        ],
+      ),
+      bottomNavigationBar: BottomAppBar(
+        height: 80,
+        child: Row(
+          children: [
+            Column(
+              children: [
+                Text("Size"),
+                Text("\$120,00"),
+              ],
+            ),
+            Container(
+              decoration: BoxDecoration(
+                border: Border.all(),
+                borderRadius: BorderRadius.circular(4),
+              ),
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
