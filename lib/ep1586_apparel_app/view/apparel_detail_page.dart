@@ -16,6 +16,11 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
           Container(
             height: 520,
           ),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(),
+            ),
+          )
         ],
       ),
       bottomNavigationBar: BottomAppBar(
@@ -40,12 +45,11 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                 ),
               ),
             ),
-            SizedBox(width: 8,),
+            SizedBox(
+              width: 8,
+            ),
             Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(4),
-                color: Colors.black
-              ),
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(4), color: Colors.black),
               child: Text(
                 "Buy Now",
                 style: TextStyle(
