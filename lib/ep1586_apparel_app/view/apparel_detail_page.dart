@@ -54,9 +54,30 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                               color: Colors.grey[200]!,
                             ),
                           ),
+                          child: Row(
+                            children: [
+                              Text("Color"),
+                              CircleAvatar(),
+                              Icon(
+                                Icons.keyboard_arrow_down,
+                              )
+                            ],
+                          ),
                         ),
                       ),
-                      Expanded(child: Container()),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(4),
+                            border: Border.all(
+                              color: Colors.grey[200]!,
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   )
                 ],
