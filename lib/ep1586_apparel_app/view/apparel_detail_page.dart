@@ -21,8 +21,30 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
               child: Column(
                 children: [
                   Text("Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt"),
-                ]
-                ,
+                  Text("\$120,00"),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Text("Subtitle Subtitle"),
+                            Text("Subtitle Subtitle"),
+                            Text("Subtitle Subtitle"),
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Text("Subtitle Subtitle"),
+                            Text("Subtitle Subtitle"),
+                            Text("Subtitle Subtitle"),
+                          ],
+                        ),
+                      ),
+                    ],
+                  )
+                ],
               ),
             ),
           )
