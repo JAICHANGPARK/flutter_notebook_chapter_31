@@ -33,6 +33,12 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                 border: Border.all(),
                 borderRadius: BorderRadius.circular(4),
               ),
+              child: IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.shopping_bag_outlined,
+                ),
+              ),
             )
           ],
         ),
