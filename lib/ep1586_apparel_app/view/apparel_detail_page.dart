@@ -74,9 +74,13 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Subtitle Subtitle"),
-                              SizedBox(height: 8,),
+                              SizedBox(
+                                height: 8,
+                              ),
                               Text("Subtitle Subtitle"),
-                              SizedBox(height: 8,),
+                              SizedBox(
+                                height: 8,
+                              ),
                               Text("Subtitle Subtitle"),
                             ],
                           ),
@@ -86,9 +90,13 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Subtitle Subtitle"),
-                              SizedBox(height: 8,),
+                              SizedBox(
+                                height: 8,
+                              ),
                               Text("Subtitle Subtitle"),
-                              SizedBox(height: 8,),
+                              SizedBox(
+                                height: 8,
+                              ),
                               Text("Subtitle Subtitle"),
                             ],
                           ),
@@ -176,44 +184,50 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
       ),
       bottomNavigationBar: BottomAppBar(
         height: 80,
-        child: Row(
-          children: [
-            const Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text("Price"),
-                Text("\$120,00"),
-              ],
-            ),
-            Container(
-              decoration: BoxDecoration(
-                border: Border.all(),
-                borderRadius: BorderRadius.circular(4),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            children: [
+              const Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Price"),
+                  Text("\$120,00"),
+                ],
               ),
-              child: IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.shopping_bag_outlined,
+              Spacer(),
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.shopping_bag_outlined,
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(
-              width: 8,
-            ),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(4),
-                color: Colors.black,
+              const SizedBox(
+                width: 8,
               ),
-              child: const Text(
-                "Buy Now",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
+              Container(
+                padding: EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(4),
+                  color: Colors.black,
+                ),
+                child: const Text(
+                  "Buy Now",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
