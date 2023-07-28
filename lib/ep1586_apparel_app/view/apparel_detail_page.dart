@@ -42,89 +42,97 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
           ),
           Expanded(
             child: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(16.0),
-                    child: const Text(
-                      "Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(0.0),
+                      child: const Text(
+                        "Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
                       ),
                     ),
-                  ),
-
-                  const Text("\$120,00"),
-                  const Row(
-                    children: [
-                      Expanded(
-                        child: Column(
-                          children: [
-                            Text("Subtitle Subtitle"),
-                            Text("Subtitle Subtitle"),
-                            Text("Subtitle Subtitle"),
-                          ],
-                        ),
-                      ),
-                      Expanded(
-                        child: Column(
-                          children: [
-                            Text("Subtitle Subtitle"),
-                            Text("Subtitle Subtitle"),
-                            Text("Subtitle Subtitle"),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(4),
-                            border: Border.all(
-                              color: Colors.grey[200]!,
-                            ),
-                          ),
-                          child: const Row(
+                    SizedBox(
+                      height: 16,
+                    ),
+                    const Text("\$120,00"),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    const Row(
+                      children: [
+                        Expanded(
+                          child: Column(
                             children: [
-                              Text("Color"),
-                              CircleAvatar(),
-                              Icon(
-                                Icons.keyboard_arrow_down,
-                              )
+                              Text("Subtitle Subtitle"),
+                              Text("Subtitle Subtitle"),
+                              Text("Subtitle Subtitle"),
                             ],
                           ),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 8,
-                      ),
-                      Expanded(
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(4),
-                            border: Border.all(
-                              color: Colors.grey[200]!,
-                            ),
-                          ),
-                          child: const Row(
+                        Expanded(
+                          child: Column(
                             children: [
-                              Text("Size:"),
-                              Text("S"),
-                              Icon(
-                                Icons.keyboard_arrow_down,
-                              )
+                              Text("Subtitle Subtitle"),
+                              Text("Subtitle Subtitle"),
+                              Text("Subtitle Subtitle"),
                             ],
                           ),
                         ),
-                      ),
-                    ],
-                  )
-                ],
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(4),
+                              border: Border.all(
+                                color: Colors.grey[200]!,
+                              ),
+                            ),
+                            child: const Row(
+                              children: [
+                                Text("Color"),
+                                CircleAvatar(),
+                                Icon(
+                                  Icons.keyboard_arrow_down,
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 8,
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(4),
+                              border: Border.all(
+                                color: Colors.grey[200]!,
+                              ),
+                            ),
+                            child: const Row(
+                              children: [
+                                Text("Size:"),
+                                Text("S"),
+                                Icon(
+                                  Icons.keyboard_arrow_down,
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
           )
