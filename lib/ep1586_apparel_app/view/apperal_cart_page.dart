@@ -29,7 +29,7 @@ class _ApparelCartPageState extends State<ApparelCartPage> {
               height: 48,
               decoration: BoxDecoration(
                 color: Colors.black,
-                borderRadius: BorderRadius.circular(4),
+                borderRadius: BorderRadius.circular(6),
               ),
               child: Center(
                 child: Text(
