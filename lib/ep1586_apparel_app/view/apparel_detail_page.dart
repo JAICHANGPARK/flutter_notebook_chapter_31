@@ -60,9 +60,10 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                     SizedBox(
                       height: 16,
                     ),
-                    const Text("\$120,00",style: TextStyle(
-                      fontSize: 16
-                    ),),
+                    const Text(
+                      "\$120,00",
+                      style: TextStyle(fontSize: 16),
+                    ),
                     SizedBox(
                       height: 16,
                     ),
@@ -80,6 +81,7 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                         ),
                         Expanded(
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Subtitle Subtitle"),
                               Text("Subtitle Subtitle"),
@@ -89,50 +91,57 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                         ),
                       ],
                     ),
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(4),
-                              border: Border.all(
-                                color: Colors.grey[200]!,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(4),
+                                border: Border.all(
+                                  color: Colors.grey[200]!,
+                                ),
+                              ),
+                              padding: EdgeInsets.all(8),
+                              child: const Row(
+                                children: [
+                                  Text("Color"),
+                                  Spacer(),
+                                  CircleAvatar(
+                                    radius: 10,
+                                  ),
+                                  Icon(
+                                    Icons.keyboard_arrow_down,
+                                  )
+                                ],
                               ),
                             ),
-                            child: const Row(
-                              children: [
-                                Text("Color"),
-                                CircleAvatar(),
-                                Icon(
-                                  Icons.keyboard_arrow_down,
-                                )
-                              ],
-                            ),
                           ),
-                        ),
-                        const SizedBox(
-                          width: 8,
-                        ),
-                        Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(4),
-                              border: Border.all(
-                                color: Colors.grey[200]!,
+                          const SizedBox(
+                            width: 16,
+                          ),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(4),
+                                border: Border.all(
+                                  color: Colors.grey[200]!,
+                                ),
+                              ),
+                              child: const Row(
+                                children: [
+                                  Text("Size:"),
+                                  Text("S"),
+                                  Icon(
+                                    Icons.keyboard_arrow_down,
+                                  )
+                                ],
                               ),
                             ),
-                            child: const Row(
-                              children: [
-                                Text("Size:"),
-                                Text("S"),
-                                Icon(
-                                  Icons.keyboard_arrow_down,
-                                )
-                              ],
-                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     )
                   ],
                 ),
