@@ -129,10 +129,22 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                                   color: Colors.grey[200]!,
                                 ),
                               ),
+                              padding: EdgeInsets.all(8),
                               child: const Row(
                                 children: [
-                                  Text("Size:"),
-                                  Text("S"),
+                                  Text(
+                                    "Size:",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Spacer(),
+                                  Text(
+                                    "S",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                   Icon(
                                     Icons.keyboard_arrow_down,
                                   )
