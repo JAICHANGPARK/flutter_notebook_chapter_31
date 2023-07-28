@@ -18,19 +18,31 @@ class _ApparelCartPageState extends State<ApparelCartPage> {
         centerTitle: true,
         elevation: 0,
       ),
-      body: Column(
-        children: [
-          const Expanded(
-            child: Placeholder(),
-          ),
-          Container(
-            height: 72,
-            decoration: BoxDecoration(
-              color: Colors.black,
-              borderRadius: BorderRadius.circular(4),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+            const Expanded(
+              child: Placeholder(),
             ),
-          )
-        ],
+            Container(
+              height: 48,
+              decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.circular(4),
+              ),
+              child: Center(
+                child: Text(
+                  "Checkout",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
