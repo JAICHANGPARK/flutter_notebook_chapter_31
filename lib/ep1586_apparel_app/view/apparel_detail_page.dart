@@ -17,6 +17,8 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
             height: 520,
             padding: EdgeInsets.fromLTRB(16, 72, 16, 0),
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CircleAvatar(),
                 CircleAvatar(),
