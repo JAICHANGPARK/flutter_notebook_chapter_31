@@ -253,6 +253,9 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
           unselectedItemColor: Colors.grey,
           currentIndex: _menuIndex,
           onTap: (idx) {
+            if (idx == 3) {
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => ApparelCartPage()));
+            }
             setState(() {
               _menuIndex = idx;
             });
