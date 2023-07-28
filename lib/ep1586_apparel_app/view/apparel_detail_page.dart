@@ -20,19 +20,22 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                CircleAvatar(
-                  radius: 18,
-                  backgroundColor: Colors.grey[300]!,
-                  foregroundColor: Colors.white,
-
-                  child: Icon(Icons.arrow_back),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).pop();
+                  },
+                  child: CircleAvatar(
+                    radius: 18,
+                    backgroundColor: Colors.grey[300]!,
+                    foregroundColor: Colors.white,
+                    child: Icon(Icons.arrow_back),
+                  ),
                 ),
                 CircleAvatar(
                   radius: 18,
                   backgroundColor: Colors.grey[300]!,
                   foregroundColor: Colors.white,
                   child: Icon(Icons.favorite_border),
-
                 ),
               ],
             ),
