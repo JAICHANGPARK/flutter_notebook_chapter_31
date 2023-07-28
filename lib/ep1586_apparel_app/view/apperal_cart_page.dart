@@ -17,7 +17,9 @@ class _ApparelCartPageState extends State<ApparelCartPage> {
       ),
       body: Column(
         children: [
-          Expanded(child: Placeholder()),
+          const Expanded(
+            child: Placeholder(),
+          ),
           Container(
             height: 72,
             decoration: BoxDecoration(
