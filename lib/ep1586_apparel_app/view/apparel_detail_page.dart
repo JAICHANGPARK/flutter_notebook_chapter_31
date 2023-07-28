@@ -16,7 +16,7 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
           Container(
             height: 520,
             padding: const EdgeInsets.fromLTRB(16, 64, 16, 0),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 image: NetworkImage("https://cdn.pixabay.com/photo/2016/11/21/16/01/woman-1846127_1280.jpg"),
                 fit: BoxFit.cover,
