@@ -260,28 +260,28 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
               _menuIndex = idx;
             });
           },
-          items: [
-            const BottomNavigationBarItem(
+          items: const [
+            BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home_filled,
                 ),
                 label: "Home"),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
                 icon: Icon(
                   Icons.bolt_outlined,
                 ),
                 label: "Promo"),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
                 icon: Icon(
                   Icons.favorite_border,
                 ),
                 label: "Favorite"),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
                 icon: Icon(
                   Icons.shopping_bag_outlined,
                 ),
                 label: "Your Cart"),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
                 icon: Icon(
                   Icons.person_outline,
                 ),
