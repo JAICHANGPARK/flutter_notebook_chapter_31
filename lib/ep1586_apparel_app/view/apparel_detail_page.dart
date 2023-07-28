@@ -15,13 +15,19 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
         children: [
           Container(
             height: 520,
-            padding: EdgeInsets.fromLTRB(16, 72, 16, 0),
+            padding: EdgeInsets.fromLTRB(16, 64, 16, 0),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                CircleAvatar(),
-                CircleAvatar(),
+                CircleAvatar(
+                  radius: 18,
+                  backgroundColor: Colors.grey[200]!,
+                ),
+                CircleAvatar(
+                  radius: 18,
+                  backgroundColor: Colors.grey[200]!,
+                ),
 
               ],
             ),
