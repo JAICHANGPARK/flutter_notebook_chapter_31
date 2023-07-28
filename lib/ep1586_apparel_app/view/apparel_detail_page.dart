@@ -70,6 +70,7 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                       children: [
                         Expanded(
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Subtitle Subtitle"),
                               Text("Subtitle Subtitle"),
