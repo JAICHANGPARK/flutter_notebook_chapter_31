@@ -11,6 +11,10 @@ class ApparelCartPage extends StatefulWidget {
 class _ApparelCartPageState extends State<ApparelCartPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Column(
+      children: [
+        
+      ],
+    );
   }
 }
