@@ -179,8 +179,10 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
         child: Row(
           children: [
             const Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Size"),
+                Text("Price"),
                 Text("\$120,00"),
               ],
             ),
