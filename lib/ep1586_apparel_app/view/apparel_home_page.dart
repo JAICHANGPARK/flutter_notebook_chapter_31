@@ -252,13 +252,13 @@ class _ApparelHomePageState extends State<ApparelHomePage> {
           selectedItemColor: Colors.black,
           unselectedItemColor: Colors.grey,
           currentIndex: _menuIndex,
-          onTap: (idx) {
+          onTap: (idx) async {
+            _menuIndex = idx;
             if (idx == 3) {
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => ApparelCartPage()));
+              await Navigator.of(context).push(MaterialPageRoute(builder: (context) => ApparelCartPage()));
+              _menuIndex = 0;
             }
-            setState(() {
-              _menuIndex = idx;
-            });
+            setState(() {});
           },
           items: const [
             BottomNavigationBarItem(
