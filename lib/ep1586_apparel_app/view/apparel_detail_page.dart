@@ -43,8 +43,19 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
           Expanded(
             child: SingleChildScrollView(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text("Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt"),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: const Text(
+                      "Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20
+                      ),
+                    ),
+                  ),
+
                   const Text("\$120,00"),
                   const Row(
                     children: [
