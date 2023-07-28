@@ -22,13 +22,18 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
               children: [
                 CircleAvatar(
                   radius: 18,
-                  backgroundColor: Colors.grey[200]!,
+                  backgroundColor: Colors.grey[300]!,
+                  foregroundColor: Colors.white,
+
+                  child: Icon(Icons.arrow_back),
                 ),
                 CircleAvatar(
                   radius: 18,
-                  backgroundColor: Colors.grey[200]!,
-                ),
+                  backgroundColor: Colors.grey[300]!,
+                  foregroundColor: Colors.white,
+                  child: Icon(Icons.favorite_border),
 
+                ),
               ],
             ),
           ),
