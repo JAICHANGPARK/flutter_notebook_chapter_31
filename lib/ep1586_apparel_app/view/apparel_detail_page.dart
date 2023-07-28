@@ -74,7 +74,9 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Subtitle Subtitle"),
+                              SizedBox(height: 8,),
                               Text("Subtitle Subtitle"),
+                              SizedBox(height: 8,),
                               Text("Subtitle Subtitle"),
                             ],
                           ),
@@ -84,7 +86,9 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Subtitle Subtitle"),
+                              SizedBox(height: 8,),
                               Text("Subtitle Subtitle"),
+                              SizedBox(height: 8,),
                               Text("Subtitle Subtitle"),
                             ],
                           ),
@@ -106,10 +110,18 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                               padding: EdgeInsets.all(8),
                               child: const Row(
                                 children: [
-                                  Text("Color"),
+                                  Text(
+                                    "Color",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                   Spacer(),
                                   CircleAvatar(
                                     radius: 10,
+                                  ),
+                                  SizedBox(
+                                    width: 4,
                                   ),
                                   Icon(
                                     Icons.keyboard_arrow_down,
