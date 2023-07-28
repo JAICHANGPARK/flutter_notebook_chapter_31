@@ -15,6 +15,14 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
         children: [
           Container(
             height: 520,
+            padding: EdgeInsets.fromLTRB(16, 72, 16, 0),
+            child: Row(
+              children: [
+                CircleAvatar(),
+                CircleAvatar(),
+
+              ],
+            ),
           ),
           Expanded(
             child: SingleChildScrollView(
