@@ -60,7 +60,9 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                     SizedBox(
                       height: 16,
                     ),
-                    const Text("\$120,00"),
+                    const Text("\$120,00",style: TextStyle(
+                      fontSize: 16
+                    ),),
                     SizedBox(
                       height: 16,
                     ),
