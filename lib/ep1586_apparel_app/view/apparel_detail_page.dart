@@ -193,7 +193,12 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text("Price"),
-                  Text("\$120,00"),
+                  Text(
+                    "\$120,00",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ],
               ),
               Spacer(),
