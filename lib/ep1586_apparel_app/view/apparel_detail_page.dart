@@ -15,7 +15,7 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
         children: [
           Container(
             height: 520,
-            padding: EdgeInsets.fromLTRB(16, 64, 16, 0),
+            padding: const EdgeInsets.fromLTRB(16, 64, 16, 0),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -28,14 +28,14 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                     radius: 18,
                     backgroundColor: Colors.grey[300]!,
                     foregroundColor: Colors.white,
-                    child: Icon(Icons.arrow_back),
+                    child: const Icon(Icons.arrow_back),
                   ),
                 ),
                 CircleAvatar(
                   radius: 18,
                   backgroundColor: Colors.grey[300]!,
                   foregroundColor: Colors.white,
-                  child: Icon(Icons.favorite_border),
+                  child: const Icon(Icons.favorite_border),
                 ),
               ],
             ),
@@ -47,9 +47,9 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.all(0.0),
-                      child: const Text(
+                    const Padding(
+                      padding: EdgeInsets.all(0.0),
+                      child: Text(
                         "Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt Flutter Shirt",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -57,14 +57,14 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
                     const Text(
                       "\$120,00",
                       style: TextStyle(fontSize: 16),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
                     const Row(
@@ -115,7 +115,7 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                                   color: Colors.grey[200]!,
                                 ),
                               ),
-                              padding: EdgeInsets.all(8),
+                              padding: const EdgeInsets.all(8),
                               child: const Row(
                                 children: [
                                   Text(
@@ -149,7 +149,7 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                                   color: Colors.grey[200]!,
                                 ),
                               ),
-                              padding: EdgeInsets.all(8),
+                              padding: const EdgeInsets.all(8),
                               child: const Row(
                                 children: [
                                   Text(
@@ -201,7 +201,7 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                   ),
                 ],
               ),
-              Spacer(),
+              const Spacer(),
               Container(
                 decoration: BoxDecoration(
                   border: Border.all(),
@@ -218,7 +218,7 @@ class _ApparelDetailPageState extends State<ApparelDetailPage> {
                 width: 8,
               ),
               Container(
-                padding: EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(4),
                   color: Colors.black,
