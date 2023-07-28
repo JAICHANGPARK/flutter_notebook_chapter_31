@@ -12,8 +12,11 @@ class _ApparelCartPageState extends State<ApparelCartPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
         title: const Text("Your Cart"),
         centerTitle: true,
+        elevation: 0,
       ),
       body: Column(
         children: [
