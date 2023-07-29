@@ -39,6 +39,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                               ),
                               CircleAvatar(
                                 radius: 4,
+                                backgroundColor: Colors.black,
                               ),
                             ],
                           ),
@@ -48,13 +49,13 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                           Row(
                             children: [
                               CircleAvatar(
-                                radius: 4,
+                                radius: 4,  backgroundColor: Colors.black,
                               ),
                               SizedBox(
                                 width: 4,
                               ),
                               CircleAvatar(
-                                radius: 4,
+                                radius: 4,  backgroundColor: Colors.black,
                               ),
                             ],
                           )
