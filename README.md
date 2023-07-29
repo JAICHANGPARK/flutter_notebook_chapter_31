@@ -4,7 +4,16 @@ How to run
 
 - flutter run
 
-## EP1586-
+## EP1591
+
+- Split Bill App
+- by MindInventory UI/UX for MindInventory
+- https://dribbble.com/shots/22121279-Split-Bill-App
+
+<img src="https://cdn.dribbble.com/userupload/8899038/file/original-efe0ae51c92ed8641a1f681129de76eb.png?resize=1600x1200"/>
+
+
+## EP1586-1590
 
 - Fashion Apparel Marketplace Mobile Design
 - by Rezha Aaron 🎃
