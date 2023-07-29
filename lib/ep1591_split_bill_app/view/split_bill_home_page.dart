@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SplitBillHomePage extends StatefulWidget {
   const SplitBillHomePage({super.key});
 
@@ -17,7 +16,16 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              
+              Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(),
+                    ),
+                  )
+                ],
+              )
             ],
           ),
         ),
