@@ -99,7 +99,22 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                     )
                   ],
                 ),
-              )
+              ),
+              Container(
+                height: 120,
+                color: Colors.blue,
+              ),
+              SizedBox(height: 16,),
+              Container(
+                height: 260,
+                color: Colors.blue,
+              ),
+              SizedBox(height: 16,),
+              Container(
+                height: 120,
+                color: Colors.blue,
+              ),
+
             ],
           ),
         ),
