@@ -31,14 +31,14 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                           Row(
                             children: [
                               CircleAvatar(
-                                radius: 4,
+                                radius: 3,
                                 backgroundColor: Colors.red,
                               ),
                               SizedBox(
                                 width: 4,
                               ),
                               CircleAvatar(
-                                radius: 4,
+                                radius: 3,
                                 backgroundColor: Colors.black,
                               ),
                             ],
@@ -49,15 +49,32 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                           Row(
                             children: [
                               CircleAvatar(
-                                radius: 4,  backgroundColor: Colors.black,
+                                radius: 3,
+                                backgroundColor: Colors.black,
                               ),
                               SizedBox(
                                 width: 4,
                               ),
                               CircleAvatar(
-                                radius: 4,  backgroundColor: Colors.black,
+                                radius: 3,
+                                backgroundColor: Colors.black,
                               ),
                             ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 64,
+                      height: 46,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            right: 0,
+                            top: 0,
+                            bottom: 0,
+
+                            child: CircleAvatar(),
                           )
                         ],
                       ),
