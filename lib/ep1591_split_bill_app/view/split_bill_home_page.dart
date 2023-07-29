@@ -19,6 +19,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
                       padding: EdgeInsets.all(12),
@@ -65,7 +66,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                       ),
                     ),
                     SizedBox(
-                      width: 64,
+                      width: 72,
                       height: 46,
                       child: Stack(
                         children: [
@@ -73,8 +74,19 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                             right: 0,
                             top: 0,
                             bottom: 0,
+                            child: CircleAvatar(
+                              backgroundColor: Colors.white,
 
-                            child: CircleAvatar(),
+                            ),
+                          ),
+                          Positioned(
+                            left: 0,
+                            top: 0,
+                            bottom: 0,
+                            child: CircleAvatar(
+                              backgroundColor: Colors.white,
+
+                            ),
                           )
                         ],
                       ),
