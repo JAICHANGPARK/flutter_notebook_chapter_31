@@ -81,6 +81,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                                   Icons.notifications_none,
                                 ),
                               ),
+                              foregroundColor: Colors.black,
                             ),
                           ),
                           Positioned(
@@ -90,6 +91,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                             child: CircleAvatar(
                               backgroundColor: Colors.white,
                               child: Icon(Icons.search),
+                              foregroundColor: Colors.black,
                             ),
                           )
                         ],
