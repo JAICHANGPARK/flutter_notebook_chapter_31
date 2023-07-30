@@ -197,7 +197,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                   10,
                   (index) => Container(
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                    margin: const EdgeInsets.only(left: 16, right: 16, bottom: 8),
+                    margin: const EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     decoration: BoxDecoration(
                       color: index == 0 ? Colors.white : Colors.transparent,
                       borderRadius: BorderRadius.circular(12),
@@ -215,6 +215,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text("Festive Celebration"),
                                 Text("\$100.00"),
@@ -223,7 +224,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                             SizedBox(
                               height: 8,
                             ),
-                            Row(
+                            Row(  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text("22 Dec 22"),
                                 Icon(
