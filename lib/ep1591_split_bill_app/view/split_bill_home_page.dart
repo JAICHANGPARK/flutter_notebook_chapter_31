@@ -144,22 +144,43 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: const Text("Pending Bills", style: TextStyle(
-                  fontSize: 16
-                ),),
+              const Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Text(
+                  "Pending Bills",
+                  style: TextStyle(fontSize: 16),
+                ),
               ),
               Container(
                 height: 260,
                 color: Colors.blue,
               ),
-              const SizedBox(
-                height: 16,
+              const Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Text(
+                  "Nearby Friends",
+                  style: TextStyle(fontSize: 16),
+                ),
               ),
               Container(
                 height: 120,
                 color: Colors.blue,
+                child: Row(
+                  children: [
+
+                  ],
+                ),
+              ),
+              const Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Row(
+                  children: [
+                    Text(
+                      "Nearby Friends",
+                      style: TextStyle(fontSize: 16),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
