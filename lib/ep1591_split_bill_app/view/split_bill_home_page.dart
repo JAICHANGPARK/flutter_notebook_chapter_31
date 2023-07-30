@@ -119,6 +119,13 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                     ),
                     Expanded(
                       child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(16),
+                            bottomRight: Radius.circular(16),
+                          ),
+                          border: Border.all(),
+                        ),
                         child: Row(
                           children: [
                             Text(
