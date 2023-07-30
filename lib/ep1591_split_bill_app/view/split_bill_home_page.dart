@@ -11,10 +11,11 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(205, 198, 198, 1),
+      backgroundColor: const Color.fromRGBO(205, 198, 198, 1),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
                 padding: const EdgeInsets.all(16.0),
@@ -22,12 +23,12 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      padding: EdgeInsets.all(12),
+                      padding: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(),
                       ),
-                      child: Column(
+                      child: const Column(
                         children: [
                           Row(
                             children: [
@@ -65,7 +66,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 72,
                       height: 46,
                       child: Stack(
@@ -102,32 +103,32 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
               ),
               Container(
                 height: 100,
-                margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(16),
                           topRight: Radius.circular(16),
                         ),
                         border: Border.all(),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                      child: Text("My Balance"),
+                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                      child: const Text("My Balance"),
                     ),
                     Expanded(
                       child: Container(
-                        padding: EdgeInsets.symmetric(horizontal: 16),
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(16),
                             bottomRight: Radius.circular(16),
                           ),
                           border: Border.all(),
                         ),
-                        child: Row(
+                        child: const Row(
                           children: [
                             Text(
                               "\$20,505.00",
@@ -143,15 +144,15 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
-              Text("Pending Bills"),
+              const Text("Pending Bills"),
               Container(
                 height: 260,
                 color: Colors.blue,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Container(
