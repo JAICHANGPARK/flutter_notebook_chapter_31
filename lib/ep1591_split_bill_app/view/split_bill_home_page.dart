@@ -101,7 +101,8 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                 ),
               ),
               Container(
-                height: 120,
+                height: 100,
+                margin: EdgeInsets.symmetric(horizontal: 16),
                 color: Colors.blue,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
