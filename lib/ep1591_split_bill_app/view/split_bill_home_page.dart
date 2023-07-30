@@ -196,14 +196,21 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                 children: List.generate(
                   10,
                   (index) => Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                    margin: const EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 12,
+                    ),
+                    margin: const EdgeInsets.only(
+                      left: 16,
+                      right: 16,
+                      bottom: 12,
+                    ),
                     decoration: BoxDecoration(
                       color: index == 0 ? Colors.white : Colors.transparent,
                       borderRadius: BorderRadius.circular(12),
                       border: Border.all(
                         color: index == 0 ? Colors.white : Colors.black,
-                      )
+                      ),
                     ),
                     child: Row(
                       children: [
