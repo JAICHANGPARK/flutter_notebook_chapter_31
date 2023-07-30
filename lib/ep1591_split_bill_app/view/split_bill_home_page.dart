@@ -104,6 +104,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                 height: 120,
                 color: Colors.blue,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
                       decoration: BoxDecoration(
@@ -118,7 +119,15 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                     Expanded(
                       child: Container(
                         child: Row(
-                          children: [],
+                          children: [
+                            Text(
+                              "\$20,505.00",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                              ),
+                            )
+                          ],
                         ),
                       ),
                     ),
