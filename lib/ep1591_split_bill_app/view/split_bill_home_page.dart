@@ -196,10 +196,15 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                 children: List.generate(
                   10,
                   (index) => Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                     margin: const EdgeInsets.only(left: 16, right: 16, bottom: 8),
                     decoration: BoxDecoration(
-                        color: index == 0 ? Colors.white : Colors.transparent, borderRadius: BorderRadius.circular(12)),
+                      color: index == 0 ? Colors.white : Colors.transparent,
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(
+                        color: index == 0 ? Colors.white : Colors.black,
+                      )
+                    ),
                     child: Row(
                       children: [
                         CircleAvatar(),
@@ -207,6 +212,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                           width: 12,
                         ),
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Row(
                               children: [
