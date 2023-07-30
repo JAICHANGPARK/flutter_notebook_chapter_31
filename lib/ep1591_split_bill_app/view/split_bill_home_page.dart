@@ -188,6 +188,37 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                   ],
                 ),
               ),
+              Column(
+                children: List.generate(
+                  10,
+                  (index) => Container(
+                    child: Row(
+                      children: [
+                        CircleAvatar(),
+                        Column(
+                          children: [
+                            Row(
+                              children: [
+                                Text("Festive Celebration"),
+                                Text("\$100.00"),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text("22 Dec 22"),
+                                Icon(
+                                  Icons.person_2_outlined,
+                                ),
+                                Text("4 Persons"),
+                              ],
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              )
             ],
           ),
         ),
