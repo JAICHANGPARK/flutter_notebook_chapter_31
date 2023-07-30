@@ -144,10 +144,12 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                   ],
                 ),
               ),
-              const SizedBox(
-                height: 16,
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: const Text("Pending Bills", style: TextStyle(
+                  fontSize: 16
+                ),),
               ),
-              const Text("Pending Bills"),
               Container(
                 height: 260,
                 color: Colors.blue,
