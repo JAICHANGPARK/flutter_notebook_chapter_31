@@ -114,6 +114,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                         ),
                         border: Border.all(),
                       ),
+                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                       child: Text("My Balance"),
                     ),
                     Expanded(
