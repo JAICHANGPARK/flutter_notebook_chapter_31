@@ -102,8 +102,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
               ),
               Container(
                 height: 100,
-                margin: EdgeInsets.symmetric(horizontal: 16),
-                color: Colors.blue,
+                margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -120,6 +119,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                     ),
                     Expanded(
                       child: Container(
+                        padding: EdgeInsets.symmetric(horizontal: 16),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(16),
@@ -146,6 +146,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
               SizedBox(
                 height: 16,
               ),
+              Text("Pending Bills"),
               Container(
                 height: 260,
                 color: Colors.blue,
