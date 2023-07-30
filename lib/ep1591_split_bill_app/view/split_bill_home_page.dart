@@ -165,16 +165,20 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
               Container(
                 height: 120,
                 color: Colors.blue,
-                child: Row(
+                child: const Row(
                   children: [],
                 ),
               ),
               Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.only(
+                  left: 16,
+                  right: 16,
+                  top: 16,
+                ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       "Recent Payments",
                       style: TextStyle(fontSize: 16),
                     ),
@@ -183,7 +187,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                       style: TextButton.styleFrom(
                         foregroundColor: Colors.black,
                       ),
-                      child: Text("See All"),
+                      child: const Text("See All"),
                     ),
                   ],
                 ),
@@ -192,9 +196,16 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                 children: List.generate(
                   10,
                   (index) => Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    margin: const EdgeInsets.only(left: 16, right: 16, bottom: 8),
+                    decoration: BoxDecoration(
+                        color: index == 0 ? Colors.white : Colors.transparent, borderRadius: BorderRadius.circular(12)),
                     child: Row(
                       children: [
                         CircleAvatar(),
+                        SizedBox(
+                          width: 12,
+                        ),
                         Column(
                           children: [
                             Row(
@@ -203,11 +214,15 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                                 Text("\$100.00"),
                               ],
                             ),
+                            SizedBox(
+                              height: 8,
+                            ),
                             Row(
                               children: [
                                 Text("22 Dec 22"),
                                 Icon(
                                   Icons.person_2_outlined,
+                                  size: 12,
                                 ),
                                 Text("4 Persons"),
                               ],
