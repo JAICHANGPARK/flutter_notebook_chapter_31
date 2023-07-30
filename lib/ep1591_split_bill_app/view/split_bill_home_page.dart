@@ -211,30 +211,33 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                         SizedBox(
                           width: 12,
                         ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Festive Celebration"),
-                                Text("\$100.00"),
-                              ],
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Row(  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("22 Dec 22"),
-                                Icon(
-                                  Icons.person_2_outlined,
-                                  size: 12,
-                                ),
-                                Text("4 Persons"),
-                              ],
-                            ),
-                          ],
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text("Festive Celebration"),
+                                  Text("\$100.00"),
+                                ],
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Row(
+                                children: [
+                                  Text("22 Dec 22"),
+                                  Spacer(),
+                                  Icon(
+                                    Icons.person_2_outlined,
+                                    size: 12,
+                                  ),
+                                  Text("4 Persons"),
+                                ],
+                              ),
+                            ],
+                          ),
                         )
                       ],
                     ),
