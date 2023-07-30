@@ -207,7 +207,10 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                     ),
                     child: Row(
                       children: [
-                        CircleAvatar(),
+                        CircleAvatar(
+                          backgroundColor: Colors.grey[200],
+                          radius: 24,
+                        ),
                         SizedBox(
                           width: 12,
                         ),
