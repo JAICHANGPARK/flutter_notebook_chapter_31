@@ -106,23 +106,39 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                 child: Column(
                   children: [
                     Container(
-                      decoration: BoxDecoration(),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(16),
+                          topRight: Radius.circular(16),
+                        ),
+                        border: Border.all(),
+                      ),
                       child: Text("My Balance"),
-                    )
+                    ),
+                    Expanded(
+                      child: Container(
+                        child: Row(
+                          children: [],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
-              SizedBox(height: 16,),
+              SizedBox(
+                height: 16,
+              ),
               Container(
                 height: 260,
                 color: Colors.blue,
               ),
-              SizedBox(height: 16,),
+              SizedBox(
+                height: 16,
+              ),
               Container(
                 height: 120,
                 color: Colors.blue,
               ),
-
             ],
           ),
         ),
