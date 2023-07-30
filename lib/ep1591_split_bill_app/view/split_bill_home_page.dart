@@ -166,18 +166,20 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                 height: 120,
                 color: Colors.blue,
                 child: Row(
-                  children: [
-
-                  ],
+                  children: [],
                 ),
               ),
-              const Padding(
+              Padding(
                 padding: EdgeInsets.all(16.0),
                 child: Row(
                   children: [
                     Text(
-                      "Nearby Friends",
+                      "Recent Payments",
                       style: TextStyle(fontSize: 16),
+                    ),
+                    TextButton(
+                      onPressed: () {},
+                      child: Text("See All"),
                     ),
                   ],
                 ),
