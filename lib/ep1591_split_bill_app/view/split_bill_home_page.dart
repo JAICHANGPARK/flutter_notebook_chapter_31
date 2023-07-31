@@ -164,12 +164,16 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
               ),
               Container(
                 height: 96,
-                padding: EdgeInsets.all(8),
+                padding: EdgeInsets.only(left: 16),
                 color: Colors.blue,
                 child: const Row(
                   children: [
                     CircleAvatar(
                       radius: 30,
+                      child: Icon(
+                        Icons.person_2_outlined,
+                      ),
+                      backgroundColor: Colors.white,
                     ),
                     SizedBox(
                       width: 12,
