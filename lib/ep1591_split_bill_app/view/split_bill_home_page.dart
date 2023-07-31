@@ -77,12 +77,12 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                             bottom: 0,
                             child: CircleAvatar(
                               backgroundColor: Colors.white,
+                              foregroundColor: Colors.black,
                               child: Badge(
                                 child: Icon(
                                   Icons.notifications_none,
                                 ),
                               ),
-                              foregroundColor: Colors.black,
                             ),
                           ),
                           Positioned(
@@ -91,8 +91,8 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                             bottom: 0,
                             child: CircleAvatar(
                               backgroundColor: Colors.white,
-                              child: Icon(Icons.search),
                               foregroundColor: Colors.black,
+                              child: Icon(Icons.search),
                             ),
                           )
                         ],
@@ -170,10 +170,11 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                   children: [
                     CircleAvatar(
                       radius: 30,
+                      foregroundColor: Colors.white,
+                      backgroundColor: Colors.red,
                       child: Icon(
                         Icons.person_2_outlined,
                       ),
-                      backgroundColor: Colors.white,
                     ),
                     SizedBox(
                       width: 12,
