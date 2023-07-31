@@ -145,8 +145,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                 ),
               ),
               Container(
-                height: 270,
-                color: Colors.blue,
+                height: 280,
                 child: Stack(
                   children: [
                     Positioned(
@@ -178,8 +177,8 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                       ),
                     ),
                     Positioned(
-                      right: -24,
-                      top: 24,
+                      right: -48,
+                      top: 32,
                       bottom: 24,
                       child: Transform.rotate(
                         angle: -0.2,
