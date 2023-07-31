@@ -186,7 +186,11 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                                   ),
                                   Text(
                                     "\$1200.00",
-                                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                    ),
                                   ),
                                   Text("Split with"),
                                   Container(
@@ -195,6 +199,21 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                                       color: Colors.white.withOpacity(0.4),
                                       borderRadius: BorderRadius.circular(32),
                                     ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                        ),
+                                        child: Text(
+                                          "Split Now",
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                          ),
+                                        ),
+                                      )
+                                    ],
                                   )
                                 ],
                               ),
