@@ -184,12 +184,15 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                           children: List.generate(
                         10,
                         (index) => Positioned(
-                          left: index * 42,
+                          left: index * 48,
                           top: 0,
                           bottom: 0,
                           child: CircleAvatar(
                             radius: 28,
                             backgroundColor: Colors.white,
+                            child: CircleAvatar(
+                              radius: 20,
+                            ),
                           ),
                         ),
                       ).toList()),
