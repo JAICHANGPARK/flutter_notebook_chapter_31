@@ -168,6 +168,21 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                         ),
                       ),
                     ),
+                    Transform.rotate(
+                      angle: 0.1,
+                      child: Positioned(
+                        right: 0,
+                        top: 0,
+                        bottom: 0,
+                        child: Container(
+                          width: 220,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
