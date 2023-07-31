@@ -169,7 +169,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                 child: const Row(
                   children: [
                     CircleAvatar(
-                      radius: 30,
+                      radius: 34,
                       foregroundColor: Colors.white,
                       backgroundColor: Colors.red,
                       child: Icon(
@@ -184,8 +184,10 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                         children: [
                           Positioned(
                             left: 0,
+                            top: 0,
+                            bottom: 0,
                             child: CircleAvatar(
-                              radius: 24,
+                              radius: 28,
                               backgroundColor: Colors.white,
                             ),
                           )
