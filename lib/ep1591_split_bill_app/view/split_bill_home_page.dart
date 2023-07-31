@@ -204,16 +204,29 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                                     children: [
                                       Expanded(
                                         child: Container(
+                                          height: 46,
                                           decoration: BoxDecoration(
                                             color: Colors.white,
                                           ),
-                                          
-                                          child: Text(
-                                            "Split Now",
-                                            style: TextStyle(
-                                              color: Colors.black,
+                                          child: Center(
+                                            child: Text(
+                                              "Split Now",
+                                              style: TextStyle(
+                                                color: Colors.black,
+                                              ),
                                             ),
                                           ),
+                                        ),
+                                      ),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.white.withOpacity(0.2),
+                                        ),
+                                        child: IconButton(
+                                          icon: Icon(
+                                            Icons.access_time,
+                                          ),
+                                          onPressed: () {},
                                         ),
                                       )
                                     ],
