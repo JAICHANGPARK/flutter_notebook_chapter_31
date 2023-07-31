@@ -171,6 +171,33 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                                 borderRadius: BorderRadius.circular(8),
                                 color: Colors.black,
                               ),
+                              padding: EdgeInsets.all(16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Birthday Party!",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  Text(
+                                    "\$1200.00",
+                                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
+                                  ),
+                                  Text("Split with"),
+                                  Container(
+                                    height: 48,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.4),
+                                      borderRadius: BorderRadius.circular(32),
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                         ],
@@ -185,9 +212,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                         child: Container(
                           width: 220,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(8),
-                            border: Border.all(color: Colors.white)
-                          ),
+                              borderRadius: BorderRadius.circular(8), border: Border.all(color: Colors.white)),
                         ),
                       ),
                     ),
