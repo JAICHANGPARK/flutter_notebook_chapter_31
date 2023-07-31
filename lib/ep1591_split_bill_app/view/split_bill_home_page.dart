@@ -144,13 +144,6 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                   ],
                 ),
               ),
-              const Padding(
-                padding: EdgeInsets.all(16.0),
-                child: Text(
-                  "Pending Bills",
-                  style: TextStyle(fontSize: 16),
-                ),
-              ),
               Container(
                 height: 240,
                 color: Colors.blue,
@@ -160,12 +153,25 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                       left: 16,
                       top: 0,
                       bottom: 0,
-                      child: Container(
-                        width: 220,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          color: Colors.black,
-                        ),
+                      right: 0,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Padding(
+                            padding: EdgeInsets.all(16.0),
+                            child: Text(
+                              "Pending Bills",
+                              style: TextStyle(fontSize: 16),
+                            ),
+                          ),
+                          Container(
+                            width: 220,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              color: Colors.black,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     Positioned(
