@@ -166,7 +166,15 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                 height: 120,
                 color: Colors.blue,
                 child: const Row(
-                  children: [],
+                  children: [
+                    CircleAvatar(
+                      radius: 30,
+                    ),
+                    SizedBox(
+                      width: 12,
+                    ),
+                    Expanded(child: Stack()),
+                  ],
                 ),
               ),
               Padding(
