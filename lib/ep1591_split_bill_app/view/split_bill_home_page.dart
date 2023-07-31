@@ -145,12 +145,12 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                 ),
               ),
               Container(
-                height: 240,
+                height: 270,
                 color: Colors.blue,
                 child: Stack(
                   children: [
                     Positioned(
-                      left: 16,
+                      left: 0,
                       top: 0,
                       bottom: 0,
                       right: 0,
@@ -164,27 +164,30 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                               style: TextStyle(fontSize: 16),
                             ),
                           ),
-                          Container(
-                            width: 220,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(8),
-                              color: Colors.black,
+                          Expanded(
+                            child: Container(
+                              width: 220,
+                              margin: EdgeInsets.only(left: 16),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                color: Colors.black,
+                              ),
                             ),
                           ),
                         ],
                       ),
                     ),
                     Positioned(
-                      right: -64,
-                      top: 0,
-                      bottom: 0,
+                      right: -24,
+                      top: 24,
+                      bottom: 24,
                       child: Transform.rotate(
-                        angle: -0.1,
+                        angle: -0.2,
                         child: Container(
                           width: 220,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8),
-                            color: Colors.black,
+                            border: Border.all(color: Colors.white)
                           ),
                         ),
                       ),
