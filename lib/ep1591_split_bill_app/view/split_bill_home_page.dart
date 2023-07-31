@@ -192,13 +192,25 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                                       fontSize: 18,
                                     ),
                                   ),
-                                  Text("Split with"),
+                                  Spacer(),
+                                  Text(
+                                    "Split with",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
                                   Container(
-                                    height: 48,
+                                    height: 42,
                                     decoration: BoxDecoration(
                                       color: Colors.white.withOpacity(0.4),
                                       borderRadius: BorderRadius.circular(32),
                                     ),
+                                  ),
+                                  SizedBox(
+                                    height: 12,
                                   ),
                                   Row(
                                     children: [
@@ -207,6 +219,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                                           height: 46,
                                           decoration: BoxDecoration(
                                             color: Colors.white,
+                                            borderRadius: BorderRadius.circular(8),
                                           ),
                                           child: Center(
                                             child: Text(
@@ -218,9 +231,13 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                                           ),
                                         ),
                                       ),
+                                      SizedBox(
+                                        width: 8,
+                                      ),
                                       Container(
                                         decoration: BoxDecoration(
-                                          color: Colors.white.withOpacity(0.2),
+                                          color: Colors.white.withOpacity(0.5),
+                                          borderRadius: BorderRadius.circular(8),
                                         ),
                                         child: IconButton(
                                           icon: Icon(
