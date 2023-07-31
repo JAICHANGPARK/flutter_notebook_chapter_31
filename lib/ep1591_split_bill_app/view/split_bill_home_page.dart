@@ -179,7 +179,19 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                     SizedBox(
                       width: 12,
                     ),
-                    Expanded(child: Stack()),
+                    Expanded(
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            left: 0,
+                            child: CircleAvatar(
+                              radius: 24,
+                              backgroundColor: Colors.white,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
