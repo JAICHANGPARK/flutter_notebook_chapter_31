@@ -166,7 +166,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                 height: 96,
                 padding: EdgeInsets.only(left: 16),
                 color: Colors.blue,
-                child: const Row(
+                child: Row(
                   children: [
                     CircleAvatar(
                       radius: 34,
@@ -181,18 +181,18 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                     ),
                     Expanded(
                       child: Stack(
-                        children: [
-                          Positioned(
-                            left: 0,
-                            top: 0,
-                            bottom: 0,
-                            child: CircleAvatar(
-                              radius: 28,
-                              backgroundColor: Colors.white,
-                            ),
-                          )
-                        ],
-                      ),
+                          children: List.generate(
+                        10,
+                        (index) => Positioned(
+                          left: index * 42,
+                          top: 0,
+                          bottom: 0,
+                          child: CircleAvatar(
+                            radius: 28,
+                            backgroundColor: Colors.white,
+                          ),
+                        ),
+                      ).toList()),
                     ),
                   ],
                 ),
