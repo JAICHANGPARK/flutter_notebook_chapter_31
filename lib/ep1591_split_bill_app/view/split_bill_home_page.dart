@@ -154,6 +154,22 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
               Container(
                 height: 260,
                 color: Colors.blue,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      left: 16,
+                      top: 0,
+                      bottom: 0,
+                      child: Container(
+                        width: 180,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
               const Padding(
                 padding: EdgeInsets.all(16.0),
