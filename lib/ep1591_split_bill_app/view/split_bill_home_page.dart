@@ -166,25 +166,25 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                           Expanded(
                             child: Container(
                               width: 220,
-                              margin: EdgeInsets.only(left: 16),
+                              margin: const EdgeInsets.only(left: 16),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8),
                                 color: Colors.black,
                               ),
-                              padding: EdgeInsets.all(16),
+                              padding: const EdgeInsets.all(16),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
+                                  const Text(
                                     "Birthday Party!",
                                     style: TextStyle(
                                       color: Colors.white,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
-                                  Text(
+                                  const Text(
                                     "\$1200.00",
                                     style: TextStyle(
                                       color: Colors.white,
@@ -192,14 +192,14 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                                       fontSize: 18,
                                     ),
                                   ),
-                                  Spacer(),
-                                  Text(
+                                  const Spacer(),
+                                  const Text(
                                     "Split with",
                                     style: TextStyle(
                                       color: Colors.white,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
                                   Container(
@@ -209,7 +209,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                                       borderRadius: BorderRadius.circular(32),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 12,
                                   ),
                                   Row(
@@ -221,7 +221,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                                             color: Colors.white,
                                             borderRadius: BorderRadius.circular(8),
                                           ),
-                                          child: Center(
+                                          child: const Center(
                                             child: Text(
                                               "Split Now",
                                               style: TextStyle(
@@ -231,7 +231,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                                           ),
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 8,
                                       ),
                                       Container(
@@ -240,7 +240,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                                           borderRadius: BorderRadius.circular(8),
                                         ),
                                         child: IconButton(
-                                          icon: Icon(
+                                          icon: const Icon(
                                             Icons.access_time,
                                           ),
                                           onPressed: () {},
@@ -264,7 +264,88 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                         child: Container(
                           width: 220,
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(8), border: Border.all(color: Colors.white)),
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(color: Colors.white),
+                          ),
+                          padding: const EdgeInsets.all(16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text(
+                                "Birthday Party!",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 8,
+                              ),
+                              const Text(
+                                "\$1200.00",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
+                              ),
+                              const Spacer(),
+                              const Text(
+                                "Split with",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 8,
+                              ),
+                              Container(
+                                height: 42,
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(0.4),
+                                  borderRadius: BorderRadius.circular(32),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 12,
+                              ),
+                              Row(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      height: 46,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                      child: const Center(
+                                        child: Text(
+                                          "Split Now",
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    width: 8,
+                                  ),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.5),
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                    child: IconButton(
+                                      icon: const Icon(
+                                        Icons.access_time,
+                                      ),
+                                      onPressed: () {},
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -280,11 +361,11 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
               ),
               Container(
                 height: 84,
-                padding: EdgeInsets.only(left: 16),
+                padding: const EdgeInsets.only(left: 16),
                 // color: Colors.blue,
                 child: Row(
                   children: [
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 34,
                       foregroundColor: Colors.white,
                       backgroundColor: Colors.red,
@@ -292,7 +373,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                         Icons.person_2_outlined,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 12,
                     ),
                     Expanded(
@@ -303,7 +384,7 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                           left: index * 54,
                           top: 0,
                           bottom: 0,
-                          child: CircleAvatar(
+                          child: const CircleAvatar(
                             radius: 30,
                             backgroundColor: Colors.white,
                             child: CircleAvatar(
@@ -365,10 +446,10 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                           backgroundColor: Colors.grey[200],
                           radius: 24,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 12,
                         ),
-                        Expanded(
+                        const Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
