@@ -149,6 +149,11 @@ class _SplitBillPageState extends State<SplitBillPage> {
                 ),
               ),
             ),
+            Expanded(child: Padding(
+              padding: const EdgeInsets.all(24.0),
+              child: Placeholder(),
+            )),
+
           ],
         ),
       ),
