@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_31/ep1591_split_bill_app/view/split_bill_page.dart';
 
 class SplitBillHomePage extends StatefulWidget {
   const SplitBillHomePage({super.key});
@@ -215,17 +216,26 @@ class _SplitBillHomePageState extends State<SplitBillHomePage> {
                                   Row(
                                     children: [
                                       Expanded(
-                                        child: Container(
-                                          height: 46,
-                                          decoration: BoxDecoration(
-                                            color: Colors.white,
-                                            borderRadius: BorderRadius.circular(8),
-                                          ),
-                                          child: const Center(
-                                            child: Text(
-                                              "Split Now",
-                                              style: TextStyle(
-                                                color: Colors.black,
+                                        child: GestureDetector(
+                                          onTap: () {
+                                            Navigator.of(context).push(
+                                              MaterialPageRoute(
+                                                builder: (context) => const SplitBillPage(),
+                                              ),
+                                            );
+                                          },
+                                          child: Container(
+                                            height: 46,
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.circular(8),
+                                            ),
+                                            child: const Center(
+                                              child: Text(
+                                                "Split Now",
+                                                style: TextStyle(
+                                                  color: Colors.black,
+                                                ),
                                               ),
                                             ),
                                           ),
