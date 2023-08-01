@@ -77,17 +77,40 @@ class _SplitBillPageState extends State<SplitBillPage> {
               child: Stack(
                 children: [
                   Positioned(
-                      left: 0,
-                      top: 0,
-                      bottom: 0,
-                      child: Container(
-                        height: 42,
-                        width: 42,
-                        decoration: BoxDecoration(
-                          border: Border.all(),
-                          shape: BoxShape.circle,
+                    left: 26,
+                    top: 0,
+                    bottom: 0,
+                    child: Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                            color: Colors.red,
+                            width: 1.5
                         ),
-                      ))
+                        shape: BoxShape.circle,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    left: 0,
+                    top: 0,
+                    bottom: 0,
+                    child: Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.red,
+                          width: 1.5
+                        ),
+                        shape: BoxShape.circle,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+
                 ],
               ),
             ),
