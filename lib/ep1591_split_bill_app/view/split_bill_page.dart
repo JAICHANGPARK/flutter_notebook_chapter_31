@@ -71,47 +71,82 @@ class _SplitBillPageState extends State<SplitBillPage> {
               ),
             ),
             Text("Birthday Party!"),
+            SizedBox(
+              height: 16,
+            ),
             Container(
               height: 48,
-              width: 180,
-              child: Stack(
-                children: [
-                  Positioned(
-                    left: 26,
-                    top: 0,
-                    bottom: 0,
-                    child: Container(
-                      height: 42,
-                      width: 42,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                            color: Colors.red,
-                            width: 1.5
+              width: 140,
+              // width: double.infinity,
+              child: Center(
+                child: Stack(
+                  children: [
+                    Positioned(
+                      left: 0,
+                      top: 0,
+                      bottom: 0,
+                      child: Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.red, width: 1.5),
+                          shape: BoxShape.circle,
+                          color: Colors.black,
                         ),
-                        shape: BoxShape.circle,
-                        color: Colors.black,
+                        padding: EdgeInsets.all(4),
+                        child: CircleAvatar(),
                       ),
                     ),
-                  ),
-                  Positioned(
-                    left: 0,
-                    top: 0,
-                    bottom: 0,
-                    child: Container(
-                      height: 42,
-                      width: 42,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.red,
-                          width: 1.5
+                    Positioned(
+                      left: 32,
+                      top: 0,
+                      bottom: 0,
+                      child: Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.red, width: 1.5),
+                          shape: BoxShape.circle,
+                          color: Colors.black,
                         ),
-                        shape: BoxShape.circle,
-                        color: Colors.black,
+                        padding: EdgeInsets.all(4),
+                        child: CircleAvatar(),
                       ),
                     ),
-                  ),
-
-                ],
+                    Positioned(
+                      left: 32 + 32,
+                      top: 0,
+                      bottom: 0,
+                      child: Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.red, width: 1.5),
+                          shape: BoxShape.circle,
+                          color: Colors.black,
+                        ),
+                        padding: EdgeInsets.all(4),
+                        child: CircleAvatar(),
+                      ),
+                    ),
+                    Positioned(
+                      left: 32 + 32 + 32,
+                      top: 0,
+                      bottom: 0,
+                      child: Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.red, width: 1.5),
+                          shape: BoxShape.circle,
+                          color: Colors.black,
+                        ),
+                        padding: EdgeInsets.all(4),
+                        child: CircleAvatar(),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
