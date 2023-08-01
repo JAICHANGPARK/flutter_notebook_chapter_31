@@ -58,7 +58,39 @@ class _SplitBillPageState extends State<SplitBillPage> {
                   ),
                 ],
               ),
-            )
+            ),
+            Text("Total Bill"),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                "\$1200.00",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            Text("Birthday Party!"),
+            Container(
+              height: 48,
+              width: 180,
+              child: Stack(
+                children: [
+                  Positioned(
+                      left: 0,
+                      top: 0,
+                      bottom: 0,
+                      child: Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(
+                          border: Border.all(),
+                          shape: BoxShape.circle,
+                        ),
+                      ))
+                ],
+              ),
+            ),
           ],
         ),
       ),
