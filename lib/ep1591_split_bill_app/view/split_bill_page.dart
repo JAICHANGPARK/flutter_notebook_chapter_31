@@ -73,6 +73,9 @@ class _SplitBillPageState extends State<SplitBillPage> {
             Text("Birthday Party!"),
             SizedBox(
               height: 16,
+
+
+              
             ),
             Container(
               height: 48,
