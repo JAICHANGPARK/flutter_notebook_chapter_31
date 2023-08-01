@@ -35,7 +35,13 @@ class _SplitBillPageState extends State<SplitBillPage> {
                   ),
                   Expanded(
                     child: Center(
-                      child: Text("Split Bill"),
+                      child: Text(
+                        "Split Bill",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                      ),
                     ),
                   ),
                   Container(
