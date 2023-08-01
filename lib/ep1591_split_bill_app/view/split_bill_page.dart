@@ -10,6 +10,25 @@ class SplitBillPage extends StatefulWidget {
 class _SplitBillPageState extends State<SplitBillPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Row(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(),
+                  shape: BoxShape.circle,
+                ),
+                child: IconButton(
+                  onPressed: () {}, icon: null,
+                  
+                ),
+              )
+            ],
+          )
+        ],
+      ),
+    );
   }
 }
