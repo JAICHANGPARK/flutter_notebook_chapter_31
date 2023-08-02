@@ -170,7 +170,58 @@ class _SplitBillPageState extends State<SplitBillPage> {
                           ),
                         ),
                       ],
-                    ))
+                    )),
+                    Expanded(
+                        child: Column(
+                          children: [
+                            Text("Lisa"),
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(32),
+                                  border: Border.all(),
+                                ),
+                              ),
+                            ),
+                          ],
+                        )),
+                    Expanded(
+                        child: Column(
+                          children: [
+                            Text("Lisa"),
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(32),
+                                  border: Border.all(),
+                                ),
+                              ),
+                            ),
+                          ],
+                        )),
+                    Expanded(
+                        child: Column(
+                          children: [
+                            Text("Lisa"),
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(32),
+                                  border: Border.all(),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ))
                   ],
                 ),
               ),
