@@ -177,6 +177,7 @@ class _SplitBillPageState extends State<SplitBillPage> {
                                     child: Container(
                                       decoration: BoxDecoration(
                                         color: Colors.red,
+                                        borderRadius: BorderRadius.circular(64),
                                       ),
                                       child: Stack(
                                         children: [
@@ -187,7 +188,8 @@ class _SplitBillPageState extends State<SplitBillPage> {
                                             top: 0,
                                             child: Container(
                                               decoration: BoxDecoration(
-                                                color: Colors.orange
+                                                color: Colors.orange,
+                                                borderRadius: BorderRadius.circular(64),
                                               ),
                                             ),
                                           ),
