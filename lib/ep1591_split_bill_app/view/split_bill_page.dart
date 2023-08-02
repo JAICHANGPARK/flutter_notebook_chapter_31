@@ -8,6 +8,8 @@ class SplitBillPage extends StatefulWidget {
 }
 
 class _SplitBillPageState extends State<SplitBillPage> {
+  double height0 = 0.0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -149,7 +151,8 @@ class _SplitBillPageState extends State<SplitBillPage> {
                 ),
               ),
             ),
-            Expanded(
+            SizedBox(
+              height: 480,
               child: Padding(
                 padding: const EdgeInsets.all(24.0),
                 child: Row(
@@ -163,8 +166,18 @@ class _SplitBillPageState extends State<SplitBillPage> {
                           ),
                           Expanded(
                             child: GestureDetector(
-                              onPanUpdate: (event){
+                              onPanDown: (event){
+                                print(event.localPosition.dy);
+                                setState(() {
+                                  // height0 = event.localPosition.dy;
+                                });
+                              },
+                              onPanUpdate: (event) {
                                 print(event.localPosition);
+                                setState(() {
+                                  height0 = 400 - event.localPosition.dy;
+                                });
+                                // print(event.globalPosition);
                               },
                               child: Container(
                                 decoration: BoxDecoration(
@@ -177,7 +190,7 @@ class _SplitBillPageState extends State<SplitBillPage> {
                                       left: 0,
                                       right: 0,
                                       top: 0,
-                                      bottom: 64,
+                                      bottom: height0,
                                       child: Container(
                                         // decoration: BoxDecoration(
                                         //   // color: Colors.red,
@@ -212,12 +225,11 @@ class _SplitBillPageState extends State<SplitBillPage> {
                                               child: Center(
                                                 child: Container(
                                                   decoration: BoxDecoration(
-                                                    color: Colors.grey,
-                                                    border: Border.all(
-                                                      color: Colors.red,
-                                                    ),
-                                                    borderRadius: BorderRadius.circular(8)
-                                                  ),
+                                                      color: Colors.grey,
+                                                      border: Border.all(
+                                                        color: Colors.red,
+                                                      ),
+                                                      borderRadius: BorderRadius.circular(8)),
                                                   child: Icon(Icons.unfold_more),
                                                 ),
                                               ),
