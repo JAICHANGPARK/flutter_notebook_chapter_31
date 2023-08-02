@@ -191,6 +191,14 @@ class _SplitBillPageState extends State<SplitBillPage> {
                                                 color: Colors.orange,
                                                 borderRadius: BorderRadius.circular(64),
                                               ),
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Column(
+                                                children: [
+                                                  CircleAvatar(
+                                                    radius: 32,
+                                                  )
+                                                ],
+                                              ),
                                             ),
                                           ),
                                           Positioned(
