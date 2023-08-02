@@ -73,9 +73,6 @@ class _SplitBillPageState extends State<SplitBillPage> {
             Text("Birthday Party!"),
             SizedBox(
               height: 16,
-
-
-              
             ),
             Container(
               height: 48,
@@ -153,16 +150,17 @@ class _SplitBillPageState extends State<SplitBillPage> {
               ),
             ),
             Expanded(
-                child: Padding(
-              padding: const EdgeInsets.all(24.0),
-              child: Placeholder(),
-            )),
+              child: Padding(
+                padding: const EdgeInsets.all(24.0),
+                child: Placeholder(),
+              ),
+            ),
             Container(
               height: 54,
               width: 200,
               decoration: BoxDecoration(
                 color: Colors.black,
-                borderRadius: BorderRadius.circular(4)
+                borderRadius: BorderRadius.circular(4),
               ),
               margin: EdgeInsets.only(bottom: 32, top: 8),
             )
