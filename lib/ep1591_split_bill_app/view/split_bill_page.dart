@@ -178,6 +178,7 @@ class _SplitBillPageState extends State<SplitBillPage> {
                                       decoration: BoxDecoration(
                                         color: Colors.red,
                                       ),
+                                      chi
                                     ),
                                   ),
                                 ],
