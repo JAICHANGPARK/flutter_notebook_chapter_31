@@ -171,57 +171,66 @@ class _SplitBillPageState extends State<SplitBillPage> {
                         ),
                       ],
                     )),
+                    SizedBox(
+                      width: 12,
+                    ),
                     Expanded(
                         child: Column(
-                          children: [
-                            Text("Lisa"),
-                            SizedBox(
-                              height: 4,
+                      children: [
+                        Text("Lisa"),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(32),
+                              border: Border.all(),
                             ),
-                            Expanded(
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(32),
-                                  border: Border.all(),
-                                ),
-                              ),
-                            ),
-                          ],
-                        )),
+                          ),
+                        ),
+                      ],
+                    )),
+                    SizedBox(
+                      width: 12,
+                    ),
                     Expanded(
                         child: Column(
-                          children: [
-                            Text("Lisa"),
-                            SizedBox(
-                              height: 4,
+                      children: [
+                        Text("Lisa"),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(32),
+                              border: Border.all(),
                             ),
-                            Expanded(
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(32),
-                                  border: Border.all(),
-                                ),
-                              ),
-                            ),
-                          ],
-                        )),
+                          ),
+                        ),
+                      ],
+                    )),
+                    SizedBox(
+                      width: 12,
+                    ),
                     Expanded(
                         child: Column(
-                          children: [
-                            Text("Lisa"),
-                            SizedBox(
-                              height: 4,
+                      children: [
+                        Text("Lisa"),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(32),
+                              border: Border.all(),
                             ),
-                            Expanded(
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(32),
-                                  border: Border.all(),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ))
+                          ),
+                        ),
+                      ],
+                    ))
                   ],
                 ),
               ),
