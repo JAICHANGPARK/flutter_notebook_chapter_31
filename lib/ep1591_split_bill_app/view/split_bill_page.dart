@@ -175,10 +175,10 @@ class _SplitBillPageState extends State<SplitBillPage> {
                                     top: 0,
                                     bottom: 64,
                                     child: Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.red,
-                                        borderRadius: BorderRadius.circular(64),
-                                      ),
+                                      // decoration: BoxDecoration(
+                                      //   // color: Colors.red,
+                                      //   borderRadius: BorderRadius.circular(64),
+                                      // ),
                                       child: Stack(
                                         children: [
                                           Positioned(
@@ -195,15 +195,19 @@ class _SplitBillPageState extends State<SplitBillPage> {
                                           ),
                                           Positioned(
                                             bottom: 0,
-                                            child: Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.grey,
-                                                border: Border.all(
-                                                  color: Colors.red,
+                                            left: 0,
+                                            right: 0,
+                                            child: Center(
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.grey,
+                                                  border: Border.all(
+                                                    color: Colors.red,
+                                                  ),
+                                                  borderRadius: BorderRadius.circular(8)
                                                 ),
-                                                borderRadius: BorderRadius.circular(8)
+                                                child: Icon(Icons.unfold_more),
                                               ),
-                                              child: Icon(Icons.unfold_more),
                                             ),
                                           ),
                                         ],
