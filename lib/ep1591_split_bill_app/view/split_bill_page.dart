@@ -155,22 +155,38 @@ class _SplitBillPageState extends State<SplitBillPage> {
                 child: Row(
                   children: [
                     Expanded(
-                        child: Column(
-                      children: [
-                        Text("Lisa"),
-                        SizedBox(
-                          height: 12,
-                        ),
-                        Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(64),
-                              border: Border.all(),
+                      child: Column(
+                        children: [
+                          Text("Lisa"),
+                          SizedBox(
+                            height: 12,
+                          ),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(64),
+                                border: Border.all(),
+                              ),
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    left: 0,
+                                    right: 0,
+                                    top: 0,
+                                    child: Container(
+                                      height: 160,
+                                      decoration: BoxDecoration(
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
-                        ),
-                      ],
-                    )),
+                        ],
+                      ),
+                    ),
                     SizedBox(
                       width: 12,
                     ),
@@ -219,7 +235,7 @@ class _SplitBillPageState extends State<SplitBillPage> {
                       children: [
                         Text("Lisa"),
                         SizedBox(
-                          height:12,
+                          height: 12,
                         ),
                         Expanded(
                           child: Container(
