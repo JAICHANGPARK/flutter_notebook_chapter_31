@@ -162,53 +162,53 @@ class _SplitBillPageState extends State<SplitBillPage> {
                             height: 12,
                           ),
                           Expanded(
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(64),
-                                border: Border.all(),
-                              ),
-                              child: Stack(
-                                children: [
-                                  Positioned(
-                                    left: 0,
-                                    right: 0,
-                                    top: 0,
-                                    bottom: 64,
-                                    child: Container(
-                                      // decoration: BoxDecoration(
-                                      //   // color: Colors.red,
-                                      //   borderRadius: BorderRadius.circular(64),
-                                      // ),
-                                      child: Stack(
-                                        children: [
-                                          Positioned(
-                                            bottom: 8,
-                                            left: 0,
-                                            right: 0,
-                                            top: 0,
-                                            child: Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.orange,
-                                                borderRadius: BorderRadius.circular(64),
-                                              ),
-                                              padding: EdgeInsets.only(top: 8),
-                                              child: Column(
-                                                children: [
-                                                  CircleAvatar(
-                                                    radius: 32,
-                                                  )
-                                                ],
+                            child: GestureDetector(
+                              onPanUpdate: (event){
+                                print(event.localPosition);
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(64),
+                                  border: Border.all(),
+                                ),
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      left: 0,
+                                      right: 0,
+                                      top: 0,
+                                      bottom: 64,
+                                      child: Container(
+                                        // decoration: BoxDecoration(
+                                        //   // color: Colors.red,
+                                        //   borderRadius: BorderRadius.circular(64),
+                                        // ),
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              bottom: 8,
+                                              left: 0,
+                                              right: 0,
+                                              top: 0,
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.orange,
+                                                  borderRadius: BorderRadius.circular(64),
+                                                ),
+                                                padding: EdgeInsets.only(top: 8),
+                                                child: Column(
+                                                  children: [
+                                                    CircleAvatar(
+                                                      radius: 32,
+                                                    )
+                                                  ],
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                          Positioned(
-                                            bottom: 0,
-                                            left: 0,
-                                            right: 0,
-                                            child: GestureDetector(
-                                              onPanUpdate: (point){
-                                                print(point.localPosition);
-                                              },
+                                            Positioned(
+                                              bottom: 0,
+                                              left: 0,
+                                              right: 0,
                                               child: Center(
                                                 child: Container(
                                                   decoration: BoxDecoration(
@@ -222,12 +222,12 @@ class _SplitBillPageState extends State<SplitBillPage> {
                                                 ),
                                               ),
                                             ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
                             ),
                           ),
