@@ -205,16 +205,21 @@ class _SplitBillPageState extends State<SplitBillPage> {
                                             bottom: 0,
                                             left: 0,
                                             right: 0,
-                                            child: Center(
-                                              child: Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.grey,
-                                                  border: Border.all(
-                                                    color: Colors.red,
+                                            child: GestureDetector(
+                                              onPanUpdate: (point){
+                                                print(point.localPosition);
+                                              },
+                                              child: Center(
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.grey,
+                                                    border: Border.all(
+                                                      color: Colors.red,
+                                                    ),
+                                                    borderRadius: BorderRadius.circular(8)
                                                   ),
-                                                  borderRadius: BorderRadius.circular(8)
+                                                  child: Icon(Icons.unfold_more),
                                                 ),
-                                                child: Icon(Icons.unfold_more),
                                               ),
                                             ),
                                           ),
