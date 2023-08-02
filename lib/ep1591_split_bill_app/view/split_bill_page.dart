@@ -194,7 +194,9 @@ class _SplitBillPageState extends State<SplitBillPage> {
                                             ),
                                           ),
                                           Positioned(
-                                            child: Container(),
+                                            child: Container(
+                                              child: Icon(Icons.unfold_more),
+                                            ),
                                           ),
                                         ],
                                       ),
