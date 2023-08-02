@@ -152,7 +152,20 @@ class _SplitBillPageState extends State<SplitBillPage> {
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(24.0),
-                child: Placeholder(),
+                child: Row(
+                  children: [
+                    Expanded(
+                        child: Column(
+                      children: [
+                        Text("Lisa"),
+                        Expanded(
+                            child: Container(
+                          decoration: BoxDecoration(),
+                        )),
+                      ],
+                    ))
+                  ],
+                ),
               ),
             ),
             Container(
