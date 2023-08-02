@@ -158,10 +158,17 @@ class _SplitBillPageState extends State<SplitBillPage> {
                         child: Column(
                       children: [
                         Text("Lisa"),
+                        SizedBox(
+                          height: 4,
+                        ),
                         Expanded(
-                            child: Container(
-                          decoration: BoxDecoration(),
-                        )),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(32),
+                              border: Border.all(),
+                            ),
+                          ),
+                        ),
                       ],
                     ))
                   ],
