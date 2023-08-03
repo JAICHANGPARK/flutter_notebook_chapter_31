@@ -24,6 +24,9 @@ class _StudentOnboardingPageState extends State<StudentOnboardingPage> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              SizedBox(
+                height: 8,
+              ),
               Text(
                 "you'll ever need",
                 style: TextStyle(
@@ -36,7 +39,7 @@ class _StudentOnboardingPageState extends State<StudentOnboardingPage> {
               ),
               Text(
                 "Upload class study materials, create\nelectronic flashcards to study.",
-                style: TextStyle(),
+                style: TextStyle(height: 1.5),
                 textAlign: TextAlign.center,
               ),
             ],
