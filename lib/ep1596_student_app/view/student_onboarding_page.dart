@@ -34,7 +34,11 @@ class _StudentOnboardingPageState extends State<StudentOnboardingPage> {
               SizedBox(
                 height: 16,
               ),
-              Text("Upload class study materials, create\nelectronic flashcards to study."),
+              Text(
+                "Upload class study materials, create\nelectronic flashcards to study.",
+                style: TextStyle(),
+                textAlign: TextAlign.center,
+              ),
             ],
           ),
           Container(
