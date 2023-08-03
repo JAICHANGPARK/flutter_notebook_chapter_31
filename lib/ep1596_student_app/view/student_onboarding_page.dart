@@ -15,6 +15,7 @@ class _StudentOnboardingPageState extends State<StudentOnboardingPage> {
       body: Column(
         children: [
           Expanded(child: Placeholder()),
+          SizedBox(height: 42,),
           Column(
             children: [
               Text(
