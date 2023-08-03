@@ -160,7 +160,8 @@ class _SplitBillPageState extends State<SplitBillPage> {
                     Expanded(
                       child: Column(
                         children: [
-                          Text("Lisa"),
+
+                         Text("Lisa"),
                           SizedBox(
                             height: 12,
                           ),
