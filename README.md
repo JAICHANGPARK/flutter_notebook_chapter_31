@@ -4,7 +4,15 @@ How to run
 
 - flutter run
 
-## EP1591
+## EP1596
+
+- Student app interaction
+- by Taras Migulko for emote_agency
+- https://dribbble.com/shots/22162953-Student-app-interaction
+
+<img src="https://cdn.dribbble.com/userupload/9009129/file/original-1a68eedce92c12278b5b895af99d2b9f.jpg?resize=1504x1128&vertical=center"/>
+
+## EP1591-1595
 
 - Split Bill App
 - by MindInventory UI/UX for MindInventory
