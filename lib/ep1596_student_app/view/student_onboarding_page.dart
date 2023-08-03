@@ -14,7 +14,14 @@ class _StudentOnboardingPageState extends State<StudentOnboardingPage> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          Expanded(child: Placeholder())
+          Expanded(child: Placeholder()),
+          Column(
+            children: [
+              Text("The only study app"),
+              Text("you'll ever need"),
+              Text("Upload class study materials, create electronic flashcards to study."),
+            ],
+          )
         ],
       ),
     );
