@@ -22,24 +22,22 @@ class _StudentOnboardingPageState extends State<StudentOnboardingPage> {
               Text("Upload class study materials, create electronic flashcards to study."),
             ],
           ),
-          SizedBox(
-            height: 42,
-          ),
           Container(
+            margin: EdgeInsets.only(top: 38, bottom: 24),
             decoration: BoxDecoration(
               color: Colors.black,
               borderRadius: BorderRadius.circular(42),
             ),
-            padding: EdgeInsets.symmetric(horizontal: 24,vertical: 24),
+            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 24),
             child: Text(
               "Let's start",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
-                fontSize: 18
+                fontSize: 18,
               ),
             ),
-          )
+          ),
         ],
       ),
     );
