@@ -14,8 +14,15 @@ class _StudentOnboardingPageState extends State<StudentOnboardingPage> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          Expanded(child: Placeholder()),
-          SizedBox(height: 42,),
+          Expanded(
+            child: Image.network(
+              "https://img.freepik.com/free-vector/group-of-young-people-posing-for-a-photo_52683-18824.jpg?w=1060&t=st=1691056017~exp=1691056617~hmac=cd240178625ba45e7d53a0a0baf27c823065e60f2beb937fe5bc27cb0a08327d",
+              fit: BoxFit.fitHeight,
+            ),
+          ),
+          SizedBox(
+            height: 42,
+          ),
           Column(
             children: [
               Text(
@@ -26,7 +33,7 @@ class _StudentOnboardingPageState extends State<StudentOnboardingPage> {
                 ),
               ),
               SizedBox(
-                height: 8,
+                height: 4,
               ),
               Text(
                 "you'll ever need",
@@ -51,13 +58,13 @@ class _StudentOnboardingPageState extends State<StudentOnboardingPage> {
               color: Colors.black,
               borderRadius: BorderRadius.circular(42),
             ),
-            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 24),
+            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 18),
             child: Text(
               "Let's start",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
-                fontSize: 18,
+                fontSize: 16,
               ),
             ),
           ),
