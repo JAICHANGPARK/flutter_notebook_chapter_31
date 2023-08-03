@@ -17,9 +17,24 @@ class _StudentOnboardingPageState extends State<StudentOnboardingPage> {
           Expanded(child: Placeholder()),
           Column(
             children: [
-              Text("The only study app"),
-              Text("you'll ever need"),
-              Text("Upload class study materials, create electronic flashcards to study."),
+              Text(
+                "The only study app",
+                style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                "you'll ever need",
+                style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              Text("Upload class study materials, create\nelectronic flashcards to study."),
             ],
           ),
           Container(
