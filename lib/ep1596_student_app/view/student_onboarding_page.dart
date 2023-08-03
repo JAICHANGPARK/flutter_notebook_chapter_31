@@ -10,6 +10,13 @@ class StudentOnboardingPage extends StatefulWidget {
 class _StudentOnboardingPageState extends State<StudentOnboardingPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Column(
+        children: [
+          Expanded(child: Placeholder())
+        ],
+      ),
+    );
   }
 }
