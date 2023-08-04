@@ -10,6 +10,14 @@ class StudentMainPage extends StatefulWidget {
 class _StudentMainPageState extends State<StudentMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Stack(
+          children: [
+            
+          ],
+        ),
+      ),
+    );
   }
 }
