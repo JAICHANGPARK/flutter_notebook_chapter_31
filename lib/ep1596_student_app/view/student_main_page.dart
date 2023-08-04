@@ -86,6 +86,9 @@ class _StudentMainPageState extends State<StudentMainPage> {
                       ),
                       TextButton(
                         onPressed: () {},
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.black,
+                        ),
                         child: Text("See all"),
                       )
                     ],
