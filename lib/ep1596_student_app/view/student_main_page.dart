@@ -30,9 +30,8 @@ class _StudentMainPageState extends State<StudentMainPage> {
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.black,
-                            borderRadius: BorderRadius.circular(12)
+                            borderRadius: BorderRadius.circular(12),
                           ),
-                          
                           child: IconButton(
                             icon: Icon(
                               Icons.home_filled,
@@ -40,6 +39,12 @@ class _StudentMainPageState extends State<StudentMainPage> {
                             color: Colors.white,
                             onPressed: () {},
                           ),
+                        ),
+                        IconButton(
+                          icon: Icon(
+                            Icons.calendar_month,
+                          ),
+                          onPressed: () {},
                         ),
                       ],
                     ),
