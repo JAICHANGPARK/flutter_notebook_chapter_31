@@ -17,34 +17,48 @@ class _StudentMainPageState extends State<StudentMainPage> {
             Positioned.fill(
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      Container(
-                        height: 52,
-                        width: 52,
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(8),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 52,
+                          width: 52,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
                         ),
-                      ),
-                      Expanded(
-                        child: Column(
-                          children: [
-                            Text(
-                              "Dream Walker",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18
+                        SizedBox(
+                          width: 12,
+                        ),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Dream Walker",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
                               ),
-                            ),
-                            SizedBox(
-                              height: 4,
-                            ),
-                            Text("6th grade")
-                          ],
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Text("6th grade")
+                            ],
+                          ),
                         ),
-                      )
-                    ],
+                        Container(
+                          height: 54,
+                          width: 54,
+                          decoration: BoxDecoration(
+                            border: Border.all()
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
