@@ -63,7 +63,8 @@ class _StudentMainPageState extends State<StudentMainPage> {
                   ),
                   Container(
                     padding: EdgeInsets.all(8),
-                    decoration: BoxDecoration(color: Colors.white),
+                    decoration: BoxDecoration(color: Colors.white,
+                    borderRadius: BorderRadius.circular(16)),
                     child: IconButton(
                       icon: Icon(
                         Icons.chat_rounded,
