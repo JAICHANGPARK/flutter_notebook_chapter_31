@@ -61,15 +61,14 @@ class _StudentMainPageState extends State<StudentMainPage> {
                             child: Badge(
                               child: Icon(
                                 Icons.notifications,
-
                               ),
                               backgroundColor: Colors.greenAccent,
                             ),
                           ),
-                        )
+                        ),
                       ],
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
