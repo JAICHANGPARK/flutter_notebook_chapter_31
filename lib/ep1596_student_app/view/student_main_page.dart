@@ -24,6 +24,9 @@ class _StudentMainPageState extends State<StudentMainPage> {
               child: Row(
                 children: [
                   Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
                     padding: EdgeInsets.all(8),
                     child: Row(
                       children: [
@@ -55,10 +58,18 @@ class _StudentMainPageState extends State<StudentMainPage> {
                       ],
                     ),
                   ),
+                  SizedBox(
+                    width: 8,
+                  ),
                   Container(
+                    padding: EdgeInsets.all(8),
                     decoration: BoxDecoration(color: Colors.white),
-                    height: 54,
-                    width: 54,
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.chat_rounded,
+                      ),
+                      onPressed: () {},
+                    ),
                   )
                 ],
               ),
