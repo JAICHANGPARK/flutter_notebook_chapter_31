@@ -47,7 +47,7 @@ class _StudentMainPageState extends State<StudentMainPage> {
                             onPressed: () {},
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 8,
                         ),
                         IconButton(
@@ -56,7 +56,7 @@ class _StudentMainPageState extends State<StudentMainPage> {
                           ),
                           onPressed: () {},
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 8,
                         ),
                         IconButton(
