@@ -74,26 +74,35 @@ class _StudentMainPageState extends State<StudentMainPage> {
                     margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                     child: TextField(),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  Expanded(child: SingleChildScrollView(
+                    child: Column(
                       children: [
-                        Text(
-                          "Next class",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Next class",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                style: TextButton.styleFrom(
+                                  foregroundColor: Colors.black,
+                                ),
+                                child: Text("See all"),
+                              )
+                            ],
                           ),
                         ),
-                        TextButton(
-                          onPressed: () {},
-                          style: TextButton.styleFrom(foregroundColor: Colors.black,),
-                          child: Text("See all"),
-                        )
                       ],
                     ),
-                  )
+                  )),
+
                 ],
               ),
             ),
