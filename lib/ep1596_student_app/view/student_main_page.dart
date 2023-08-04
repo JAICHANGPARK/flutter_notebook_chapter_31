@@ -54,7 +54,17 @@ class _StudentMainPageState extends State<StudentMainPage> {
                           height: 54,
                           width: 54,
                           decoration: BoxDecoration(
-                            border: Border.all()
+                            border: Border.all(),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Center(
+                            child: Badge(
+                              child: Icon(
+                                Icons.notifications,
+
+                              ),
+                              backgroundColor: Colors.greenAccent,
+                            ),
                           ),
                         )
                       ],
