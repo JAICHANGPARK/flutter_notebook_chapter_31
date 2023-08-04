@@ -14,7 +14,7 @@ class _StudentMainPageState extends State<StudentMainPage> {
       body: SafeArea(
         child: Stack(
           children: [
-            Positioned.fill(
+            const Positioned.fill(
               child: Column(
                 children: [],
               ),
@@ -26,8 +26,9 @@ class _StudentMainPageState extends State<StudentMainPage> {
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
+                      borderRadius: BorderRadius.circular(16),
                     ),
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     child: Row(
                       children: [
                         Container(
@@ -36,7 +37,7 @@ class _StudentMainPageState extends State<StudentMainPage> {
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: IconButton(
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.home_filled,
                             ),
                             color: Colors.white,
@@ -44,13 +45,13 @@ class _StudentMainPageState extends State<StudentMainPage> {
                           ),
                         ),
                         IconButton(
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.calendar_month,
                           ),
                           onPressed: () {},
                         ),
                         IconButton(
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.list_alt,
                           ),
                           onPressed: () {},
@@ -58,15 +59,14 @@ class _StudentMainPageState extends State<StudentMainPage> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   Container(
-                    padding: EdgeInsets.all(8),
-                    decoration: BoxDecoration(color: Colors.white,
-                    borderRadius: BorderRadius.circular(16)),
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.chat_rounded,
                       ),
                       onPressed: () {},
