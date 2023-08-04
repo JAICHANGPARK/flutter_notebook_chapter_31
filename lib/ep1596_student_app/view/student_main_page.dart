@@ -14,7 +14,44 @@ class _StudentMainPageState extends State<StudentMainPage> {
       body: SafeArea(
         child: Stack(
           children: [
-            
+            Positioned.fill(
+              child: Column(
+                children: [],
+              ),
+            ),
+            Positioned(
+              bottom: 24,
+              child: Row(
+                children: [
+                  Container(
+                    padding: EdgeInsets.all(8),
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(12)
+                          ),
+                          
+                          child: IconButton(
+                            icon: Icon(
+                              Icons.home_filled,
+                            ),
+                            color: Colors.white,
+                            onPressed: () {},
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(color: Colors.white),
+                    height: 54,
+                    width: 54,
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),
