@@ -21,7 +21,10 @@ class _StudentMainPageState extends State<StudentMainPage> {
             ),
             Positioned(
               bottom: 24,
+              left: 0,
+              right: 0,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     decoration: BoxDecoration(
@@ -44,11 +47,17 @@ class _StudentMainPageState extends State<StudentMainPage> {
                             onPressed: () {},
                           ),
                         ),
+                        SizedBox(
+                          width: 8,
+                        ),
                         IconButton(
                           icon: const Icon(
                             Icons.calendar_month,
                           ),
                           onPressed: () {},
+                        ),
+                        SizedBox(
+                          width: 8,
                         ),
                         IconButton(
                           icon: const Icon(
