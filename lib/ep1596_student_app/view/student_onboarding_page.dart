@@ -20,10 +20,10 @@ class _StudentOnboardingPageState extends State<StudentOnboardingPage> {
               fit: BoxFit.fitHeight,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 42,
           ),
-          Column(
+          const Column(
             children: [
               Text(
                 "The only study app",
@@ -53,13 +53,13 @@ class _StudentOnboardingPageState extends State<StudentOnboardingPage> {
             ],
           ),
           Container(
-            margin: EdgeInsets.only(top: 38, bottom: 24),
+            margin: const EdgeInsets.only(top: 38, bottom: 24),
             decoration: BoxDecoration(
               color: Colors.black,
               borderRadius: BorderRadius.circular(42),
             ),
-            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 18),
-            child: Text(
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 18),
+            child: const Text(
               "Let's start",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
