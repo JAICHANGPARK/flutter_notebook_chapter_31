@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_31/ep1596_student_app/view/student_main_page.dart';
 
 class StudentOnboardingPage extends StatefulWidget {
   const StudentOnboardingPage({super.key});
@@ -52,19 +53,28 @@ class _StudentOnboardingPageState extends State<StudentOnboardingPage> {
               ),
             ],
           ),
-          Container(
-            margin: const EdgeInsets.only(top: 38, bottom: 24),
-            decoration: BoxDecoration(
-              color: Colors.black,
-              borderRadius: BorderRadius.circular(42),
-            ),
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 18),
-            child: const Text(
-              "Let's start",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-                fontSize: 16,
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(
+                  builder: (context) => StudentMainPage(),
+                ),
+              );
+            },
+            child: Container(
+              margin: const EdgeInsets.only(top: 38, bottom: 24),
+              decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.circular(42),
+              ),
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 18),
+              child: const Text(
+                "Let's start",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  fontSize: 16,
+                ),
               ),
             ),
           ),
