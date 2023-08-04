@@ -46,6 +46,12 @@ class _StudentMainPageState extends State<StudentMainPage> {
                           ),
                           onPressed: () {},
                         ),
+                        IconButton(
+                          icon: Icon(
+                            Icons.list_alt,
+                          ),
+                          onPressed: () {},
+                        ),
                       ],
                     ),
                   ),
@@ -60,6 +66,7 @@ class _StudentMainPageState extends State<StudentMainPage> {
           ],
         ),
       ),
+      backgroundColor: Colors.red,
     );
   }
 }
