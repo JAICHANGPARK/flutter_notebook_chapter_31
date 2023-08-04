@@ -67,7 +67,10 @@ class _StudentOnboardingPageState extends State<StudentOnboardingPage> {
                 color: Colors.black,
                 borderRadius: BorderRadius.circular(42),
               ),
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 18),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 24,
+                vertical: 18,
+              ),
               child: const Text(
                 "Let's start",
                 style: TextStyle(
