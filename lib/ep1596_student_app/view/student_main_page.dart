@@ -14,9 +14,39 @@ class _StudentMainPageState extends State<StudentMainPage> {
       body: SafeArea(
         child: Stack(
           children: [
-            const Positioned.fill(
+            Positioned.fill(
               child: Column(
-                children: [],
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        height: 52,
+                        width: 52,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Text(
+                              "Dream Walker",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18
+                              ),
+                            ),
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Text("6th grade")
+                          ],
+                        ),
+                      )
+                    ],
+                  )
+                ],
               ),
             ),
             Positioned(
