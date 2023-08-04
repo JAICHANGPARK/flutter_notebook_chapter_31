@@ -74,7 +74,8 @@ class _StudentMainPageState extends State<StudentMainPage> {
                     margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                     child: TextField(),
                   ),
-                  Expanded(child: SingleChildScrollView(
+                  Expanded(
+                      child: SingleChildScrollView(
                     child: Column(
                       children: [
                         Padding(
@@ -99,10 +100,16 @@ class _StudentMainPageState extends State<StudentMainPage> {
                             ],
                           ),
                         ),
+                        Container(
+                          height: 240,
+                          decoration: BoxDecoration(
+                            color: Colors.deepPurple,
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                        )
                       ],
                     ),
                   )),
-
                 ],
               ),
             ),
