@@ -75,41 +75,74 @@ class _StudentMainPageState extends State<StudentMainPage> {
                     child: TextField(),
                   ),
                   Expanded(
-                      child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "Next class",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 18,
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Next class",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),
                                 ),
-                              ),
-                              TextButton(
-                                onPressed: () {},
-                                style: TextButton.styleFrom(
-                                  foregroundColor: Colors.black,
+                                TextButton(
+                                  onPressed: () {},
+                                  style: TextButton.styleFrom(
+                                    foregroundColor: Colors.black,
+                                  ),
+                                  child: Text("See all"),
+                                )
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: 240,
+                            decoration: BoxDecoration(
+                              color: Colors.deepPurple[100],
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(
+                              top: 18,
+                              bottom: 8,
+                              left: 16,
+                              right: 16,
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Events",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),
                                 ),
-                                child: Text("See all"),
-                              )
-                            ],
+                                TextButton(
+                                  onPressed: () {},
+                                  style: TextButton.styleFrom(
+                                    foregroundColor: Colors.black,
+                                  ),
+                                  child: Text("See all"),
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
-                        Container(
-                          height: 240,
-                          decoration: BoxDecoration(
-                            color: Colors.deepPurple,
-                            borderRadius: BorderRadius.circular(24),
-                          ),
-                        )
-                      ],
+                          Column(
+                            children: List.generate(10, (index) => Container(
+                              
+                            )),
+                          )
+                        ],
+                      ),
                     ),
-                  )),
+                  ),
                 ],
               ),
             ),
