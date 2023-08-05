@@ -134,6 +134,10 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                                     children: [
                                       Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius: BorderRadius.circular(16),
+                                        ),
                                         child: IconButton(
                                           icon: const Icon(Icons.calculate),
                                           onPressed: () {},
