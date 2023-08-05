@@ -174,7 +174,10 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                   right: 8,
                                   top: 8,
                                   child: Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
                                     padding: EdgeInsets.symmetric(horizontal: 8),
                                     child: Row(
                                       children: [
