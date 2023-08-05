@@ -122,7 +122,6 @@ class _StudentMainPageState extends State<StudentMainPage> {
                               color: Colors.deepPurple[100],
                               borderRadius: BorderRadius.circular(24),
                             ),
-
                             child: Stack(
                               children: [
                                 Positioned(
@@ -141,10 +140,18 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                       ),
                                       Text(
                                         "Basic mathematics",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 18
-                                        ),
+                                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                      ),
+                                      Text('Today, 08:15am'),
+                                      Row(
+                                        children: [
+                                          Container(
+                                              height: 24,
+                                              width: 24,
+                                              decoration: BoxDecoration(
+                                                color: Colors.blue,
+                                              ))
+                                        ],
                                       )
                                     ],
                                   ),
