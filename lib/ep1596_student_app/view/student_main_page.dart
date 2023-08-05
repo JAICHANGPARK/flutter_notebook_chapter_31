@@ -159,7 +159,12 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                           SizedBox(
                                             width: 8,
                                           ),
-                                          Text("Dream walker")
+                                          Text(
+                                            "Dream walker",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          )
                                         ],
                                       )
                                     ],
