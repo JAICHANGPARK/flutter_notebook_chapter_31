@@ -29,10 +29,10 @@ class _StudentMainPageState extends State<StudentMainPage> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 12,
                         ),
-                        Expanded(
+                        const Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -57,7 +57,7 @@ class _StudentMainPageState extends State<StudentMainPage> {
                             border: Border.all(),
                             borderRadius: BorderRadius.circular(8),
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Badge(
                               child: Icon(
                                 Icons.notifications,
@@ -74,12 +74,12 @@ class _StudentMainPageState extends State<StudentMainPage> {
                       color: Colors.grey[300],
                       borderRadius: BorderRadius.circular(24),
                     ),
-                    margin: EdgeInsets.symmetric(
+                    margin: const EdgeInsets.symmetric(
                       horizontal: 16,
                       vertical: 16,
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 12),
-                    child: TextField(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    child: const TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         icon: Icon(
@@ -98,7 +98,7 @@ class _StudentMainPageState extends State<StudentMainPage> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
+                                const Text(
                                   "Next class",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -110,14 +110,14 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                   style: TextButton.styleFrom(
                                     foregroundColor: Colors.black,
                                   ),
-                                  child: Text("See all"),
+                                  child: const Text("See all"),
                                 )
                               ],
                             ),
                           ),
                           Container(
                             height: 240,
-                            margin: EdgeInsets.symmetric(horizontal: 2),
+                            margin: const EdgeInsets.symmetric(horizontal: 2),
                             decoration: BoxDecoration(
                               color: Colors.deepPurple[100],
                               borderRadius: BorderRadius.circular(24),
@@ -134,23 +134,27 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                     children: [
                                       Container(
                                         child: IconButton(
-                                          icon: Icon(Icons.calculate),
+                                          icon: const Icon(Icons.calculate),
                                           onPressed: () {},
                                         ),
                                       ),
-                                      Text(
+                                      const Text(
                                         "Basic mathematics",
-                                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 18,
+                                        ),
                                       ),
-                                      Text('Today, 08:15am'),
+                                      const Text('Today, 08:15am'),
                                       Row(
                                         children: [
                                           Container(
-                                              height: 24,
-                                              width: 24,
-                                              decoration: BoxDecoration(
-                                                color: Colors.blue,
-                                              ))
+                                            height: 32,
+                                            width: 32,
+                                            decoration: const BoxDecoration(
+                                              color: Colors.blue,
+                                            ),
+                                          )
                                         ],
                                       )
                                     ],
@@ -160,7 +164,7 @@ class _StudentMainPageState extends State<StudentMainPage> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.only(
+                            padding: const EdgeInsets.only(
                               top: 18,
                               bottom: 8,
                               left: 16,
@@ -169,7 +173,7 @@ class _StudentMainPageState extends State<StudentMainPage> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
+                                const Text(
                                   "Events",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -181,7 +185,7 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                   style: TextButton.styleFrom(
                                     foregroundColor: Colors.black,
                                   ),
-                                  child: Text("See all"),
+                                  child: const Text("See all"),
                                 ),
                               ],
                             ),
@@ -190,7 +194,7 @@ class _StudentMainPageState extends State<StudentMainPage> {
                             children: List.generate(
                               10,
                               (index) => Container(
-                                margin: EdgeInsets.symmetric(
+                                margin: const EdgeInsets.symmetric(
                                   horizontal: 4,
                                   vertical: 2,
                                 ),
