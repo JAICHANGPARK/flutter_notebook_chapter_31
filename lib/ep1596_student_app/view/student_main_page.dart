@@ -131,6 +131,7 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                   right: 16,
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                                     children: [
                                       Container(
                                         child: IconButton(
@@ -154,7 +155,11 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                             decoration: const BoxDecoration(
                                               color: Colors.blue,
                                             ),
-                                          )
+                                          ),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
+                                          Text("Dream walker")
                                         ],
                                       )
                                     ],
