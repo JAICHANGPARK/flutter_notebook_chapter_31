@@ -238,7 +238,10 @@ class _StudentMainPageState extends State<StudentMainPage> {
                   ),
                   Container(
                     padding: const EdgeInsets.all(8),
-                    decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
                     child: IconButton(
                       icon: const Icon(
                         Icons.chat_rounded,
@@ -252,7 +255,7 @@ class _StudentMainPageState extends State<StudentMainPage> {
           ],
         ),
       ),
-      backgroundColor: Colors.red,
+    
     );
   }
 }
