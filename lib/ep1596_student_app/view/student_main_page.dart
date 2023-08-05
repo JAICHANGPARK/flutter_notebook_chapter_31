@@ -70,11 +70,22 @@ class _StudentMainPageState extends State<StudentMainPage> {
                     ),
                   ),
                   Container(
-                    decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(24)),
-                    margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                    decoration: BoxDecoration(
+                      color: Colors.grey[300],
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                    margin: EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 16,
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 12),
                     child: TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
+                        icon: Icon(
+                          Icons.search,
+                        ),
+                        hintText: "Search",
                       ),
                     ),
                   ),
