@@ -169,7 +169,25 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                       )
                                     ],
                                   ),
-                                )
+                                ),
+                                Positioned(
+                                  right: 8,
+                                  top: 8,
+                                  child: Container(
+                                    decoration: BoxDecoration(),
+                                    padding: EdgeInsets.symmetric(horizontal: 8),
+                                    child: Row(
+                                      children: [
+                                        Text(
+                                          "Homework",
+                                        ),
+                                        Icon(
+                                          Icons.check_circle,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
                               ],
                             ),
                           ),
