@@ -135,9 +135,27 @@ class _StudentMainPageState extends State<StudentMainPage> {
                             ),
                           ),
                           Column(
-                            children: List.generate(10, (index) => Container(
-                              
-                            )),
+                            children: List.generate(
+                              10,
+                              (index) => Container(
+                                margin: EdgeInsets.symmetric(
+                                  horizontal: 4,
+                                  vertical: 2
+                                ),
+                                decoration: BoxDecoration(color: Colors.pink[50]),
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      height: 84,
+                                      width: 72,
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
                           )
                         ],
                       ),
