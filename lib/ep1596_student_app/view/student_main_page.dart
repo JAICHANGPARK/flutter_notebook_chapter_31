@@ -122,6 +122,35 @@ class _StudentMainPageState extends State<StudentMainPage> {
                               color: Colors.deepPurple[100],
                               borderRadius: BorderRadius.circular(24),
                             ),
+
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  left: 16,
+                                  top: 16,
+                                  bottom: 16,
+                                  right: 16,
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        child: IconButton(
+                                          icon: Icon(Icons.calculate),
+                                          onPressed: () {},
+                                        ),
+                                      ),
+                                      Text(
+                                        "Basic mathematics",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 18
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                           Padding(
                             padding: EdgeInsets.only(
@@ -255,7 +284,6 @@ class _StudentMainPageState extends State<StudentMainPage> {
           ],
         ),
       ),
-    
     );
   }
 }
