@@ -72,7 +72,11 @@ class _StudentMainPageState extends State<StudentMainPage> {
                   Container(
                     decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(24)),
                     margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                    child: TextField(),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                      ),
+                    ),
                   ),
                   Expanded(
                     child: SingleChildScrollView(
@@ -140,16 +144,20 @@ class _StudentMainPageState extends State<StudentMainPage> {
                               (index) => Container(
                                 margin: EdgeInsets.symmetric(
                                   horizontal: 4,
-                                  vertical: 2
+                                  vertical: 2,
                                 ),
-                                decoration: BoxDecoration(color: Colors.pink[50]),
+                                decoration: BoxDecoration(
+                                  color: Colors.pink[50],
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
                                 child: Row(
                                   children: [
                                     Container(
                                       height: 84,
-                                      width: 72,
+                                      width: 84,
                                       decoration: BoxDecoration(
                                         color: Colors.blue,
+                                        borderRadius: BorderRadius.circular(16),
                                       ),
                                     )
                                   ],
