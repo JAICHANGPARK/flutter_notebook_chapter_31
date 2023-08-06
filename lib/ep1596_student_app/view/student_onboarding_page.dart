@@ -57,7 +57,7 @@ class _StudentOnboardingPageState extends State<StudentOnboardingPage> {
             onTap: () {
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(
-                  builder: (context) => StudentMainPage(),
+                  builder: (context) => const StudentMainPage(),
                 ),
               );
             },
