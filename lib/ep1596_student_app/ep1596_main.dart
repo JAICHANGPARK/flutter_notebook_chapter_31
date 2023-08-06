@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_31/ep1596_student_app/view/student_onboarding_page.dart';
 
 void main() {
-  runApp(StudentApp());
+  runApp(const StudentApp());
 }
 
 class StudentApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class StudentApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: StudentOnboardingPage(),
     );
   }
