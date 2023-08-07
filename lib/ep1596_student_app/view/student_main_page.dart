@@ -297,12 +297,25 @@ class _StudentMainPageState extends State<StudentMainPage> {
                   Container(),
                   Column(
                     children: [
-                      Row(
-                        children: [
-                          Text("Subjects"),
-                          Text("Homework"),
-                          Text("Library"),
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(16,16,16,0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text("Subjects",style: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                            ),),
+                            Text("Homework",style: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                            ),),
+                            Text("Library",style: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                            ),),
+                          ],
+                        ),
                       ),
                       Container(
                         margin: EdgeInsets.all(16),
@@ -315,6 +328,7 @@ class _StudentMainPageState extends State<StudentMainPage> {
                           decoration: InputDecoration(
                             hintText: "Search",
                             icon: Icon(Icons.search),
+                            border: InputBorder.none,
                           ),
                         ),
                       )
