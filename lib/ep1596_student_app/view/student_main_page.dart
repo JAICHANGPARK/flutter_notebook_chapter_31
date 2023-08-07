@@ -182,8 +182,7 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(16),
                                     ),
-                                    padding: EdgeInsets.symmetric(horizontal: 8,
-                                    vertical: 4),
+                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                     child: Row(
                                       children: [
                                         Text(
@@ -246,6 +245,21 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                       decoration: BoxDecoration(
                                         color: Colors.blue,
                                         borderRadius: BorderRadius.circular(16),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text("Comedy Show"),
+                                          Text("26 Apr,6:30pm"),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      decoration: BoxDecoration(),
+                                      child: Icon(
+                                        Icons.favorite_border,
                                       ),
                                     )
                                   ],
