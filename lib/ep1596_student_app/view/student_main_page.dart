@@ -254,7 +254,13 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text("Comedy Show"),
+                                          Text(
+                                            "Comedy Show",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16
+                                            ),
+                                          ),
                                           SizedBox(
                                             height: 8,
                                           ),
