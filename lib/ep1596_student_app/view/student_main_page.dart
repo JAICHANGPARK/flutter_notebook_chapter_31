@@ -303,6 +303,12 @@ class _StudentMainPageState extends State<StudentMainPage> {
                           Text("Homework"),
                           Text("Library"),
                         ],
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+
+                        ),
+                        child: TextField(),
                       )
                     ],
                   )
