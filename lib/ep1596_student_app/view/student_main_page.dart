@@ -247,17 +247,26 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                         borderRadius: BorderRadius.circular(16),
                                       ),
                                     ),
+                                    SizedBox(
+                                      width: 16,
+                                    ),
                                     Expanded(
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text("Comedy Show"),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
                                           Text("26 Apr,6:30pm"),
                                         ],
                                       ),
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                      ),
+                                      padding: EdgeInsets.all(8),
                                       child: Icon(
                                         Icons.favorite_border,
                                       ),
