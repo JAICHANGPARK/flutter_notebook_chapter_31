@@ -305,10 +305,18 @@ class _StudentMainPageState extends State<StudentMainPage> {
                         ],
                       ),
                       Container(
+                        margin: EdgeInsets.all(16),
                         decoration: BoxDecoration(
-
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(24),
                         ),
-                        child: TextField(),
+                        padding: EdgeInsets.symmetric(horizontal: 12),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            hintText: "Search",
+                            icon: Icon(Icons.search),
+                          ),
+                        ),
                       )
                     ],
                   )
