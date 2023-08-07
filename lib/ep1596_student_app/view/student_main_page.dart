@@ -298,22 +298,31 @@ class _StudentMainPageState extends State<StudentMainPage> {
                   Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(16,16,16,0),
+                        padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text("Subjects",style: TextStyle(
-                              fontSize: 24,
-                              fontWeight: FontWeight.bold,
-                            ),),
-                            Text("Homework",style: TextStyle(
-                              fontSize: 24,
-                              fontWeight: FontWeight.bold,
-                            ),),
-                            Text("Library",style: TextStyle(
-                              fontSize: 24,
-                              fontWeight: FontWeight.bold,
-                            ),),
+                            Text(
+                              "Subjects",
+                              style: TextStyle(
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              "Homework",
+                              style: TextStyle(
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              "Library",
+                              style: TextStyle(
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ],
                         ),
                       ),
@@ -330,6 +339,39 @@ class _StudentMainPageState extends State<StudentMainPage> {
                             icon: Icon(Icons.search),
                             border: InputBorder.none,
                           ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Row(
+                          children: [
+                            Text(
+                              "Subject: ",
+                              style: TextStyle(fontSize: 18),
+                            ),
+                            Text(
+                              "All",
+                              style: TextStyle(fontSize: 18,
+                                fontWeight: FontWeight.bold,),
+                            ),
+                            Icon(
+                              Icons.arrow_drop_down,
+                            ),
+                            Text(
+                              "Sort by: ",
+                              style: TextStyle(fontSize: 18),
+                            ),
+                            Text(
+                              "Do first",
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Icon(
+                              Icons.arrow_drop_down,
+                            )
+                          ],
                         ),
                       )
                     ],
