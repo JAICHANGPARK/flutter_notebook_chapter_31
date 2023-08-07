@@ -265,12 +265,16 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                     Container(
                                       decoration: BoxDecoration(
                                         color: Colors.white,
+                                        borderRadius: BorderRadius.circular(8),
                                       ),
                                       padding: EdgeInsets.all(8),
                                       child: Icon(
                                         Icons.favorite_border,
                                       ),
-                                    )
+                                    ),
+                                    SizedBox(
+                                      width: 16,
+                                    ),
                                   ],
                                 ),
                               ),
