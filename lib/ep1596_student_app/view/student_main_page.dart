@@ -8,6 +8,8 @@ class StudentMainPage extends StatefulWidget {
 }
 
 class _StudentMainPageState extends State<StudentMainPage> {
+  int pageNum = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,6 +18,7 @@ class _StudentMainPageState extends State<StudentMainPage> {
           children: [
             Positioned.fill(
               child: IndexedStack(
+                index: pageNum,
                 children: [
                   Column(
                     children: [
@@ -331,17 +334,32 @@ class _StudentMainPageState extends State<StudentMainPage> {
                               Icons.home_filled,
                             ),
                             color: Colors.white,
-                            onPressed: () {},
+                            onPressed: () {
+                              setState(() {
+                                pageNum = 0;
+                              });
+                            },
                           ),
                         ),
                         const SizedBox(
                           width: 8,
                         ),
-                        IconButton(
-                          icon: const Icon(
-                            Icons.calendar_month,
+                        Container(
+                          decoration: BoxDecoration(
+                            color: pageNum == 1 ? Colors.black : Colors.white,
+                            borderRadius: BorderRadius.circular(12),
                           ),
-                          onPressed: () {},
+                          child: IconButton(
+                            icon: const Icon(
+                              Icons.calendar_month,
+                            ),
+                            color: pageNum == 1 ? Colors.white : Colors.black,
+                            onPressed: () {
+                              setState(() {
+                                pageNum = 1;
+                              });
+                            },
+                          ),
                         ),
                         const SizedBox(
                           width: 8,
@@ -350,7 +368,11 @@ class _StudentMainPageState extends State<StudentMainPage> {
                           icon: const Icon(
                             Icons.list_alt,
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            setState(() {
+                              pageNum = 2;
+                            });
+                          },
                         ),
                       ],
                     ),
