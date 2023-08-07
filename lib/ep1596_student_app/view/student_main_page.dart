@@ -326,14 +326,14 @@ class _StudentMainPageState extends State<StudentMainPage> {
                       children: [
                         Container(
                           decoration: BoxDecoration(
-                            color: Colors.black,
+                            color: pageNum == 0 ? Colors.black : Colors.white,
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: IconButton(
                             icon: const Icon(
                               Icons.home_filled,
                             ),
-                            color: Colors.white,
+                            color: pageNum == 0 ? Colors.white : Colors.black,
                             onPressed: () {
                               setState(() {
                                 pageNum = 0;
@@ -364,15 +364,22 @@ class _StudentMainPageState extends State<StudentMainPage> {
                         const SizedBox(
                           width: 8,
                         ),
-                        IconButton(
-                          icon: const Icon(
-                            Icons.list_alt,
+                        Container(
+                          decoration: BoxDecoration(
+                            color: pageNum == 2 ? Colors.black : Colors.white,
+                            borderRadius: BorderRadius.circular(12),
                           ),
-                          onPressed: () {
-                            setState(() {
-                              pageNum = 2;
-                            });
-                          },
+                          child: IconButton(
+                            icon: const Icon(
+                              Icons.list_alt,
+                            ),
+                            color: pageNum == 2 ? Colors.white : Colors.black,
+                            onPressed: () {
+                              setState(() {
+                                pageNum = 2;
+                              });
+                            },
+                          ),
                         ),
                       ],
                     ),
