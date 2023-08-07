@@ -165,10 +165,10 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                                   color: Colors.blue,
                                                 ),
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 width: 8,
                                               ),
-                                              Text(
+                                              const Text(
                                                 "Dream walker",
                                                 style: TextStyle(
                                                   fontWeight: FontWeight.bold,
@@ -187,8 +187,8 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                           color: Colors.white,
                                           borderRadius: BorderRadius.circular(16),
                                         ),
-                                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                        child: Row(
+                                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                        child: const Row(
                                           children: [
                                             Text(
                                               "Homework",
@@ -252,10 +252,10 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                             borderRadius: BorderRadius.circular(16),
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           width: 16,
                                         ),
-                                        Expanded(
+                                        const Expanded(
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
@@ -275,12 +275,12 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                             color: Colors.white,
                                             borderRadius: BorderRadius.circular(8),
                                           ),
-                                          padding: EdgeInsets.all(8),
-                                          child: Icon(
+                                          padding: const EdgeInsets.all(8),
+                                          child: const Icon(
                                             Icons.favorite_border,
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           width: 16,
                                         ),
                                       ],
@@ -297,8 +297,8 @@ class _StudentMainPageState extends State<StudentMainPage> {
                   Container(),
                   Column(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(16, 16, 16, 0),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -327,13 +327,13 @@ class _StudentMainPageState extends State<StudentMainPage> {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.all(16),
+                        margin: const EdgeInsets.all(16),
                         decoration: BoxDecoration(
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(24),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 12),
-                        child: TextField(
+                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                        child: const TextField(
                           decoration: InputDecoration(
                             hintText: "Search",
                             icon: Icon(Icons.search),
@@ -341,8 +341,8 @@ class _StudentMainPageState extends State<StudentMainPage> {
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(16.0),
+                      const Padding(
+                        padding: EdgeInsets.all(16.0),
                         child: Row(
                           children: [
                             Text(
