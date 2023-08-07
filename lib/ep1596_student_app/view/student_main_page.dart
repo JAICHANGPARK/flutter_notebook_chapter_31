@@ -182,7 +182,8 @@ class _StudentMainPageState extends State<StudentMainPage> {
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(16),
                                     ),
-                                    padding: EdgeInsets.symmetric(horizontal: 8),
+                                    padding: EdgeInsets.symmetric(horizontal: 8,
+                                    vertical: 4),
                                     child: Row(
                                       children: [
                                         Text(
