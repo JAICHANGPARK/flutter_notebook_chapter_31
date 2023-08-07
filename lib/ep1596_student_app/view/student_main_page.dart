@@ -351,8 +351,10 @@ class _StudentMainPageState extends State<StudentMainPage> {
                             ),
                             Text(
                               "All",
-                              style: TextStyle(fontSize: 18,
-                                fontWeight: FontWeight.bold,),
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                             Icon(
                               Icons.arrow_drop_down,
@@ -373,7 +375,92 @@ class _StudentMainPageState extends State<StudentMainPage> {
                             )
                           ],
                         ),
-                      )
+                      ),
+                      Expanded(child: ListView.builder(itemBuilder: (context, index) {
+                        return Container(
+                          height: 240,
+                          margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
+                          decoration: BoxDecoration(
+                            color: Colors.deepPurple[100],
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                left: 16,
+                                top: 16,
+                                bottom: 16,
+                                right: 16,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.circular(16),
+                                      ),
+                                      child: IconButton(
+                                        icon: const Icon(Icons.calculate),
+                                        onPressed: () {},
+                                      ),
+                                    ),
+                                    const Text(
+                                      "Basic mathematics",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 18,
+                                      ),
+                                    ),
+                                    const Text('Today, 08:15am'),
+                                    Row(
+                                      children: [
+                                        Container(
+                                          height: 32,
+                                          width: 32,
+                                          decoration: const BoxDecoration(
+                                            color: Colors.blue,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
+                                        Text(
+                                          "Dream walker",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Positioned(
+                                right: 8,
+                                top: 8,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
+                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                  child: Row(
+                                    children: [
+                                      Text(
+                                        "Homework",
+                                      ),
+                                      Icon(
+                                        Icons.check_circle,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        );
+                      })),
                     ],
                   )
                 ],
