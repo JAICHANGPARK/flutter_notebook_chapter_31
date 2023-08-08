@@ -233,59 +233,60 @@ class _StudentMainPageState extends State<StudentMainPage> {
                               Column(
                                 children: List.generate(
                                   10,
-                                  (index) => Container(
-                                    margin: const EdgeInsets.symmetric(
-                                      horizontal: 4,
-                                      vertical: 2,
-                                    ),
-                                    decoration: BoxDecoration(
-                                      color: Colors.pink[50],
-                                      borderRadius: BorderRadius.circular(16),
-                                    ),
-                                    child: Row(
-                                      children: [
-                                        Container(
-                                          height: 84,
-                                          width: 84,
-                                          decoration: BoxDecoration(
-                                            color: Colors.blue,
-                                            borderRadius: BorderRadius.circular(16),
-                                          ),
+                                      (index) =>
+                                      Container(
+                                        margin: const EdgeInsets.symmetric(
+                                          horizontal: 4,
+                                          vertical: 2,
                                         ),
-                                        const SizedBox(
-                                          width: 16,
+                                        decoration: BoxDecoration(
+                                          color: Colors.pink[50],
+                                          borderRadius: BorderRadius.circular(16),
                                         ),
-                                        const Expanded(
-                                          child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Text(
-                                                "Comedy Show",
-                                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                        child: Row(
+                                          children: [
+                                            Container(
+                                              height: 84,
+                                              width: 84,
+                                              decoration: BoxDecoration(
+                                                color: Colors.blue,
+                                                borderRadius: BorderRadius.circular(16),
                                               ),
-                                              SizedBox(
-                                                height: 8,
+                                            ),
+                                            const SizedBox(
+                                              width: 16,
+                                            ),
+                                            const Expanded(
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    "Comedy Show",
+                                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                                  ),
+                                                  SizedBox(
+                                                    height: 8,
+                                                  ),
+                                                  Text("26 Apr,6:30pm"),
+                                                ],
                                               ),
-                                              Text("26 Apr,6:30pm"),
-                                            ],
-                                          ),
+                                            ),
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.white,
+                                                borderRadius: BorderRadius.circular(8),
+                                              ),
+                                              padding: const EdgeInsets.all(8),
+                                              child: const Icon(
+                                                Icons.favorite_border,
+                                              ),
+                                            ),
+                                            const SizedBox(
+                                              width: 16,
+                                            ),
+                                          ],
                                         ),
-                                        Container(
-                                          decoration: BoxDecoration(
-                                            color: Colors.white,
-                                            borderRadius: BorderRadius.circular(8),
-                                          ),
-                                          padding: const EdgeInsets.all(8),
-                                          child: const Icon(
-                                            Icons.favorite_border,
-                                          ),
-                                        ),
-                                        const SizedBox(
-                                          width: 16,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
+                                      ),
                                 ),
                               )
                             ],
