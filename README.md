@@ -4,7 +4,7 @@ How to run
 
 - flutter run
 
-## EP1596
+## EP1596-1600
 
 - Student app interaction
 - by Taras Migulko for emote_agency
